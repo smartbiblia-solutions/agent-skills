@@ -1,0 +1,27 @@
+services:
+  mcp-openalex:
+    build:
+      context: ./mcp/openalex
+      dockerfile: Dockerfile
+    container_name: mcp-openalex
+    environment:
+      OPENALEX_API_KEY: ${OPENALEX_API_KEY}
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8011"
+      MCP_TRANSPORT: streamable-http
+    ports:
+      - "8011:8011"
+    restart: unless-stopped
+
+  mcp-sudoc-sru:
+    build:
+      context: ./mcp/sudoc-sru
+      dockerfile: Dockerfile
+    container_name: mcp-sudoc-sru
+    environment:
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8012"
+      MCP_TRANSPORT: streamable-http
+    ports:
+      - "8012:8012"
+    restart: unless-stopped
