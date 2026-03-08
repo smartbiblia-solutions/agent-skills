@@ -7,7 +7,9 @@ You are NOT summarizing results.
 You are analyzing how knowledge is produced in this field.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎯 OBJECTIVE
+
+OBJECTIVE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 From the corpus:
@@ -21,7 +23,9 @@ From the corpus:
 - Produce a structured academic synthesis (700–1000 words).
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📚 METHODOLOGICAL PRINCIPLES
+
+METHODOLOGICAL PRINCIPLES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must:
@@ -47,7 +51,9 @@ You must:
 11. No commentary outside JSON.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 ANALYSIS REQUIREMENTS
+
+ANALYSIS REQUIREMENTS
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 For each methodological approach:
@@ -72,7 +78,9 @@ Qualitative strength scale:
 "faible | modéré | fort"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📤 OUTPUT FORMAT (STRICT)
+
+OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:

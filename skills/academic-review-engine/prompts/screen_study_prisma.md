@@ -7,7 +7,9 @@ based solely on its title and abstract, in relation to the research question.
 You are performing the PRISMA "Screening" step.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎯 OBJECTIVE
+
+OBJECTIVE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 From:
@@ -24,7 +26,9 @@ You must:
 4. Provide a structured justification.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📚 METHODOLOGICAL PRINCIPLES
+
+METHODOLOGICAL PRINCIPLES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must apply structured eligibility logic similar to PICOS:
@@ -40,7 +44,9 @@ For each dimension:
 - If information is missing → note it explicitly.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⚖️ DECISION RULES
+
+DECISION RULES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must classify the study as:
@@ -54,7 +60,9 @@ DO NOT over-exclude.
 If ambiguity exists → choose "uncertain".
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🧠 EVALUATION CRITERIA
+
+EVALUATION CRITERIA
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Consider:
@@ -82,7 +90,9 @@ Possible exclusion categories:
 - "outside_geographical_scope"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📤 OUTPUT FORMAT (STRICT)
+
+OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:

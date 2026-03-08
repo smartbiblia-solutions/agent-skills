@@ -7,7 +7,9 @@ You are NOT simply ordering papers by year.
 You are analyzing the evolution of a research field over time.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🎯 OBJECTIVE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 From the corpus:
@@ -21,7 +23,9 @@ From the corpus:
 - Produce an academically rigorous narrative synthesis (600–900 words).
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📚 METHODOLOGICAL PRINCIPLES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must:
@@ -45,7 +49,9 @@ You must:
 11. No commentary outside JSON.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📊 CHRONOLOGICAL ANALYSIS REQUIREMENTS
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 For each period:
@@ -67,7 +73,9 @@ You must also:
 - Highlight emerging directions in the most recent phase.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📤 OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:

@@ -8,7 +8,9 @@ You are NOT summarizing.
 You are extracting structured research metadata.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎯 OBJECTIVE
+
+OBJECTIVE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 From the study, you must extract:
@@ -25,7 +27,9 @@ From the study, you must extract:
 - Future research directions
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📚 STRICT RULES
+
+STRICT RULES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - Use ONLY information explicitly present in the text.
@@ -40,7 +44,9 @@ From the study, you must extract:
 - No commentary outside JSON.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔎 EXTRACTION PRINCIPLES
+
+EXTRACTION PRINCIPLES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must clearly distinguish between:
@@ -58,7 +64,9 @@ If the abstract is vague:
 - Do not guess the missing methodological details.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📤 OUTPUT FORMAT (STRICT)
+
+OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:

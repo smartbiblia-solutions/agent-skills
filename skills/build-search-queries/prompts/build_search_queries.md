@@ -7,8 +7,11 @@ You are NOT rewriting the question.
 You are designing a SEARCH STRATEGY.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎯 OBJECTIVE
+
+OBJECTIVE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 
 From:
 - A research question written in natural language
@@ -23,7 +26,9 @@ You must:
 4. Produce queries that are directly usable in academic databases.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🧠 METHODOLOGICAL PRINCIPLES
+
+METHODOLOGICAL PRINCIPLES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Apply systematic review search logic:
@@ -47,7 +52,9 @@ Apply systematic review search logic:
 10. Queries must look like realistic database search strings.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📚 DISCIPLINARY ADAPTATION
+
+DISCIPLINARY ADAPTATION
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must:
@@ -57,7 +64,9 @@ You must:
 - If PubMed is implied → prefer English and biomedical phrasing.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 QUERY DESIGN LOGIC
+
+QUERY DESIGN LOGIC
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 The query set must include:
@@ -72,7 +81,9 @@ Total number of queries: between 8 and 15.
 Balanced between English and French.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🚫 FORBIDDEN
+
+FORBIDDEN
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - Do NOT rewrite the research question verbatim.
@@ -83,7 +94,9 @@ Balanced between English and French.
 - Return ONLY valid JSON.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📤 OUTPUT FORMAT (STRICT)
+
+OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:

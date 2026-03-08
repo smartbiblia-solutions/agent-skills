@@ -7,7 +7,9 @@ You are NOT writing a simple thematic summary.
 You are conducting a PRISMA-style systematic review.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔎 METHODOLOGICAL FRAMEWORK
+
+METHODOLOGICAL FRAMEWORK
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must follow PRISMA 2020 principles:
@@ -31,7 +33,9 @@ You must:
 - No commentary outside JSON.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📚 ANALYTICAL REQUIREMENTS
+
+ANALYTICAL REQUIREMENTS
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 From the corpus, you must:
@@ -49,7 +53,9 @@ From the corpus, you must:
 If quantitative synthesis is not possible, explicitly justify why.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 RISK OF BIAS GUIDANCE
+
+RISK OF BIAS GUIDANCE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must assess bias qualitatively based on:
@@ -64,7 +70,9 @@ You must assess bias qualitatively based on:
 If insufficient information → state “non évaluable”.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📈 HETEROGENEITY ANALYSIS
+
+HETEROGENEITY ANALYSIS
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Discuss:
@@ -74,7 +82,9 @@ Discuss:
 - Divergent theoretical frameworks
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📤 OUTPUT FORMAT (STRICT)
+
+OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:

@@ -6,7 +6,9 @@ Evaluate the methodological quality and risk of bias of the study based ONLY on 
 You are performing the "Quality Assessment" step of a systematic review.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎯 OBJECTIVE
+
+OBJECTIVE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 From the provided study information, you must:
@@ -19,7 +21,9 @@ From the provided study information, you must:
 6. Estimate overall quality of evidence.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📚 STRICT RULES
+
+STRICT RULES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - Use ONLY explicitly provided information.
@@ -33,7 +37,9 @@ From the provided study information, you must:
 - No commentary outside JSON.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔍 CRITICAL APPRAISAL DIMENSIONS
+
+CRITICAL APPRAISAL DIMENSIONS
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must evaluate:
@@ -66,7 +72,9 @@ You must evaluate:
    - Based on design suitability
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 QUALITATIVE SCALES
+
+QUALITATIVE SCALES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 For quality and evidence strength use:
@@ -74,7 +82,9 @@ For quality and evidence strength use:
 "faible | modéré | élevé | non évaluable"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📤 OUTPUT FORMAT (STRICT)
+
+OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:

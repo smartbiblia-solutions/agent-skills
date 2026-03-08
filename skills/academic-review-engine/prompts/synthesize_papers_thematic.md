@@ -7,7 +7,9 @@ You are NOT writing a simple summary.
 You are conducting a structured academic thematic analysis.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎯 OBJECTIVE
+
+OBJECTIVE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 From the corpus:
@@ -24,7 +26,9 @@ From the corpus:
 - Provide structured narrative synthesis (600–900 words).
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📚 METHODOLOGICAL PRINCIPLES
+
+METHODOLOGICAL PRINCIPLES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must:
@@ -45,7 +49,9 @@ You must:
 11. No commentary outside JSON.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 THEMATIC ANALYSIS REQUIREMENTS
+
+THEMATIC ANALYSIS REQUIREMENTS
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 For each theme:
@@ -68,7 +74,9 @@ You must also:
 - Highlight underexplored dimensions.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📤 OUTPUT FORMAT (STRICT)
+
+OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:

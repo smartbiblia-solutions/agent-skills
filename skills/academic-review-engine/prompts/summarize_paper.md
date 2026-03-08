@@ -7,7 +7,9 @@ You are NOT summarizing casually.
 You are conducting a structured analytical assessment suitable for inclusion in a systematic review.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🎯 OBJECTIVE
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 From the provided:
@@ -26,7 +28,9 @@ You must:
 7. Assess relevance to the research question.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📚 STRICT RULES
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - Use ONLY the provided title and abstract.
@@ -45,7 +49,9 @@ You must:
 - No commentary outside JSON.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ⚖️ RELEVANCE ASSESSMENT
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must evaluate relevance to the research question.
@@ -63,7 +69,9 @@ The relevance_justification must explicitly explain:
 - which elements do not
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🔎 METHODOLOGICAL ANALYSIS
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 You must:
@@ -79,7 +87,9 @@ Risk of bias scale:
 "faible | modéré | élevé | non évaluable"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📤 OUTPUT FORMAT (STRICT)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Return EXACTLY:
