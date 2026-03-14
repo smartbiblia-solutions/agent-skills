@@ -1,6 +1,8 @@
 ---
 name: academic-review-engine
-description: Contract-based orchestrator skill (Host-LLM) for the post-retrieval part of an academic literature review pipeline: screening, extraction, appraisal, and synthesis (PRISMA / thematic / chronological / methodological). Use with build-search-queries plus retrieval skills such as OpenAlex.
+description: >
+  Contract-based orchestrator skill (Host-LLM) for the post-retrieval part of an academic literature review pipeline: screening, extraction, appraisal, and synthesis (PRISMA / thematic / chronological / methodological). 
+  Use with build-search-queries plus retrieval skills such as OpenAlex.
 version: 1.1.0
 author: smartbiblia
 tags:
