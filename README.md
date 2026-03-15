@@ -22,6 +22,7 @@ mcp/             MCP servers (streamable-HTTP, Docker-ready)
 | [`generate-search-queries`](#generate-search-queries) | contract pack | Build a bilingual search strategy from a research question |
 | [`search-works-openalex`](#search-works-openalex) | CLI tool | Retrieve scholarly works from OpenAlex |
 | [`search-records-hal`](#search-records-hal) | CLI tool | Retrieve records from HAL (French open repository) |
+| [`search-records-sudoc`](#search-records-sudoc) | CLI tool | Search the French academic union catalogue (UNIMARC, holdings, theses) |
 | [`synthesize-literature`](#synthesize-literature) | contract pack | Screen, summarize, appraise, and synthesize retrieved papers |
 | [`orchestrate-literature-review`](#orchestrate-literature-review) | orchestrator | End-to-end pipeline from research question to synthesis |
 | [`trace-agent-execution`](#trace-agent-execution) | utility | Produce readable audit traces from agentic run logs |
@@ -59,7 +60,7 @@ Skills with multiple tasks (`synthesize-literature`) require `--task`.
 To use a skill, mention its name in your prompt. The agent reads `skills/<name>/SKILL.md`
 and follows the workflow.
 
-> See [`HUB-REGISTRY.md`](./HUB-REGISTRY.md) for the full skill map, logical skill
+> See [`HUB-REGISTRY.md`](./skills/HUB-REGISTRY.md) for the full skill map, logical skill
 > identifiers, and the annotated pipeline showing how outputs chain into inputs.
 
 ---
@@ -153,6 +154,50 @@ Environment variables (optional, set in `skills/search-records-hal/.env`):
 HAL_HTTP_TIMEOUT=20.0
 HAL_MAX_RETRIES=2
 HAL_TRACE=0          # set to 1 to enable HTTP trace logging
+```
+
+---
+
+### search-records-sudoc
+
+Searches the Sudoc union catalogue — all French higher education and research
+library holdings. Five subcommands covering the main use cases:
+
+```bash
+# Keyword search (uses Sudoc index syntax)
+uv run skills/search-records-sudoc/scripts/cli.py search \
+  --query "mti=intelligence artificielle and msu=apprentissage" \
+  --doc-type b \
+  --lang-major fre \
+  --year-from 2018
+
+# French theses on a topic
+uv run skills/search-records-sudoc/scripts/cli.py search \
+  --query "nth=toulouse and mti=machine learning" \
+  --doc-type y
+
+# Resolve a PPN or ISBN
+uv run skills/search-records-sudoc/scripts/cli.py lookup-by-ppn --ppn 070685045
+uv run skills/search-records-sudoc/scripts/cli.py lookup-by-isbn --isbn 978-2-07-036024-5
+
+# Count records before fetching
+uv run skills/search-records-sudoc/scripts/cli.py count --query "edi=gallimard"
+
+# Browse an index to discover valid terms (useful to debug zero-result queries)
+uv run skills/search-records-sudoc/scripts/cli.py scan --index vma --term abricot --max-terms 20
+```
+
+Use this skill for French academic library holdings, thesis lookup, UNIMARC
+metadata, and RAMEAU subject headings. For French open-access preprints, use
+`search-records-hal` instead. For international scholarly literature, use
+`search-works-openalex`.
+
+Environment variables (optional, set in `skills/search-records-sudoc/.env`):
+
+```bash
+SUDOC_HTTP_TIMEOUT=30.0
+SUDOC_MAX_RETRIES=3
+SUDOC_TRACE=0          # set to 1 to enable HTTP trace logging
 ```
 
 ---

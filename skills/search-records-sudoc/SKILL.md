@@ -542,7 +542,6 @@ always be at least one regular index term.
 
 ## Notes
 
-- Configure local defaults in `skills/search-records-sudoc/.env`.
 - Output is strict JSON on stdout.
 - The Sudoc SRU service has no published rate limit, but courtesy pauses of
   200 ms between paginated requests are applied automatically.
