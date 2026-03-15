@@ -1,5 +1,5 @@
 ---
-name: sudoc-sru
+name: search-records-sudoc
 description: >
   Search and retrieve bibliographic records from the Sudoc catalogue, the
   French academic union catalogue covering all higher education and research
@@ -14,10 +14,11 @@ description: >
   Also use it when the user wants to know whether a document is held in
   French academic libraries, or needs UNIMARC metadata for a French
   publication.
-version: 0.1.0
-author: smartbiblia
+metadata:
+  version: 0.1.0
+  author: smartbiblia
 tags:
-  - sudoc-sru
+  - search-records-sudoc
   - unimarc
   - academic-libraries
   - france
@@ -39,7 +40,7 @@ uv run scripts/cli.py <subcommand> [flags]
 ```
 
 > **Path note**: adjust the path to `cli.py` to wherever it lives in your
-> project (e.g. `skills/sudoc-sru/scripts/cli.py`).
+> project (e.g. `skills/search-records-sudoc/scripts/cli.py`).
 
 The Sudoc catalogue covers **bibliographic records and their holdings** across
 French higher education and research libraries. It contains books, serials,
@@ -80,7 +81,7 @@ boolean operators, truncation, and all document-type / language / country /
 date filters.
 
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "mti=jardins and japonais" \
   --max-results 20 \
   --doc-type b \
@@ -92,25 +93,25 @@ uv run skills/sudoc-sru/scripts/cli.py search \
 
 ```bash
 # Theses in biophysics defended at Lyon:
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "nth=biophysique and lyon" \
   --doc-type y
 
 # Works by Lagerlöf with "troll" in the title:
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "aut=lagerlof and mti=troll"
 
 # Serials in the shared conservation plan "pcdroit", excluding congress proceedings:
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "pcp=pcdroit not fgr=actes congres" \
   --doc-type t
 
 # Records about antivirals (French and English subject indexes combined with OR):
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "vma=antivir* or mee=antivir*"
 
 # Electronic theses from STAR corpus held by Avignon SCD (RCR 840079901):
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "rbc=840079901 and sou=star*"
 ```
 
@@ -142,7 +143,7 @@ uv run skills/sudoc-sru/scripts/cli.py search \
 The PPN (Pica Production Number) is Sudoc's unique record identifier.
 
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py lookup-by-ppn --ppn 070685045
+uv run skills/search-records-sudoc/scripts/cli.py lookup-by-ppn --ppn 070685045
 ```
 
 | Flag | Type | Notes |
@@ -158,8 +159,8 @@ Accepts ISBN-10 or ISBN-13, with or without hyphens. One ISBN may match
 multiple records (e.g. different editions or manifestations).
 
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py lookup-by-isbn --isbn 978-2-07-036024-5
-uv run skills/sudoc-sru/scripts/cli.py lookup-by-isbn --isbn 2070360245
+uv run skills/search-records-sudoc/scripts/cli.py lookup-by-isbn --isbn 978-2-07-036024-5
+uv run skills/search-records-sudoc/scripts/cli.py lookup-by-isbn --isbn 2070360245
 ```
 
 | Flag | Type | Notes |
@@ -175,8 +176,8 @@ Returns only the total number of matching records. Use this before a large
 `search` to estimate corpus size or validate a query.
 
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py count --query "aut=zola"
-uv run skills/sudoc-sru/scripts/cli.py count --query "pcp=pcmed and tdo=t"
+uv run skills/search-records-sudoc/scripts/cli.py count --query "aut=zola"
+uv run skills/search-records-sudoc/scripts/cli.py count --query "pcp=pcmed and tdo=t"
 ```
 
 | Flag | Type | Notes |
@@ -193,13 +194,13 @@ zero-result queries. Equivalent to the SRU `scan` operation.
 
 ```bash
 # Browse title-word index starting from "paralogue":
-uv run skills/sudoc-sru/scripts/cli.py scan --index mti --term paralogue --max-terms 25
+uv run skills/search-records-sudoc/scripts/cli.py scan --index mti --term paralogue --max-terms 25
 
 # Browse author index starting from "lagerlof":
-uv run skills/sudoc-sru/scripts/cli.py scan --index aut --term lagerlof --max-terms 10
+uv run skills/search-records-sudoc/scripts/cli.py scan --index aut --term lagerlof --max-terms 10
 
 # Browse subject access point index:
-uv run skills/sudoc-sru/scripts/cli.py scan --index vma --term abricot --max-terms 15
+uv run skills/search-records-sudoc/scripts/cli.py scan --index vma --term abricot --max-terms 15
 ```
 
 | Flag | Type | Default | Notes |
@@ -415,7 +416,7 @@ retried up to `SUDOC_MAX_RETRIES`.
 
 **Find recent French theses on primates:**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "mti=primates and msu=hominides" \
   --doc-type y \
   --year-from 2010
@@ -423,37 +424,37 @@ uv run skills/sudoc-sru/scripts/cli.py search \
 
 **Look up a book by ISBN and get its Sudoc PPN:**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py lookup-by-isbn --isbn 978-2-07-036024-5 \
+uv run skills/search-records-sudoc/scripts/cli.py lookup-by-isbn --isbn 978-2-07-036024-5 \
   | python3 -c "import sys,json; [print(r['ppn']) for r in json.load(sys.stdin)['results']]"
 ```
 
 **Count how many records Sudoc has for a publisher:**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py count --query "edi=gallimard"
+uv run skills/search-records-sudoc/scripts/cli.py count --query "edi=gallimard"
 ```
 
 **Cross-language subject search (French + English MeSH):**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "vma=antivir* or mee=antivir*" \
   --max-results 50
 ```
 
 **Find all records held by a specific library (by RCR number):**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "rbc=130012101" \
   --max-results 100
 ```
 
 **Scan the subject index to discover RAMEAU terms starting with "abricot":**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py scan --index vma --term abricot --max-terms 20
+uv run skills/search-records-sudoc/scripts/cli.py scan --index vma --term abricot --max-terms 20
 ```
 
 **Find Umberto Eco's Italian-language works published after 2015:**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "per=eco,umberto" \
   --lang-major ita \
   --year-from 2016
@@ -461,14 +462,14 @@ uv run skills/sudoc-sru/scripts/cli.py search \
 
 **Serials in shared conservation plan "pcmed", excluding orthodontics/dentistry:**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "pcp=pcmed not mti=orthod* and pcp=pcmed not mti=dent*" \
   --doc-type t
 ```
 
 **Find electronic theses about machine learning from Toulouse universities:**
 ```bash
-uv run skills/sudoc-sru/scripts/cli.py search \
+uv run skills/search-records-sudoc/scripts/cli.py search \
   --query "nth=toulouse and mti=machine learning" \
   --doc-type y
 ```

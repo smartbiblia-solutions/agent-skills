@@ -1,5 +1,5 @@
 ---
-name: openalex
+name: search-works-openalex
 description: >
   Search and retrieve academic papers from OpenAlex, the world's largest open
   bibliographic database. Use this skill whenever the user wants to find
@@ -10,8 +10,29 @@ description: >
   any request involving bibliographic data. Use it even if the user doesn't
   explicitly name OpenAlex — if they want to find or analyse academic papers,
   this skill applies.
-version: 0.1.0
-author: smartbiblia
+metadata:
+  version: 0.1.0
+  author: smartbiblia
+  maturity: stable
+  preferred_output: json
+
+selection:
+  use_when:
+    - The task is to discover or retrieve scholarly works, articles, or preprints.
+    - The user wants to resolve a DOI or find full bibliographic metadata.
+    - The task requires finding papers that cite a specific work.
+    - The task is to classify a title or abstract by academic topic.
+  avoid_when:
+    - The task concerns a library catalog or institutional holdings (use search-records-sudoc instead).
+    - Papers have already been retrieved and the next step is appraisal or synthesis.
+  prefer_over:
+    - generic-web-search
+  combine_with:
+    - generate-search-queries
+    - screen-studies-prisma
+    - summarize-paper
+    - synthesize-papers-thematic
+
 tags:
   - openalex
   - scholarly
@@ -19,9 +40,9 @@ tags:
   - bibliometrics
 ---
 
-# OpenAlex Skill
+# search-works-openalex
 
-## Overview
+## Purpose
 
 `scripts/cli.py` is a self-contained CLI (runs with `uv run`) that wraps the
 [OpenAlex REST API](https://docs.openalex.org). It exposes four subcommands and
@@ -32,7 +53,28 @@ uv run scripts/cli.py <subcommand> [flags]
 ```
 
 > **Path note**: adjust the path to `cli.py` to wherever it lives in
-> your project (e.g. `skills/openalex/scripts/cli.py`).
+> your project (e.g. `skills/search-works-openalex/scripts/cli.py`).
+
+This skill exposes four logical operations, each addressable independently:
+
+| Logical skill | Subcommand | Purpose |
+|---|---|---|
+| `search-works-openalex` | `search` | Keyword search across the OpenAlex corpus |
+| `lookup-dois-openalex` | `batch-lookup-by-doi` | Resolve one or more DOIs to full metadata |
+| `get-citing-works-openalex` | `get-citing-works` | Find papers citing a specific work |
+| `classify-text-openalex` | `classify-text` | Classify a title or abstract by academic topic |
+
+---
+
+## When to use / When not to use
+
+Use this skill for any task involving discovery or retrieval of scholarly works,
+DOI resolution, citation graph exploration, or topic classification of academic text.
+
+Do not use it when:
+- The task concerns a library catalog or institutional holdings — use `search-records-sudoc` instead.
+- Papers have already been retrieved and the next step is appraisal or synthesis —
+  use `appraise-study-quality` or `synthesize-papers-thematic` instead.
 
 ---
 
@@ -43,7 +85,7 @@ uv run scripts/cli.py <subcommand> [flags]
 Find papers by free-text query, with optional filters.
 
 ```bash
-uv run skills/openalex/scripts/cli.py search \
+uv run skills/search-works-openalex/scripts/cli.py search \
   --query "transformer language models" \
   --max-results 10 \
   --date-from 2022-01-01 \
@@ -80,16 +122,16 @@ Fetch full metadata for known papers by DOI. Handles batches of up to 200 DOIs
 
 ```bash
 # Single DOI
-uv run skills/openalex/scripts/cli.py batch-lookup-by-doi \
+uv run skills/search-works-openalex/scripts/cli.py batch-lookup-by-doi \
   --doi 10.1038/s41586-021-03819-2
 
 # Multiple DOIs (repeat the flag)
-uv run skills/openalex/scripts/cli.py batch-lookup-by-doi \
+uv run skills/search-works-openalex/scripts/cli.py batch-lookup-by-doi \
   --doi 10.1038/s41586-021-03819-2 \
   --doi 10.1145/3292500.3330701
 
 # From a file (one DOI per line)
-uv run skills/openalex/scripts/cli.py batch-lookup-by-doi \
+uv run skills/search-works-openalex/scripts/cli.py batch-lookup-by-doi \
   --doi-file dois.txt
 ```
 
@@ -110,14 +152,14 @@ Retrieve works that cite a specific OpenAlex work, sorted by citation count
 (most-cited first).
 
 ```bash
-uv run skills/openalex/scripts/cli.py get-citing-works \
+uv run skills/search-works-openalex/scripts/cli.py get-citing-works \
   --openalex-id W2741809807 \
   --max-results 50
 ```
 
 | Flag | Type | Default | Notes |
 |---|---|---|---|
-| `--openalex-id` | string | **required** | Short ID (`W2741809807`) or full URL (`https://openalex.org/W2741809807`) — both accepted |
+| `--openalex-id` | string | **required** | Short ID (`W2741809807`) or full URL — both accepted |
 | `--max-results` | int | `20` | Max 200 |
 | `--trace` | flag | — | Append HTTP trace log |
 
@@ -133,11 +175,11 @@ OpenAlex's `/text` endpoint.
 
 ```bash
 # Inline text
-uv run skills/openalex/scripts/cli.py classify-text \
+uv run skills/search-works-openalex/scripts/cli.py classify-text \
   --text "Attention is all you need. We propose a new simple network architecture..."
 
 # From a file
-uv run skills/openalex/scripts/cli.py classify-text \
+uv run skills/search-works-openalex/scripts/cli.py classify-text \
   --file abstract.txt
 ```
 
@@ -153,55 +195,56 @@ input is shorter than 20 characters the response will contain
 
 ---
 
-## Output Schema
+## Output
 
 All subcommands return a JSON object. The `results` array (where present) uses
 this common schema:
 
 ```jsonc
 {
-  "total_found": 1523,        // total matching in OpenAlex (may exceed returned)
-  "returned": 15,             // number of records in this response
+  "total_found": 1523,
+  "returned": 15,
   "results": [
     {
       "source": "openalex",
-      "id": "W2741809807",              // short OpenAlex work ID
+      "id": "W2741809807",
       "openalex_id": "W2741809807",
       "title": "Attention Is All You Need",
       "authors": ["Ashish Vaswani", "Noam Shazeer"],
       "author_details": [
         {
           "name": "Ashish Vaswani",
-          "orcid": "https://orcid.org/0000-0002-...",  // null if unknown
+          "orcid": "https://orcid.org/0000-0002-...",
           "openalex_id": "A123456789",
           "institutions": ["Google Brain"]
         }
       ],
-      "abstract": "The dominant sequence transduction models…",  // null if unavailable
-      "doi": "10.48550/arXiv.1706.03762",    // short form, null if none
-      "pdf_url": "https://arxiv.org/pdf/1706.03762",  // null if not OA
+      "abstract": "The dominant sequence transduction models…",
+      "doi": "10.48550/arXiv.1706.03762",
+      "pdf_url": "https://arxiv.org/pdf/1706.03762",
       "url": "https://openalex.org/W2741809807",
       "source_url": "https://openalex.org/W2741809807",
       "year": 2017,
       "date": "2017-06-12",
-      "doc_type": "preprint",             // "article", "book-chapter", etc.
-      "journal": "arXiv",                 // null if unknown
+      "doc_type": "preprint",
+      "journal": "arXiv",
       "cited_by_count": 98000,
       "referenced_works_count": 34,
       "is_open_access": true,
-      "oa_status": "green",               // "gold", "green", "bronze", "closed"
-      "topics": ["Transformer Models", "Natural Language Processing"],  // up to 5, score > 0.3
+      "oa_status": "green",
+      "topics": ["Transformer Models", "Natural Language Processing"],
       "keywords": ["attention mechanism", "self-attention"],
       "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2741809807"
     }
   ],
-  "query_used": "transformer language models",   // search only
-  "filters_used": ["from_publication_date:2022-01-01"],  // search only
-  "cited_work_id": "W2741809807"                 // get-citing-works only
+  "query_used": "transformer language models",
+  "filters_used": ["from_publication_date:2022-01-01"],
+  "cited_work_id": "W2741809807"
 }
 ```
 
 `classify-text` returns a different shape:
+
 ```jsonc
 {
   "topics": [
@@ -219,6 +262,7 @@ this common schema:
 ### Error responses
 
 When author or institution resolution fails, `search` returns:
+
 ```jsonc
 { "total_found": 0, "returned": 0, "results": [], "error": "Auteur introuvable dans OpenAlex : 'John Doe'" }
 ```
@@ -228,7 +272,7 @@ the `error` key in the output.
 
 ---
 
-## Environment Variables
+## Environment variables
 
 Set these in a `.env` file next to the script or export them in the shell.
 
@@ -247,11 +291,34 @@ retried up to `MAX_RETRIES`.
 
 ---
 
-## Common Workflows
+## Composition hints
+
+Typical position in a systematic review pipeline:
+
+```
+generate-search-queries
+  → search-works-openalex        ← this skill
+  → screen-studies-prisma
+  → summarize-paper
+  → appraise-study-quality
+  → synthesize-papers-thematic
+```
+
+For citation analysis:
+
+```
+batch-lookup-by-doi              ← resolve seed papers
+  → get-citing-works-openalex   ← expand the citation graph
+  → screen-studies-prisma
+```
+
+---
+
+## Common workflows
 
 **Find recent open-access papers on a topic:**
 ```bash
-uv run skills/openalex/scripts/cli.py search \
+uv run skills/search-works-openalex/scripts/cli.py search \
   --query "large language model alignment" \
   --date-from 2023-01-01 --oa --max-results 20
 ```
@@ -259,28 +326,34 @@ uv run skills/openalex/scripts/cli.py search \
 **Resolve a DOI and then find what cites it:**
 ```bash
 # Step 1 — get the OpenAlex ID
-uv run skills/openalex/scripts/cli.py batch-lookup-by-doi --doi 10.1038/s41586-021-03819-2 \
+uv run skills/search-works-openalex/scripts/cli.py batch-lookup-by-doi \
+  --doi 10.1038/s41586-021-03819-2 \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['results'][0]['openalex_id'])"
 
-# Step 2 — fetch citing works (paste ID from above)
-uv run skills/openalex/scripts/cli.py get-citing-works --openalex-id W2741809807 --max-results 50
+# Step 2 — fetch citing works
+uv run skills/search-works-openalex/scripts/cli.py get-citing-works \
+  --openalex-id W2741809807 --max-results 50
 ```
 
 **Classify an abstract to find its research field:**
 ```bash
-uv run skills/openalex/scripts/cli.py classify-text \
+uv run skills/search-works-openalex/scripts/cli.py classify-text \
   --text "We introduce a method for fine-tuning large language models with human feedback…"
 ```
 
 **Look up papers by a specific author at a specific institution:**
 ```bash
-uv run skills/openalex/scripts/cli.py search \
+uv run skills/search-works-openalex/scripts/cli.py search \
   --query "protein folding" \
   --author "David Baker" \
   --institution "University of Washington"
 ```
+
 ---
 
-## Notes
-- Configure local defaults in `skills/openalex/.env`.
-- Output is strict JSON on stdout.
+## Failure modes
+
+- **Author/institution not found**: resolution returns zero results with an `error` key — check spelling or use ORCID/ROR directly.
+- **Exit code always 0**: the CLI does not raise non-zero on API errors — always inspect the `error` field in the JSON output.
+- **Rate limiting**: handled automatically via retry with exponential backoff. If persistent, set `OPENALEX_API_KEY`.
+- **Abstract unavailable**: the `abstract` field is `null` for some works — OpenAlex does not guarantee abstract coverage.
