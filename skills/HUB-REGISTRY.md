@@ -11,7 +11,7 @@ Complete reference for all packages, logical skills, and their relationships.
 | `generate-search-queries` | contract pack (single task) | stable | Build a bilingual search strategy from a research question |
 | `search-works-openalex` | CLI tool | stable | Retrieve scholarly works from OpenAlex |
 | `search-records-hal` | CLI tool | stable | Retrieve records from HAL (French open repository) |
-| `search-records-sudoc` | CLI tool | — | Search library catalog records via SRU/Sudoc |
+| `search-records-sudoc` | CLI tool | stable | Search library catalog records via SRU/Sudoc (UNIMARC, holdings, theses) |
 | `synthesize-literature` | contract pack (multi-task) | stable | Post-retrieval analysis: screen, summarize, appraise, synthesize |
 | `orchestrate-literature-review` | orchestrator | beta | End-to-end pipeline from question to synthesis |
 | `trace-agent-execution` | utility | stable | Produce readable audit traces from agentic run logs |

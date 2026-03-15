@@ -17,8 +17,32 @@ description: >
 metadata:
   version: 0.1.0
   author: smartbiblia
+  maturity: stable
+  preferred_output: json
+
+selection:
+  use_when:
+    - The task targets French academic library holdings, union catalogue records, or institutional collections.
+    - The user needs to find books, serials, theses, manuscripts, or documents held in French universities.
+    - PPN or ISBN resolution is needed for French library records.
+    - The task involves French academic theses (including electronic theses from the STAR corpus).
+    - UNIMARC metadata or RAMEAU subject headings are required.
+    - The user wants to know whether a document is held in French academic libraries.
+  avoid_when:
+    - The task requires broad international scholarly literature — use search-works-openalex instead.
+    - The task targets French open-access preprints or institutional deposits — use search-records-hal instead.
+    - DOI-based scholarly retrieval is the primary goal — use lookup-dois-openalex instead.
+  prefer_over:
+    - generic-web-search
+  combine_with:
+    - generate-search-queries
+    - search-works-openalex
+    - search-records-hal
+    - screen-studies-prisma
+    - synthesize-literature
+
 tags:
-  - search-records-sudoc
+  - sudoc
   - unimarc
   - academic-libraries
   - france
@@ -313,7 +337,7 @@ Use these keys in `--query` with the `key=value` syntax.
 
 All subcommands return a JSON object. The `results` array uses this schema:
 
-```jsonc
+```json
 {
   "total_found": 42,       // total matching records in Sudoc
   "returned": 15,          // records in this response
@@ -349,7 +373,7 @@ All subcommands return a JSON object. The `results` array uses this schema:
 
 For thesis records, the `thesis` field is populated:
 
-```jsonc
+```json
 "thesis": {
   "type": "Thèse de doctorat",
   "discipline": "Biophysique",
@@ -360,7 +384,7 @@ For thesis records, the `thesis` field is populated:
 
 ### `count` response
 
-```jsonc
+```json
 {
   "query": "aut=zola",
   "total_found": 1247,
@@ -370,7 +394,7 @@ For thesis records, the `thesis` field is populated:
 
 ### `scan` response
 
-```jsonc
+```json
 {
   "index": "mti",
   "start_term": "paralogue",
@@ -385,7 +409,7 @@ For thesis records, the `thesis` field is populated:
 
 ### Error responses
 
-```jsonc
+```json
 { "total_found": 0, "returned": 0, "results": [],
   "error": "PPN not found in Sudoc: '000000000'" }
 ```
@@ -518,7 +542,7 @@ always be at least one regular index term.
 
 ## Notes
 
-- Configure local defaults in `skills/sudoc/.env`.
+- Configure local defaults in `skills/search-records-sudoc/.env`.
 - Output is strict JSON on stdout.
 - The Sudoc SRU service has no published rate limit, but courtesy pauses of
   200 ms between paginated requests are applied automatically.
