@@ -15,6 +15,7 @@ Complete reference for all packages, logical skills, and their relationships.
 | `synthesize-literature` | contract pack (multi-task) | stable | Post-retrieval analysis: screen, summarize, appraise, synthesize |
 | `orchestrate-literature-review` | orchestrator | beta | End-to-end pipeline from question to synthesis |
 | `trace-agent-execution` | utility | stable | Produce readable audit traces from agentic run logs |
+| `create-hub-skill` | meta-skill | stable | Create or update hub-compliant skills of any type |
 
 ---
 
@@ -26,6 +27,7 @@ All `synthesize-literature` tasks share the same CLI and contract pack.
 | Logical skill ID | Task / subcommand | Package | Category | When to use |
 |---|---|---|---|---|
 | `generate-search-queries` | *(single task, no --task flag)* | `generate-search-queries` | generation | Translate a research question into 8–15 bilingual search queries |
+| `create-hub-skill` | *(no CLI — prompt-driven)* | `create-hub-skill` | meta | Create or update any hub-compliant skill |
 | `search-works-openalex` | `search` | `search-works-openalex` | retrieval | Keyword search across the OpenAlex corpus |
 | `lookup-dois-openalex` | `batch-lookup-by-doi` | `search-works-openalex` | retrieval | Resolve one or more DOIs to full bibliographic metadata |
 | `get-citing-works-openalex` | `get-citing-works` | `search-works-openalex` | retrieval | Find papers citing a specific work |
@@ -101,6 +103,6 @@ orchestrate-literature-review              ← runs the full pipeline above end-
   │
   ▼
 trace-agent-execution                      ← audit trail for any run, any step
-```
 
----
+create-hub-skill                               ← meta-skill: create or update any skill in the hub
+```

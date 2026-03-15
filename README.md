@@ -26,6 +26,7 @@ mcp/             MCP servers (streamable-HTTP, Docker-ready)
 | [`synthesize-literature`](#synthesize-literature) | contract pack | Screen, summarize, appraise, and synthesize retrieved papers |
 | [`orchestrate-literature-review`](#orchestrate-literature-review) | orchestrator | End-to-end pipeline from research question to synthesis |
 | [`trace-agent-execution`](#trace-agent-execution) | utility | Produce readable audit traces from agentic run logs |
+| [`create-hub-skill`](#create-hub-skill) | meta-skill | Create or update hub-compliant skills of any type |
 
 ### MCP servers
 
@@ -60,7 +61,7 @@ Skills with multiple tasks (`synthesize-literature`) require `--task`.
 To use a skill, mention its name in your prompt. The agent reads `skills/<name>/SKILL.md`
 and follows the workflow.
 
-> See [`HUB-REGISTRY.md`](./skills/HUB-REGISTRY.md) for the full skill map, logical skill
+> See [`HUB-REGISTRY.md`](./HUB-REGISTRY.md) for the full skill map, logical skill
 > identifiers, and the annotated pipeline showing how outputs chain into inputs.
 
 ---
@@ -266,6 +267,27 @@ committable `.run.md` trace. Three output modes: `audit`, `narrative`, `compact`
 
 ---
 
+### create-hub-skill
+
+Meta-skill for creating any new hub-compliant skill — retrieval CLI, contract
+pack, analytical, generative, orchestrator, or utility. Guides the agent
+through three phases: researching the data source (retrieval skills only),
+drafting a compliant SKILL.md, and reviewing coherence with the hub registry.
+
+No CLI — the skill is read directly by the agent:
+
+```
+skills/create-hub-skill/SKILL.md
+```
+
+Or via raw GitHub URL:
+
+```
+https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills/create-hub-skill/SKILL.md
+```
+
+---
+
 ## Typical workflows
 
 ### A — Skill-only local workflow
@@ -416,4 +438,4 @@ cloning the full repository:
 - `mcp/openalex/mcp_server.py` reads all parameters from CLI args.
 - `mcp/sudoc-sru/mcp_server.py` requires no external API key.
 - `SKILL.md` files are the authoritative source for task semantics, prompt contracts, and expected JSON output schemas.
-- See [`HUB-REGISTRY.md`](./skills/HUB-REGISTRY.md) for the complete skill map and logical skill identifiers.
+- See [`HUB-REGISTRY.md`](./HUB-REGISTRY.md) for the complete skill map and logical skill identifiers.
