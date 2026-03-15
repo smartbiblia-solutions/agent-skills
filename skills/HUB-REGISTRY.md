@@ -15,6 +15,7 @@ Complete reference for all packages, logical skills, and their relationships.
 | `synthesize-literature` | contract pack (multi-task) | stable | Post-retrieval analysis: screen, summarize, appraise, synthesize |
 | `orchestrate-literature-review` | orchestrator | beta | End-to-end pipeline from question to synthesis |
 | `trace-agent-execution` | utility | stable | Produce readable audit traces from agentic run logs |
+| `explore-dataset` | analytical CLI | experimental | EDA + interactive HTML dashboard on any tabular dataset |
 | `create-hub-skill` | meta-skill | stable | Create or update hub-compliant skills of any type |
 
 ---
@@ -27,6 +28,7 @@ All `synthesize-literature` tasks share the same CLI and contract pack.
 | Logical skill ID | Task / subcommand | Package | Category | When to use |
 |---|---|---|---|---|
 | `generate-search-queries` | *(single task, no --task flag)* | `generate-search-queries` | generation | Translate a research question into 8–15 bilingual search queries |
+| `explore-dataset` | *(single command)* | `explore-dataset` | analytical | EDA + dashboard on CSV/TSV/JSON/Excel/Parquet/Arrow |
 | `create-hub-skill` | *(no CLI — prompt-driven)* | `create-hub-skill` | meta | Create or update any hub-compliant skill |
 | `search-works-openalex` | `search` | `search-works-openalex` | retrieval | Keyword search across the OpenAlex corpus |
 | `lookup-dois-openalex` | `batch-lookup-by-doi` | `search-works-openalex` | retrieval | Resolve one or more DOIs to full bibliographic metadata |
@@ -83,6 +85,10 @@ search-records-hal                           output: results[] records (OpenAlex
 search-records-sudoc                       output: catalog records (UNIMARC / SRU)
   │
   │  merge results[] from all sources, deduplicate on doi field
+  │
+  │  optional: explore corpus before screening
+explore-dataset                                output: .metrics.json + .summary.md + .dashboard.html
+  │
   ▼
 screen-studies-prisma                      output: decision (include/exclude/uncertain) per record
   │  keep "include" records only
@@ -106,3 +112,5 @@ trace-agent-execution                      ← audit trail for any run, any step
 
 create-hub-skill                               ← meta-skill: create or update any skill in the hub
 ```
+
+---

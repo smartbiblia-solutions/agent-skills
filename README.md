@@ -26,6 +26,7 @@ mcp/             MCP servers (streamable-HTTP, Docker-ready)
 | [`synthesize-literature`](#synthesize-literature) | contract pack | Screen, summarize, appraise, and synthesize retrieved papers |
 | [`orchestrate-literature-review`](#orchestrate-literature-review) | orchestrator | End-to-end pipeline from research question to synthesis |
 | [`trace-agent-execution`](#trace-agent-execution) | utility | Produce readable audit traces from agentic run logs |
+| [`explore-dataset`](#explore-dataset) | analytical CLI | EDA + interactive HTML dashboard on any tabular dataset |
 | [`create-hub-skill`](#create-hub-skill) | meta-skill | Create or update hub-compliant skills of any type |
 
 ### MCP servers
@@ -267,6 +268,33 @@ committable `.run.md` trace. Three output modes: `audit`, `narrative`, `compact`
 
 ---
 
+### explore-dataset
+
+Performs EDA on any tabular dataset and produces three outputs in one command:
+a JSON metrics report, a Markdown narrative summary, and a standalone
+interactive HTML dashboard (Plotly, no server required).
+
+```bash
+# Hub records output (auto-detected profile)
+UV_CACHE_DIR=/root/.cache/uv uv run skills/explore-dataset/scripts/cli.py \
+  --input /tmp/openalex_results.json \
+  --output-dir /tmp/explore/
+
+# Generic CSV
+UV_CACHE_DIR=/root/.cache/uv uv run skills/explore-dataset/scripts/cli.py \
+  --input data.csv \
+  --output-dir /tmp/explore/ \
+  --title "My dataset"
+```
+
+Accepts CSV, TSV, JSON, Excel, Parquet, and Arrow. Automatically detects hub
+record schemas (OpenAlex, HAL, Sudoc outputs) and applies domain-relevant
+analyses: publication trends, top authors, top journals, OA rate, topic
+distribution. Falls back to universal EDA (distributions, correlations,
+missing values) for any other dataset.
+
+---
+
 ### create-hub-skill
 
 Meta-skill for creating any new hub-compliant skill — retrieval CLI, contract
@@ -285,54 +313,6 @@ Or via raw GitHub URL:
 ```
 https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills/create-hub-skill/SKILL.md
 ```
-
----
-
-## Test the skills
-
-### Test base routing
-
-These queries must trigger the right skill without naming it.
-
->Find recent papers on GraphRAG published since 2024
-
->Search for French theses on machine learning defended in Lyon
-
->Look up the DOI 10.1038/s41586-021-03819-2
-
->I need search queries for a systematic review on climate adaptation in coastal cities
-
-### Test the sources desambiguisation
-
-These queries are testing the `avoid_when` and `prefer_over`.
-
->Find papers on multilingual subject indexing — I need both international coverage and French institutional deposits
-
->Search the INRIA collection on HAL for papers about formal verification
-
->Is the book "Le Capital" held in French university libraries? I need the UNIMARC record
-
-### Test the chained pipelines
-
->Do a literature review on retrieval-augmented generation, I want a thematic synthesis
-
->Build a search strategy for a PRISMA review on antibiotic resistance, then retrieve the top papers from OpenAlex
-
-### Test the skill creation with the meta-skill create-hub-skill
-
->I want to create a new skill for the hub that wraps the Crossref API to resolve DOIs and fetch citation metadata
-
->I want to create a write-report skill that turns a synthesize-literature JSON output into a structured Markdown report
-
->Review my search-records-sudoc skill for hub compliance
-
-### Test the utils skills
-
->Here is my agent run log — produce an audit trace in narrative mode for a non-technical reader
-
-### Test the analytic skill
-
->I have a set of 50 HAL records in JSON — what are the publication trends by year and the top authors?
 
 ---
 

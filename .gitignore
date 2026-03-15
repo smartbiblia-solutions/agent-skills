@@ -22,3 +22,6 @@ wheels/
 **/.env
 .env.*
 **/.env.*
+
+# Private examples files
+examples/
