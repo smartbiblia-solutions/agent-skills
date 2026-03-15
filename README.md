@@ -61,7 +61,7 @@ Skills with multiple tasks (`synthesize-literature`) require `--task`.
 To use a skill, mention its name in your prompt. The agent reads `skills/<name>/SKILL.md`
 and follows the workflow.
 
-> See [`HUB-REGISTRY.md`](./HUB-REGISTRY.md) for the full skill map, logical skill
+> See [`HUB-REGISTRY.md`](./skills/HUB-REGISTRY.md) for the full skill map, logical skill
 > identifiers, and the annotated pipeline showing how outputs chain into inputs.
 
 ---
@@ -438,4 +438,4 @@ cloning the full repository:
 - `mcp/openalex/mcp_server.py` reads all parameters from CLI args.
 - `mcp/sudoc-sru/mcp_server.py` requires no external API key.
 - `SKILL.md` files are the authoritative source for task semantics, prompt contracts, and expected JSON output schemas.
-- See [`HUB-REGISTRY.md`](./HUB-REGISTRY.md) for the complete skill map and logical skill identifiers.
+- See [`HUB-REGISTRY.md`](./skills/HUB-REGISTRY.md) for the complete skill map and logical skill identifiers.
