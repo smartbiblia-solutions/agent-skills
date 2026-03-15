@@ -276,12 +276,12 @@ interactive HTML dashboard (Plotly, no server required).
 
 ```bash
 # Hub records output (auto-detected profile)
-UV_CACHE_DIR=/root/.cache/uv uv run skills/explore-dataset/scripts/cli.py \
+uv run skills/explore-dataset/scripts/cli.py \
   --input /tmp/openalex_results.json \
   --output-dir /tmp/explore/
 
 # Generic CSV
-UV_CACHE_DIR=/root/.cache/uv uv run skills/explore-dataset/scripts/cli.py \
+uv run skills/explore-dataset/scripts/cli.py \
   --input data.csv \
   --output-dir /tmp/explore/ \
   --title "My dataset"
