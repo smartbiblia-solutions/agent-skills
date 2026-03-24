@@ -86,7 +86,7 @@ All are backed by the same CLI and contract pack.
 ## Directory structure
 
 ```text
-skills/synthetize-literature/
+skills/synthesize-literature/
 ├── scripts/
 │   └── cli.py
 ├── prompts/
