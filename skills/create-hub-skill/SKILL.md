@@ -1,5 +1,5 @@
 ---
-name: create-hub-skill
+name: create_hub_skill
 description: >
   Meta-skill for creating new agent skills that conform to the smartbiblia hub
   standards. Use this skill whenever the task is to create a new skill for the
@@ -9,10 +9,7 @@ description: >
   reviewing coherence with the hub registry. Always use this skill before writing
   any new SKILL.md for the hub — it ensures naming, frontmatter, selection block,
   CLI patterns, and output schemas are consistent with existing skills.
-metadata:
-  version: 0.2.0
-  author: smartbiblia
-  maturity: stable
+metadata: {"version": "0.2.0", "author": "smartbiblia", "maturity": "stable", "openclaw": {"emoji": "🛠️"}}
 
 selection:
   use_when:
@@ -46,7 +43,7 @@ up to date at these URLs.
 | Document | URL | When to fetch |
 |---|---|---|
 | Hub registry | `https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills/HUB-REGISTRY.md` | Phases 2 and 3 — naming, combine_with, pipeline position |
-| Spec skills | `https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills/SPEC_SKILLS.md` | Phase 2 — naming rules, manifest structure |
+| Spec skills | `https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills/SPEC_SKILLS_en.md` | Phase 2 — naming rules, manifest structure |
 | Skill anatomy | `references/skill-anatomy.md` | Phase 2 — detailed patterns with real examples |
 | llm.md guide | `references/llm-md-guide.md` | Phase 1 — how to document a data source API |
 

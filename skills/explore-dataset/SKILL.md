@@ -1,5 +1,5 @@
 ---
-name: explore-dataset
+name: explore_dataset
 description: >
   Perform exploratory data analysis (EDA) on any tabular dataset and produce
   interactive HTML dashboards. Accepts CSV, TSV, JSON, and Excel files —
@@ -12,11 +12,7 @@ description: >
   as a standalone deliverable. Trigger on phrases like "explore this dataset",
   "analyse these records", "show me the distribution of", "build a dashboard
   for", "what are the trends in", "data quality report", "EDA on".
-metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: experimental
-  preferred_output: html
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "experimental", "preferred_output": "html", "openclaw": {"emoji": "📊", "requires": {"bins": ["uv"]}}}
 
 selection:
   use_when:
@@ -109,26 +105,26 @@ report, and at least one time-series chart if a date/year column is found.
 ```bash
 # Basic usage — produces .metrics.json + .summary.md + .dashboard.html
 uv run skills/explore-dataset/scripts/cli.py \
-  --input /tmp/openalex_results.json \
-  --output-dir /tmp/explore-output/
+  --input $WORKSPACE/openalex_results.json \
+  --output-dir $WORKSPACE/explore-output/
 
 # Explicit profile and sheet selection
 uv run skills/explore-dataset/scripts/cli.py \
   --input data.xlsx \
   --sheet "Sheet2" \
   --profile tabular-generic \
-  --output-dir /tmp/explore-output/
+  --output-dir $WORKSPACE/explore-output/
 
 # JSON metrics only (no HTML)
 uv run skills/explore-dataset/scripts/cli.py \
   --input records.csv \
-  --output-dir /tmp/explore-output/ \
+  --output-dir $WORKSPACE/explore-output/ \
   --no-html
 
 # HTML only (skip JSON metrics file)
 uv run skills/explore-dataset/scripts/cli.py \
   --input records.csv \
-  --output-dir /tmp/explore-output/ \
+  --output-dir $WORKSPACE/explore-output/ \
   --no-json
 ```
 

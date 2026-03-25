@@ -53,7 +53,7 @@ All `synthesize-literature` tasks share the same CLI and contract pack.
 ```bash
 uv run skills/generate-search-queries/scripts/cli.py prompt
 uv run skills/generate-search-queries/scripts/cli.py schema
-uv run skills/generate-search-queries/scripts/cli.py validate --json-file /tmp/queries.json
+uv run skills/generate-search-queries/scripts/cli.py validate --json-file $WORKSPACE/queries.json
 ```
 
 ### synthesize-literature (multi-task — --task required)
@@ -61,7 +61,7 @@ uv run skills/generate-search-queries/scripts/cli.py validate --json-file /tmp/q
 ```bash
 uv run skills/synthesize-literature/scripts/cli.py prompt --task <task_name>
 uv run skills/synthesize-literature/scripts/cli.py schema --task <task_name>
-uv run skills/synthesize-literature/scripts/cli.py validate --task <task_name> --json-file /tmp/output.json
+uv run skills/synthesize-literature/scripts/cli.py validate --task <task_name> --json-file $WORKSPACE/output.json
 ```
 
 ---

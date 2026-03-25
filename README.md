@@ -53,7 +53,7 @@ All skills follow the same contract pattern:
 ```bash
 uv run skills/<name>/scripts/cli.py prompt [--task <task>]   # read the methodological prompt
 uv run skills/<name>/scripts/cli.py schema [--task <task>]   # read the JSON output schema
-uv run skills/<name>/scripts/cli.py validate --json-file /tmp/output.json [--task <task>]
+uv run skills/<name>/scripts/cli.py validate --json-file $WORKSPACE/output.json [--task <task>]
 ```
 
 Skills with a single task (`generate-search-queries`) do not take a `--task` flag.
@@ -75,9 +75,9 @@ Always run this skill first, before any retrieval.
 
 ```bash
 uv run skills/generate-search-queries/scripts/cli.py prompt
-# → produce /tmp/queries.json, then:
+# → produce $WORKSPACE/queries.json, then:
 uv run skills/generate-search-queries/scripts/cli.py validate \
-  --json-file /tmp/queries.json
+  --json-file $WORKSPACE/queries.json
 ```
 
 Output: `queries[].query` strings directly usable as `--query` in `search-works-openalex`.
@@ -216,7 +216,7 @@ uv run skills/synthesize-literature/scripts/cli.py list
 # Run a task (read prompt → produce JSON → validate)
 uv run skills/synthesize-literature/scripts/cli.py prompt --task screen_study_prisma
 uv run skills/synthesize-literature/scripts/cli.py validate \
-  --task screen_study_prisma --json-file /tmp/screen_W123.json
+  --task screen_study_prisma --json-file $WORKSPACE/screen_W123.json
 ```
 
 Available tasks:
@@ -277,13 +277,13 @@ interactive HTML dashboard (Plotly, no server required).
 ```bash
 # Hub records output (auto-detected profile)
 uv run skills/explore-dataset/scripts/cli.py \
-  --input /tmp/openalex_results.json \
-  --output-dir /tmp/explore/
+  --input $WORKSPACE/openalex_results.json \
+  --output-dir $WORKSPACE/explore/
 
 # Generic CSV
 uv run skills/explore-dataset/scripts/cli.py \
   --input data.csv \
-  --output-dir /tmp/explore/ \
+  --output-dir $WORKSPACE/explore/ \
   --title "My dataset"
 ```
 
@@ -323,17 +323,17 @@ https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills
 ```bash
 # 1. Build search strategy
 uv run skills/generate-search-queries/scripts/cli.py prompt
-# → /tmp/queries.json (contains queries with lang "en" and "fr")
+# → $WORKSPACE/queries.json (contains queries with lang "en" and "fr")
 
 # 2. Retrieve papers — run both sources, deduplicate on doi
 uv run skills/search-works-openalex/scripts/cli.py search \
-  --query "$(jq -r '.queries[0].query' /tmp/queries.json)" \
-  --max-results 15 > /tmp/results_openalex.json
+  --query "$(jq -r '.queries[0].query' $WORKSPACE/queries.json)" \
+  --max-results 15 > $WORKSPACE/results_openalex.json
 
 uv run skills/search-records-hal/scripts/cli.py search \
   --collection "MY-COLLECTION" \
-  --q "$(jq -r '.queries[] | select(.lang=="fr") | .query' /tmp/queries.json | head -1)" \
-  --rows 15 > /tmp/results_hal.json
+  --q "$(jq -r '.queries[] | select(.lang=="fr") | .query' $WORKSPACE/queries.json | head -1)" \
+  --rows 15 > $WORKSPACE/results_hal.json
 
 # 3. Screen, summarize, synthesize
 uv run skills/synthesize-literature/scripts/cli.py prompt --task screen_study_prisma

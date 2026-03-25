@@ -1,5 +1,5 @@
 ---
-name: search-records-sudoc
+name: search_records_sudoc
 description: >
   Search and retrieve bibliographic records from the Sudoc catalogue, the
   French academic union catalogue covering all higher education and research
@@ -14,11 +14,7 @@ description: >
   Also use it when the user wants to know whether a document is held in
   French academic libraries, or needs UNIMARC metadata for a French
   publication.
-metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: stable
-  preferred_output: json
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "📚", "requires": {"bins": ["uv"]}}}
 
 selection:
   use_when:

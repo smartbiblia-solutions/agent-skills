@@ -1,16 +1,33 @@
-# Spécification du hub de skills — Bibliothèques et recherche académique
+# Spécification du Hub de Skills — Workflows Savants & Bibliothéconomiques
 
-> Référence allégée pour le nommage, la structure des manifestes et le routage agentique.
-> Compatible avec les conventions AgentSkills.
+> Référence légère pour la nomenclature, la structure des manifestes et le routage agent.
+> Compatible avec les conventions AgentSkills et le format OpenClaw/ClawHub.
 
 ---
 
-## 1. Principes directeurs
+## 0. Notes de compatibilité
+
+Cette spec cible le format **AgentSkills** tel qu'implémenté par **OpenClaw**.
+Contraintes imposées par le parser OpenClaw :
+
+- Le champ `name` dans le frontmatter YAML doit être en **snake_case**.
+- Le champ `metadata` doit être un **objet JSON sur une seule ligne** (pas d'imbrication YAML multi-niveaux).
+- Le bloc `selection` est une **extension AgentDesk uniquement** : OpenClaw l'ignore sans erreur ;
+  AgentDesk l'utilise pour son UI de recommandation de skills et son constructeur de pipelines.
+- Le nom du dossier (utilisé comme slug ClawHub) reste en **kebab-case** — il est indépendant du champ `name`.
+
+**Nom du dossier** (slug, kebab-case) → `search-works-openalex`  
+**Champ `name`** (snake_case, identifiant runtime) → `search_works_openalex`
+
+---
+
+## 1. Principes de conception
 
 - Un nom de skill est un **identifiant de routage**, pas un label marketing.
-- Une skill exprime **une capacité dominante**.
-- Le champ `description` est le **mécanisme de déclenchement principal** — il doit être suffisamment riche pour qu'un agent sélectionne la skill sans lire le corps du fichier.
-- Tout le reste du manifeste sert à la désambiguïsation et à l'enchaînement, pas au routage.
+- Un skill exprime **une capacité dominante unique**.
+- Le champ `description` est le **mécanisme de déclenchement principal** — il doit être
+  suffisamment riche pour qu'un agent sélectionne le skill sans lire le corps du fichier.
+- Tout le reste du manifeste sert la désambiguïsation et le chaînage, pas le routage.
 
 ---
 
@@ -24,9 +41,9 @@
 
 - **verbe** — l'action principale réalisée
 - **objet** — l'entité principale manipulée ou retournée
-- **source** — le système ou corpus externe, quand le comportement en dépend
+- **source** — le système externe ou le corpus, quand le comportement en dépend
 
-Le segment `source` est optionnel pour les skills indépendantes de la source :
+Le segment `source` est optionnel pour les skills indépendants de la source :
 
 ```
 <verbe>-<objet>
@@ -35,56 +52,58 @@ Le segment `source` est optionnel pour les skills indépendantes de la source :
 ### Règles de caractères
 
 - ASCII minuscules uniquement
-- Traits d'union comme séparateurs, pas d'underscores
-- Pas de suffixes de version dans le nom
+- **Nom du dossier et slug ClawHub** : tirets comme séparateurs (kebab-case)
+- **Champ `name` en YAML** : underscores comme séparateurs (snake_case) — exigence OpenClaw
+- Pas de suffixes de version dans les noms
 - Pas de termes architecturaux : éviter `engine`, `agent`, `tool`, `runner`, `service`
 
 ### Verbes recommandés
 
-| Verbe | Quand l'utiliser |
-|-------|-----------------|
+| Verbe | Utiliser quand |
+|-------|----------------|
 | `search` | Découvrir des items dans un corpus |
 | `lookup` | Résoudre un identifiant connu |
 | `fetch` / `retrieve` | Récupérer une ressource connue |
 | `generate` | Créer un nouvel output |
-| `extract` | Extraire des informations structurées d'un document |
+| `extract` | Extraire de l'information structurée d'un document |
 | `summarize` | Condenser un document unique |
 | `synthesize` | Intégrer analytiquement plusieurs documents |
 | `screen` | Filtrer un ensemble selon des critères |
 | `appraise` | Évaluer la qualité ou la pertinence |
-| `classify` | Assigner des catégories ou sujets |
+| `classify` | Assigner des catégories ou des sujets |
 | `trace` | Documenter une exécution |
 | `validate` | Vérifier la conformité à un schéma ou une règle |
 | `convert` | Transformer un format ou une structure |
-| `annotate` | Ajouter des métadonnées structurées à un contenu existant |
-| `synthetize` |  |
-| `orchestrate` | Orchester un pipeline complet |
-| `run` | Alternative à `orchestrate` |
+| `annotate` | Ajouter des métadonnées structurées à du contenu existant |
+| `orchestrate` | Orchestrer un pipeline de bout en bout |
+| `run` | Alternative à `orchestrate` pour les pipelines simples |
 
 ### Bons noms
 
 ```
-generate-search-queries
-search-works-openalex
-search-records-sudoc
-lookup-dois-crossref
-extract-metadata-pdf
-extract-metadata-unimarc
-screen-studies-prisma
-summarize-paper
-synthesize-papers-thematic
-appraise-study-quality
-classify-text-openalex
-trace-agent-execution
+Dossier / slug (kebab)         →  champ name (snake_case)
+──────────────────────────────────────────────────────────
+generate-search-queries        →  generate_search_queries
+search-works-openalex          →  search_works_openalex
+search-records-sudoc           →  search_records_sudoc
+lookup-dois-crossref           →  lookup_dois_crossref
+extract-metadata-pdf           →  extract_metadata_pdf
+extract-metadata-unimarc       →  extract_metadata_unimarc
+screen-studies-prisma          →  screen_studies_prisma
+summarize-paper                →  summarize_paper
+synthesize-papers-thematic     →  synthesize_papers_thematic
+appraise-study-quality         →  appraise_study_quality
+classify-text-openalex         →  classify_text_openalex
+trace-agent-execution          →  trace_agent_execution
 ```
 
 ### Noms à éviter
 
 ```
-academic-review-engine    → décrit l'architecture, pas l'action
-literature-review-agent   → éviter "agent"
-openakes                  → opaque
-sru-sudoc                 → pas de verbe
+academic-review-engine   → décrit l'architecture, pas l'action
+literature-review-agent  → éviter "agent"
+openakes                 → opaque
+sru-sudoc                → pas de verbe
 search-screen-summarize-papers-openalex  → surchargé
 ```
 
@@ -92,42 +111,53 @@ search-screen-summarize-papers-openalex  → surchargé
 
 ## 3. Structure du manifeste
 
-Le frontmatter doit rester **minimal**. L'agent lit `name` et `description` en premier —
-tout le reste est secondaire.
+Le frontmatter doit rester **minimal et compatible single-line**.
+Le parser OpenClaw ne supporte pas les valeurs YAML multi-niveaux sous `metadata`.
 
-### Champs requis
+### Champs obligatoires
 
 ```yaml
-name: search-works-openalex
+name: search_works_openalex
 description: >
-  Recherche et récupère des travaux académiques depuis OpenAlex. Utilise cette
-  skill dès que la tâche consiste à découvrir des articles scientifiques,
-  résoudre des entités bibliographiques, ou récupérer des métadonnées structurées
-  depuis le corpus OpenAlex. À préférer à la recherche web générique pour toute
-  tâche de récupération académique. Retourne du JSON.
+  Rechercher et récupérer des travaux savants depuis OpenAlex. Utiliser ce skill
+  quand la tâche est de découvrir des articles académiques, résoudre des entités
+  bibliographiques, ou récupérer des métadonnées structurées depuis le corpus
+  OpenAlex. Préférer ce skill à une recherche web générique pour toute tâche
+  de récupération savante. Retourne du JSON.
 ```
 
-**Bien rédiger la description est la chose la plus importante du manifeste.**
-Elle doit répondre à trois questions en 2 à 4 phrases :
-- Que fait cette skill ?
-- Quand un agent doit-il la choisir ?
-- Que retourne-t-elle ?
+**Rédiger une bonne description est la chose la plus importante du manifeste.**
+Elle doit répondre à trois questions en 2–4 phrases :
+- Que fait ce skill ?
+- Quand un agent doit-il le sélectionner ?
+- Que retourne-t-il ?
 
 ### Champs recommandés
 
-```yaml
-metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: experimental | beta | stable | deprecated
-  preferred_output: json | markdown | text | csv | xml
+Le champ `metadata` doit être un **objet JSON sur une seule ligne** fusionnant :
+- Vos métadonnées hub (`version`, `author`, `maturity`, `preferred_output`, etc.)
+- Le sous-objet `openclaw` pour le gating et le comportement runtime
 
+```yaml
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "beta", "preferred_output": "json", "openclaw": {"emoji": "🔬", "requires": {"env": ["OPENALEX_API_KEY"]}}}
+```
+
+Pour les skills ne nécessitant aucun binaire externe ni variable d'environnement, `openclaw` peut être omis :
+
+```yaml
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "beta", "preferred_output": "json"}
+```
+
+Le bloc `selection` est une **extension YAML multi-niveaux** pour AgentDesk et les lecteurs humains.
+OpenClaw l'ignore. Le conserver quand il apporte de la valeur pour le routage ou le chaînage.
+
+```yaml
 selection:
   use_when:
-    - La tâche consiste à récupérer des travaux académiques depuis OpenAlex.
+    - La tâche est de récupérer des travaux savants depuis OpenAlex.
   avoid_when:
-    - La tâche consiste à synthétiser des articles déjà récupérés.
-    - La tâche concerne un catalogue de bibliothèque plutôt que des articles scientifiques.
+    - La tâche est de synthétiser des articles déjà récupérés.
+    - La tâche concerne un catalogue de bibliothèque plutôt que des articles savants.
   prefer_over:
     - generic-web-search
   combine_with:
@@ -137,102 +167,162 @@ selection:
 
 tags:
   - openalex
-  - scholarly
-  - retrieval
+  - savant
+  - récupération
 ```
-
-### Champs optionnels
-
-À ajouter uniquement s'ils portent une information réelle pour le registre du hub :
-
-```yaml
-metadata:
-  domain: scholarly-communication | research-workflows | libraries | bibliometrics
-  category: retrieval | generation | extraction | synthesis | screening | appraisal
-  source: openalex | crossref | sudoc | pubmed
-  interface: cli | api | mcp
-  requires_network: true
-  supports_validation: true
-```
-
-### Ce qu'il faut omettre
-
-Champs à supprimer sauf raison concrète de les renseigner :
-`deterministic`, `scope`, `subcategory`, `entrypoint`, `package_manager`,
-`requires_auth`, `input_modes`, `output_modes`, `languages`.
-Des métadonnées périmées sont pires que pas de métadonnées.
 
 ---
 
-## 4. Structure du corps SKILL.md
+## 4. Gating (filtres au chargement OpenClaw)
 
-Garder le frontmatter concis. L'usage détaillé appartient au corps du fichier.
+OpenClaw filtre les skills au chargement via `metadata.openclaw`.
+Déclarer les gates pour que l'agent ne tente jamais d'utiliser un skill dont
+les dépendances sont absentes de l'environnement.
 
-Adapter les sections au type de skill — toutes les skills n'ont pas besoin de toutes les sections.
+### `requires.bins`
+
+Liste de binaires qui doivent exister sur `PATH`. Le skill est silencieusement
+exclu si un binaire manque.
+
+```yaml
+metadata: {"openclaw": {"requires": {"bins": ["uv", "curl"]}}}
+```
+
+### `requires.env`
+
+Liste de noms de variables d'environnement qui doivent être définies (ou fournies via config).
+
+```yaml
+metadata: {"openclaw": {"requires": {"env": ["OPENALEX_API_KEY"]}}}
+```
+
+### `requires.anyBins`
+
+Au moins un binaire de la liste doit exister. Utiliser pour les outils avec des
+implémentations alternatives.
+
+```yaml
+metadata: {"openclaw": {"requires": {"anyBins": ["curl", "wget"]}}}
+```
+
+### `requires.config`
+
+Liste de chemins de config `openclaw.json` qui doivent être truthy.
+
+```yaml
+metadata: {"openclaw": {"requires": {"config": ["browser.enabled"]}}}
+```
+
+### `primaryEnv`
+
+La variable d'environnement canonique pour la clé API de ce skill. Active la
+commodité `skills.entries.<n>.apiKey` dans `openclaw.json`.
+
+```yaml
+metadata: {"openclaw": {"primaryEnv": "OPENALEX_API_KEY", "requires": {"env": ["OPENALEX_API_KEY"]}}}
+```
+
+### `os`
+
+Restreindre le skill à des plateformes spécifiques.
+
+```yaml
+metadata: {"openclaw": {"os": ["darwin", "linux"]}}
+```
+
+### `install`
+
+Spécification d'installation optionnelle pour le macOS Skills UI et la configuration automatisée.
+Types supportés : `brew`, `node`, `go`, `uv`, `download`.
+
+```yaml
+metadata: {"openclaw": {"requires": {"bins": ["uv"]}, "install": [{"id": "uv-pip", "kind": "uv", "package": "scholarly", "bins": ["scholarly"], "label": "Installer scholarly (uv)"}]}}
+```
+
+### Table de référence du gating
+
+| Champ | Type | Rôle |
+|-------|------|------|
+| `requires.bins` | string[] | Tous doivent exister sur PATH |
+| `requires.anyBins` | string[] | Au moins un doit exister sur PATH |
+| `requires.env` | string[] | Tous doivent être définis dans l'environnement ou la config |
+| `requires.config` | string[] | Tous les chemins de config doivent être truthy |
+| `primaryEnv` | string | Nom canonique de la variable de clé API |
+| `os` | string[] | `darwin`, `linux`, `win32` — restreindre par plateforme |
+| `install` | object[] | Spécifications d'installation pour la configuration automatisée |
+| `always` | boolean | Mettre `true` pour court-circuiter tous les autres gates |
+| `emoji` | string | Emoji pour le macOS Skills UI |
+
+---
+
+## 5. Structure du corps du SKILL.md
+
+Garder le frontmatter concis. L'usage détaillé appartient au corps.
+Adapter les sections au type de skill — toutes les sections ne sont pas nécessaires pour chaque skill.
 
 ```markdown
 --- FRONTMATTER YAML ---
 
-# Titre de la skill
+# Titre du skill
 
 ## Objectif
-Un paragraphe. Quel problème cette skill résout et pour qui.
+Un paragraphe. Quel problème ce skill résout et pour qui.
 
-## Quand l'utiliser / Quand ne pas l'utiliser
-Reprend le bloc `selection`, mais en prose. Ajoute les nuances que le YAML ne peut pas porter.
+## Quand utiliser / Quand ne pas utiliser
+Reflète le bloc `selection`, mais en prose. Ajouter la nuance que le YAML ne peut pas porter.
 
 ## Entrée
-Ce que la skill attend : format, champs requis, contraintes.
+Ce que le skill attend : format, champs obligatoires, contraintes.
 
 ## Sortie
-Ce que la skill retourne : format, schéma, exemple.
+Ce que le skill retourne : format, schéma, exemple.
 
 ## Commandes
-Comment invoquer la skill (CLI, commande prompt, appel API).
+Comment invoquer le skill (CLI, commande prompt, appel API).
 
 ## Exemples
-1 à 2 paires entrée/sortie concrètes.
+1–2 paires entrée/sortie concrètes.
 
 ## Conseils de composition
-Ce qui précède et suit typiquement cette skill dans un pipeline.
+Ce qui précède et suit typiquement ce skill dans un pipeline.
 
-## Modes d'échec         ← seulement si non évident
+## Modes d'échec         ← uniquement si non évident
 Conditions d'échec connues et comment les gérer.
 
-## Validation           ← seulement pour les skills à contrat
+## Validation           ← uniquement pour les skills basés sur des contrats
 Commande de schéma, commande de validation, politique de retry.
 ```
 
 ---
 
-## 5. Guidance de sélection pour l'agent
+## 6. Guidance de sélection agent
 
 ### Règle de désambiguïsation
 
-Quand plusieurs skills peuvent s'appliquer, préférer dans cet ordre :
+Quand plusieurs skills pourraient s'appliquer, préférer dans cet ordre :
 
-1. La skill la plus **spécifique à la source** compatible
-2. La skill la plus **atomique**
-3. La skill avec **validation explicite**
-4. Le fallback plus générique
+1. Skill le plus **spécifique à la source** compatible
+2. Skill le plus **atomique**
+3. Skill avec **validation explicite**
+4. Fallback plus général
 
-**Exemple** — l'utilisateur demande : *"Trouve des articles sur l'indexation multilingue en bibliothèque."*
+**Exemple** — l'utilisateur demande : *"Trouver des articles sur l'indexation sujet multilingue en bibliothèques."*
 
 ```
-1. generate-search-queries          ← traduire d'abord la question
-2. search-openalex                  ← récupérer depuis le corpus académique
-3. search-sudoc-sru                 ← seulement si des preuves catalogue sont aussi nécessaires
-4. recherche web générique          ← dernier recours
+1. generate-search-queries   ← traduire la question d'abord
+2. search-works-openalex     ← récupérer depuis le corpus savant
+3. search-records-sudoc      ← seulement si des preuves du catalogue sont aussi nécessaires
+4. recherche web générique   ← dernier recours
 ```
 
-### Guidance d'enchaînement
+### Guidance de chaînage
 
 Documenter ce qui précède et suit chaque skill.
 Exemple de pipeline pour une revue systématique :
 
 ```
 generate-search-queries
-  → search-openalex
+  → search-works-openalex
   → screen-studies-prisma
   → summarize-paper
   → appraise-study-quality
@@ -241,61 +331,100 @@ generate-search-queries
 
 ---
 
-## 6. Exemple de manifeste complet
+## 7. Exemple complet de manifeste
 
 ```yaml
-name: generate-search-queries
+name: generate_search_queries
 description: >
-  Génère des requêtes de recherche académiques structurées à partir d'une question
-  de recherche en langage naturel. Utilise cette skill dès que la tâche implique
-  de construire une stratégie de recherche, d'étendre une question de revue en
-  expressions interrogeables, ou de concevoir des requêtes bilingues pour des
-  revues systématiques. À utiliser systématiquement avant toute récupération de
-  notices dans un corpus. Retourne du JSON validé.
+  Générer des requêtes de recherche savante structurées à partir d'une question
+  de recherche en langage naturel. Utiliser ce skill chaque fois que la tâche
+  implique de construire une stratégie de recherche, d'étendre une question de
+  revue en expressions interrogeables, ou de concevoir des requêtes bilingues
+  pour des revues systématiques. Toujours utiliser ce skill avant de récupérer
+  des notices depuis un corpus quelconque. Retourne du JSON validé.
 
-metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: beta
-  preferred_output: json
-  supports_validation: true
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "beta", "preferred_output": "json", "domain": "scholarly-communication", "category": "generation", "openclaw": {"emoji": "🔎", "requires": {}}}
 
 selection:
   use_when:
-    - La tâche consiste à traduire une question de recherche en expressions interrogeables.
+    - La tâche est de traduire une question de recherche en expressions interrogeables.
     - L'utilisateur a besoin d'une stratégie de recherche bilingue ou multi-bases.
   avoid_when:
-    - Les notices ont déjà été récupérées.
-    - L'utilisateur n'a besoin que d'un mot-clé unique, pas d'une requête structurée.
+    - Des notices ont déjà été récupérées.
+    - L'utilisateur n'a besoin que d'un seul mot-clé, pas d'une requête structurée.
   prefer_over:
     - generic-keyword-generator
   combine_with:
-    - search-openalex
-    - search-sudoc-sru
+    - search-works-openalex
+    - search-records-sudoc
 
 tags:
-  - systematic-review
-  - search-strategy
-  - scholarly
+  - revue-systematique
+  - strategie-recherche
+  - savant
 ```
+
+Nom du dossier : `generate-search-queries/SKILL.md`
 
 ---
 
-## 7. Résumé des règles
+## 8. Publication sur ClawHub
 
-### Requis
-- Nom en minuscules avec traits d'union, commençant par un verbe
+ClawHub est le registre public de skills pour OpenClaw. Le nom du dossier est le slug.
+
+```bash
+# Publier un skill unique
+clawhub publish ./generate-search-queries \
+  --slug generate-search-queries \
+  --name "Generate Search Queries" \
+  --version 0.1.0 \
+  --tags latest
+
+# Synchroniser tous les skills du repo en une fois
+clawhub sync --all --bump patch
+```
+
+Le dépôt Github reste la source de vérité.
+`clawhub sync` est l'étape d'automatisation de la publication.
+
+---
+
+## 9. Notes d'import AgentDesk
+
+Quand AgentDesk importe un skill depuis le registre Github :
+
+1. **Transformation `metadata`** — le YAML multi-niveaux lisible par les humains que les
+   contributeurs *peuvent* écrire dans le repo est normalisé vers le format JSON single-line
+   requis par OpenClaw à l'installation. Les contributeurs peuvent écrire dans l'un ou l'autre
+   style ; AgentDesk normalise à l'import.
+2. **Bloc `selection`** — parsé et stocké comme métadonnée AgentDesk pour l'UI de recommandation
+   de skills (`combine_with`, constructeur de pipelines). Non transmis au runtime agent.
+3. **Gating** — `metadata.openclaw.requires` est évalué par rapport à l'environnement local
+   à l'installation. Les binaires ou variables d'environnement manquants génèrent un
+   avertissement dans l'UI AgentDesk.
+
+---
+
+## 10. Récapitulatif des règles
+
+### Obligatoire
+- Nom du dossier : kebab-case minuscule commençant par un verbe (`search-works-openalex`)
+- Champ `name` : version snake_case du nom du dossier (`search_works_openalex`)
 - Patron `<verbe>-<objet>-<source>` quand la source est déterminante
 - `description` riche répondant à : quoi / quand / ce que ça retourne
+- `metadata` sous forme d'objet JSON single-line
 
 ### Fortement recommandé
+- `metadata.openclaw.requires` pour tout skill nécessitant des binaires, variables d'environnement ou clés de config
+- `metadata.openclaw.primaryEnv` pour les skills avec une clé API canonique
 - Bloc `selection` avec `use_when`, `avoid_when`, `combine_with`
 - `metadata.maturity` et `metadata.preferred_output`
-- Documentation des enchaînements dans le corps du SKILL.md
+- Documentation du chaînage dans le corps du SKILL.md
 
 ### À éviter
-- Termes architecturaux dans les identifiants (`engine`, `agent`, `tool`, `runner`)
-- Noms opaques ou trop orientés marque
+- Termes architecturaux dans les IDs de skills (`engine`, `agent`, `tool`, `runner`)
+- Noms opaques ou ressemblant à des marques
 - Noms multi-actions surchargés
 - Suffixes de version dans les noms
-- Renseigner des champs optionnels avec des valeurs par défaut sans les avoir réfléchis
+- Imbrication YAML multi-niveaux sous `metadata` (casse le parser OpenClaw)
+- Remplir les champs de métadonnées optionnels avec des valeurs placeholder

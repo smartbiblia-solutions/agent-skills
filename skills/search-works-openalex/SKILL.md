@@ -1,5 +1,5 @@
 ---
-name: search-works-openalex
+name: search_works_openalex
 description: >
   Search and retrieve academic papers from OpenAlex, the world's largest open
   bibliographic database. Use this skill whenever the user wants to find
@@ -10,11 +10,7 @@ description: >
   any request involving bibliographic data. Use it even if the user doesn't
   explicitly name OpenAlex — if they want to find or analyse academic papers,
   this skill applies.
-metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: stable
-  preferred_output: json
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "🌐", "requires": {"bins": ["uv"]}}}
 
 selection:
   use_when:

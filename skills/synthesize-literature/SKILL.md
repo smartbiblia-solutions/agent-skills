@@ -1,5 +1,5 @@
 ---
-name: synthesize-literature
+name: synthesize_literature
 description: >
   Contract pack for the post-retrieval stages of an academic literature review:
   screening, summarization, metadata extraction, quality appraisal, and synthesis
@@ -9,12 +9,7 @@ description: >
   isolation or chain them in a full review pipeline. Always use this skill before
   any synthesis or appraisal step. Do not use it for retrieval — use
   search-works-openalex or search-records-sudoc instead.
-metadata:
-  version: 1.2.0
-  author: smartbiblia
-  maturity: stable
-  preferred_output: json
-  supports_validation: true
+metadata: {"version": "1.2.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "📝"}}
 
 selection:
   use_when:
@@ -142,7 +137,7 @@ uv run skills/synthesize-literature/scripts/cli.py schema --task summarize_paper
 ```bash
 uv run skills/synthesize-literature/scripts/cli.py validate \
   --task screen_study_prisma \
-  --json-file /tmp/screening_W123.json
+  --json-file $WORKSPACE/screening_W123.json
 ```
 
 Returns `{"valid": true, "errors": []}` or `{"valid": false, "errors": [...]}`.

@@ -1,5 +1,5 @@
 ---
-name: generate-agentmd
+name: generate_agentmd
 description: >
   Generate a ready-to-use agent.md file through a guided conversational
   elicitation. Use this skill whenever a user wants to create a new agent
@@ -10,12 +10,7 @@ description: >
   workspace. Returns a complete agent.md file and the recommended folder
   structure for the chosen backend.
 
-metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: beta
-  preferred_output: markdown
-  supports_validation: false
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "beta", "preferred_output": "markdown", "openclaw": {"emoji": "🤖"}}
 
 selection:
   use_when:

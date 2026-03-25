@@ -17,7 +17,7 @@ Produces:
   <stem>.summary.md       — narrative EDA summary (human-readable)
 
 Usage:
-  uv run skills/explore-dataset/scripts/cli.py --input data.csv --output-dir /tmp/out/
+  uv run skills/explore-dataset/scripts/cli.py --input data.csv --output-dir $WORKSPACE/out/
 """
 
 from __future__ import annotations

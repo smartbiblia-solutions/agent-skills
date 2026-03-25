@@ -1,5 +1,5 @@
 ---
-name: agent-trace
+name: trace_agent_execution
 description: >
   Generates a readable execution trace from the raw log of an agentic run,
   regardless of the framework used (Claude Code, LangChain, AgentMD, etc.).
@@ -8,9 +8,25 @@ description: >
   "get a run summary", "document the execution", or "produce an audit report".
   Also applies upstream: if the user asks how to trace or document their agentic
   workflows, propose this format.
-metadata:
-  version: 0.1.0
-  author: smartbiblia
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "beta", "preferred_output": "markdown", "openclaw": {"emoji": "🔍"}}
+
+selection:
+  use_when:
+    - The user has an agentic run log and wants to understand or document what happened.
+    - An audit trail or execution report is needed for a completed agent run.
+    - The user asks how to trace or document agentic workflows.
+  avoid_when:
+    - The task is to run or launch an agent — use generate-agentmd or orchestrate-literature-review instead.
+    - No log or execution history is available.
+  combine_with:
+    - orchestrate-literature-review
+    - generate-agentmd
+
+tags:
+  - trace
+  - audit
+  - agent-execution
+  - observability
 ---
 
 # Agent Trace

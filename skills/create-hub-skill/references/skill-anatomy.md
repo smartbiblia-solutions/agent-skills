@@ -205,7 +205,7 @@ This skill exposes a single task. There is no `--task` flag.
 uv run skills/generate-search-queries/scripts/cli.py prompt
 uv run skills/generate-search-queries/scripts/cli.py schema
 uv run skills/generate-search-queries/scripts/cli.py validate \
-  --json-file /tmp/queries.json
+  --json-file $WORKSPACE/queries.json
 ```
 ```
 
@@ -219,7 +219,7 @@ uv run skills/synthesize-literature/scripts/cli.py list
 uv run skills/synthesize-literature/scripts/cli.py prompt --task screen_study_prisma
 uv run skills/synthesize-literature/scripts/cli.py schema --task summarize_paper
 uv run skills/synthesize-literature/scripts/cli.py validate \
-  --task screen_study_prisma --json-file /tmp/screening.json
+  --task screen_study_prisma --json-file $WORKSPACE/screening.json
 ```
 
 Returns `{"valid": true, "errors": []}` or `{"valid": false, "errors": [...]}`.

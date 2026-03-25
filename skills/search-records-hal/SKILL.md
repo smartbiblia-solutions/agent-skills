@@ -1,5 +1,5 @@
 ---
-name: search-records-hal
+name: search_records_hal
 description: >
   Search and retrieve records from HAL (Hyper Articles en Ligne), the French
   open repository, powered by Apache Solr. Use this skill whenever the user
@@ -12,11 +12,7 @@ description: >
   "dépôt HAL", or any request to search French open-access deposits.
   Most HAL usage is collection-scoped — always ask for the collection code
   when it is not provided.
-metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: stable
-  preferred_output: json
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "🇫🇷", "requires": {"bins": ["uv"]}}}
 
 selection:
   use_when:
@@ -252,11 +248,11 @@ uv run skills/search-records-hal/scripts/cli.py search \
 # Run both in parallel, then deduplicate on doi
 uv run skills/search-records-hal/scripts/cli.py search \
   --collection "FRANCE-GRILLES" --q 'text:GraphRAG' --rows 15 \
-  > /tmp/hal_results.json &
+  > $WORKSPACE/hal_results.json &
 
 uv run skills/search-works-openalex/scripts/cli.py search \
   --query "GraphRAG graph retrieval augmented generation" --max-results 15 \
-  > /tmp/openalex_results.json &
+  > $WORKSPACE/openalex_results.json &
 
 wait
 # merge results[] arrays, deduplicate on doi field

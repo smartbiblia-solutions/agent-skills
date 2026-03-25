@@ -1,5 +1,5 @@
 ---
-name: generate-search-queries
+name: generate_search_queries
 description: >
   Build a structured documentary search strategy from a natural-language research
   question. Decomposes concepts, expands terminology (synonyms, broader/narrower
@@ -11,12 +11,7 @@ description: >
   or any request that implies going from a research question to searchable
   expressions. Always use this skill before search-works-openalex,
   search-records-sudoc, or any other retrieval skill.
-metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: stable
-  preferred_output: json
-  supports_validation: true
+metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "🔎"}}
 
 selection:
   use_when:
@@ -79,7 +74,7 @@ uv run skills/generate-search-queries/scripts/cli.py schema
 
 # Validate the produced JSON
 uv run skills/generate-search-queries/scripts/cli.py validate \
-  --json-file /tmp/queries.json
+  --json-file $WORKSPACE/queries.json
 ```
 
 Returns `{"valid": true, "errors": []}` or `{"valid": false, "errors": [...]}`.

@@ -1,5 +1,5 @@
 ---
-name: orchestrate-literature-review
+name: orchestrate_literature_review
 description: >
   End-to-end orchestrator for systematic academic literature reviews. Sequences
   query design, OpenAlex retrieval, deduplication, PRISMA screening, summarization,
@@ -10,11 +10,7 @@ description: >
   "review the literature on", or any request that implies going from a question
   all the way to a written synthesis. Does not replace the individual task skills —
   it orchestrates them.
-metadata:
-  version: 0.2.0
-  author: smartbiblia
-  maturity: beta
-  preferred_output: json
+metadata: {"version": "0.2.0", "author": "smartbiblia", "maturity": "beta", "preferred_output": "json", "openclaw": {"emoji": "🔬", "requires": {"bins": ["uv"]}}}
 
 selection:
   use_when:
@@ -104,7 +100,7 @@ Produce the search strategy JSON, then validate:
 
 ```bash
 uv run skills/generate-search-queries/scripts/cli.py validate \
-  --json-file /tmp/queries.json
+  --json-file $WORKSPACE/queries.json
 ```
 
 The validated output contains a `queries[]` array. Each `queries[].query`
@@ -122,7 +118,7 @@ uv run skills/search-works-openalex/scripts/cli.py search \
   --date-from 2023-01-01 \
   --sort-by cited_by_count:desc \
   --trace \
-  > /tmp/results_q1.json
+  > $WORKSPACE/results_q1.json
 ```
 
 Respect `suggested_filters` from the query output when relevant
@@ -169,7 +165,7 @@ Validate:
 
 ```bash
 uv run skills/synthesize-literature/scripts/cli.py validate \
-  --task screen_study_prisma --json-file /tmp/screen_<id>.json
+  --task screen_study_prisma --json-file $WORKSPACE/screen_<id>.json
 ```
 
 Keep only `include` records. Log all `exclude` decisions with their reason
@@ -185,7 +181,7 @@ Validate each summary:
 
 ```bash
 uv run skills/synthesize-literature/scripts/cli.py validate \
-  --task summarize_paper --json-file /tmp/summary_<id>.json
+  --task summarize_paper --json-file $WORKSPACE/summary_<id>.json
 ```
 
 ### 2c. Quality appraisal (optional)
@@ -224,7 +220,7 @@ Validate:
 
 ```bash
 uv run skills/synthesize-literature/scripts/cli.py validate \
-  --task synthesize_papers_thematic --json-file /tmp/synthesis.json
+  --task synthesize_papers_thematic --json-file $WORKSPACE/synthesis.json
 ```
 
 ---
@@ -255,30 +251,30 @@ If available, archive included records with their metadata and a link to the syn
 ```bash
 # Step 1a — Build search strategy from the research question
 uv run skills/generate-search-queries/scripts/cli.py prompt
-# → produce /tmp/queries.json (contains queries[].query strings), then validate:
+# → produce $WORKSPACE/queries.json (contains queries[].query strings), then validate:
 uv run skills/generate-search-queries/scripts/cli.py validate \
-  --json-file /tmp/queries.json
+  --json-file $WORKSPACE/queries.json
 
 # Step 1b — Retrieve with the core query from queries[0].query
 uv run skills/search-works-openalex/scripts/cli.py search \
   --query "GraphRAG graph retrieval augmented generation" \
   --max-results 15 --date-from 2025-01-01 \
-  > /tmp/graphrag_results.json
+  > $WORKSPACE/graphrag_results.json
 # Repeat with queries[1].query, queries[2].query if needed (max 3 calls total)
 
 # Step 2a — Screening (repeat for each record)
 uv run skills/synthesize-literature/scripts/cli.py prompt --task screen_study_prisma
-# → produce /tmp/screen_W123.json, validate, keep "include" only
+# → produce $WORKSPACE/screen_W123.json, validate, keep "include" only
 
 # Step 2b — Summaries (repeat for each included paper)
 uv run skills/synthesize-literature/scripts/cli.py prompt --task summarize_paper
-# → produce /tmp/summary_W123.json, validate
+# → produce $WORKSPACE/summary_W123.json, validate
 
 # Step 3 — Thematic synthesis
 uv run skills/synthesize-literature/scripts/cli.py prompt --task synthesize_papers_thematic
-# → produce /tmp/synthesis_graphrag.json, then validate:
+# → produce $WORKSPACE/synthesis_graphrag.json, then validate:
 uv run skills/synthesize-literature/scripts/cli.py validate \
-  --task synthesize_papers_thematic --json-file /tmp/synthesis_graphrag.json
+  --task synthesize_papers_thematic --json-file $WORKSPACE/synthesis_graphrag.json
 ```
 
 ---
