@@ -1,0 +1,541 @@
+{
+  "total_found": 523,
+  "returned": 5,
+  "results": [
+    {
+      "source": "openalex",
+      "id": "W4389984066",
+      "openalex_id": "W4389984066",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "authors": [
+        "Yunfan Gao",
+        "Yun Xiong",
+        "Xinyu Gao",
+        "Kangxiang Jia",
+        "Jinliu Pan",
+        "Yuxi Bi",
+        "Yi Dai",
+        "Jiawei Sun",
+        "Haofen Wang",
+        "Wang, Haofen"
+      ],
+      "author_details": [
+        {
+          "name": "Yunfan Gao",
+          "orcid": "https://orcid.org/0000-0002-7932-2752",
+          "openalex_id": "A5102001778",
+          "institutions": []
+        },
+        {
+          "name": "Yun Xiong",
+          "orcid": "https://orcid.org/0000-0002-8575-5415",
+          "openalex_id": "A5001877137",
+          "institutions": []
+        },
+        {
+          "name": "Xinyu Gao",
+          "orcid": "https://orcid.org/0000-0001-7654-3800",
+          "openalex_id": "A5101581913",
+          "institutions": []
+        },
+        {
+          "name": "Kangxiang Jia",
+          "orcid": "https://orcid.org/0009-0001-0054-5049",
+          "openalex_id": "A5109666673",
+          "institutions": []
+        },
+        {
+          "name": "Jinliu Pan",
+          "orcid": null,
+          "openalex_id": "A5104217086",
+          "institutions": []
+        },
+        {
+          "name": "Yuxi Bi",
+          "orcid": null,
+          "openalex_id": "A5104217087",
+          "institutions": []
+        },
+        {
+          "name": "Yi Dai",
+          "orcid": "https://orcid.org/0000-0003-1219-2436",
+          "openalex_id": "A5100647639",
+          "institutions": []
+        },
+        {
+          "name": "Jiawei Sun",
+          "orcid": "https://orcid.org/0000-0003-1332-6758",
+          "openalex_id": "A5101598822",
+          "institutions": []
+        },
+        {
+          "name": "Haofen Wang",
+          "orcid": "https://orcid.org/0000-0003-3018-3824",
+          "openalex_id": "A5039059501",
+          "institutions": []
+        },
+        {
+          "name": "Wang, Haofen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        }
+      ],
+      "abstract": "Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development.",
+      "doi": "10.48550/arxiv.2312.10997",
+      "pdf_url": "https://arxiv.org/pdf/2312.10997",
+      "url": "https://openalex.org/W4389984066",
+      "source_url": "https://openalex.org/W4389984066",
+      "year": 2023,
+      "date": "2023-12-18",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 605,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Credibility",
+        "Computer science",
+        "Modular design",
+        "Benchmark (surveying)",
+        "Data science",
+        "Domain (mathematical analysis)",
+        "Language model",
+        "Artificial intelligence",
+        "Programming language",
+        "Political science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4392240262",
+      "openalex_id": "W4392240262",
+      "title": "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond",
+      "authors": [
+        "Jingfeng Yang",
+        "Hongye Jin",
+        "Ruixiang Tang",
+        "Xiaotian Han",
+        "Qizhang Feng",
+        "Haoming Jiang",
+        "Shaochen Zhong",
+        "Bing Yin",
+        "Xia Hu"
+      ],
+      "author_details": [
+        {
+          "name": "Jingfeng Yang",
+          "orcid": "https://orcid.org/0000-0001-9713-1792",
+          "openalex_id": "A5101495322",
+          "institutions": [
+            "Seattle University",
+            "Amazon (United States)"
+          ]
+        },
+        {
+          "name": "Hongye Jin",
+          "orcid": "https://orcid.org/0009-0009-7920-632X",
+          "openalex_id": "A5063597595",
+          "institutions": [
+            "Texas A&M University"
+          ]
+        },
+        {
+          "name": "Ruixiang Tang",
+          "orcid": "https://orcid.org/0000-0001-6476-2336",
+          "openalex_id": "A5101660251",
+          "institutions": [
+            "Rice University"
+          ]
+        },
+        {
+          "name": "Xiaotian Han",
+          "orcid": "https://orcid.org/0000-0003-1175-7925",
+          "openalex_id": "A5015326511",
+          "institutions": [
+            "Texas A&M University"
+          ]
+        },
+        {
+          "name": "Qizhang Feng",
+          "orcid": "https://orcid.org/0000-0002-2574-0270",
+          "openalex_id": "A5040574435",
+          "institutions": [
+            "Texas A&M University"
+          ]
+        },
+        {
+          "name": "Haoming Jiang",
+          "orcid": "https://orcid.org/0000-0003-0789-525X",
+          "openalex_id": "A5030361161",
+          "institutions": [
+            "Seattle University",
+            "Amazon (United States)"
+          ]
+        },
+        {
+          "name": "Shaochen Zhong",
+          "orcid": null,
+          "openalex_id": "A5050530149",
+          "institutions": [
+            "Rice University"
+          ]
+        },
+        {
+          "name": "Bing Yin",
+          "orcid": "https://orcid.org/0000-0002-5890-0031",
+          "openalex_id": "A5085519273",
+          "institutions": [
+            "Seattle University",
+            "Amazon (United States)"
+          ]
+        },
+        {
+          "name": "Xia Hu",
+          "orcid": "https://orcid.org/0000-0003-2234-3226",
+          "openalex_id": "A5068477431",
+          "institutions": [
+            "Rice University"
+          ]
+        }
+      ],
+      "abstract": "This article presents a comprehensive and practical guide for practitioners and end-users working with Large Language Models (LLMs) in their downstream Natural Language Processing (NLP) tasks. We provide discussions and insights into the usage of LLMs from the perspectives of models, data, and downstream tasks. First, we offer an introduction and brief summary of current language models. Then, we discuss the influence of pre-training data, training data, and test data. Most importantly, we provide a detailed discussion about the use and non-use cases of large language models for various natural language processing tasks, such as knowledge-intensive tasks, traditional natural language understanding tasks, generation tasks, emergent abilities, and considerations for specific tasks. We present various use cases and non-use cases to illustrate the practical applications and limitations of LLMs in real-world scenarios. We also try to understand the importance of data and the specific challenges associated with each NLP task. Furthermore, we explore the impact of spurious biases on LLMs and delve into other essential considerations, such as efficiency, cost, and latency, to ensure a comprehensive understanding of deploying LLMs in practice. This comprehensive guide aims to provide researchers and practitioners with valuable insights and best practices for working with LLMs, thereby enabling the successful implementation of these models in a wide range of NLP tasks. A curated list of practical guide resources of LLMs, regularly updated, can be found at https://github.com/Mooler0410/LLMsPracticalGuide . An LLMs evolutionary tree, editable yet regularly updated, can be found at llmtree.ai .",
+      "doi": "10.1145/3649506",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3649506",
+      "url": "https://openalex.org/W4392240262",
+      "source_url": "https://openalex.org/W4392240262",
+      "year": 2024,
+      "date": "2024-02-28",
+      "doc_type": "article",
+      "journal": "ACM Transactions on Knowledge Discovery from Data",
+      "cited_by_count": 434,
+      "referenced_works_count": 69,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "Topic Modeling",
+        "Privacy-Preserving Technologies in Data"
+      ],
+      "keywords": [
+        "Power (physics)",
+        "Data science",
+        "Geography",
+        "Political science",
+        "Computer science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4320165837",
+      "openalex_id": "W4320165837",
+      "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+      "authors": [
+        "Timo Schick",
+        "Jane Dwivedi-Yu",
+        "Roberto Dessì",
+        "Roberta Răileanu",
+        "María Lomelí",
+        "Luke Zettlemoyer",
+        "Nicola Cancedda",
+        "Thomas Scialom"
+      ],
+      "author_details": [
+        {
+          "name": "Timo Schick",
+          "orcid": null,
+          "openalex_id": "A5076269589",
+          "institutions": []
+        },
+        {
+          "name": "Jane Dwivedi-Yu",
+          "orcid": null,
+          "openalex_id": "A5068122668",
+          "institutions": []
+        },
+        {
+          "name": "Roberto Dessì",
+          "orcid": null,
+          "openalex_id": "A5081298299",
+          "institutions": []
+        },
+        {
+          "name": "Roberta Răileanu",
+          "orcid": "https://orcid.org/0009-0003-2057-2903",
+          "openalex_id": "A5018702533",
+          "institutions": []
+        },
+        {
+          "name": "María Lomelí",
+          "orcid": "https://orcid.org/0000-0002-6524-3615",
+          "openalex_id": "A5002000099",
+          "institutions": []
+        },
+        {
+          "name": "Luke Zettlemoyer",
+          "orcid": "https://orcid.org/0009-0008-8296-0764",
+          "openalex_id": "A5067919401",
+          "institutions": []
+        },
+        {
+          "name": "Nicola Cancedda",
+          "orcid": null,
+          "openalex_id": "A5004751764",
+          "institutions": []
+        },
+        {
+          "name": "Thomas Scialom",
+          "orcid": null,
+          "openalex_id": "A5089419558",
+          "institutions": []
+        }
+      ],
+      "abstract": "Language models (LMs) exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also, paradoxically, struggle with basic functionality, such as arithmetic or factual lookup, where much simpler and smaller models excel. In this paper, we show that LMs can teach themselves to use external tools via simple APIs and achieve the best of both worlds. We introduce Toolformer, a model trained to decide which APIs to call, when to call them, what arguments to pass, and how to best incorporate the results into future token prediction. This is done in a self-supervised way, requiring nothing more than a handful of demonstrations for each API. We incorporate a range of tools, including a calculator, a Q\\&amp;A system, two different search engines, a translation system, and a calendar. Toolformer achieves substantially improved zero-shot performance across a variety of downstream tasks, often competitive with much larger models, without sacrificing its core language modeling abilities.",
+      "doi": "10.48550/arxiv.2302.04761",
+      "pdf_url": "https://arxiv.org/pdf/2302.04761",
+      "url": "https://openalex.org/W4320165837",
+      "source_url": "https://openalex.org/W4320165837",
+      "year": 2023,
+      "date": "2023-02-09",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 369,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Computer science",
+        "Variety (cybernetics)",
+        "Calculator",
+        "Language model",
+        "Simple (philosophy)",
+        "Security token",
+        "Scale (ratio)",
+        "Range (aeronautics)",
+        "Programming language",
+        "Table (database)",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Data mining"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4384389802",
+      "openalex_id": "W4384389802",
+      "title": "A Comprehensive Overview of Large Language Models",
+      "authors": [
+        "Humza Naveed",
+        "Asad Ullah Khan",
+        "Shi Qiu",
+        "Muhammad Saqib",
+        "Saeed Anwar",
+        "Muhammad Usman",
+        "Nick Barnes",
+        "Ajmal Mian",
+        "Mian, Ajmal"
+      ],
+      "author_details": [
+        {
+          "name": "Humza Naveed",
+          "orcid": "https://orcid.org/0000-0003-4962-903X",
+          "openalex_id": "A5072548276",
+          "institutions": []
+        },
+        {
+          "name": "Asad Ullah Khan",
+          "orcid": "https://orcid.org/0000-0002-5127-527X",
+          "openalex_id": "A5100412513",
+          "institutions": []
+        },
+        {
+          "name": "Shi Qiu",
+          "orcid": "https://orcid.org/0000-0001-9958-180X",
+          "openalex_id": "A5100736298",
+          "institutions": []
+        },
+        {
+          "name": "Muhammad Saqib",
+          "orcid": null,
+          "openalex_id": "A5112508987",
+          "institutions": []
+        },
+        {
+          "name": "Saeed Anwar",
+          "orcid": "https://orcid.org/0000-0002-0692-8411",
+          "openalex_id": "A5084633048",
+          "institutions": []
+        },
+        {
+          "name": "Muhammad Usman",
+          "orcid": "https://orcid.org/0000-0002-7818-4546",
+          "openalex_id": "A5014572558",
+          "institutions": []
+        },
+        {
+          "name": "Nick Barnes",
+          "orcid": "https://orcid.org/0000-0002-9343-9535",
+          "openalex_id": "A5072837153",
+          "institutions": []
+        },
+        {
+          "name": "Ajmal Mian",
+          "orcid": "https://orcid.org/0000-0002-5206-3842",
+          "openalex_id": "A5089986388",
+          "institutions": []
+        },
+        {
+          "name": "Mian, Ajmal",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        }
+      ],
+      "abstract": "Large Language Models (LLMs) have recently demonstrated remarkable capabilities in natural language processing tasks and beyond. This success of LLMs has led to a large influx of research contributions in this direction. These works encompass diverse topics such as architectural innovations, better training strategies, context length improvements, fine-tuning, multi-modal LLMs, robotics, datasets, benchmarking, efficiency, and more. With the rapid development of techniques and regular breakthroughs in LLM research, it has become considerably challenging to perceive the bigger picture of the advances in this direction. Considering the rapidly emerging plethora of literature on LLMs, it is imperative that the research community is able to benefit from a concise yet comprehensive overview of the recent developments in this field. This article provides an overview of the existing literature on a broad range of LLM-related concepts. Our self-contained comprehensive overview of LLMs discusses relevant background concepts along with covering the advanced topics at the frontier of research in LLMs. This review article is intended to not only provide a systematic survey but also a quick comprehensive reference for the researchers and practitioners to draw insights from extensive informative summaries of the existing works to advance the LLM research.",
+      "doi": "10.48550/arxiv.2307.06435",
+      "pdf_url": "https://arxiv.org/pdf/2307.06435",
+      "url": "https://openalex.org/W4384389802",
+      "source_url": "https://openalex.org/W4384389802",
+      "year": 2023,
+      "date": "2023-07-12",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 350,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Context (archaeology)",
+        "Benchmarking",
+        "Frontier",
+        "Engineering ethics",
+        "Data science",
+        "Management science",
+        "Computer science",
+        "Political science",
+        "Engineering",
+        "Geography",
+        "Business",
+        "Marketing"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4388778348",
+      "openalex_id": "W4388778348",
+      "title": "In-Context Retrieval-Augmented Language Models",
+      "authors": [
+        "Ori Ram",
+        "Yoav Levine",
+        "Itay Dalmedigos",
+        "Dor Muhlgay",
+        "Amnon Shashua",
+        "Kevin Leyton‐Brown",
+        "Yoav Shoham"
+      ],
+      "author_details": [
+        {
+          "name": "Ori Ram",
+          "orcid": null,
+          "openalex_id": "A5058640064",
+          "institutions": []
+        },
+        {
+          "name": "Yoav Levine",
+          "orcid": null,
+          "openalex_id": "A5005177735",
+          "institutions": []
+        },
+        {
+          "name": "Itay Dalmedigos",
+          "orcid": null,
+          "openalex_id": "A5082565423",
+          "institutions": [
+            "IBM Research - Haifa"
+          ]
+        },
+        {
+          "name": "Dor Muhlgay",
+          "orcid": null,
+          "openalex_id": "A5087809446",
+          "institutions": [
+            "IBM Research - Haifa"
+          ]
+        },
+        {
+          "name": "Amnon Shashua",
+          "orcid": null,
+          "openalex_id": "A5075004917",
+          "institutions": []
+        },
+        {
+          "name": "Kevin Leyton‐Brown",
+          "orcid": "https://orcid.org/0000-0002-7644-5327",
+          "openalex_id": "A5089807699",
+          "institutions": []
+        },
+        {
+          "name": "Yoav Shoham",
+          "orcid": null,
+          "openalex_id": "A5028913764",
+          "institutions": []
+        }
+      ],
+      "abstract": "Abstract Retrieval-Augmented Language Modeling (RALM) methods, which condition a language model (LM) on relevant documents from a grounding corpus during generation, were shown to significantly improve language modeling performance. In addition, they can mitigate the problem of factually inaccurate text generation and provide natural source attribution mechanism. Existing RALM approaches focus on modifying the LM architecture in order to facilitate the incorporation of external information, significantly complicating deployment. This paper considers a simple alternative, which we dub In-Context RALM: leaving the LM architecture unchanged and prepending grounding documents to the input, without any further training of the LM. We show that In-Context RALM that builds on off-the-shelf general purpose retrievers provides surprisingly large LM gains across model sizes and diverse corpora. We also demonstrate that the document retrieval and ranking mechanism can be specialized to the RALM setting to further boost performance. We conclude that In-Context RALM has considerable potential to increase the prevalence of LM grounding, particularly in settings where a pretrained LM must be used without modification or even via API access.1",
+      "doi": "10.1162/tacl_a_00605",
+      "pdf_url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00605/2178834/tacl_a_00605.pdf",
+      "url": "https://openalex.org/W4388778348",
+      "source_url": "https://openalex.org/W4388778348",
+      "year": 2023,
+      "date": "2023-01-01",
+      "doc_type": "article",
+      "journal": "Transactions of the Association for Computational Linguistics",
+      "cited_by_count": 293,
+      "referenced_works_count": 46,
+      "is_open_access": true,
+      "oa_status": "diamond",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Text Readability and Simplification"
+      ],
+      "keywords": [
+        "Computer science",
+        "Context (archaeology)",
+        "Ranking (information retrieval)",
+        "Language model",
+        "Software deployment",
+        "Focus (optics)",
+        "Information retrieval",
+        "Natural language processing",
+        "Artificial intelligence",
+        "Architecture",
+        "Rank (graph theory)",
+        "Natural language",
+        "Software engineering"
+      ],
+      "cited_by_api_url": null
+    }
+  ],
+  "query_used": "2208.03299",
+  "filters_used": [
+    "from_publication_date:2020-01-01"
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "total_found": 1609,
+  "returned": 5,
+  "results": [
+    {
+      "source": "openalex",
+      "id": "W4295122555",
+      "openalex_id": "W4295122555",
+      "title": "Deep Residual Learning for Image Recognition: A Survey",
+      "authors": [
+        "Muhammad Shafiq",
+        "Zhaoquan Gu"
+      ],
+      "author_details": [
+        {
+          "name": "Muhammad Shafiq",
+          "orcid": "https://orcid.org/0000-0003-1909-9373",
+          "openalex_id": "A5100771200",
+          "institutions": [
+            "Guangzhou University"
+          ]
+        },
+        {
+          "name": "Zhaoquan Gu",
+          "orcid": "https://orcid.org/0000-0001-7546-852X",
+          "openalex_id": "A5070856186",
+          "institutions": [
+            "Harbin Institute of Technology",
+            "Peng Cheng Laboratory"
+          ]
+        }
+      ],
+      "abstract": "Deep Residual Networks have recently been shown to significantly improve the performance of neural networks trained on ImageNet, with results beating all previous methods on this dataset by large margins in the image classification task. However, the meaning of these impressive numbers and their implications for future research are not fully understood yet. In this survey, we will try to explain what Deep Residual Networks are, how they achieve their excellent results, and why their successful implementation in practice represents a significant advance over existing techniques. We also discuss some open questions related to residual learning as well as possible applications of Deep Residual Networks beyond ImageNet. Finally, we discuss some issues that still need to be resolved before deep residual learning can be applied on more complex problems.",
+      "doi": "10.3390/app12188972",
+      "pdf_url": "https://www.mdpi.com/2076-3417/12/18/8972/pdf?version=1662547655",
+      "url": "https://openalex.org/W4295122555",
+      "source_url": "https://openalex.org/W4295122555",
+      "year": 2022,
+      "date": "2022-09-07",
+      "doc_type": "article",
+      "journal": "Applied Sciences",
+      "cited_by_count": 853,
+      "referenced_works_count": 91,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "COVID-19 diagnosis using AI",
+        "Domain Adaptation and Few-Shot Learning"
+      ],
+      "keywords": [
+        "Residual",
+        "Deep learning",
+        "Computer science",
+        "Artificial intelligence",
+        "Deep neural networks",
+        "Meaning (existential)",
+        "Task (project management)",
+        "Machine learning",
+        "Psychology",
+        "Algorithm",
+        "Engineering"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4365504037",
+      "openalex_id": "W4365504037",
+      "title": "A survey on deep learning tools dealing with data scarcity: definitions, challenges, solutions, tips, and applications",
+      "authors": [
+        "Laith Alzubaidi",
+        "Jinshuai Bai",
+        "Aiman Al-Sabaawi",
+        "José Santamaría",
+        "A. S. Albahri",
+        "Bashar Sami Nayyef Al-dabbagh",
+        "Mohammed A. Fadhel",
+        "Mohamed Manoufali",
+        "Jinglan Zhang",
+        "Ali H. Al‐Timemy",
+        "Ye Duan",
+        "Amjed Abdullah",
+        "Laith Farhan",
+        "Yi Lu",
+        "Ashish Gupta",
+        "Felix Albu",
+        "Amin Abbosh",
+        "Yuantong Gu"
+      ],
+      "author_details": [
+        {
+          "name": "Laith Alzubaidi",
+          "orcid": "https://orcid.org/0000-0002-7296-5413",
+          "openalex_id": "A5102889969",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Jinshuai Bai",
+          "orcid": "https://orcid.org/0000-0002-0753-6428",
+          "openalex_id": "A5021489599",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Aiman Al-Sabaawi",
+          "orcid": "https://orcid.org/0000-0002-0465-8091",
+          "openalex_id": "A5062462649",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "José Santamaría",
+          "orcid": "https://orcid.org/0000-0002-2022-6838",
+          "openalex_id": "A5010765865",
+          "institutions": [
+            "Universidad de Jaén"
+          ]
+        },
+        {
+          "name": "A. S. Albahri",
+          "orcid": "https://orcid.org/0000-0003-3335-457X",
+          "openalex_id": "A5012505948",
+          "institutions": [
+            "Sultan Idris Education University"
+          ]
+        },
+        {
+          "name": "Bashar Sami Nayyef Al-dabbagh",
+          "orcid": null,
+          "openalex_id": "A5052319607",
+          "institutions": [
+            "Universidad Carlos III de Madrid"
+          ]
+        },
+        {
+          "name": "Mohammed A. Fadhel",
+          "orcid": "https://orcid.org/0000-0001-9877-049X",
+          "openalex_id": "A5090966997",
+          "institutions": [
+            "Thi Qar University"
+          ]
+        },
+        {
+          "name": "Mohamed Manoufali",
+          "orcid": "https://orcid.org/0000-0002-9140-6529",
+          "openalex_id": "A5066987395",
+          "institutions": [
+            "The University of Queensland"
+          ]
+        },
+        {
+          "name": "Jinglan Zhang",
+          "orcid": "https://orcid.org/0000-0001-6459-2963",
+          "openalex_id": "A5101979224",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Ali H. Al‐Timemy",
+          "orcid": "https://orcid.org/0000-0003-2738-8896",
+          "openalex_id": "A5066206447",
+          "institutions": [
+            "University of Baghdad"
+          ]
+        },
+        {
+          "name": "Ye Duan",
+          "orcid": "https://orcid.org/0000-0002-1166-7703",
+          "openalex_id": "A5101430356",
+          "institutions": [
+            "University of Missouri"
+          ]
+        },
+        {
+          "name": "Amjed Abdullah",
+          "orcid": "https://orcid.org/0000-0002-8769-6826",
+          "openalex_id": "A5085799439",
+          "institutions": [
+            "University of Missouri"
+          ]
+        },
+        {
+          "name": "Laith Farhan",
+          "orcid": "https://orcid.org/0000-0001-8256-7323",
+          "openalex_id": "A5059266881",
+          "institutions": [
+            "Manchester Metropolitan University"
+          ]
+        },
+        {
+          "name": "Yi Lu",
+          "orcid": "https://orcid.org/0000-0001-6097-100X",
+          "openalex_id": "A5102902635",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Ashish Gupta",
+          "orcid": "https://orcid.org/0000-0003-4593-3261",
+          "openalex_id": "A5035513892",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Felix Albu",
+          "orcid": "https://orcid.org/0000-0002-3240-809X",
+          "openalex_id": "A5088650299",
+          "institutions": [
+            "Valahia University of Targoviste"
+          ]
+        },
+        {
+          "name": "Amin Abbosh",
+          "orcid": "https://orcid.org/0000-0002-8015-5883",
+          "openalex_id": "A5017903283",
+          "institutions": [
+            "The University of Queensland"
+          ]
+        },
+        {
+          "name": "Yuantong Gu",
+          "orcid": "https://orcid.org/0000-0002-2770-5014",
+          "openalex_id": "A5108068122",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        }
+      ],
+      "abstract": "Abstract Data scarcity is a major challenge when training deep learning (DL) models. DL demands a large amount of data to achieve exceptional performance. Unfortunately, many applications have small or inadequate data to train DL frameworks. Usually, manual labeling is needed to provide labeled data, which typically involves human annotators with a vast background of knowledge. This annotation process is costly, time-consuming, and error-prone. Usually, every DL framework is fed by a significant amount of labeled data to automatically learn representations. Ultimately, a larger amount of data would generate a better DL model and its performance is also application dependent. This issue is the main barrier for many applications dismissing the use of DL. Having sufficient data is the first step toward any successful and trustworthy DL application. This paper presents a holistic survey on state-of-the-art techniques to deal with training DL models to overcome three challenges including small, imbalanced datasets, and lack of generalization. This survey starts by listing the learning techniques. Next, the types of DL architectures are introduced. After that, state-of-the-art solutions to address the issue of lack of training data are listed, such as Transfer Learning (TL), Self-Supervised Learning (SSL), Generative Adversarial Networks (GANs), Model Architecture (MA), Physics-Informed Neural Network (PINN), and Deep Synthetic Minority Oversampling Technique (DeepSMOTE). Then, these solutions were followed by some related tips about data acquisition needed prior to training purposes, as well as recommendations for ensuring the trustworthiness of the training dataset. The survey ends with a list of applications that suffer from data scarcity, several alternatives are proposed in order to generate more data in each application including Electromagnetic Imaging (EMI), Civil Structural Health Monitoring, Medical imaging, Meteorology, Wireless Communications, Fluid Mechanics, Microelectromechanical system, and Cybersecurity. To the best of the authors’ knowledge, this is the first review that offers a comprehensive overview on strategies to tackle data scarcity in DL.",
+      "doi": "10.1186/s40537-023-00727-2",
+      "pdf_url": "https://journalofbigdata.springeropen.com/counter/pdf/10.1186/s40537-023-00727-2",
+      "url": "https://openalex.org/W4365504037",
+      "source_url": "https://openalex.org/W4365504037",
+      "year": 2023,
+      "date": "2023-04-14",
+      "doc_type": "article",
+      "journal": "Journal Of Big Data",
+      "cited_by_count": 704,
+      "referenced_works_count": 561,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "COVID-19 diagnosis using AI",
+        "Anomaly Detection Techniques and Applications",
+        "Domain Adaptation and Few-Shot Learning"
+      ],
+      "keywords": [
+        "Computer science",
+        "Deep learning",
+        "Artificial intelligence",
+        "Machine learning",
+        "Generalization",
+        "Scarcity",
+        "Process (computing)",
+        "Data science",
+        "Transfer of learning"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4389984066",
+      "openalex_id": "W4389984066",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "authors": [
+        "Yunfan Gao",
+        "Yun Xiong",
+        "Xinyu Gao",
+        "Kangxiang Jia",
+        "Jinliu Pan",
+        "Yuxi Bi",
+        "Yi Dai",
+        "Jiawei Sun",
+        "Haofen Wang",
+        "Wang, Haofen"
+      ],
+      "author_details": [
+        {
+          "name": "Yunfan Gao",
+          "orcid": "https://orcid.org/0000-0002-7932-2752",
+          "openalex_id": "A5102001778",
+          "institutions": []
+        },
+        {
+          "name": "Yun Xiong",
+          "orcid": "https://orcid.org/0000-0002-8575-5415",
+          "openalex_id": "A5001877137",
+          "institutions": []
+        },
+        {
+          "name": "Xinyu Gao",
+          "orcid": "https://orcid.org/0000-0001-7654-3800",
+          "openalex_id": "A5101581913",
+          "institutions": []
+        },
+        {
+          "name": "Kangxiang Jia",
+          "orcid": "https://orcid.org/0009-0001-0054-5049",
+          "openalex_id": "A5109666673",
+          "institutions": []
+        },
+        {
+          "name": "Jinliu Pan",
+          "orcid": null,
+          "openalex_id": "A5104217086",
+          "institutions": []
+        },
+        {
+          "name": "Yuxi Bi",
+          "orcid": null,
+          "openalex_id": "A5104217087",
+          "institutions": []
+        },
+        {
+          "name": "Yi Dai",
+          "orcid": "https://orcid.org/0000-0003-1219-2436",
+          "openalex_id": "A5100647639",
+          "institutions": []
+        },
+        {
+          "name": "Jiawei Sun",
+          "orcid": "https://orcid.org/0000-0003-1332-6758",
+          "openalex_id": "A5101598822",
+          "institutions": []
+        },
+        {
+          "name": "Haofen Wang",
+          "orcid": "https://orcid.org/0000-0003-3018-3824",
+          "openalex_id": "A5039059501",
+          "institutions": []
+        },
+        {
+          "name": "Wang, Haofen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        }
+      ],
+      "abstract": "Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development.",
+      "doi": "10.48550/arxiv.2312.10997",
+      "pdf_url": "https://arxiv.org/pdf/2312.10997",
+      "url": "https://openalex.org/W4389984066",
+      "source_url": "https://openalex.org/W4389984066",
+      "year": 2023,
+      "date": "2023-12-18",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 605,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Credibility",
+        "Computer science",
+        "Modular design",
+        "Benchmark (surveying)",
+        "Data science",
+        "Domain (mathematical analysis)",
+        "Language model",
+        "Artificial intelligence",
+        "Programming language",
+        "Political science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4380685454",
+      "openalex_id": "W4380685454",
+      "title": "Re-Thinking Data Strategy and Integration for Artificial Intelligence: Concepts, Opportunities, and Challenges",
+      "authors": [
+        "Abdulaziz Aldoseri",
+        "Khalifa N. Al‐Khalifa",
+        "A.M.S. Hamouda"
+      ],
+      "author_details": [
+        {
+          "name": "Abdulaziz Aldoseri",
+          "orcid": "https://orcid.org/0009-0003-4367-0450",
+          "openalex_id": "A5053777601",
+          "institutions": [
+            "Qatar University"
+          ]
+        },
+        {
+          "name": "Khalifa N. Al‐Khalifa",
+          "orcid": null,
+          "openalex_id": "A5111995971",
+          "institutions": [
+            "Qatar University"
+          ]
+        },
+        {
+          "name": "A.M.S. Hamouda",
+          "orcid": "https://orcid.org/0000-0001-8022-4319",
+          "openalex_id": "A5029670996",
+          "institutions": [
+            "Qatar University"
+          ]
+        }
+      ],
+      "abstract": "The use of artificial intelligence (AI) is becoming more prevalent across industries such as healthcare, finance, and transportation. Artificial intelligence is based on the analysis of large datasets and requires a continuous supply of high-quality data. However, using data for AI is not without challenges. This paper comprehensively reviews and critically examines the challenges of using data for AI, including data quality, data volume, privacy and security, bias and fairness, interpretability and explainability, ethical concerns, and technical expertise and skills. This paper examines these challenges in detail and offers recommendations on how companies and organizations can address them. By understanding and addressing these challenges, organizations can harness the power of AI to make smarter decisions and gain competitive advantage in the digital age. It is expected, since this review article provides and discusses various strategies for data challenges for AI over the last decade, that it will be very helpful to the scientific research community to create new and novel ideas to rethink our approaches to data strategies for AI.",
+      "doi": "10.3390/app13127082",
+      "pdf_url": "https://www.mdpi.com/2076-3417/13/12/7082/pdf?version=1686659661",
+      "url": "https://openalex.org/W4380685454",
+      "source_url": "https://openalex.org/W4380685454",
+      "year": 2023,
+      "date": "2023-06-13",
+      "doc_type": "article",
+      "journal": "Applied Sciences",
+      "cited_by_count": 549,
+      "referenced_works_count": 132,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Explainable Artificial Intelligence (XAI)",
+        "Ethics and Social Impacts of AI",
+        "Artificial Intelligence in Healthcare and Education"
+      ],
+      "keywords": [
+        "Interpretability",
+        "Big data",
+        "Computer science",
+        "Quality (philosophy)",
+        "Artificial intelligence",
+        "Data quality",
+        "Data science",
+        "Knowledge management",
+        "Business",
+        "Data mining",
+        "Marketing"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4283170666",
+      "openalex_id": "W4283170666",
+      "title": "Taxonomy of Risks posed by Language Models",
+      "authors": [
+        "Laura Weidinger",
+        "Jonathan Uesato",
+        "Maribeth Rauh",
+        "Conor Griffin",
+        "Po-Sen Huang",
+        "John Mellor",
+        "Amelia Glaese",
+        "Myra Cheng",
+        "Borja Balle",
+        "Atoosa Kasirzadeh",
+        "Courtney Biles",
+        "Sasha Brown",
+        "Zac Kenton",
+        "Will Hawkins",
+        "Tom Stepleton",
+        "Abeba Birhane",
+        "Lisa Anne Hendricks",
+        "Laura Rimell",
+        "William Isaac",
+        "Julia Haas",
+        "Sean Legassick",
+        "Geoffrey Irving",
+        "Iason Gabriel"
+      ],
+      "author_details": [
+        {
+          "name": "Laura Weidinger",
+          "orcid": "https://orcid.org/0000-0002-5189-760X",
+          "openalex_id": "A5056575786",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Jonathan Uesato",
+          "orcid": null,
+          "openalex_id": "A5059226057",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Maribeth Rauh",
+          "orcid": null,
+          "openalex_id": "A5080160770",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Conor Griffin",
+          "orcid": null,
+          "openalex_id": "A5048091074",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Po-Sen Huang",
+          "orcid": "https://orcid.org/0000-0003-1470-0991",
+          "openalex_id": "A5076474156",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "John Mellor",
+          "orcid": null,
+          "openalex_id": "A5111981498",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Amelia Glaese",
+          "orcid": null,
+          "openalex_id": "A5005117726",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Myra Cheng",
+          "orcid": null,
+          "openalex_id": "A5012939002",
+          "institutions": [
+            "California Institute of Technology",
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Borja Balle",
+          "orcid": "https://orcid.org/0009-0003-8726-2803",
+          "openalex_id": "A5085679401",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Atoosa Kasirzadeh",
+          "orcid": "https://orcid.org/0000-0002-5967-3782",
+          "openalex_id": "A5047979305",
+          "institutions": [
+            "DeepMind (United Kingdom)",
+            "University of Toronto"
+          ]
+        },
+        {
+          "name": "Courtney Biles",
+          "orcid": null,
+          "openalex_id": "A5041858762",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Sasha Brown",
+          "orcid": null,
+          "openalex_id": "A5081055990",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Zac Kenton",
+          "orcid": null,
+          "openalex_id": "A5065666918",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Will Hawkins",
+          "orcid": "https://orcid.org/0009-0004-5135-6792",
+          "openalex_id": "A5103131863",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Tom Stepleton",
+          "orcid": null,
+          "openalex_id": "A5046305893",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Abeba Birhane",
+          "orcid": "https://orcid.org/0000-0001-6319-7937",
+          "openalex_id": "A5038758207",
+          "institutions": [
+            "DeepMind (United Kingdom)",
+            "University College Dublin"
+          ]
+        },
+        {
+          "name": "Lisa Anne Hendricks",
+          "orcid": "https://orcid.org/0000-0001-9340-5143",
+          "openalex_id": "A5020758501",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Laura Rimell",
+          "orcid": null,
+          "openalex_id": "A5059804251",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "William Isaac",
+          "orcid": "https://orcid.org/0000-0002-1297-5409",
+          "openalex_id": "A5048272174",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Julia Haas",
+          "orcid": "https://orcid.org/0000-0003-2330-1132",
+          "openalex_id": "A5007213257",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Sean Legassick",
+          "orcid": null,
+          "openalex_id": "A5043068612",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Geoffrey Irving",
+          "orcid": null,
+          "openalex_id": "A5029611587",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Iason Gabriel",
+          "orcid": "https://orcid.org/0000-0002-7552-4576",
+          "openalex_id": "A5032814084",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        }
+      ],
+      "abstract": "Responsible innovation on large-scale Language Models (LMs) requires foresight into and in-depth understanding of the risks these models may pose. This paper develops a comprehensive taxonomy of ethical and social risks associated with LMs. We identify twenty-one risks, drawing on expertise and literature from computer science, linguistics, and the social sciences. We situate these risks in our taxonomy of six risk areas: I. Discrimination, Hate speech and Exclusion, II. Information Hazards, III. Misinformation Harms, IV. Malicious Uses, V. Human-Computer Interaction Harms, and VI. Environmental and Socioeconomic harms. For risks that have already been observed in LMs, the causal mechanism leading to harm, evidence of the risk, and approaches to risk mitigation are discussed. We further describe and analyse risks that have not yet been observed but are anticipated based on assessments of other language technologies, and situate these in the same taxonomy. We underscore that it is the responsibility of organizations to engage with the mitigations we discuss throughout the paper. We close by highlighting challenges and directions for further research on risk evaluation and mitigation with the goal of ensuring that language models are developed responsibly.",
+      "doi": "10.1145/3531146.3533088",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3531146.3533088",
+      "url": "https://openalex.org/W4283170666",
+      "source_url": "https://openalex.org/W4283170666",
+      "year": 2022,
+      "date": "2022-06-20",
+      "doc_type": "article",
+      "journal": "2022 ACM Conference on Fairness, Accountability, and Transparency",
+      "cited_by_count": 509,
+      "referenced_works_count": 70,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Hate Speech and Cyberbullying Detection",
+        "Ethics and Social Impacts of AI"
+      ],
+      "keywords": [
+        "Misinformation",
+        "Taxonomy (biology)",
+        "Harm",
+        "Risk analysis (engineering)",
+        "Futures studies",
+        "Computer science",
+        "Risk management",
+        "Data science",
+        "Management science",
+        "Knowledge management",
+        "Engineering ethics",
+        "Psychology",
+        "Business",
+        "Artificial intelligence",
+        "Computer security",
+        "Social psychology",
+        "Engineering"
+      ],
+      "cited_by_api_url": null
+    }
+  ],
+  "query_used": "Atlas: Few-shot Learning with Retrieval Augmented Language Models",
+  "filters_used": [
+    "from_publication_date:2020-01-01"
+  ]
+}

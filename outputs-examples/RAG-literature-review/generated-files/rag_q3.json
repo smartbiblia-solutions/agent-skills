@@ -1,0 +1,3046 @@
+{
+  "total_found": 14094,
+  "returned": 20,
+  "results": [
+    {
+      "source": "openalex",
+      "id": "W3140854437",
+      "openalex_id": "W3140854437",
+      "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+      "authors": [
+        "Laith Alzubaidi",
+        "Jinglan Zhang",
+        "Amjad J. Humaidi",
+        "Ayad Q. Al-Dujaili",
+        "Ye Duan",
+        "Omran Al-Shamma",
+        "José Santamaría",
+        "Mohammed A. Fadhel",
+        "Muthana Al‐Amidie",
+        "Laith Farhan"
+      ],
+      "author_details": [
+        {
+          "name": "Laith Alzubaidi",
+          "orcid": "https://orcid.org/0000-0002-7296-5413",
+          "openalex_id": "A5102889969",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Jinglan Zhang",
+          "orcid": "https://orcid.org/0000-0001-6459-2963",
+          "openalex_id": "A5101979224",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Amjad J. Humaidi",
+          "orcid": "https://orcid.org/0000-0002-9071-1329",
+          "openalex_id": "A5016153721",
+          "institutions": [
+            "University of Technology - Iraq"
+          ]
+        },
+        {
+          "name": "Ayad Q. Al-Dujaili",
+          "orcid": "https://orcid.org/0000-0002-1126-3290",
+          "openalex_id": "A5052471696",
+          "institutions": [
+            "Middle Technical University"
+          ]
+        },
+        {
+          "name": "Ye Duan",
+          "orcid": "https://orcid.org/0000-0002-1166-7703",
+          "openalex_id": "A5101430356",
+          "institutions": [
+            "University of Missouri"
+          ]
+        },
+        {
+          "name": "Omran Al-Shamma",
+          "orcid": "https://orcid.org/0000-0001-5930-6176",
+          "openalex_id": "A5008534489",
+          "institutions": [
+            "University of Information Technology and Communications"
+          ]
+        },
+        {
+          "name": "José Santamaría",
+          "orcid": "https://orcid.org/0000-0002-2022-6838",
+          "openalex_id": "A5010765865",
+          "institutions": [
+            "Universidad de Jaén"
+          ]
+        },
+        {
+          "name": "Mohammed A. Fadhel",
+          "orcid": "https://orcid.org/0000-0001-9877-049X",
+          "openalex_id": "A5090966997",
+          "institutions": [
+            "Thi Qar University"
+          ]
+        },
+        {
+          "name": "Muthana Al‐Amidie",
+          "orcid": "https://orcid.org/0000-0002-8116-1871",
+          "openalex_id": "A5036536042",
+          "institutions": [
+            "University of Missouri"
+          ]
+        },
+        {
+          "name": "Laith Farhan",
+          "orcid": "https://orcid.org/0000-0001-8256-7323",
+          "openalex_id": "A5059266881",
+          "institutions": [
+            "Manchester Metropolitan University"
+          ]
+        }
+      ],
+      "abstract": "In the last few years, the deep learning (DL) computing paradigm has been deemed the Gold Standard in the machine learning (ML) community. Moreover, it has gradually become the most widely used computational approach in the field of ML, thus achieving outstanding results on several complex cognitive tasks, matching or even beating those provided by human performance. One of the benefits of DL is the ability to learn massive amounts of data. The DL field has grown fast in the last few years and it has been extensively used to successfully address a wide range of traditional applications. More importantly, DL has outperformed well-known ML techniques in many domains, e.g., cybersecurity, natural language processing, bioinformatics, robotics and control, and medical information processing, among many others. Despite it has been contributed several works reviewing the State-of-the-Art on DL, all of them only tackled one aspect of the DL, which leads to an overall lack of knowledge about it. Therefore, in this contribution, we propose using a more holistic approach in order to provide a more suitable starting point from which to develop a full understanding of DL. Specifically, this review attempts to provide a more comprehensive survey of the most important aspects of DL and including those enhancements recently added to the field. In particular, this paper outlines the importance of DL, presents the types of DL techniques and networks. It then presents convolutional neural networks (CNNs) which the most utilized DL network type and describes the development of CNNs architectures together with their main features, e.g., starting with the AlexNet network and closing with the High-Resolution network (HR.Net). Finally, we further present the challenges and suggested solutions to help researchers understand the existing research gaps. It is followed by a list of the major DL applications. Computational tools including FPGA, GPU, and CPU are summarized along with a description of their influence on DL. The paper ends with the evolution matrix, benchmark datasets, and summary and conclusion.",
+      "doi": "10.1186/s40537-021-00444-8",
+      "pdf_url": "https://journalofbigdata.springeropen.com/counter/pdf/10.1186/s40537-021-00444-8",
+      "url": "https://openalex.org/W3140854437",
+      "source_url": "https://openalex.org/W3140854437",
+      "year": 2021,
+      "date": "2021-03-31",
+      "doc_type": "article",
+      "journal": "Journal Of Big Data",
+      "cited_by_count": 7118,
+      "referenced_works_count": 362,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "COVID-19 diagnosis using AI",
+        "Anomaly Detection Techniques and Applications"
+      ],
+      "keywords": [
+        "Computer science",
+        "Artificial intelligence",
+        "Field (mathematics)",
+        "Deep learning",
+        "Convolutional neural network",
+        "Machine learning",
+        "Data science",
+        "Point (geometry)",
+        "Matching (statistics)"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4360620450",
+      "openalex_id": "W4360620450",
+      "title": "Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy",
+      "authors": [
+        "Yogesh K. Dwivedi",
+        "Nir Kshetri",
+        "Laurie Hughes",
+        "Emma Slade",
+        "Anand Jeyaraj",
+        "Arpan Kumar Kar",
+        "Abdullah M. Baabdullah",
+        "Alex Koohang",
+        "Vishnupriya Raghavan",
+        "Manju Ahuja",
+        "Hanaa Albanna",
+        "Mousa Ahmad Albashrawi",
+        "Adil S. Al-Busaidi",
+        "Janarthanan Balakrishnan",
+        "Yves Barlette",
+        "Sriparna Basu",
+        "Indranil Bose",
+        "Laurence Brooks",
+        "Dimitrios Buhalis",
+        "Lemuria Carter",
+        "Soumyadeb Chowdhury",
+        "Tom Crick",
+        "Scott W. Cunningham",
+        "Gareth H. Davies",
+        "Robert M. Davison",
+        "Rahul Dé",
+        "Denis Dennehy",
+        "Yanqing Duan",
+        "Rameshwar Dubey",
+        "Rohita Dwivedi",
+        "John S. Edwards",
+        "Carlos Flavián",
+        "Robin Gauld",
+        "Varun Grover",
+        "Mei‐Chih Hu",
+        "Marijn Janssen",
+        "Paul Jones",
+        "Iris Junglas",
+        "Sangeeta Khorana",
+        "Sascha Kraus",
+        "Kai R. Larsen",
+        "Paul Latreille",
+        "Sven Laumer",
+        "Tegwen Malik",
+        "Abbas Mardani",
+        "Marcello Mariani",
+        "Sunil Mithas",
+        "Emmanuel Mogaji",
+        "Jeretta Horn Nord",
+        "Siobhán O’Connor",
+        "Fevzi Okumus",
+        "Margherita Pagani",
+        "Neeraj Pandey",
+        "Savvas Papagiannidis",
+        "Ilias O. Pappas",
+        "Nishith Pathak",
+        "Jan Pries‐Heje",
+        "Ramakrishnan Raman",
+        "Nripendra P. Rana",
+        "Sven‐Volker Rehm",
+        "Samuel Ribeiro‐Navarrete",
+        "Alexander Richter",
+        "Frantz Rowe",
+        "Suprateek Sarker",
+        "Bernd Carsten Stahl",
+        "Manoj Tiwari",
+        "Wil van der Aalst",
+        "Viswanath Venkatesh",
+        "Giampaolo Viglia",
+        "Michael Wade",
+        "Paul Walton",
+        "Jochen Wirtz",
+        "Ryan Wright"
+      ],
+      "author_details": [
+        {
+          "name": "Yogesh K. Dwivedi",
+          "orcid": "https://orcid.org/0000-0002-5547-9990",
+          "openalex_id": "A5048622877",
+          "institutions": [
+            "Symbiosis International University",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Nir Kshetri",
+          "orcid": "https://orcid.org/0000-0002-1408-4212",
+          "openalex_id": "A5025481201",
+          "institutions": [
+            "University of North Carolina at Greensboro"
+          ]
+        },
+        {
+          "name": "Laurie Hughes",
+          "orcid": "https://orcid.org/0000-0002-0956-0608",
+          "openalex_id": "A5072512285",
+          "institutions": [
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Emma Slade",
+          "orcid": "https://orcid.org/0000-0001-7648-6383",
+          "openalex_id": "A5081524121",
+          "institutions": [
+            "University of Bristol"
+          ]
+        },
+        {
+          "name": "Anand Jeyaraj",
+          "orcid": "https://orcid.org/0000-0003-3691-881X",
+          "openalex_id": "A5057695278",
+          "institutions": [
+            "Wright State University"
+          ]
+        },
+        {
+          "name": "Arpan Kumar Kar",
+          "orcid": "https://orcid.org/0000-0003-4186-4887",
+          "openalex_id": "A5061235109",
+          "institutions": [
+            "Indian Institute of Technology Delhi"
+          ]
+        },
+        {
+          "name": "Abdullah M. Baabdullah",
+          "orcid": null,
+          "openalex_id": "A5017453435",
+          "institutions": [
+            "King Abdulaziz University"
+          ]
+        },
+        {
+          "name": "Alex Koohang",
+          "orcid": "https://orcid.org/0000-0002-4565-0408",
+          "openalex_id": "A5008571658",
+          "institutions": [
+            "Georgia State University",
+            "Middle Georgia State College"
+          ]
+        },
+        {
+          "name": "Vishnupriya Raghavan",
+          "orcid": null,
+          "openalex_id": "A5050603102",
+          "institutions": [
+            "NIIT (India)"
+          ]
+        },
+        {
+          "name": "Manju Ahuja",
+          "orcid": null,
+          "openalex_id": "A5018408477",
+          "institutions": [
+            "University of Louisville"
+          ]
+        },
+        {
+          "name": "Hanaa Albanna",
+          "orcid": null,
+          "openalex_id": "A5078874795",
+          "institutions": [
+            "Northumbria University"
+          ]
+        },
+        {
+          "name": "Mousa Ahmad Albashrawi",
+          "orcid": null,
+          "openalex_id": "A5019826465",
+          "institutions": [
+            "King Fahd University of Petroleum and Minerals"
+          ]
+        },
+        {
+          "name": "Adil S. Al-Busaidi",
+          "orcid": "https://orcid.org/0000-0002-0959-7419",
+          "openalex_id": "A5057159975",
+          "institutions": [
+            "Sultan Qaboos University"
+          ]
+        },
+        {
+          "name": "Janarthanan Balakrishnan",
+          "orcid": "https://orcid.org/0000-0003-2456-2617",
+          "openalex_id": "A5033683059",
+          "institutions": [
+            "National Institute of Technology Tiruchirappalli"
+          ]
+        },
+        {
+          "name": "Yves Barlette",
+          "orcid": "https://orcid.org/0000-0001-6106-7274",
+          "openalex_id": "A5041516869",
+          "institutions": [
+            "Montpellier Business School"
+          ]
+        },
+        {
+          "name": "Sriparna Basu",
+          "orcid": "https://orcid.org/0000-0001-7924-8153",
+          "openalex_id": "A5056774275",
+          "institutions": [
+            "Fore School of Management"
+          ]
+        },
+        {
+          "name": "Indranil Bose",
+          "orcid": "https://orcid.org/0000-0002-5737-966X",
+          "openalex_id": "A5045996720",
+          "institutions": [
+            "Indian Institute of Management Ahmedabad"
+          ]
+        },
+        {
+          "name": "Laurence Brooks",
+          "orcid": "https://orcid.org/0000-0002-5456-8799",
+          "openalex_id": "A5049268821",
+          "institutions": [
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Dimitrios Buhalis",
+          "orcid": "https://orcid.org/0000-0001-9148-6090",
+          "openalex_id": "A5068663980",
+          "institutions": [
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Lemuria Carter",
+          "orcid": "https://orcid.org/0000-0002-2364-3100",
+          "openalex_id": "A5067377847",
+          "institutions": [
+            "UNSW Sydney"
+          ]
+        },
+        {
+          "name": "Soumyadeb Chowdhury",
+          "orcid": "https://orcid.org/0000-0002-8074-248X",
+          "openalex_id": "A5067653484",
+          "institutions": [
+            "TBS Education"
+          ]
+        },
+        {
+          "name": "Tom Crick",
+          "orcid": "https://orcid.org/0000-0001-5196-9389",
+          "openalex_id": "A5015452463",
+          "institutions": [
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Scott W. Cunningham",
+          "orcid": "https://orcid.org/0000-0001-7140-916X",
+          "openalex_id": "A5000045142",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "University of Strathclyde",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Gareth H. Davies",
+          "orcid": null,
+          "openalex_id": "A5104108927",
+          "institutions": [
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Robert M. Davison",
+          "orcid": "https://orcid.org/0000-0002-7243-3521",
+          "openalex_id": "A5006120288",
+          "institutions": [
+            "City University of Hong Kong",
+            "Universidad de Zaragoza",
+            "Indian Institute of Management Bangalore"
+          ]
+        },
+        {
+          "name": "Rahul Dé",
+          "orcid": "https://orcid.org/0000-0002-1300-1438",
+          "openalex_id": "A5113796817",
+          "institutions": [
+            "University of Bristol"
+          ]
+        },
+        {
+          "name": "Denis Dennehy",
+          "orcid": "https://orcid.org/0000-0001-9931-762X",
+          "openalex_id": "A5083528596",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Yanqing Duan",
+          "orcid": "https://orcid.org/0000-0003-4205-7403",
+          "openalex_id": "A5032994640",
+          "institutions": [
+            "University of Bedfordshire",
+            "College of Charleston",
+            "Swansea University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Rameshwar Dubey",
+          "orcid": null,
+          "openalex_id": "A5112902933",
+          "institutions": [
+            "Montpellier Business School"
+          ]
+        },
+        {
+          "name": "Rohita Dwivedi",
+          "orcid": "https://orcid.org/0000-0003-3801-3635",
+          "openalex_id": "A5070017829",
+          "institutions": [
+            "Symbiosis International University",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "John S. Edwards",
+          "orcid": "https://orcid.org/0000-0003-3979-017X",
+          "openalex_id": "A5007695310",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Aston University",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Carlos Flavián",
+          "orcid": "https://orcid.org/0000-0001-7118-9013",
+          "openalex_id": "A5044113079",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Universidad de Zaragoza",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Robin Gauld",
+          "orcid": "https://orcid.org/0000-0001-5401-1192",
+          "openalex_id": "A5065964282",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Swansea University",
+            "University of Reading",
+            "University of Otago",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Varun Grover",
+          "orcid": null,
+          "openalex_id": "A5103134481",
+          "institutions": [
+            "University of Arkansas at Fayetteville"
+          ]
+        },
+        {
+          "name": "Mei‐Chih Hu",
+          "orcid": null,
+          "openalex_id": "A5112818613",
+          "institutions": [
+            "University of Louisville"
+          ]
+        },
+        {
+          "name": "Marijn Janssen",
+          "orcid": "https://orcid.org/0000-0001-6211-8790",
+          "openalex_id": "A5062073470",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University",
+            "Delft University of Technology"
+          ]
+        },
+        {
+          "name": "Paul Jones",
+          "orcid": "https://orcid.org/0000-0003-0417-9143",
+          "openalex_id": "A5080152304",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Iris Junglas",
+          "orcid": "https://orcid.org/0000-0002-2914-3879",
+          "openalex_id": "A5001364826",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Sangeeta Khorana",
+          "orcid": "https://orcid.org/0000-0001-8901-0050",
+          "openalex_id": "A5086148004",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Sascha Kraus",
+          "orcid": "https://orcid.org/0000-0002-3721-1122",
+          "openalex_id": "A5075871949",
+          "institutions": [
+            "Free University of Bozen-Bolzano",
+            "College of Charleston",
+            "University of Johannesburg",
+            "University of Otago",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Kai R. Larsen",
+          "orcid": "https://orcid.org/0000-0002-8812-9866",
+          "openalex_id": "A5075496480",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "University of Colorado Boulder",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Paul Latreille",
+          "orcid": "https://orcid.org/0000-0001-7685-6532",
+          "openalex_id": "A5109602539",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Sven Laumer",
+          "orcid": null,
+          "openalex_id": "A5107936554",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Tegwen Malik",
+          "orcid": "https://orcid.org/0000-0003-4315-5726",
+          "openalex_id": "A5090009163",
+          "institutions": [
+            "University of Manchester",
+            "Delft University of Technology"
+          ]
+        },
+        {
+          "name": "Abbas Mardani",
+          "orcid": "https://orcid.org/0000-0003-1010-3655",
+          "openalex_id": "A5033150664",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Marcello Mariani",
+          "orcid": null,
+          "openalex_id": "A5108091448",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University",
+            "University of Bologna"
+          ]
+        },
+        {
+          "name": "Sunil Mithas",
+          "orcid": "https://orcid.org/0000-0002-2182-6202",
+          "openalex_id": "A5086635152",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "University of South Florida",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Emmanuel Mogaji",
+          "orcid": "https://orcid.org/0000-0003-0544-4842",
+          "openalex_id": "A5082000265",
+          "institutions": [
+            "Oklahoma State University",
+            "University of Greenwich",
+            "University of Arkansas at Fayetteville"
+          ]
+        },
+        {
+          "name": "Jeretta Horn Nord",
+          "orcid": "https://orcid.org/0000-0001-7590-9022",
+          "openalex_id": "A5070124847",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Siobhán O’Connor",
+          "orcid": "https://orcid.org/0000-0001-8579-1718",
+          "openalex_id": "A5067043429",
+          "institutions": [
+            "University of Manchester"
+          ]
+        },
+        {
+          "name": "Fevzi Okumus",
+          "orcid": null,
+          "openalex_id": "A5114045132",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Margherita Pagani",
+          "orcid": "https://orcid.org/0000-0002-4269-9409",
+          "openalex_id": "A5074068450",
+          "institutions": [
+            "SKEMA Business School"
+          ]
+        },
+        {
+          "name": "Neeraj Pandey",
+          "orcid": "https://orcid.org/0000-0002-6238-6397",
+          "openalex_id": "A5035078504",
+          "institutions": [
+            "Free University of Bozen-Bolzano",
+            "College of Charleston",
+            "University of Johannesburg",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Savvas Papagiannidis",
+          "orcid": null,
+          "openalex_id": "A5006679927",
+          "institutions": [
+            "Aston University",
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Ilias O. Pappas",
+          "orcid": "https://orcid.org/0000-0001-7528-3488",
+          "openalex_id": "A5080505347",
+          "institutions": [
+            "Free University of Bozen-Bolzano",
+            "University of Johannesburg"
+          ]
+        },
+        {
+          "name": "Nishith Pathak",
+          "orcid": null,
+          "openalex_id": "A5108072182",
+          "institutions": [
+            "College of Charleston",
+            "National Tsing Hua University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Jan Pries‐Heje",
+          "orcid": "https://orcid.org/0000-0003-2219-9332",
+          "openalex_id": "A5074257477",
+          "institutions": [
+            "National Institute of Technology Tiruchirappalli"
+          ]
+        },
+        {
+          "name": "Ramakrishnan Raman",
+          "orcid": "https://orcid.org/0000-0003-3642-6989",
+          "openalex_id": "A5072261829",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Nripendra P. Rana",
+          "orcid": "https://orcid.org/0000-0003-1105-8729",
+          "openalex_id": "A5034248834",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Sven‐Volker Rehm",
+          "orcid": "https://orcid.org/0000-0002-9785-6707",
+          "openalex_id": "A5011882746",
+          "institutions": [
+            "Humans and management in society"
+          ]
+        },
+        {
+          "name": "Samuel Ribeiro‐Navarrete",
+          "orcid": "https://orcid.org/0000-0003-1046-5322",
+          "openalex_id": "A5006215958",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Alexander Richter",
+          "orcid": "https://orcid.org/0000-0002-3699-6466",
+          "openalex_id": "A5061717541",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Frantz Rowe",
+          "orcid": "https://orcid.org/0000-0001-8520-1570",
+          "openalex_id": "A5056984467",
+          "institutions": [
+            "Laboratoire d'Economie et de Management de Nantes Atlantique"
+          ]
+        },
+        {
+          "name": "Suprateek Sarker",
+          "orcid": "https://orcid.org/0000-0002-8079-3121",
+          "openalex_id": "A5060897112",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Bernd Carsten Stahl",
+          "orcid": "https://orcid.org/0000-0002-4058-4456",
+          "openalex_id": "A5042194412",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Universidad de Zaragoza",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Manoj Tiwari",
+          "orcid": "https://orcid.org/0000-0001-8949-0330",
+          "openalex_id": "A5101785022",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Wil van der Aalst",
+          "orcid": null,
+          "openalex_id": "A5114045133",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University",
+            "Delft University of Technology"
+          ]
+        },
+        {
+          "name": "Viswanath Venkatesh",
+          "orcid": null,
+          "openalex_id": "A5108144975",
+          "institutions": [
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Giampaolo Viglia",
+          "orcid": "https://orcid.org/0000-0001-8521-4988",
+          "openalex_id": "A5065568454",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Michael Wade",
+          "orcid": "https://orcid.org/0000-0002-0829-7422",
+          "openalex_id": "A5008575290",
+          "institutions": [
+            "Prin. L. N. Welingkar Institute of Management Development and Research",
+            "Montpellier Business School",
+            "Liverpool John Moores University"
+          ]
+        },
+        {
+          "name": "Paul Walton",
+          "orcid": null,
+          "openalex_id": "A5109157215",
+          "institutions": [
+            "Delft University of Technology"
+          ]
+        },
+        {
+          "name": "Jochen Wirtz",
+          "orcid": "https://orcid.org/0000-0002-6297-4498",
+          "openalex_id": "A5064998398",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Ryan Wright",
+          "orcid": "https://orcid.org/0000-0002-9719-415X",
+          "openalex_id": "A5060691228",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1016/j.ijinfomgt.2023.102642",
+      "pdf_url": "https://linkinghub.elsevier.com/science/article/pii/S0268401223000233/pdfft?md5=492895056a2fa29b1cb81876a1c57544&pid=1-s2.0-S0268401223000233-main.pdf",
+      "url": "https://openalex.org/W4360620450",
+      "source_url": "https://openalex.org/W4360620450",
+      "year": 2023,
+      "date": "2023-03-11",
+      "doc_type": "article",
+      "journal": "International Journal of Information Management",
+      "cited_by_count": 3309,
+      "referenced_works_count": 265,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "AI in Service Interactions",
+        "FinTech, Crowdfunding, Digital Finance"
+      ],
+      "keywords": [
+        "Transformative learning",
+        "Generative grammar",
+        "Knowledge management",
+        "Hospitality",
+        "Engineering ethics",
+        "Sociology",
+        "Tourism",
+        "Public relations",
+        "Political science",
+        "Computer science",
+        "Engineering",
+        "Artificial intelligence"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4386958277",
+      "openalex_id": "W4386958277",
+      "title": "Revolutionizing healthcare: the role of artificial intelligence in clinical practice",
+      "authors": [
+        "Shuroug A. Alowais",
+        "Sahar S. Alghamdi",
+        "Nada Alsuhebany",
+        "Tariq Alqahtani",
+        "Abdulrahman Alshaya",
+        "Sumaya N. Almohareb",
+        "Atheer Aldairem",
+        "Mohammed Alrashed",
+        "Khalid Bin Saleh",
+        "Hisham A. Badreldin",
+        "Majed S. Al Yami",
+        "Shmeylan Al Harbi",
+        "Abdulkareem Albekairy"
+      ],
+      "author_details": [
+        {
+          "name": "Shuroug A. Alowais",
+          "orcid": "https://orcid.org/0000-0002-3266-5774",
+          "openalex_id": "A5005352524",
+          "institutions": []
+        },
+        {
+          "name": "Sahar S. Alghamdi",
+          "orcid": "https://orcid.org/0000-0002-2770-218X",
+          "openalex_id": "A5050298886",
+          "institutions": [
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Nada Alsuhebany",
+          "orcid": "https://orcid.org/0000-0003-4077-4521",
+          "openalex_id": "A5081991977",
+          "institutions": [
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City",
+            "King Abdullah International Medical Research Center"
+          ]
+        },
+        {
+          "name": "Tariq Alqahtani",
+          "orcid": "https://orcid.org/0009-0007-1094-6835",
+          "openalex_id": "A5066001851",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City",
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences"
+          ]
+        },
+        {
+          "name": "Abdulrahman Alshaya",
+          "orcid": "https://orcid.org/0000-0002-5262-5841",
+          "openalex_id": "A5020760203",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Sumaya N. Almohareb",
+          "orcid": "https://orcid.org/0000-0003-3392-8369",
+          "openalex_id": "A5084394960",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City",
+            "King Abdullah International Medical Research Center"
+          ]
+        },
+        {
+          "name": "Atheer Aldairem",
+          "orcid": "https://orcid.org/0009-0001-0924-4672",
+          "openalex_id": "A5086178563",
+          "institutions": [
+            "King Abdullah International Medical Research Center",
+            "National Guard Health Affairs",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Mohammed Alrashed",
+          "orcid": "https://orcid.org/0000-0002-5203-8962",
+          "openalex_id": "A5069678285",
+          "institutions": [
+            "King Abdullah International Medical Research Center",
+            "National Guard Health Affairs",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Khalid Bin Saleh",
+          "orcid": null,
+          "openalex_id": "A5112910027",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City",
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences"
+          ]
+        },
+        {
+          "name": "Hisham A. Badreldin",
+          "orcid": "https://orcid.org/0000-0001-7182-4347",
+          "openalex_id": "A5088912799",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdullah International Medical Research Center"
+          ]
+        },
+        {
+          "name": "Majed S. Al Yami",
+          "orcid": "https://orcid.org/0000-0003-2308-8407",
+          "openalex_id": "A5005774540",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdullah International Medical Research Center",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Shmeylan Al Harbi",
+          "orcid": "https://orcid.org/0000-0003-4437-8761",
+          "openalex_id": "A5017442221",
+          "institutions": [
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdullah International Medical Research Center",
+            "King Abdulaziz Medical City",
+            "National Guard Health Affairs"
+          ]
+        },
+        {
+          "name": "Abdulkareem Albekairy",
+          "orcid": "https://orcid.org/0000-0002-0205-6484",
+          "openalex_id": "A5103246868",
+          "institutions": [
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City",
+            "National Guard Health Affairs"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1186/s12909-023-04698-z",
+      "pdf_url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-023-04698-z",
+      "url": "https://openalex.org/W4386958277",
+      "source_url": "https://openalex.org/W4386958277",
+      "year": 2023,
+      "date": "2023-09-22",
+      "doc_type": "review",
+      "journal": "BMC Medical Education",
+      "cited_by_count": 2523,
+      "referenced_works_count": 117,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "Ethics in Clinical Research",
+        "Machine Learning in Healthcare"
+      ],
+      "keywords": [
+        "Health care",
+        "MEDLINE",
+        "Applications of artificial intelligence",
+        "Medicine",
+        "Leverage (statistics)",
+        "Artificial intelligence",
+        "Computer science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3153990350",
+      "openalex_id": "W3153990350",
+      "title": "Machine learning and deep learning",
+      "authors": [
+        "Christian Janiesch",
+        "Patrick Zschech",
+        "Kai Heinrich"
+      ],
+      "author_details": [
+        {
+          "name": "Christian Janiesch",
+          "orcid": "https://orcid.org/",
+          "openalex_id": "",
+          "institutions": [
+            "University of Würzburg"
+          ]
+        },
+        {
+          "name": "Patrick Zschech",
+          "orcid": "https://orcid.org/0000-0002-1105-8086",
+          "openalex_id": "",
+          "institutions": [
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg"
+          ]
+        },
+        {
+          "name": "Kai Heinrich",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Otto-von-Guericke University Magdeburg"
+          ]
+        }
+      ],
+      "abstract": "Abstract Today, intelligent systems that offer artificial intelligence capabilities often rely on machine learning. Machine learning describes the capacity of systems to learn from problem-specific training data to automate the process of analytical model building and solve associated tasks. Deep learning is a machine learning concept based on artificial neural networks. For many applications, deep learning models outperform shallow machine learning models and traditional data analysis approaches. In this article, we summarize the fundamentals of machine learning and deep learning to generate a broader understanding of the methodical underpinning of current intelligent systems. In particular, we provide a conceptual distinction between relevant terms and concepts, explain the process of automated analytical model building through machine learning and deep learning, and discuss the challenges that arise when implementing such intelligent systems in the field of electronic markets and networked business. These naturally go beyond technological aspects and highlight issues in human-machine interaction and artificial intelligence servitization.",
+      "doi": "10.1007/s12525-021-00475-2",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12525-021-00475-2.pdf",
+      "url": "https://openalex.org/W3153990350",
+      "source_url": "https://openalex.org/W3153990350",
+      "year": 2021,
+      "date": "2021-04-08",
+      "doc_type": "article",
+      "journal": "Electronic Markets",
+      "cited_by_count": 2304,
+      "referenced_works_count": 53,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [],
+      "keywords": [
+        "Deep learning",
+        "Field (mathematics)",
+        "Process (computing)",
+        "Underpinning",
+        "Artificial neural network",
+        "Instance-based learning",
+        "Hyper-heuristic",
+        "Computational learning theory"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3023211159",
+      "openalex_id": "W3023211159",
+      "title": "A comprehensive survey on support vector machine classification: Applications, challenges and trends",
+      "authors": [
+        "Jair Cervantes",
+        "Farid García‐Lamont",
+        "Lisbeth Rodríguez-Mazahua",
+        "Asdrúbal López‐Chau"
+      ],
+      "author_details": [
+        {
+          "name": "Jair Cervantes",
+          "orcid": "https://orcid.org/0000-0003-2012-8151",
+          "openalex_id": "A5048103294",
+          "institutions": [
+            "Universidad Autónoma del Estado de México"
+          ]
+        },
+        {
+          "name": "Farid García‐Lamont",
+          "orcid": "https://orcid.org/0000-0002-9739-3802",
+          "openalex_id": "A5022867602",
+          "institutions": [
+            "Universidad Autónoma del Estado de México"
+          ]
+        },
+        {
+          "name": "Lisbeth Rodríguez-Mazahua",
+          "orcid": "https://orcid.org/0000-0002-9861-3993",
+          "openalex_id": "A5020368425",
+          "institutions": [
+            "Instituto Tecnologico de Orizaba"
+          ]
+        },
+        {
+          "name": "Asdrúbal López‐Chau",
+          "orcid": "https://orcid.org/0000-0001-5254-0939",
+          "openalex_id": "A5065258336",
+          "institutions": [
+            "Universidad Autónoma del Estado de México"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1016/j.neucom.2019.10.118",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0925231220307153",
+      "url": "https://openalex.org/W3023211159",
+      "source_url": "https://openalex.org/W3023211159",
+      "year": 2020,
+      "date": "2020-05-08",
+      "doc_type": "article",
+      "journal": "Neurocomputing",
+      "cited_by_count": 2169,
+      "referenced_works_count": 303,
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "topics": [
+        "Face and Expression Recognition",
+        "Imbalanced Data Classification Techniques",
+        "Text and Document Classification Technologies"
+      ],
+      "keywords": [
+        "Support vector machine",
+        "Machine learning",
+        "Artificial intelligence",
+        "Computer science",
+        "Ranking SVM",
+        "Data mining",
+        "Pattern recognition (psychology)"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W2747680751",
+      "openalex_id": "W2747680751",
+      "title": "Natural language processing: state of the art, current trends and challenges",
+      "authors": [
+        "Diksha Khurana",
+        "Aditya Koli",
+        "Kiran Khatter",
+        "Sukhdev Singh"
+      ],
+      "author_details": [
+        {
+          "name": "Diksha Khurana",
+          "orcid": null,
+          "openalex_id": "A5059223087",
+          "institutions": [
+            "Manav Rachna International Institute of Research and Studies"
+          ]
+        },
+        {
+          "name": "Aditya Koli",
+          "orcid": null,
+          "openalex_id": "A5037925675",
+          "institutions": [
+            "Manav Rachna International Institute of Research and Studies"
+          ]
+        },
+        {
+          "name": "Kiran Khatter",
+          "orcid": "https://orcid.org/0000-0002-1000-6102",
+          "openalex_id": "A5007623775",
+          "institutions": [
+            "BML Munjal University"
+          ]
+        },
+        {
+          "name": "Sukhdev Singh",
+          "orcid": "https://orcid.org/0000-0001-6282-4281",
+          "openalex_id": "A5004992343",
+          "institutions": []
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1007/s11042-022-13428-4",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11042-022-13428-4.pdf",
+      "url": "https://openalex.org/W2747680751",
+      "source_url": "https://openalex.org/W2747680751",
+      "year": 2022,
+      "date": "2022-07-14",
+      "doc_type": "article",
+      "journal": "Multimedia Tools and Applications",
+      "cited_by_count": 1644,
+      "referenced_works_count": 146,
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Text and Document Classification Technologies"
+      ],
+      "keywords": [
+        "Automatic summarization",
+        "Computer science",
+        "Natural language processing",
+        "Machine translation",
+        "Artificial intelligence",
+        "Question answering",
+        "Information extraction",
+        "Natural language generation",
+        "Natural language",
+        "Translation (biology)",
+        "State (computer science)",
+        "Programming language"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3176923149",
+      "openalex_id": "W3176923149",
+      "title": "Text Data Augmentation for Deep Learning",
+      "authors": [
+        "Connor Shorten",
+        "Taghi M. Khoshgoftaar",
+        "Borko Furht"
+      ],
+      "author_details": [
+        {
+          "name": "Connor Shorten",
+          "orcid": "https://orcid.org/0000-0001-6253-6861",
+          "openalex_id": "A5051577117",
+          "institutions": [
+            "Florida Atlantic University"
+          ]
+        },
+        {
+          "name": "Taghi M. Khoshgoftaar",
+          "orcid": null,
+          "openalex_id": "A5089170562",
+          "institutions": [
+            "Florida Atlantic University"
+          ]
+        },
+        {
+          "name": "Borko Furht",
+          "orcid": "https://orcid.org/0000-0002-3584-9659",
+          "openalex_id": "A5057260089",
+          "institutions": [
+            "Florida Atlantic University"
+          ]
+        }
+      ],
+      "abstract": "Natural Language Processing (NLP) is one of the most captivating applications of Deep Learning. In this survey, we consider how the Data Augmentation training strategy can aid in its development. We begin with the major motifs of Data Augmentation summarized into strengthening local decision boundaries, brute force training, causality and counterfactual examples, and the distinction between meaning and form. We follow these motifs with a concrete list of augmentation frameworks that have been developed for text data. Deep Learning generally struggles with the measurement of generalization and characterization of overfitting. We highlight studies that cover how augmentations can construct test sets for generalization. NLP is at an early stage in applying Data Augmentation compared to Computer Vision. We highlight the key differences and promising ideas that have yet to be tested in NLP. For the sake of practical implementation, we describe tools that facilitate Data Augmentation such as the use of consistency regularization, controllers, and offline and online augmentation pipelines, to preview a few. Finally, we discuss interesting topics around Data Augmentation in NLP such as task-specific augmentations, the use of prior knowledge in self-supervised learning versus Data Augmentation, intersections with transfer and multi-task learning, and ideas for AI-GAs (AI-Generating Algorithms). We hope this paper inspires further research interest in Text Data Augmentation.",
+      "doi": "10.1186/s40537-021-00492-0",
+      "pdf_url": "https://journalofbigdata.springeropen.com/track/pdf/10.1186/s40537-021-00492-0",
+      "url": "https://openalex.org/W3176923149",
+      "source_url": "https://openalex.org/W3176923149",
+      "year": 2021,
+      "date": "2021-07-19",
+      "doc_type": "article",
+      "journal": "Journal Of Big Data",
+      "cited_by_count": 1643,
+      "referenced_works_count": 129,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Topic Modeling",
+        "Text and Document Classification Technologies",
+        "Machine Learning in Healthcare"
+      ],
+      "keywords": [
+        "Computer science",
+        "Computational Science and Engineering",
+        "Deep learning",
+        "Artificial intelligence",
+        "Data science",
+        "Machine learning"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4362515116",
+      "openalex_id": "W4362515116",
+      "title": "A Survey of Large Language Models",
+      "authors": [
+        "Wayne Xin Zhao",
+        "Kun Zhou",
+        "Junyi Li",
+        "Tianyi Tang",
+        "Xiaolei Wang",
+        "Yupeng Hou",
+        "Yingqian Min",
+        "Beichen Zhang",
+        "Junjie Zhang",
+        "Zican Dong",
+        "Yifan Du",
+        "Yang Chen",
+        "Yushuo Chen",
+        "Zhipeng Chen",
+        "Jinhao Jiang",
+        "Ruiyang Ren",
+        "Yifan Li",
+        "Xinyu Tang",
+        "Zikang Liu",
+        "Peiyu Liu",
+        "Jian‐Yun Nie",
+        "Ji-Rong Wen"
+      ],
+      "author_details": [
+        {
+          "name": "Wayne Xin Zhao",
+          "orcid": "https://orcid.org/0000-0002-8333-6196",
+          "openalex_id": "A5037145565",
+          "institutions": []
+        },
+        {
+          "name": "Kun Zhou",
+          "orcid": "https://orcid.org/0000-0001-7660-2911",
+          "openalex_id": "A5100722039",
+          "institutions": []
+        },
+        {
+          "name": "Junyi Li",
+          "orcid": "https://orcid.org/0009-0007-0480-5593",
+          "openalex_id": "A5100363220",
+          "institutions": []
+        },
+        {
+          "name": "Tianyi Tang",
+          "orcid": "https://orcid.org/0000-0002-4352-8222",
+          "openalex_id": "A5030566556",
+          "institutions": []
+        },
+        {
+          "name": "Xiaolei Wang",
+          "orcid": "https://orcid.org/0000-0003-3685-3606",
+          "openalex_id": "A5100367735",
+          "institutions": []
+        },
+        {
+          "name": "Yupeng Hou",
+          "orcid": "https://orcid.org/0000-0002-0747-8010",
+          "openalex_id": "A5052347581",
+          "institutions": []
+        },
+        {
+          "name": "Yingqian Min",
+          "orcid": null,
+          "openalex_id": "A5059541770",
+          "institutions": []
+        },
+        {
+          "name": "Beichen Zhang",
+          "orcid": "https://orcid.org/0000-0001-5030-0632",
+          "openalex_id": "A5101849100",
+          "institutions": []
+        },
+        {
+          "name": "Junjie Zhang",
+          "orcid": "https://orcid.org/0000-0002-0033-0494",
+          "openalex_id": "A5100343044",
+          "institutions": []
+        },
+        {
+          "name": "Zican Dong",
+          "orcid": null,
+          "openalex_id": "A5018732664",
+          "institutions": []
+        },
+        {
+          "name": "Yifan Du",
+          "orcid": "https://orcid.org/0000-0002-0734-9200",
+          "openalex_id": "A5001058167",
+          "institutions": []
+        },
+        {
+          "name": "Yang Chen",
+          "orcid": "https://orcid.org/0000-0003-4749-3060",
+          "openalex_id": "A5100350503",
+          "institutions": []
+        },
+        {
+          "name": "Yushuo Chen",
+          "orcid": "https://orcid.org/0000-0002-9091-6711",
+          "openalex_id": "A5008293262",
+          "institutions": []
+        },
+        {
+          "name": "Zhipeng Chen",
+          "orcid": "https://orcid.org/0000-0002-8330-0070",
+          "openalex_id": "A5100325084",
+          "institutions": []
+        },
+        {
+          "name": "Jinhao Jiang",
+          "orcid": null,
+          "openalex_id": "A5069058824",
+          "institutions": []
+        },
+        {
+          "name": "Ruiyang Ren",
+          "orcid": "https://orcid.org/0000-0002-0562-9911",
+          "openalex_id": "A5074848230",
+          "institutions": []
+        },
+        {
+          "name": "Yifan Li",
+          "orcid": "https://orcid.org/0009-0006-1222-7706",
+          "openalex_id": "A5100427047",
+          "institutions": []
+        },
+        {
+          "name": "Xinyu Tang",
+          "orcid": "https://orcid.org/0000-0001-9221-154X",
+          "openalex_id": "A5102019389",
+          "institutions": []
+        },
+        {
+          "name": "Zikang Liu",
+          "orcid": "https://orcid.org/0000-0002-8947-7053",
+          "openalex_id": "A5008547683",
+          "institutions": []
+        },
+        {
+          "name": "Peiyu Liu",
+          "orcid": "https://orcid.org/0000-0002-2905-5473",
+          "openalex_id": "A5100716216",
+          "institutions": []
+        },
+        {
+          "name": "Jian‐Yun Nie",
+          "orcid": "https://orcid.org/0000-0003-1556-3335",
+          "openalex_id": "A5018977183",
+          "institutions": []
+        },
+        {
+          "name": "Ji-Rong Wen",
+          "orcid": "https://orcid.org/0000-0002-9777-9676",
+          "openalex_id": "A5025631695",
+          "institutions": []
+        }
+      ],
+      "abstract": "Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. Since researchers have found that model scaling can lead to performance improvement, they further study the scaling effect by increasing the model size to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance improvement but also show some special abilities that are not present in small-scale language models. To discriminate the difference in parameter scale, the research community has coined the term large language models (LLM) for the PLMs of significant size. Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT, which has attracted widespread attention from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. In this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.",
+      "doi": "10.48550/arxiv.2303.18223",
+      "pdf_url": "https://arxiv.org/pdf/2303.18223",
+      "url": "https://openalex.org/W4362515116",
+      "source_url": "https://openalex.org/W4362515116",
+      "year": 2023,
+      "date": "2023-03-31",
+      "doc_type": "preprint",
+      "journal": "ArXiv.org",
+      "cited_by_count": 1373,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Language model",
+        "Computer science",
+        "Mainstream",
+        "Scale (ratio)",
+        "Artificial intelligence",
+        "Scaling",
+        "Natural language processing",
+        "Data science",
+        "Political science",
+        "Mathematics"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4387835442",
+      "openalex_id": "W4387835442",
+      "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+      "authors": [
+        "Joon Sung Park",
+        "Joseph O’Brien",
+        "Carrie J. Cai",
+        "Meredith Ringel Morris",
+        "Percy Liang",
+        "Michael S. Bernstein"
+      ],
+      "author_details": [
+        {
+          "name": "Joon Sung Park",
+          "orcid": "https://orcid.org/0000-0001-5036-4409",
+          "openalex_id": "A5053096615",
+          "institutions": [
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Joseph O’Brien",
+          "orcid": "https://orcid.org/0009-0004-0781-926X",
+          "openalex_id": "A5101464503",
+          "institutions": [
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Carrie J. Cai",
+          "orcid": "https://orcid.org/0000-0001-9421-7128",
+          "openalex_id": "A5065663195",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Meredith Ringel Morris",
+          "orcid": "https://orcid.org/0000-0003-1436-9223",
+          "openalex_id": "A5062285844",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Percy Liang",
+          "orcid": "https://orcid.org/0000-0002-0458-6139",
+          "openalex_id": "A5025255782",
+          "institutions": [
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Michael S. Bernstein",
+          "orcid": "https://orcid.org/0000-0001-8020-9434",
+          "openalex_id": "A5076189854",
+          "institutions": [
+            "Stanford University"
+          ]
+        }
+      ],
+      "abstract": "Believable proxies of human behavior can empower interactive applications ranging from immersive environments to rehearsal spaces for interpersonal communication to prototyping tools. In this paper, we introduce generative agents: computational software agents that simulate believable human behavior. Generative agents wake up, cook breakfast, and head to work; artists paint, while authors write; they form opinions, notice each other, and initiate conversations; they remember and reflect on days past as they plan the next day. To enable generative agents, we describe an architecture that extends a large language model to store a complete record of the agent’s experiences using natural language, synthesize those memories over time into higher-level reflections, and retrieve them dynamically to plan behavior. We instantiate generative agents to populate an interactive sandbox environment inspired by The Sims, where end users can interact with a small town of twenty-five agents using natural language. In an evaluation, these generative agents produce believable individual and emergent social behaviors. For example, starting with only a single user-specified notion that one agent wants to throw a Valentine’s Day party, the agents autonomously spread invitations to the party over the next two days, make new acquaintances, ask each other out on dates to the party, and coordinate to show up for the party together at the right time. We demonstrate through ablation that the components of our agent architecture—observation, planning, and reflection—each contribute critically to the believability of agent behavior. By fusing large language models with computational interactive agents, this work introduces architectural and interaction patterns for enabling believable simulations of human behavior.",
+      "doi": "10.1145/3586183.3606763",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3586183.3606763",
+      "url": "https://openalex.org/W4387835442",
+      "source_url": "https://openalex.org/W4387835442",
+      "year": 2023,
+      "date": "2023-10-20",
+      "doc_type": "article",
+      "journal": null,
+      "cited_by_count": 1176,
+      "referenced_works_count": 68,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Artificial Intelligence in Games",
+        "Social Robot Interaction and HRI",
+        "Reinforcement Learning in Robotics"
+      ],
+      "keywords": [
+        "Generative grammar",
+        "Computer science",
+        "Artificial intelligence",
+        "Human–computer interaction",
+        "Generative model"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3208687975",
+      "openalex_id": "W3208687975",
+      "title": "Recent advances and applications of deep learning methods in materials science",
+      "authors": [
+        "Kamal Choudhary",
+        "Brian DeCost",
+        "Chi Chen",
+        "Anubhav Jain",
+        "Francesca Tavazza",
+        "Ryan Cohn",
+        "Cheol Woo Park",
+        "Alok Choudhary",
+        "Ankit Agrawal",
+        "Simon J. L. Billinge",
+        "Elizabeth A. Holm",
+        "Shyue Ping Ong",
+        "Chris Wolverton"
+      ],
+      "author_details": [
+        {
+          "name": "Kamal Choudhary",
+          "orcid": "https://orcid.org/0000-0001-9737-8074",
+          "openalex_id": "A5019215236",
+          "institutions": [
+            "National Institute of Standards and Technology",
+            "National Labor College",
+            "Theiss Research"
+          ]
+        },
+        {
+          "name": "Brian DeCost",
+          "orcid": "https://orcid.org/0000-0002-3459-5888",
+          "openalex_id": "A5053080365",
+          "institutions": [
+            "National Institute of Standards and Technology",
+            "Material Measurement Laboratory"
+          ]
+        },
+        {
+          "name": "Chi Chen",
+          "orcid": "https://orcid.org/0000-0001-8008-7043",
+          "openalex_id": "A5100435616",
+          "institutions": [
+            "University of California, San Diego"
+          ]
+        },
+        {
+          "name": "Anubhav Jain",
+          "orcid": "https://orcid.org/0000-0001-5893-9967",
+          "openalex_id": "A5003640520",
+          "institutions": [
+            "Lawrence Berkeley National Laboratory"
+          ]
+        },
+        {
+          "name": "Francesca Tavazza",
+          "orcid": "https://orcid.org/0000-0002-5602-180X",
+          "openalex_id": "A5088846466",
+          "institutions": [
+            "National Institute of Standards and Technology"
+          ]
+        },
+        {
+          "name": "Ryan Cohn",
+          "orcid": "https://orcid.org/0000-0002-7898-0059",
+          "openalex_id": "A5078422186",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        },
+        {
+          "name": "Cheol Woo Park",
+          "orcid": null,
+          "openalex_id": "A5066580911",
+          "institutions": [
+            "Northwestern University"
+          ]
+        },
+        {
+          "name": "Alok Choudhary",
+          "orcid": "https://orcid.org/0000-0001-8152-6319",
+          "openalex_id": "A5074976770",
+          "institutions": [
+            "Northwestern University"
+          ]
+        },
+        {
+          "name": "Ankit Agrawal",
+          "orcid": "https://orcid.org/0000-0002-5519-0302",
+          "openalex_id": "A5004659592",
+          "institutions": [
+            "Northwestern University"
+          ]
+        },
+        {
+          "name": "Simon J. L. Billinge",
+          "orcid": "https://orcid.org/0000-0002-9734-4998",
+          "openalex_id": "A5065794019",
+          "institutions": [
+            "Columbia University"
+          ]
+        },
+        {
+          "name": "Elizabeth A. Holm",
+          "orcid": "https://orcid.org/0000-0003-3064-5769",
+          "openalex_id": "A5016287426",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        },
+        {
+          "name": "Shyue Ping Ong",
+          "orcid": "https://orcid.org/0000-0001-5726-2587",
+          "openalex_id": "A5002723657",
+          "institutions": [
+            "University of California, San Diego"
+          ]
+        },
+        {
+          "name": "Chris Wolverton",
+          "orcid": "https://orcid.org/0000-0003-2248-474X",
+          "openalex_id": "A5087949669",
+          "institutions": [
+            "Northwestern University"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1038/s41524-022-00734-6",
+      "pdf_url": "https://www.nature.com/articles/s41524-022-00734-6.pdf",
+      "url": "https://openalex.org/W3208687975",
+      "source_url": "https://openalex.org/W3208687975",
+      "year": 2022,
+      "date": "2022-04-05",
+      "doc_type": "article",
+      "journal": "npj Computational Materials",
+      "cited_by_count": 972,
+      "referenced_works_count": 455,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Machine Learning in Materials Science",
+        "X-ray Diffraction in Crystallography",
+        "Electron and X-Ray Spectroscopy Techniques"
+      ],
+      "keywords": [
+        "Deep learning",
+        "Computer science",
+        "Data science",
+        "Field (mathematics)",
+        "Artificial intelligence",
+        "Identification (biology)",
+        "Generative grammar",
+        "Perspective (graphical)",
+        "Modalities",
+        "Machine learning"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3089252064",
+      "openalex_id": "W3089252064",
+      "title": "Artificial intelligence in supply chain management: A systematic literature review",
+      "authors": [
+        "Reza Toorajipour",
+        "Vahid Sohrabpour",
+        "Ali Nazarpour",
+        "Pejvak Oghazi",
+        "Maria Fischl"
+      ],
+      "author_details": [
+        {
+          "name": "Reza Toorajipour",
+          "orcid": "https://orcid.org/0000-0003-3682-299X",
+          "openalex_id": "A5035205750",
+          "institutions": [
+            "Mälardalen University"
+          ]
+        },
+        {
+          "name": "Vahid Sohrabpour",
+          "orcid": null,
+          "openalex_id": "A5053032836",
+          "institutions": [
+            "Copenhagen Business School",
+            "Ideon Science Park",
+            "Ideon Innovation (Sweden)"
+          ]
+        },
+        {
+          "name": "Ali Nazarpour",
+          "orcid": "https://orcid.org/0000-0003-0793-3754",
+          "openalex_id": "A5042770678",
+          "institutions": [
+            "National University of Ireland, Maynooth"
+          ]
+        },
+        {
+          "name": "Pejvak Oghazi",
+          "orcid": "https://orcid.org/0000-0003-2125-6155",
+          "openalex_id": "A5040479320",
+          "institutions": [
+            "Södertörn University"
+          ]
+        },
+        {
+          "name": "Maria Fischl",
+          "orcid": null,
+          "openalex_id": "A5057388751",
+          "institutions": [
+            "Siemens (Germany)"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1016/j.jbusres.2020.09.009",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S014829632030583X?via%3Dihub",
+      "url": "https://openalex.org/W3089252064",
+      "source_url": "https://openalex.org/W3089252064",
+      "year": 2020,
+      "date": "2020-09-24",
+      "doc_type": "article",
+      "journal": "Journal of Business Research",
+      "cited_by_count": 841,
+      "referenced_works_count": 196,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Quality and Supply Management",
+        "Digital Transformation in Industry",
+        "Advanced Manufacturing and Logistics Optimization"
+      ],
+      "keywords": [
+        "Supply chain",
+        "Systematic review",
+        "Supply chain management",
+        "Computer science",
+        "Scientific literature",
+        "Applications of artificial intelligence",
+        "Management science",
+        "Knowledge management",
+        "Process management",
+        "Business",
+        "Artificial intelligence",
+        "Marketing",
+        "Engineering",
+        "Political science",
+        "MEDLINE"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4366091323",
+      "openalex_id": "W4366091323",
+      "title": "Deep learning modelling techniques: current progress, applications, advantages, and challenges",
+      "authors": [
+        "Shams Forruque Ahmed",
+        "Md. Sakib Bin Alam",
+        "Maruf Hassan",
+        "Mahtabin Rodela Rozbu",
+        "Taoseef Ishtiak",
+        "Nazifa Rafa",
+        "M. Mofijur",
+        "A. B. M. Shawkat Ali",
+        "Amir H. Gandomi"
+      ],
+      "author_details": [
+        {
+          "name": "Shams Forruque Ahmed",
+          "orcid": "https://orcid.org/0000-0003-3360-3636",
+          "openalex_id": "A5073938714",
+          "institutions": [
+            "Asian University for Women"
+          ]
+        },
+        {
+          "name": "Md. Sakib Bin Alam",
+          "orcid": "https://orcid.org/0000-0003-3009-2228",
+          "openalex_id": "A5056383055",
+          "institutions": [
+            "Asian Institute of Technology"
+          ]
+        },
+        {
+          "name": "Maruf Hassan",
+          "orcid": null,
+          "openalex_id": "A5075887922",
+          "institutions": [
+            "Asian University for Women"
+          ]
+        },
+        {
+          "name": "Mahtabin Rodela Rozbu",
+          "orcid": null,
+          "openalex_id": "A5004666484",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        },
+        {
+          "name": "Taoseef Ishtiak",
+          "orcid": null,
+          "openalex_id": "A5041357642",
+          "institutions": [
+            "Carleton University"
+          ]
+        },
+        {
+          "name": "Nazifa Rafa",
+          "orcid": "https://orcid.org/0000-0003-0595-8253",
+          "openalex_id": "A5079931078",
+          "institutions": [
+            "University of Cambridge"
+          ]
+        },
+        {
+          "name": "M. Mofijur",
+          "orcid": null,
+          "openalex_id": "A5107942006",
+          "institutions": [
+            "University of Technology Sydney",
+            "Prince Mohammad bin Fahd University"
+          ]
+        },
+        {
+          "name": "A. B. M. Shawkat Ali",
+          "orcid": "https://orcid.org/0000-0001-9673-0080",
+          "openalex_id": "A5100326993",
+          "institutions": [
+            "University of Fiji",
+            "Central Queensland University"
+          ]
+        },
+        {
+          "name": "Amir H. Gandomi",
+          "orcid": "https://orcid.org/0000-0002-2798-0104",
+          "openalex_id": "A5039341855",
+          "institutions": [
+            "Obuda University",
+            "University of Technology Sydney"
+          ]
+        }
+      ],
+      "abstract": "Abstract Deep learning (DL) is revolutionizing evidence-based decision-making techniques that can be applied across various sectors. Specifically, it possesses the ability to utilize two or more levels of non-linear feature transformation of the given data via representation learning in order to overcome limitations posed by large datasets. As a multidisciplinary field that is still in its nascent phase, articles that survey DL architectures encompassing the full scope of the field are rather limited. Thus, this paper comprehensively reviews the state-of-art DL modelling techniques and provides insights into their advantages and challenges. It was found that many of the models exhibit a highly domain-specific efficiency and could be trained by two or more methods. However, training DL models can be very time-consuming, expensive, and requires huge samples for better accuracy. Since DL is also susceptible to deception and misclassification and tends to get stuck on local minima, improved optimization of parameters is required to create more robust models. Regardless, DL has already been leading to groundbreaking results in the healthcare, education, security, commercial, industrial, as well as government sectors. Some models, like the convolutional neural network (CNN), generative adversarial networks (GAN), recurrent neural network (RNN), recursive neural networks, and autoencoders, are frequently used, while the potential of other models remains widely unexplored. Pertinently, hybrid conventional DL architectures have the capacity to overcome the challenges experienced by conventional models. Considering that capsule architectures may dominate future DL models, this work aimed to compile information for stakeholders involved in the development and use of DL models in the contemporary world.",
+      "doi": "10.1007/s10462-023-10466-8",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-023-10466-8.pdf",
+      "url": "https://openalex.org/W4366091323",
+      "source_url": "https://openalex.org/W4366091323",
+      "year": 2023,
+      "date": "2023-04-17",
+      "doc_type": "article",
+      "journal": "Artificial Intelligence Review",
+      "cited_by_count": 821,
+      "referenced_works_count": 258,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Anomaly Detection Techniques and Applications",
+        "COVID-19 diagnosis using AI",
+        "Explainable Artificial Intelligence (XAI)"
+      ],
+      "keywords": [
+        "Computer science",
+        "Deep learning",
+        "Artificial intelligence",
+        "Machine learning",
+        "Field (mathematics)",
+        "Convolutional neural network",
+        "Benchmark (surveying)",
+        "Feature learning",
+        "Data science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4391876619",
+      "openalex_id": "W4391876619",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "authors": [
+        "Nelson F. Liu",
+        "Kevin Lin",
+        "John Hewitt",
+        "Ashwin Paranjape",
+        "Michele Bevilacqua",
+        "Fabio Petroni",
+        "Percy Liang"
+      ],
+      "author_details": [
+        {
+          "name": "Nelson F. Liu",
+          "orcid": null,
+          "openalex_id": "A5031981513",
+          "institutions": [
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Kevin Lin",
+          "orcid": "https://orcid.org/0000-0002-1236-9847",
+          "openalex_id": "A5074764224",
+          "institutions": [
+            "University of California, Berkeley"
+          ]
+        },
+        {
+          "name": "John Hewitt",
+          "orcid": "https://orcid.org/0000-0003-1320-6633",
+          "openalex_id": "A5075075495",
+          "institutions": [
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Ashwin Paranjape",
+          "orcid": null,
+          "openalex_id": "A5067264969",
+          "institutions": []
+        },
+        {
+          "name": "Michele Bevilacqua",
+          "orcid": "https://orcid.org/0000-0001-7955-0117",
+          "openalex_id": "A5036241567",
+          "institutions": []
+        },
+        {
+          "name": "Fabio Petroni",
+          "orcid": null,
+          "openalex_id": "A5112562416",
+          "institutions": []
+        },
+        {
+          "name": "Percy Liang",
+          "orcid": "https://orcid.org/0000-0002-0458-6139",
+          "openalex_id": "A5025255782",
+          "institutions": [
+            "Stanford University"
+          ]
+        }
+      ],
+      "abstract": "Abstract While recent language models have the ability to take long contexts as input, relatively little is known about how well they use longer context. We analyze the performance of language models on two tasks that require identifying relevant information in their input contexts: multi-document question answering and key-value retrieval. We find that performance can degrade significantly when changing the position of relevant information, indicating that current language models do not robustly make use of information in long input contexts. In particular, we observe that performance is often highest when relevant information occurs at the beginning or end of the input context, and significantly degrades when models must access relevant information in the middle of long contexts, even for explicitly long-context models. Our analysis provides a better understanding of how language models use their input context and provides new evaluation protocols for future long-context language models.",
+      "doi": "10.1162/tacl_a_00638",
+      "pdf_url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00638/2336043/tacl_a_00638.pdf",
+      "url": "https://openalex.org/W4391876619",
+      "source_url": "https://openalex.org/W4391876619",
+      "year": 2024,
+      "date": "2024-01-01",
+      "doc_type": "article",
+      "journal": "Transactions of the Association for Computational Linguistics",
+      "cited_by_count": 722,
+      "referenced_works_count": 55,
+      "is_open_access": true,
+      "oa_status": "diamond",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Multimodal Machine Learning Applications"
+      ],
+      "keywords": [
+        "Computer science",
+        "Language model",
+        "Natural language processing",
+        "Artificial intelligence",
+        "Linguistics",
+        "Data science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4365504037",
+      "openalex_id": "W4365504037",
+      "title": "A survey on deep learning tools dealing with data scarcity: definitions, challenges, solutions, tips, and applications",
+      "authors": [
+        "Laith Alzubaidi",
+        "Jinshuai Bai",
+        "Aiman Al-Sabaawi",
+        "José Santamaría",
+        "A. S. Albahri",
+        "Bashar Sami Nayyef Al-dabbagh",
+        "Mohammed A. Fadhel",
+        "Mohamed Manoufali",
+        "Jinglan Zhang",
+        "Ali H. Al‐Timemy",
+        "Ye Duan",
+        "Amjed Abdullah",
+        "Laith Farhan",
+        "Yi Lu",
+        "Ashish Gupta",
+        "Felix Albu",
+        "Amin Abbosh",
+        "Yuantong Gu"
+      ],
+      "author_details": [
+        {
+          "name": "Laith Alzubaidi",
+          "orcid": "https://orcid.org/0000-0002-7296-5413",
+          "openalex_id": "A5102889969",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Jinshuai Bai",
+          "orcid": "https://orcid.org/0000-0002-0753-6428",
+          "openalex_id": "A5021489599",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Aiman Al-Sabaawi",
+          "orcid": "https://orcid.org/0000-0002-0465-8091",
+          "openalex_id": "A5062462649",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "José Santamaría",
+          "orcid": "https://orcid.org/0000-0002-2022-6838",
+          "openalex_id": "A5010765865",
+          "institutions": [
+            "Universidad de Jaén"
+          ]
+        },
+        {
+          "name": "A. S. Albahri",
+          "orcid": "https://orcid.org/0000-0003-3335-457X",
+          "openalex_id": "A5012505948",
+          "institutions": [
+            "Sultan Idris Education University"
+          ]
+        },
+        {
+          "name": "Bashar Sami Nayyef Al-dabbagh",
+          "orcid": null,
+          "openalex_id": "A5052319607",
+          "institutions": [
+            "Universidad Carlos III de Madrid"
+          ]
+        },
+        {
+          "name": "Mohammed A. Fadhel",
+          "orcid": "https://orcid.org/0000-0001-9877-049X",
+          "openalex_id": "A5090966997",
+          "institutions": [
+            "Thi Qar University"
+          ]
+        },
+        {
+          "name": "Mohamed Manoufali",
+          "orcid": "https://orcid.org/0000-0002-9140-6529",
+          "openalex_id": "A5066987395",
+          "institutions": [
+            "The University of Queensland"
+          ]
+        },
+        {
+          "name": "Jinglan Zhang",
+          "orcid": "https://orcid.org/0000-0001-6459-2963",
+          "openalex_id": "A5101979224",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Ali H. Al‐Timemy",
+          "orcid": "https://orcid.org/0000-0003-2738-8896",
+          "openalex_id": "A5066206447",
+          "institutions": [
+            "University of Baghdad"
+          ]
+        },
+        {
+          "name": "Ye Duan",
+          "orcid": "https://orcid.org/0000-0002-1166-7703",
+          "openalex_id": "A5101430356",
+          "institutions": [
+            "University of Missouri"
+          ]
+        },
+        {
+          "name": "Amjed Abdullah",
+          "orcid": "https://orcid.org/0000-0002-8769-6826",
+          "openalex_id": "A5085799439",
+          "institutions": [
+            "University of Missouri"
+          ]
+        },
+        {
+          "name": "Laith Farhan",
+          "orcid": "https://orcid.org/0000-0001-8256-7323",
+          "openalex_id": "A5059266881",
+          "institutions": [
+            "Manchester Metropolitan University"
+          ]
+        },
+        {
+          "name": "Yi Lu",
+          "orcid": "https://orcid.org/0000-0001-6097-100X",
+          "openalex_id": "A5102902635",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Ashish Gupta",
+          "orcid": "https://orcid.org/0000-0003-4593-3261",
+          "openalex_id": "A5035513892",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Felix Albu",
+          "orcid": "https://orcid.org/0000-0002-3240-809X",
+          "openalex_id": "A5088650299",
+          "institutions": [
+            "Valahia University of Targoviste"
+          ]
+        },
+        {
+          "name": "Amin Abbosh",
+          "orcid": "https://orcid.org/0000-0002-8015-5883",
+          "openalex_id": "A5017903283",
+          "institutions": [
+            "The University of Queensland"
+          ]
+        },
+        {
+          "name": "Yuantong Gu",
+          "orcid": "https://orcid.org/0000-0002-2770-5014",
+          "openalex_id": "A5108068122",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        }
+      ],
+      "abstract": "Abstract Data scarcity is a major challenge when training deep learning (DL) models. DL demands a large amount of data to achieve exceptional performance. Unfortunately, many applications have small or inadequate data to train DL frameworks. Usually, manual labeling is needed to provide labeled data, which typically involves human annotators with a vast background of knowledge. This annotation process is costly, time-consuming, and error-prone. Usually, every DL framework is fed by a significant amount of labeled data to automatically learn representations. Ultimately, a larger amount of data would generate a better DL model and its performance is also application dependent. This issue is the main barrier for many applications dismissing the use of DL. Having sufficient data is the first step toward any successful and trustworthy DL application. This paper presents a holistic survey on state-of-the-art techniques to deal with training DL models to overcome three challenges including small, imbalanced datasets, and lack of generalization. This survey starts by listing the learning techniques. Next, the types of DL architectures are introduced. After that, state-of-the-art solutions to address the issue of lack of training data are listed, such as Transfer Learning (TL), Self-Supervised Learning (SSL), Generative Adversarial Networks (GANs), Model Architecture (MA), Physics-Informed Neural Network (PINN), and Deep Synthetic Minority Oversampling Technique (DeepSMOTE). Then, these solutions were followed by some related tips about data acquisition needed prior to training purposes, as well as recommendations for ensuring the trustworthiness of the training dataset. The survey ends with a list of applications that suffer from data scarcity, several alternatives are proposed in order to generate more data in each application including Electromagnetic Imaging (EMI), Civil Structural Health Monitoring, Medical imaging, Meteorology, Wireless Communications, Fluid Mechanics, Microelectromechanical system, and Cybersecurity. To the best of the authors’ knowledge, this is the first review that offers a comprehensive overview on strategies to tackle data scarcity in DL.",
+      "doi": "10.1186/s40537-023-00727-2",
+      "pdf_url": "https://journalofbigdata.springeropen.com/counter/pdf/10.1186/s40537-023-00727-2",
+      "url": "https://openalex.org/W4365504037",
+      "source_url": "https://openalex.org/W4365504037",
+      "year": 2023,
+      "date": "2023-04-14",
+      "doc_type": "article",
+      "journal": "Journal Of Big Data",
+      "cited_by_count": 704,
+      "referenced_works_count": 561,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "COVID-19 diagnosis using AI",
+        "Anomaly Detection Techniques and Applications",
+        "Domain Adaptation and Few-Shot Learning"
+      ],
+      "keywords": [
+        "Computer science",
+        "Deep learning",
+        "Artificial intelligence",
+        "Machine learning",
+        "Generalization",
+        "Scarcity",
+        "Process (computing)",
+        "Data science",
+        "Transfer of learning"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4386222752",
+      "openalex_id": "W4386222752",
+      "title": "Redefining Radiology: A Review of Artificial Intelligence Integration in Medical Imaging",
+      "authors": [
+        "Reabal Najjar"
+      ],
+      "author_details": [
+        {
+          "name": "Reabal Najjar",
+          "orcid": "https://orcid.org/0000-0001-7169-7077",
+          "openalex_id": "A5028466190",
+          "institutions": [
+            "Services Australia",
+            "Act Health",
+            "ACT Government"
+          ]
+        }
+      ],
+      "abstract": "This comprehensive review unfolds a detailed narrative of Artificial Intelligence (AI) making its foray into radiology, a move that is catalysing transformational shifts in the healthcare landscape. It traces the evolution of radiology, from the initial discovery of X-rays to the application of machine learning and deep learning in modern medical image analysis. The primary focus of this review is to shed light on AI applications in radiology, elucidating their seminal roles in image segmentation, computer-aided diagnosis, predictive analytics, and workflow optimisation. A spotlight is cast on the profound impact of AI on diagnostic processes, personalised medicine, and clinical workflows, with empirical evidence derived from a series of case studies across multiple medical disciplines. However, the integration of AI in radiology is not devoid of challenges. The review ventures into the labyrinth of obstacles that are inherent to AI-driven radiology-data quality, the 'black box' enigma, infrastructural and technical complexities, as well as ethical implications. Peering into the future, the review contends that the road ahead for AI in radiology is paved with promising opportunities. It advocates for continuous research, embracing avant-garde imaging technologies, and fostering robust collaborations between radiologists and AI developers. The conclusion underlines the role of AI as a catalyst for change in radiology, a stance that is firmly rooted in sustained innovation, dynamic partnerships, and a steadfast commitment to ethical responsibility.",
+      "doi": "10.3390/diagnostics13172760",
+      "pdf_url": "https://www.mdpi.com/2075-4418/13/17/2760/pdf?version=1692969539",
+      "url": "https://openalex.org/W4386222752",
+      "source_url": "https://openalex.org/W4386222752",
+      "year": 2023,
+      "date": "2023-08-25",
+      "doc_type": "review",
+      "journal": "Diagnostics",
+      "cited_by_count": 633,
+      "referenced_works_count": 107,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Radiomics and Machine Learning in Medical Imaging",
+        "Artificial Intelligence in Healthcare and Education",
+        "Medical Imaging and Analysis"
+      ],
+      "keywords": [
+        "Workflow",
+        "Artificial intelligence",
+        "Radiology",
+        "Deep learning",
+        "Analytics",
+        "Radiomics",
+        "Computer science",
+        "Medicine",
+        "Data science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4210883322",
+      "openalex_id": "W4210883322",
+      "title": "Perspectives in machine learning for wildlife conservation",
+      "authors": [
+        "Devis Tuia",
+        "Benjamin Kellenberger",
+        "Sara Beery",
+        "Blair R. Costelloe",
+        "Silvia Zuffi",
+        "Benjamin Risse",
+        "Alexander Mathis",
+        "Mackenzie Weygandt Mathis",
+        "Frank van Langevelde",
+        "Tilo Burghardt",
+        "Roland Kays",
+        "Holger Klinck",
+        "Martin Wikelski",
+        "Iain D. Couzin",
+        "Grant Van Horn",
+        "Margaret C. Crofoot",
+        "Charles V. Stewart",
+        "Tanya Berger‐Wolf"
+      ],
+      "author_details": [
+        {
+          "name": "Devis Tuia",
+          "orcid": "https://orcid.org/0000-0003-0374-2459",
+          "openalex_id": "A5005192117",
+          "institutions": [
+            "École Polytechnique Fédérale de Lausanne"
+          ]
+        },
+        {
+          "name": "Benjamin Kellenberger",
+          "orcid": "https://orcid.org/0000-0002-2902-2014",
+          "openalex_id": "A5055174808",
+          "institutions": [
+            "École Polytechnique Fédérale de Lausanne"
+          ]
+        },
+        {
+          "name": "Sara Beery",
+          "orcid": "https://orcid.org/0000-0002-2544-1844",
+          "openalex_id": "A5055165096",
+          "institutions": [
+            "California Institute of Technology"
+          ]
+        },
+        {
+          "name": "Blair R. Costelloe",
+          "orcid": "https://orcid.org/0000-0001-5291-788X",
+          "openalex_id": "A5079322290",
+          "institutions": [
+            "University of Konstanz",
+            "Max Planck Institute of Animal Behavior"
+          ]
+        },
+        {
+          "name": "Silvia Zuffi",
+          "orcid": "https://orcid.org/0000-0003-1358-0828",
+          "openalex_id": "A5011219092",
+          "institutions": [
+            "Istituto di Matematica Applicata e Tecnologie Informatiche"
+          ]
+        },
+        {
+          "name": "Benjamin Risse",
+          "orcid": "https://orcid.org/0000-0001-5691-4029",
+          "openalex_id": "A5003115770",
+          "institutions": [
+            "University of Münster"
+          ]
+        },
+        {
+          "name": "Alexander Mathis",
+          "orcid": "https://orcid.org/0000-0002-3777-2202",
+          "openalex_id": "A5013861606",
+          "institutions": [
+            "École Polytechnique Fédérale de Lausanne"
+          ]
+        },
+        {
+          "name": "Mackenzie Weygandt Mathis",
+          "orcid": "https://orcid.org/0000-0001-7368-4456",
+          "openalex_id": "A5025196309",
+          "institutions": [
+            "École Polytechnique Fédérale de Lausanne"
+          ]
+        },
+        {
+          "name": "Frank van Langevelde",
+          "orcid": "https://orcid.org/0000-0001-8870-0797",
+          "openalex_id": "A5061011401",
+          "institutions": [
+            "Wageningen University & Research"
+          ]
+        },
+        {
+          "name": "Tilo Burghardt",
+          "orcid": "https://orcid.org/0000-0002-8506-012X",
+          "openalex_id": "A5052504255",
+          "institutions": [
+            "University of Bristol"
+          ]
+        },
+        {
+          "name": "Roland Kays",
+          "orcid": "https://orcid.org/0000-0002-2947-6665",
+          "openalex_id": "A5064196187",
+          "institutions": [
+            "North Carolina Museum of Natural Sciences",
+            "North Carolina State University"
+          ]
+        },
+        {
+          "name": "Holger Klinck",
+          "orcid": "https://orcid.org/0000-0003-1078-7268",
+          "openalex_id": "A5071316406",
+          "institutions": [
+            "Cornell University"
+          ]
+        },
+        {
+          "name": "Martin Wikelski",
+          "orcid": "https://orcid.org/0000-0002-9790-7025",
+          "openalex_id": "A5012353622",
+          "institutions": [
+            "University of Konstanz",
+            "Max Planck Institute of Animal Behavior"
+          ]
+        },
+        {
+          "name": "Iain D. Couzin",
+          "orcid": "https://orcid.org/0000-0001-8556-4558",
+          "openalex_id": "A5008389022",
+          "institutions": [
+            "Max Planck Institute of Animal Behavior",
+            "University of Konstanz"
+          ]
+        },
+        {
+          "name": "Grant Van Horn",
+          "orcid": "https://orcid.org/0000-0003-2953-9651",
+          "openalex_id": "A5024685173",
+          "institutions": [
+            "Cornell University"
+          ]
+        },
+        {
+          "name": "Margaret C. Crofoot",
+          "orcid": "https://orcid.org/0000-0002-0056-7950",
+          "openalex_id": "A5000914380",
+          "institutions": [
+            "University of Konstanz",
+            "Max Planck Institute of Animal Behavior"
+          ]
+        },
+        {
+          "name": "Charles V. Stewart",
+          "orcid": "https://orcid.org/0000-0001-6532-6675",
+          "openalex_id": "A5035964079",
+          "institutions": [
+            "Rensselaer Polytechnic Institute"
+          ]
+        },
+        {
+          "name": "Tanya Berger‐Wolf",
+          "orcid": "https://orcid.org/0000-0001-7610-1412",
+          "openalex_id": "A5060005215",
+          "institutions": [
+            "The Ohio State University"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1038/s41467-022-27980-y",
+      "pdf_url": "https://www.nature.com/articles/s41467-022-27980-y.pdf",
+      "url": "https://openalex.org/W4210883322",
+      "source_url": "https://openalex.org/W4210883322",
+      "year": 2022,
+      "date": "2022-02-09",
+      "doc_type": "review",
+      "journal": "Nature Communications",
+      "cited_by_count": 610,
+      "referenced_works_count": 173,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Species Distribution and Climate Change",
+        "Wildlife Ecology and Conservation",
+        "Animal Vocal Communication and Behavior"
+      ],
+      "keywords": [
+        "Wildlife",
+        "Wildlife conservation",
+        "Conservation science",
+        "Conservation biology",
+        "Computer science",
+        "Environmental planning",
+        "Data science",
+        "Geography",
+        "Ecology",
+        "Biology",
+        "Biodiversity"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4389984066",
+      "openalex_id": "W4389984066",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "authors": [
+        "Yunfan Gao",
+        "Yun Xiong",
+        "Xinyu Gao",
+        "Kangxiang Jia",
+        "Jinliu Pan",
+        "Yuxi Bi",
+        "Yi Dai",
+        "Jiawei Sun",
+        "Haofen Wang",
+        "Wang, Haofen"
+      ],
+      "author_details": [
+        {
+          "name": "Yunfan Gao",
+          "orcid": "https://orcid.org/0000-0002-7932-2752",
+          "openalex_id": "A5102001778",
+          "institutions": []
+        },
+        {
+          "name": "Yun Xiong",
+          "orcid": "https://orcid.org/0000-0002-8575-5415",
+          "openalex_id": "A5001877137",
+          "institutions": []
+        },
+        {
+          "name": "Xinyu Gao",
+          "orcid": "https://orcid.org/0000-0001-7654-3800",
+          "openalex_id": "A5101581913",
+          "institutions": []
+        },
+        {
+          "name": "Kangxiang Jia",
+          "orcid": "https://orcid.org/0009-0001-0054-5049",
+          "openalex_id": "A5109666673",
+          "institutions": []
+        },
+        {
+          "name": "Jinliu Pan",
+          "orcid": null,
+          "openalex_id": "A5104217086",
+          "institutions": []
+        },
+        {
+          "name": "Yuxi Bi",
+          "orcid": null,
+          "openalex_id": "A5104217087",
+          "institutions": []
+        },
+        {
+          "name": "Yi Dai",
+          "orcid": "https://orcid.org/0000-0003-1219-2436",
+          "openalex_id": "A5100647639",
+          "institutions": []
+        },
+        {
+          "name": "Jiawei Sun",
+          "orcid": "https://orcid.org/0000-0003-1332-6758",
+          "openalex_id": "A5101598822",
+          "institutions": []
+        },
+        {
+          "name": "Haofen Wang",
+          "orcid": "https://orcid.org/0000-0003-3018-3824",
+          "openalex_id": "A5039059501",
+          "institutions": []
+        },
+        {
+          "name": "Wang, Haofen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        }
+      ],
+      "abstract": "Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development.",
+      "doi": "10.48550/arxiv.2312.10997",
+      "pdf_url": "https://arxiv.org/pdf/2312.10997",
+      "url": "https://openalex.org/W4389984066",
+      "source_url": "https://openalex.org/W4389984066",
+      "year": 2023,
+      "date": "2023-12-18",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 605,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Credibility",
+        "Computer science",
+        "Modular design",
+        "Benchmark (surveying)",
+        "Data science",
+        "Domain (mathematical analysis)",
+        "Language model",
+        "Artificial intelligence",
+        "Programming language",
+        "Political science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W2798435682",
+      "openalex_id": "W2798435682",
+      "title": "Explainable Recommendation: A Survey and New Perspectives",
+      "authors": [
+        "Yongfeng Zhang",
+        "Xu Chen"
+      ],
+      "author_details": [
+        {
+          "name": "Yongfeng Zhang",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Rutgers, The State University of New Jersey"
+          ]
+        },
+        {
+          "name": "Xu Chen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Tsinghua University"
+          ]
+        }
+      ],
+      "abstract": "Explainable recommendation attempts to develop models that generate not only high-quality recommendations but also intuitive explanations. The explanations may either be post-hoc or directly come from an explainable model (also called interpretable or transparent model in some contexts). Explainable recommendation tries to address the problem of why: by providing explanations to users or system designers, it helps humans to understand why certain items are recommended by the algorithm, where the human can either be users or system designers. Explainable recommendation helpsendation systems. It also facilitates system design to improve the transparency, persuasiveness, effectiveness, trustworthiness, and satisfaction of recommers for better system debugging. In recent years, a large number of explainable recommendation approaches – especially model-based methods – have been proposed and applied in real-world systems. In this survey, we provide a comprehensive review for the explainable recommendation research. We first highlight the position of explainable recommendation in recommender system research by categorizing recommendation problems into the 5W, i.e., what, when, who, where, and why. We then conduct a comprehensive survey of explainable recommendation on three perspectives: 1) We provide a chronological research timeline of explainable recommendation, including user study approaches in the early years and more recent model-based approaches. 2) We provide a two-dimensional taxonomy to classify existing explainable recommendation research: one dimension is the information source (or display style) of the explanations, and the other dimension is the algorithmic mechanism to generate explainable recommendations. 3) We summarize how explainable recommendation applies to different recommendation tasks, such as product recommendation, social recommendation, and POI recommendation. We also devote a section to discuss the explanation perspectives in broader IR and AI/ML research. We end the survey by discussing potential future directions to promote the explainable recommendation research area and beyond.",
+      "doi": "10.1561/1500000066",
+      "pdf_url": "https://arxiv.org/pdf/1804.11192",
+      "url": "https://openalex.org/W2798435682",
+      "source_url": "https://openalex.org/W2798435682",
+      "year": 2020,
+      "date": "2020-03-11",
+      "doc_type": "article",
+      "journal": "Foundations and Trends® in Information Retrieval",
+      "cited_by_count": 597,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Explainable Artificial Intelligence (XAI)"
+      ],
+      "keywords": [
+        "Recommender system",
+        "Timeline",
+        "Dimension (graph theory)",
+        "Product (mathematics)",
+        "Taxonomy (biology)",
+        "Key (lock)"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4391855109",
+      "openalex_id": "W4391855109",
+      "title": "A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges",
+      "authors": [
+        "Mohaimenul Azam Khan Raiaan",
+        "Md. Saddam Hossain Mukta",
+        "Kaniz Fatema",
+        "Nur Mohammad Fahad",
+        "Sadman Sakib",
+        "Most. Marufatul Jannat Mim",
+        "Jubaer Ahmad",
+        "Mohammed Eunus Ali",
+        "Sami Azam"
+      ],
+      "author_details": [
+        {
+          "name": "Mohaimenul Azam Khan Raiaan",
+          "orcid": "https://orcid.org/0009-0006-4793-5382",
+          "openalex_id": "A5055795711",
+          "institutions": [
+            "United International University"
+          ]
+        },
+        {
+          "name": "Md. Saddam Hossain Mukta",
+          "orcid": "https://orcid.org/0000-0003-2675-5471",
+          "openalex_id": "A5087616870",
+          "institutions": [
+            "Lappeenranta-Lahti University of Technology"
+          ]
+        },
+        {
+          "name": "Kaniz Fatema",
+          "orcid": "https://orcid.org/0000-0002-0787-5403",
+          "openalex_id": "A5008339199",
+          "institutions": [
+            "Charles Darwin University"
+          ]
+        },
+        {
+          "name": "Nur Mohammad Fahad",
+          "orcid": "https://orcid.org/0009-0000-5445-6925",
+          "openalex_id": "A5022918060",
+          "institutions": [
+            "United International University"
+          ]
+        },
+        {
+          "name": "Sadman Sakib",
+          "orcid": "https://orcid.org/0009-0007-2007-5746",
+          "openalex_id": "A5008882566",
+          "institutions": [
+            "United International University"
+          ]
+        },
+        {
+          "name": "Most. Marufatul Jannat Mim",
+          "orcid": null,
+          "openalex_id": "A5092939745",
+          "institutions": [
+            "United International University"
+          ]
+        },
+        {
+          "name": "Jubaer Ahmad",
+          "orcid": null,
+          "openalex_id": "A5018257829",
+          "institutions": [
+            "United International University"
+          ]
+        },
+        {
+          "name": "Mohammed Eunus Ali",
+          "orcid": "https://orcid.org/0000-0002-0384-7616",
+          "openalex_id": "A5000819439",
+          "institutions": [
+            "Bangladesh University of Engineering and Technology"
+          ]
+        },
+        {
+          "name": "Sami Azam",
+          "orcid": "https://orcid.org/0000-0001-7572-9750",
+          "openalex_id": "A5062716310",
+          "institutions": [
+            "Charles Darwin University"
+          ]
+        }
+      ],
+      "abstract": "Large Language Models (LLMs) recently demonstrated extraordinary capability, including natural language processing (NLP), language translation, text generation, question answering, etc. Moreover, LLMs are a new and essential part of computerized language processing, having the ability to understand complex verbal patterns and generate coherent and appropriate replies for the situation. Though this success of LLMs has prompted a substantial increase in research contributions, rapid growth has made it difficult to understand the overall impact of these improvements. Since a lot of new research on LLMs is coming out quickly, it is getting tough to get an overview of all of them in a short note. Consequently, the research community would benefit from a short but thorough review of the recent changes in this area. This article thoroughly overviews LLMs, including their history, architectures, transformers, resources, training methods, applications, impacts, challenges, etc. This paper begins by discussing the fundamental concepts of LLMs with its traditional pipeline of the LLMs training phase. It then provides an overview of the existing works, the history of LLMs, their evolution over time, the architecture of transformers in LLMs, the different resources of LLMs, and the different training methods that have been used to train them. It also demonstrated the datasets utilized in the studies. After that, the paper discusses the wide range of applications of LLMs, including biomedical and healthcare, education, social, business, and agriculture. It also illustrates how LLMs create an impact on society and shape the future of AI and how they can be used to solve real-world problems. Then it also explores open issues and challenges to deploying LLMs in real-world scenario. Our review paper aims to help practitioners, researchers, and experts thoroughly understand the evolution of LLMs, pre-trained architectures, applications, challenges, and future goals.",
+      "doi": "10.1109/access.2024.3365742",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10433480.pdf",
+      "url": "https://openalex.org/W4391855109",
+      "source_url": "https://openalex.org/W4391855109",
+      "year": 2024,
+      "date": "2024-01-01",
+      "doc_type": "review",
+      "journal": "IEEE Access",
+      "cited_by_count": 586,
+      "referenced_works_count": 230,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Data Quality and Management"
+      ],
+      "keywords": [
+        "Computer science",
+        "Open research",
+        "Data science",
+        "Natural language processing",
+        "World Wide Web"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3139657805",
+      "openalex_id": "W3139657805",
+      "title": "Advancing Neuromorphic Computing With Loihi: A Survey of Results and Outlook",
+      "authors": [
+        "Mike Davies",
+        "Andreas Wild",
+        "Garrick Orchard",
+        "Yulia Sandamirskaya",
+        "G. A. Fonseca Guerra",
+        "Prasad Joshi",
+        "Philipp Plank",
+        "Sumedh R. Risbud"
+      ],
+      "author_details": [
+        {
+          "name": "Mike Davies",
+          "orcid": "https://orcid.org/0000-0002-5459-5957",
+          "openalex_id": "A5009816332",
+          "institutions": [
+            "Intel (United States)"
+          ]
+        },
+        {
+          "name": "Andreas Wild",
+          "orcid": "https://orcid.org/0000-0003-0380-5675",
+          "openalex_id": "A5090260554",
+          "institutions": [
+            "Intel (United States)"
+          ]
+        },
+        {
+          "name": "Garrick Orchard",
+          "orcid": "https://orcid.org/0000-0002-1243-2711",
+          "openalex_id": "A5045833517",
+          "institutions": [
+            "Intel (United States)"
+          ]
+        },
+        {
+          "name": "Yulia Sandamirskaya",
+          "orcid": "https://orcid.org/0000-0003-4684-202X",
+          "openalex_id": "A5000514685",
+          "institutions": [
+            "Intel (United States)"
+          ]
+        },
+        {
+          "name": "G. A. Fonseca Guerra",
+          "orcid": "https://orcid.org/0000-0001-5403-4634",
+          "openalex_id": "A5009165685",
+          "institutions": [
+            "Intel (United States)"
+          ]
+        },
+        {
+          "name": "Prasad Joshi",
+          "orcid": "https://orcid.org/0000-0003-0896-4341",
+          "openalex_id": "A5047348809",
+          "institutions": [
+            "Intel (United States)"
+          ]
+        },
+        {
+          "name": "Philipp Plank",
+          "orcid": "https://orcid.org/0000-0002-2209-9238",
+          "openalex_id": "A5102769370",
+          "institutions": [
+            "Intel (United States)"
+          ]
+        },
+        {
+          "name": "Sumedh R. Risbud",
+          "orcid": "https://orcid.org/0000-0003-4777-1139",
+          "openalex_id": "A5063618610",
+          "institutions": [
+            "Intel (United States)"
+          ]
+        }
+      ],
+      "abstract": "Deep artificial neural networks apply principles of the brain's information processing that led to breakthroughs in machine learning spanning many problem domains. Neuromorphic computing aims to take this a step further to chips more directly inspired by the form and function of biological neural circuits, so they can process new knowledge, adapt, behave, and learn in real time at low power levels. Despite several decades of research, until recently, very few published results have shown that today's neuromorphic chips can demonstrate quantitative computational value. This is now changing with the advent of Intel's Loihi, a neuromorphic research processor designed to support a broad range of spiking neural networks with sufficient scale, performance, and features to deliver competitive results compared to state-of-the-art contemporary computing architectures. This survey reviews results that are obtained to date with Loihi across the major algorithmic domains under study, including deep learning approaches and novel approaches that aim to more directly harness the key features of spike-based neuromorphic hardware. While conventional feedforward deep neural networks show modest if any benefit on Loihi, more brain-inspired networks using recurrence, precise spike-timing relationships, synaptic plasticity, stochasticity, and sparsity perform certain computation with orders of magnitude lower latency and energy compared to state-of-the-art conventional approaches. These compelling neuromorphic networks solve a diverse range of problems representative of brain-like computation, such as event-based data processing, adaptive control, constrained optimization, sparse feature regression, and graph search.",
+      "doi": "10.1109/jproc.2021.3067593",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/5/9420072/09395703.pdf",
+      "url": "https://openalex.org/W3139657805",
+      "source_url": "https://openalex.org/W3139657805",
+      "year": 2021,
+      "date": "2021-04-06",
+      "doc_type": "article",
+      "journal": "Proceedings of the IEEE",
+      "cited_by_count": 576,
+      "referenced_works_count": 187,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Advanced Memory and Neural Computing",
+        "Ferroelectric and Negative Capacitance Devices",
+        "Neural Networks and Reservoir Computing"
+      ],
+      "keywords": [
+        "Neuromorphic engineering",
+        "Computer science",
+        "Spiking neural network",
+        "Artificial intelligence",
+        "Artificial neural network",
+        "Spike (software development)",
+        "Deep learning",
+        "Computation",
+        "MNIST database",
+        "Machine learning",
+        "Computer architecture",
+        "Algorithm"
+      ],
+      "cited_by_api_url": null
+    }
+  ],
+  "query_used": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+  "filters_used": [
+    "from_publication_date:2020-01-01"
+  ]
+}

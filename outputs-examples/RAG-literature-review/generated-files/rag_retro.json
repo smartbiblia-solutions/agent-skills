@@ -1,0 +1,581 @@
+{
+  "total_found": 4374,
+  "returned": 5,
+  "results": [
+    {
+      "source": "openalex",
+      "id": "W3169483174",
+      "openalex_id": "W3169483174",
+      "title": "mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer",
+      "authors": [
+        "Linting Xue",
+        "Noah Constant",
+        "Adam P. Roberts",
+        "Mihir Kale",
+        "Rami Al‐Rfou",
+        "Aditya Siddhant",
+        "Aditya Barua",
+        "Colin Raffel"
+      ],
+      "author_details": [
+        {
+          "name": "Linting Xue",
+          "orcid": null,
+          "openalex_id": "A5037677672",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Noah Constant",
+          "orcid": null,
+          "openalex_id": "A5090701958",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Adam P. Roberts",
+          "orcid": "https://orcid.org/0000-0002-0760-3088",
+          "openalex_id": "A5023591414",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Mihir Kale",
+          "orcid": null,
+          "openalex_id": "A5002931312",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Rami Al‐Rfou",
+          "orcid": null,
+          "openalex_id": "A5025234902",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Aditya Siddhant",
+          "orcid": null,
+          "openalex_id": "A5021329708",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Aditya Barua",
+          "orcid": null,
+          "openalex_id": "A5043471926",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Colin Raffel",
+          "orcid": null,
+          "openalex_id": "A5045077843",
+          "institutions": [
+            "Google (United States)"
+          ]
+        }
+      ],
+      "abstract": "Linting Xue, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, Aditya Barua, Colin Raffel. Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2021.",
+      "doi": "10.18653/v1/2021.naacl-main.41",
+      "pdf_url": "https://aclanthology.org/2021.naacl-main.41.pdf",
+      "url": "https://openalex.org/W3169483174",
+      "source_url": "https://openalex.org/W3169483174",
+      "year": 2021,
+      "date": "2021-01-01",
+      "doc_type": "article",
+      "journal": null,
+      "cited_by_count": 1501,
+      "referenced_works_count": 59,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Computational and Text Analysis Methods"
+      ],
+      "keywords": [
+        "Transformer",
+        "Computer science",
+        "Massively parallel",
+        "Computational linguistics",
+        "Association (psychology)",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Electrical engineering",
+        "Engineering",
+        "Parallel computing",
+        "Philosophy",
+        "Epistemology"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4365143687",
+      "openalex_id": "W4365143687",
+      "title": "Foundation models for generalist medical artificial intelligence",
+      "authors": [
+        "Michael Moor",
+        "Oishi Banerjee",
+        "Zahra Shakeri Hossein Abad",
+        "Harlan M. Krumholz",
+        "Jure Leskovec",
+        "Eric J. Topol",
+        "Pranav Rajpurkar"
+      ],
+      "author_details": [
+        {
+          "name": "Michael Moor",
+          "orcid": "https://orcid.org/0000-0003-4911-6437",
+          "openalex_id": "A5021730842",
+          "institutions": [
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Oishi Banerjee",
+          "orcid": null,
+          "openalex_id": "A5057010395",
+          "institutions": [
+            "Harvard University"
+          ]
+        },
+        {
+          "name": "Zahra Shakeri Hossein Abad",
+          "orcid": null,
+          "openalex_id": "A5086148541",
+          "institutions": [
+            "University of Toronto",
+            "Public Health Ontario"
+          ]
+        },
+        {
+          "name": "Harlan M. Krumholz",
+          "orcid": "https://orcid.org/0000-0003-2046-127X",
+          "openalex_id": "A5088028306",
+          "institutions": [
+            "Yale New Haven Hospital",
+            "Yale University"
+          ]
+        },
+        {
+          "name": "Jure Leskovec",
+          "orcid": "https://orcid.org/0000-0002-5411-923X",
+          "openalex_id": "A5091272738",
+          "institutions": [
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Eric J. Topol",
+          "orcid": "https://orcid.org/0000-0002-1478-4729",
+          "openalex_id": "A5084515381",
+          "institutions": [
+            "Scripps Research Institute"
+          ]
+        },
+        {
+          "name": "Pranav Rajpurkar",
+          "orcid": "https://orcid.org/0000-0002-8030-3727",
+          "openalex_id": "A5001094226",
+          "institutions": [
+            "Harvard University"
+          ]
+        }
+      ],
+      "abstract": "The exceptionally rapid development of highly flexible, reusable artificial intelligence (AI) models is likely to usher in newfound capabilities in medicine. We propose a new paradigm for medical AI, which we refer to as generalist medical AI (GMAI). GMAI models will be capable of carrying out a diverse set of tasks using very little or no task-specific labelled data. Built through self-supervision on large, diverse datasets, GMAI will flexibly interpret different combinations of medical modalities, including data from imaging, electronic health records, laboratory results, genomics, graphs or medical text. Models will in turn produce expressive outputs such as free-text explanations, spoken recommendations or image annotations that demonstrate advanced medical reasoning abilities. Here we identify a set of high-impact potential applications for GMAI and lay out specific technical capabilities and training datasets necessary to enable them. We expect that GMAI-enabled applications will challenge current strategies for regulating and validating AI devices for medicine and will shift practices associated with the collection of large medical datasets.",
+      "doi": "10.1038/s41586-023-05881-4",
+      "pdf_url": "https://www.nature.com/articles/s41586-023-05881-4.pdf",
+      "url": "https://openalex.org/W4365143687",
+      "source_url": "https://openalex.org/W4365143687",
+      "year": 2023,
+      "date": "2023-04-12",
+      "doc_type": "review",
+      "journal": "Nature",
+      "cited_by_count": 1376,
+      "referenced_works_count": 50,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Machine Learning in Healthcare",
+        "Artificial Intelligence in Healthcare and Education",
+        "Radiomics and Machine Learning in Medical Imaging"
+      ],
+      "keywords": [
+        "Computer science",
+        "Set (abstract data type)",
+        "Artificial intelligence",
+        "Modalities",
+        "Task (project management)",
+        "Data science",
+        "Machine learning"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4362515116",
+      "openalex_id": "W4362515116",
+      "title": "A Survey of Large Language Models",
+      "authors": [
+        "Wayne Xin Zhao",
+        "Kun Zhou",
+        "Junyi Li",
+        "Tianyi Tang",
+        "Xiaolei Wang",
+        "Yupeng Hou",
+        "Yingqian Min",
+        "Beichen Zhang",
+        "Junjie Zhang",
+        "Zican Dong",
+        "Yifan Du",
+        "Yang Chen",
+        "Yushuo Chen",
+        "Zhipeng Chen",
+        "Jinhao Jiang",
+        "Ruiyang Ren",
+        "Yifan Li",
+        "Xinyu Tang",
+        "Zikang Liu",
+        "Peiyu Liu",
+        "Jian‐Yun Nie",
+        "Ji-Rong Wen"
+      ],
+      "author_details": [
+        {
+          "name": "Wayne Xin Zhao",
+          "orcid": "https://orcid.org/0000-0002-8333-6196",
+          "openalex_id": "A5037145565",
+          "institutions": []
+        },
+        {
+          "name": "Kun Zhou",
+          "orcid": "https://orcid.org/0000-0001-7660-2911",
+          "openalex_id": "A5100722039",
+          "institutions": []
+        },
+        {
+          "name": "Junyi Li",
+          "orcid": "https://orcid.org/0009-0007-0480-5593",
+          "openalex_id": "A5100363220",
+          "institutions": []
+        },
+        {
+          "name": "Tianyi Tang",
+          "orcid": "https://orcid.org/0000-0002-4352-8222",
+          "openalex_id": "A5030566556",
+          "institutions": []
+        },
+        {
+          "name": "Xiaolei Wang",
+          "orcid": "https://orcid.org/0000-0003-3685-3606",
+          "openalex_id": "A5100367735",
+          "institutions": []
+        },
+        {
+          "name": "Yupeng Hou",
+          "orcid": "https://orcid.org/0000-0002-0747-8010",
+          "openalex_id": "A5052347581",
+          "institutions": []
+        },
+        {
+          "name": "Yingqian Min",
+          "orcid": null,
+          "openalex_id": "A5059541770",
+          "institutions": []
+        },
+        {
+          "name": "Beichen Zhang",
+          "orcid": "https://orcid.org/0000-0001-5030-0632",
+          "openalex_id": "A5101849100",
+          "institutions": []
+        },
+        {
+          "name": "Junjie Zhang",
+          "orcid": "https://orcid.org/0000-0002-0033-0494",
+          "openalex_id": "A5100343044",
+          "institutions": []
+        },
+        {
+          "name": "Zican Dong",
+          "orcid": null,
+          "openalex_id": "A5018732664",
+          "institutions": []
+        },
+        {
+          "name": "Yifan Du",
+          "orcid": "https://orcid.org/0000-0002-0734-9200",
+          "openalex_id": "A5001058167",
+          "institutions": []
+        },
+        {
+          "name": "Yang Chen",
+          "orcid": "https://orcid.org/0000-0003-4749-3060",
+          "openalex_id": "A5100350503",
+          "institutions": []
+        },
+        {
+          "name": "Yushuo Chen",
+          "orcid": "https://orcid.org/0000-0002-9091-6711",
+          "openalex_id": "A5008293262",
+          "institutions": []
+        },
+        {
+          "name": "Zhipeng Chen",
+          "orcid": "https://orcid.org/0000-0002-8330-0070",
+          "openalex_id": "A5100325084",
+          "institutions": []
+        },
+        {
+          "name": "Jinhao Jiang",
+          "orcid": null,
+          "openalex_id": "A5069058824",
+          "institutions": []
+        },
+        {
+          "name": "Ruiyang Ren",
+          "orcid": "https://orcid.org/0000-0002-0562-9911",
+          "openalex_id": "A5074848230",
+          "institutions": []
+        },
+        {
+          "name": "Yifan Li",
+          "orcid": "https://orcid.org/0009-0006-1222-7706",
+          "openalex_id": "A5100427047",
+          "institutions": []
+        },
+        {
+          "name": "Xinyu Tang",
+          "orcid": "https://orcid.org/0000-0001-9221-154X",
+          "openalex_id": "A5102019389",
+          "institutions": []
+        },
+        {
+          "name": "Zikang Liu",
+          "orcid": "https://orcid.org/0000-0002-8947-7053",
+          "openalex_id": "A5008547683",
+          "institutions": []
+        },
+        {
+          "name": "Peiyu Liu",
+          "orcid": "https://orcid.org/0000-0002-2905-5473",
+          "openalex_id": "A5100716216",
+          "institutions": []
+        },
+        {
+          "name": "Jian‐Yun Nie",
+          "orcid": "https://orcid.org/0000-0003-1556-3335",
+          "openalex_id": "A5018977183",
+          "institutions": []
+        },
+        {
+          "name": "Ji-Rong Wen",
+          "orcid": "https://orcid.org/0000-0002-9777-9676",
+          "openalex_id": "A5025631695",
+          "institutions": []
+        }
+      ],
+      "abstract": "Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. Since researchers have found that model scaling can lead to performance improvement, they further study the scaling effect by increasing the model size to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance improvement but also show some special abilities that are not present in small-scale language models. To discriminate the difference in parameter scale, the research community has coined the term large language models (LLM) for the PLMs of significant size. Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT, which has attracted widespread attention from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. In this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.",
+      "doi": "10.48550/arxiv.2303.18223",
+      "pdf_url": "https://arxiv.org/pdf/2303.18223",
+      "url": "https://openalex.org/W4362515116",
+      "source_url": "https://openalex.org/W4362515116",
+      "year": 2023,
+      "date": "2023-03-31",
+      "doc_type": "preprint",
+      "journal": "ArXiv.org",
+      "cited_by_count": 1373,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Language model",
+        "Computer science",
+        "Mainstream",
+        "Scale (ratio)",
+        "Artificial intelligence",
+        "Scaling",
+        "Natural language processing",
+        "Data science",
+        "Political science",
+        "Mathematics"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3023617420",
+      "openalex_id": "W3023617420",
+      "title": "A Comprehensive Review of the COVID-19 Pandemic and the Role of IoT, Drones, AI, Blockchain, and 5G in Managing its Impact",
+      "authors": [
+        "Vinay Chamola",
+        "Vikas Hassija",
+        "Vatsal Gupta",
+        "Mohsen Guizani"
+      ],
+      "author_details": [
+        {
+          "name": "Vinay Chamola",
+          "orcid": "https://orcid.org/0000-0002-6730-3060",
+          "openalex_id": "A5005020243",
+          "institutions": [
+            "Birla Institute of Technology and Science, Pilani"
+          ]
+        },
+        {
+          "name": "Vikas Hassija",
+          "orcid": "https://orcid.org/0000-0002-3199-8753",
+          "openalex_id": "A5058693080",
+          "institutions": [
+            "Jaypee Institute of Information Technology"
+          ]
+        },
+        {
+          "name": "Vatsal Gupta",
+          "orcid": "https://orcid.org/0000-0001-9225-7193",
+          "openalex_id": "A5070442882",
+          "institutions": [
+            "Jaypee Institute of Information Technology"
+          ]
+        },
+        {
+          "name": "Mohsen Guizani",
+          "orcid": "https://orcid.org/0000-0002-8972-8094",
+          "openalex_id": "A5057916222",
+          "institutions": [
+            "Qatar University"
+          ]
+        }
+      ],
+      "abstract": "The unprecedented outbreak of the 2019 novel coronavirus, termed as COVID-19 by the World Health Organization (WHO), has placed numerous governments around the world in a precarious position. The impact of the COVID-19 outbreak, earlier witnessed by the citizens of China alone, has now become a matter of grave concern for virtually every country in the world. The scarcity of resources to endure the COVID-19 outbreak combined with the fear of overburdened healthcare systems has forced a majority of these countries into a state of partial or complete lockdown. The number of laboratory-confirmed coronavirus cases has been increasing at an alarming rate throughout the world, with reportedly more than 3 million confirmed cases as of 30 April 2020. Adding to these woes, numerous false reports, misinformation, and unsolicited fears in regards to coronavirus, are being circulated regularly since the outbreak of the COVID-19. In response to such acts, we draw on various reliable sources to present a detailed review of all the major aspects associated with the COVID-19 pandemic. In addition to the direct health implications associated with the outbreak of COVID-19, this study highlights its impact on the global economy. In drawing things to a close, we explore the use of technologies such as the Internet of Things (IoT), Unmanned Aerial Vehicles (UAVs), blockchain, Artificial Intelligence (AI), and 5G, among others, to help mitigate the impact of COVID-19 outbreak.",
+      "doi": "10.1109/access.2020.2992341",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09086010.pdf",
+      "url": "https://openalex.org/W3023617420",
+      "source_url": "https://openalex.org/W3023617420",
+      "year": 2020,
+      "date": "2020-01-01",
+      "doc_type": "review",
+      "journal": "IEEE Access",
+      "cited_by_count": 1108,
+      "referenced_works_count": 58,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "COVID-19 epidemiological studies",
+        "COVID-19 Pandemic Impacts",
+        "COVID-19 diagnosis using AI"
+      ],
+      "keywords": [
+        "Pandemic",
+        "Outbreak",
+        "Coronavirus disease 2019 (COVID-19)",
+        "Coronavirus",
+        "Misinformation",
+        "Business",
+        "Computer security",
+        "Computer science",
+        "Virology",
+        "Medicine",
+        "Disease"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4295951577",
+      "openalex_id": "W4295951577",
+      "title": "Multimodal biomedical AI",
+      "authors": [
+        "Julián Acosta",
+        "Guido J. Falcone",
+        "Pranav Rajpurkar",
+        "Eric J. Topol"
+      ],
+      "author_details": [
+        {
+          "name": "Julián Acosta",
+          "orcid": "https://orcid.org/0000-0001-6497-5454",
+          "openalex_id": "A5087190024",
+          "institutions": [
+            "Yale University"
+          ]
+        },
+        {
+          "name": "Guido J. Falcone",
+          "orcid": "https://orcid.org/0000-0002-6407-0302",
+          "openalex_id": "A5053098139",
+          "institutions": [
+            "Yale University"
+          ]
+        },
+        {
+          "name": "Pranav Rajpurkar",
+          "orcid": "https://orcid.org/0000-0002-8030-3727",
+          "openalex_id": "A5001094226",
+          "institutions": [
+            "Harvard University"
+          ]
+        },
+        {
+          "name": "Eric J. Topol",
+          "orcid": "https://orcid.org/0000-0002-1478-4729",
+          "openalex_id": "A5084515381",
+          "institutions": [
+            "Scripps Research Institute"
+          ]
+        }
+      ],
+      "abstract": "The increasing availability of biomedical data from large biobanks, electronic health records, medical imaging, wearable and ambient biosensors, and the lower cost of genome and microbiome sequencing have set the stage for the development of multimodal artificial intelligence solutions that capture the complexity of human health and disease. In this Review, we outline the key applications enabled, along with the technical and analytical challenges. We explore opportunities in personalized medicine, digital clinical trials, remote monitoring and care, pandemic surveillance, digital twin technology and virtual health assistants. Further, we survey the data, modeling and privacy challenges that must be overcome to realize the full potential of multimodal artificial intelligence in health.",
+      "doi": "10.1038/s41591-022-01981-2",
+      "pdf_url": "https://www.nature.com/articles/s41591-022-01981-2.pdf",
+      "url": "https://openalex.org/W4295951577",
+      "source_url": "https://openalex.org/W4295951577",
+      "year": 2022,
+      "date": "2022-09-01",
+      "doc_type": "review",
+      "journal": "Nature Medicine",
+      "cited_by_count": 984,
+      "referenced_works_count": 180,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "COVID-19 diagnosis using AI",
+        "Machine Learning in Healthcare"
+      ],
+      "keywords": [
+        "Computer science",
+        "Digital health",
+        "Biobank",
+        "Data science",
+        "Wearable computer",
+        "Wearable technology",
+        "Precision medicine",
+        "Applications of artificial intelligence",
+        "Key (lock)",
+        "Health care",
+        "Artificial intelligence",
+        "Medicine",
+        "Bioinformatics",
+        "Computer security"
+      ],
+      "cited_by_api_url": null
+    }
+  ],
+  "query_used": "Improving Language Models by Retrieving from Trillions of Tokens",
+  "filters_used": [
+    "from_publication_date:2020-01-01"
+  ]
+}

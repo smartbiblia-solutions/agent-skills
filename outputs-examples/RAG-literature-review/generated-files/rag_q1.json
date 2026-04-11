@@ -1,0 +1,3926 @@
+{
+  "total_found": 91917,
+  "returned": 20,
+  "results": [
+    {
+      "source": "openalex",
+      "id": "W3003257820",
+      "openalex_id": "W3003257820",
+      "title": "SciPy 1.0: fundamental algorithms for scientific computing in Python",
+      "authors": [
+        "Pauli Virtanen",
+        "Ralf Gommers",
+        "Travis E. Oliphant",
+        "Matt Haberland",
+        "Tyler Reddy",
+        "David Cournapeau",
+        "Evgeni Burovski",
+        "Pearu Peterson",
+        "Warren Weckesser",
+        "Jonathan Bright",
+        "Stéfan J. van der Walt",
+        "Matthew Brett",
+        "Joshua Wilson",
+        "K. Jarrod Millman",
+        "Nikolay Mayorov",
+        "Andrew R. J. Nelson",
+        "Eric Jones",
+        "Robert Kern",
+        "Eric Larson",
+        "C J Carey",
+        "İlhan Polat",
+        "Yu Feng",
+        "Eric W. Moore",
+        "Jake VanderPlas",
+        "Denis Laxalde",
+        "Josef Perktold",
+        "Robert Cimrman",
+        "Ian Henriksen",
+        "E. A. Quintero",
+        "Charles R. Harris",
+        "Anne M. Archibald",
+        "Antônio H. Ribeiro",
+        "Fabian Pedregosa",
+        "Paul van Mulbregt",
+        "SciPy 1.0 Contributors",
+        "Aditya Vijaykumar",
+        "Alessandro Pietro Bardelli",
+        "Alex Rothberg",
+        "Andreas Hilboll",
+        "Andreas Kloeckner",
+        "Anthony Scopatz",
+        "Antony Lee",
+        "Ariel Rokem",
+        "C. Nathan Woods",
+        "Chad Fulton",
+        "Charles Masson",
+        "Christian Häggström",
+        "Clark Fitzgerald",
+        "David A. Nicholson",
+        "David R. Hagen",
+        "Dmitrii V. Pasechnik",
+        "Emanuele Olivetti",
+        "Eric Martin",
+        "Eric Wieser",
+        "Fabrice Silva",
+        "Felix Lenders",
+        "Florian Wilhelm",
+        "G. Young",
+        "Gavin A. Price",
+        "Gert-Ludwig Ingold",
+        "Gregory E. Allen",
+        "Gregory R. Lee",
+        "Hervé Audren",
+        "Irvin Probst",
+        "Jörg P. Dietrich",
+        "Jacob Silterra",
+        "James T Webber",
+        "Janko Slavič",
+        "Joel Nothman",
+        "Johannes Buchner",
+        "Johannes Kulick",
+        "Johannes L. Schönberger",
+        "José Vinícius de Miranda Cardoso",
+        "Joscha Reimer",
+        "Joseph Harrington",
+        "Juan Luis Cano Rodríguez",
+        "Juan Nunez-Iglesias",
+        "Justin Kuczynski",
+        "Kevin Tritz",
+        "Martin Thoma",
+        "Matthew Newville",
+        "Matthias Kümmerer",
+        "Maximilian Bolingbroke",
+        "Michael Tartre",
+        "Mikhail Pak",
+        "Nathaniel J. Smith",
+        "Nikolai Nowaczyk",
+        "Nikolay Shebanov",
+        "Oleksandr Pavlyk",
+        "Per A. Brodtkorb",
+        "Perry Lee",
+        "Robert T. McGibbon",
+        "Roman Feldbauer",
+        "Sam Lewis",
+        "Sam Tygier",
+        "Scott Sievert",
+        "Sebastiano Vigna",
+        "Stefan Peterson",
+        "Surhud More",
+        "Tadeusz Pudlik"
+      ],
+      "author_details": [
+        {
+          "name": "Pauli Virtanen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "University of Jyväskylä"
+          ]
+        },
+        {
+          "name": "Ralf Gommers",
+          "orcid": "https://orcid.org/0000-0002-0300-3333",
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Travis E. Oliphant",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Brigham Young University",
+            "Quansight (United States)",
+            "Enthought (United States)",
+            "Anaconda (United States)",
+            "Mayo Clinic in Florida"
+          ]
+        },
+        {
+          "name": "Matt Haberland",
+          "orcid": "https://orcid.org/0000-0003-4806-3601",
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Tyler Reddy",
+          "orcid": "https://orcid.org/0000-0003-2364-6157",
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "David Cournapeau",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Evgeni Burovski",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "National Research University Higher School of Economics"
+          ]
+        },
+        {
+          "name": "Pearu Peterson",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Tallinn University of Technology"
+          ]
+        },
+        {
+          "name": "Warren Weckesser",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "University of California, Berkeley"
+          ]
+        },
+        {
+          "name": "Jonathan Bright",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Stéfan J. van der Walt",
+          "orcid": "https://orcid.org/0000-0001-9276-1891",
+          "openalex_id": "",
+          "institutions": [
+            "University of California, Berkeley"
+          ]
+        },
+        {
+          "name": "Matthew Brett",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "University of Birmingham"
+          ]
+        },
+        {
+          "name": "Joshua Wilson",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Film Independent"
+          ]
+        },
+        {
+          "name": "K. Jarrod Millman",
+          "orcid": "https://orcid.org/0000-0002-5263-5070",
+          "openalex_id": "",
+          "institutions": [
+            "University of California, Berkeley"
+          ]
+        },
+        {
+          "name": "Nikolay Mayorov",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Skolkovo Foundation",
+            "WayRay (Russia)"
+          ]
+        },
+        {
+          "name": "Andrew R. J. Nelson",
+          "orcid": "https://orcid.org/0000-0002-4548-3558",
+          "openalex_id": "",
+          "institutions": [
+            "Australian Nuclear Science and Technology Organisation"
+          ]
+        },
+        {
+          "name": "Eric Jones",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Enthought (United States)"
+          ]
+        },
+        {
+          "name": "Robert Kern",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Enthought (United States)"
+          ]
+        },
+        {
+          "name": "Eric Larson",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "University of Washington"
+          ]
+        },
+        {
+          "name": "C J Carey",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "University of Massachusetts Amherst",
+            "Amherst College"
+          ]
+        },
+        {
+          "name": "İlhan Polat",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Yu Feng",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "University of California, Berkeley"
+          ]
+        },
+        {
+          "name": "Eric W. Moore",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Bruker (United States)"
+          ]
+        },
+        {
+          "name": "Jake VanderPlas",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "University of Washington"
+          ]
+        },
+        {
+          "name": "Denis Laxalde",
+          "orcid": "https://orcid.org/0000-0002-5540-4825",
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Josef Perktold",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Robert Cimrman",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "University of West Bohemia"
+          ]
+        },
+        {
+          "name": "Ian Henriksen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Anaconda (United States)",
+            "The University of Texas at Austin",
+            "Brigham Young University"
+          ]
+        },
+        {
+          "name": "E. A. Quintero",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Charles R. Harris",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Utah State University Space Dynamics Laboratory"
+          ]
+        },
+        {
+          "name": "Anne M. Archibald",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Antônio H. Ribeiro",
+          "orcid": "https://orcid.org/0000-0003-3632-8529",
+          "openalex_id": "",
+          "institutions": [
+            "Universidade Federal de Minas Gerais"
+          ]
+        },
+        {
+          "name": "Fabian Pedregosa",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Google (Canada)"
+          ]
+        },
+        {
+          "name": "Paul van Mulbregt",
+          "orcid": "https://orcid.org/0000-0002-2382-8308",
+          "openalex_id": "",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "SciPy 1.0 Contributors",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Aditya Vijaykumar",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Alessandro Pietro Bardelli",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Alex Rothberg",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Andreas Hilboll",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Andreas Kloeckner",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Anthony Scopatz",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Antony Lee",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Ariel Rokem",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "C. Nathan Woods",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Chad Fulton",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Charles Masson",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Christian Häggström",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Clark Fitzgerald",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "David A. Nicholson",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "David R. Hagen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Dmitrii V. Pasechnik",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Emanuele Olivetti",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Eric Martin",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Eric Wieser",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Fabrice Silva",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Felix Lenders",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Florian Wilhelm",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "G. Young",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Gavin A. Price",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Gert-Ludwig Ingold",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Gregory E. Allen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Gregory R. Lee",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Hervé Audren",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Irvin Probst",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Jörg P. Dietrich",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Jacob Silterra",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "James T Webber",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Janko Slavič",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Joel Nothman",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Johannes Buchner",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Johannes Kulick",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Johannes L. Schönberger",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "José Vinícius de Miranda Cardoso",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Joscha Reimer",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Joseph Harrington",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Juan Luis Cano Rodríguez",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Juan Nunez-Iglesias",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Justin Kuczynski",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Kevin Tritz",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Martin Thoma",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Matthew Newville",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Matthias Kümmerer",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Maximilian Bolingbroke",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Michael Tartre",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Mikhail Pak",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Nathaniel J. Smith",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Nikolai Nowaczyk",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Nikolay Shebanov",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Oleksandr Pavlyk",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Per A. Brodtkorb",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Perry Lee",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Robert T. McGibbon",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Roman Feldbauer",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Sam Lewis",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Sam Tygier",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Scott Sievert",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Sebastiano Vigna",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Stefan Peterson",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Surhud More",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Tadeusz Pudlik",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1038/s41592-019-0686-2",
+      "pdf_url": "https://www.nature.com/articles/s41592-019-0686-2.pdf",
+      "url": "https://openalex.org/W3003257820",
+      "source_url": "https://openalex.org/W3003257820",
+      "year": 2020,
+      "date": "2020-02-03",
+      "doc_type": "article",
+      "journal": "Nature Methods",
+      "cited_by_count": 35642,
+      "referenced_works_count": 70,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Computational Physics and Python Applications"
+      ],
+      "keywords": [
+        "Python (programming language)",
+        "Code (set theory)",
+        "Source code",
+        "De facto",
+        "Function (biology)"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3107527779",
+      "openalex_id": "W3107527779",
+      "title": "The STRING database in 2021: customizable protein–protein networks, and functional characterization of user-uploaded gene/measurement sets",
+      "authors": [
+        "Damian Szklarczyk",
+        "Annika L. Gable",
+        "Katerina Nastou",
+        "David Lyon",
+        "Rebecca Kirsch",
+        "Sampo Pyysalo",
+        "Nadezhda T. Doncheva",
+        "Marc Legeay",
+        "Tao Fang",
+        "Peer Bork",
+        "Lars Juhl Jensen",
+        "Christian von Mering"
+      ],
+      "author_details": [
+        {
+          "name": "Damian Szklarczyk",
+          "orcid": "https://orcid.org/0000-0002-4052-5069",
+          "openalex_id": "A5061581536",
+          "institutions": [
+            "University of Zurich",
+            "SIB Swiss Institute of Bioinformatics"
+          ]
+        },
+        {
+          "name": "Annika L. Gable",
+          "orcid": "https://orcid.org/0000-0002-8965-0848",
+          "openalex_id": "A5010825633",
+          "institutions": [
+            "University of Zurich",
+            "SIB Swiss Institute of Bioinformatics"
+          ]
+        },
+        {
+          "name": "Katerina Nastou",
+          "orcid": "https://orcid.org/0000-0003-3611-5726",
+          "openalex_id": "A5026049213",
+          "institutions": [
+            "Novo Nordisk Foundation",
+            "University of Copenhagen"
+          ]
+        },
+        {
+          "name": "David Lyon",
+          "orcid": "https://orcid.org/0000-0001-5794-0456",
+          "openalex_id": "A5064443056",
+          "institutions": [
+            "University of Zurich",
+            "SIB Swiss Institute of Bioinformatics"
+          ]
+        },
+        {
+          "name": "Rebecca Kirsch",
+          "orcid": null,
+          "openalex_id": "A5027950078",
+          "institutions": [
+            "University of Copenhagen",
+            "Novo Nordisk Foundation"
+          ]
+        },
+        {
+          "name": "Sampo Pyysalo",
+          "orcid": "https://orcid.org/0000-0002-6279-5000",
+          "openalex_id": "A5066925770",
+          "institutions": [
+            "University of Turku"
+          ]
+        },
+        {
+          "name": "Nadezhda T. Doncheva",
+          "orcid": "https://orcid.org/0000-0002-8806-6850",
+          "openalex_id": "A5103353640",
+          "institutions": [
+            "University of Copenhagen",
+            "Novo Nordisk Foundation"
+          ]
+        },
+        {
+          "name": "Marc Legeay",
+          "orcid": "https://orcid.org/0000-0001-7984-326X",
+          "openalex_id": "A5036215808",
+          "institutions": [
+            "University of Copenhagen",
+            "Novo Nordisk Foundation"
+          ]
+        },
+        {
+          "name": "Tao Fang",
+          "orcid": "https://orcid.org/0000-0001-9659-7726",
+          "openalex_id": "A5009279307",
+          "institutions": [
+            "SIB Swiss Institute of Bioinformatics",
+            "University of Zurich"
+          ]
+        },
+        {
+          "name": "Peer Bork",
+          "orcid": "https://orcid.org/0000-0002-2627-833X",
+          "openalex_id": "A5074309419",
+          "institutions": [
+            "Max Delbrück Center",
+            "Heidelberg University",
+            "European Molecular Biology Laboratory",
+            "European Molecular Biology Laboratory",
+            "University of Würzburg"
+          ]
+        },
+        {
+          "name": "Lars Juhl Jensen",
+          "orcid": "https://orcid.org/0000-0001-7885-715X",
+          "openalex_id": "A5005772961",
+          "institutions": [
+            "Novo Nordisk Foundation",
+            "University of Copenhagen"
+          ]
+        },
+        {
+          "name": "Christian von Mering",
+          "orcid": "https://orcid.org/0000-0001-7734-9102",
+          "openalex_id": "A5000334281",
+          "institutions": [
+            "University of Zurich",
+            "SIB Swiss Institute of Bioinformatics"
+          ]
+        }
+      ],
+      "abstract": "Cellular life depends on a complex web of functional associations between biomolecules. Among these associations, protein-protein interactions are particularly important due to their versatility, specificity and adaptability. The STRING database aims to integrate all known and predicted associations between proteins, including both physical interactions as well as functional associations. To achieve this, STRING collects and scores evidence from a number of sources: (i) automated text mining of the scientific literature, (ii) databases of interaction experiments and annotated complexes/pathways, (iii) computational interaction predictions from co-expression and from conserved genomic context and (iv) systematic transfers of interaction evidence from one organism to another. STRING aims for wide coverage; the upcoming version 11.5 of the resource will contain more than 14 000 organisms. In this update paper, we describe changes to the text-mining system, a new scoring-mode for physical interactions, as well as extensive user interface features for customizing, extending and sharing protein networks. In addition, we describe how to query STRING with genome-wide, experimental data, including the automated detection of enriched functionalities and potential biases in the user's query data. The STRING resource is available online, at https://string-db.org/.",
+      "doi": "10.1093/nar/gkaa1074",
+      "pdf_url": "https://academic.oup.com/nar/article-pdf/49/D1/D605/40395991/gkaa1074.pdf",
+      "url": "https://openalex.org/W3107527779",
+      "source_url": "https://openalex.org/W3107527779",
+      "year": 2020,
+      "date": "2020-11-23",
+      "doc_type": "article",
+      "journal": "Nucleic Acids Research",
+      "cited_by_count": 8317,
+      "referenced_works_count": 64,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Bioinformatics and Genomic Networks",
+        "Gene expression and cancer classification",
+        "Advanced Proteomics Techniques and Applications"
+      ],
+      "keywords": [
+        "Biology",
+        "Upload",
+        "Gene",
+        "String (physics)",
+        "Computational biology",
+        "Database",
+        "Genetics",
+        "Computer science",
+        "World Wide Web"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3140854437",
+      "openalex_id": "W3140854437",
+      "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+      "authors": [
+        "Laith Alzubaidi",
+        "Jinglan Zhang",
+        "Amjad J. Humaidi",
+        "Ayad Q. Al-Dujaili",
+        "Ye Duan",
+        "Omran Al-Shamma",
+        "José Santamaría",
+        "Mohammed A. Fadhel",
+        "Muthana Al‐Amidie",
+        "Laith Farhan"
+      ],
+      "author_details": [
+        {
+          "name": "Laith Alzubaidi",
+          "orcid": "https://orcid.org/0000-0002-7296-5413",
+          "openalex_id": "A5102889969",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Jinglan Zhang",
+          "orcid": "https://orcid.org/0000-0001-6459-2963",
+          "openalex_id": "A5101979224",
+          "institutions": [
+            "Queensland University of Technology"
+          ]
+        },
+        {
+          "name": "Amjad J. Humaidi",
+          "orcid": "https://orcid.org/0000-0002-9071-1329",
+          "openalex_id": "A5016153721",
+          "institutions": [
+            "University of Technology - Iraq"
+          ]
+        },
+        {
+          "name": "Ayad Q. Al-Dujaili",
+          "orcid": "https://orcid.org/0000-0002-1126-3290",
+          "openalex_id": "A5052471696",
+          "institutions": [
+            "Middle Technical University"
+          ]
+        },
+        {
+          "name": "Ye Duan",
+          "orcid": "https://orcid.org/0000-0002-1166-7703",
+          "openalex_id": "A5101430356",
+          "institutions": [
+            "University of Missouri"
+          ]
+        },
+        {
+          "name": "Omran Al-Shamma",
+          "orcid": "https://orcid.org/0000-0001-5930-6176",
+          "openalex_id": "A5008534489",
+          "institutions": [
+            "University of Information Technology and Communications"
+          ]
+        },
+        {
+          "name": "José Santamaría",
+          "orcid": "https://orcid.org/0000-0002-2022-6838",
+          "openalex_id": "A5010765865",
+          "institutions": [
+            "Universidad de Jaén"
+          ]
+        },
+        {
+          "name": "Mohammed A. Fadhel",
+          "orcid": "https://orcid.org/0000-0001-9877-049X",
+          "openalex_id": "A5090966997",
+          "institutions": [
+            "Thi Qar University"
+          ]
+        },
+        {
+          "name": "Muthana Al‐Amidie",
+          "orcid": "https://orcid.org/0000-0002-8116-1871",
+          "openalex_id": "A5036536042",
+          "institutions": [
+            "University of Missouri"
+          ]
+        },
+        {
+          "name": "Laith Farhan",
+          "orcid": "https://orcid.org/0000-0001-8256-7323",
+          "openalex_id": "A5059266881",
+          "institutions": [
+            "Manchester Metropolitan University"
+          ]
+        }
+      ],
+      "abstract": "In the last few years, the deep learning (DL) computing paradigm has been deemed the Gold Standard in the machine learning (ML) community. Moreover, it has gradually become the most widely used computational approach in the field of ML, thus achieving outstanding results on several complex cognitive tasks, matching or even beating those provided by human performance. One of the benefits of DL is the ability to learn massive amounts of data. The DL field has grown fast in the last few years and it has been extensively used to successfully address a wide range of traditional applications. More importantly, DL has outperformed well-known ML techniques in many domains, e.g., cybersecurity, natural language processing, bioinformatics, robotics and control, and medical information processing, among many others. Despite it has been contributed several works reviewing the State-of-the-Art on DL, all of them only tackled one aspect of the DL, which leads to an overall lack of knowledge about it. Therefore, in this contribution, we propose using a more holistic approach in order to provide a more suitable starting point from which to develop a full understanding of DL. Specifically, this review attempts to provide a more comprehensive survey of the most important aspects of DL and including those enhancements recently added to the field. In particular, this paper outlines the importance of DL, presents the types of DL techniques and networks. It then presents convolutional neural networks (CNNs) which the most utilized DL network type and describes the development of CNNs architectures together with their main features, e.g., starting with the AlexNet network and closing with the High-Resolution network (HR.Net). Finally, we further present the challenges and suggested solutions to help researchers understand the existing research gaps. It is followed by a list of the major DL applications. Computational tools including FPGA, GPU, and CPU are summarized along with a description of their influence on DL. The paper ends with the evolution matrix, benchmark datasets, and summary and conclusion.",
+      "doi": "10.1186/s40537-021-00444-8",
+      "pdf_url": "https://journalofbigdata.springeropen.com/counter/pdf/10.1186/s40537-021-00444-8",
+      "url": "https://openalex.org/W3140854437",
+      "source_url": "https://openalex.org/W3140854437",
+      "year": 2021,
+      "date": "2021-03-31",
+      "doc_type": "article",
+      "journal": "Journal Of Big Data",
+      "cited_by_count": 7118,
+      "referenced_works_count": 362,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "COVID-19 diagnosis using AI",
+        "Anomaly Detection Techniques and Applications"
+      ],
+      "keywords": [
+        "Computer science",
+        "Artificial intelligence",
+        "Field (mathematics)",
+        "Deep learning",
+        "Convolutional neural network",
+        "Machine learning",
+        "Data science",
+        "Point (geometry)",
+        "Matching (statistics)"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3163993681",
+      "openalex_id": "W3163993681",
+      "title": "Physics-informed machine learning",
+      "authors": [
+        "George Em Karniadakis",
+        "Ioannis G. Kevrekidis",
+        "Lu Lu",
+        "Paris Perdikaris",
+        "Sifan Wang",
+        "Liu Yang"
+      ],
+      "author_details": [
+        {
+          "name": "George Em Karniadakis",
+          "orcid": "https://orcid.org/0000-0002-9713-7120",
+          "openalex_id": "A5009658255",
+          "institutions": [
+            "Brown University"
+          ]
+        },
+        {
+          "name": "Ioannis G. Kevrekidis",
+          "orcid": "https://orcid.org/0000-0003-2220-3522",
+          "openalex_id": "A5036566464",
+          "institutions": [
+            "Johns Hopkins University"
+          ]
+        },
+        {
+          "name": "Lu Lu",
+          "orcid": "https://orcid.org/0000-0002-5476-5768",
+          "openalex_id": "A5100366029",
+          "institutions": [
+            "Massachusetts Institute of Technology"
+          ]
+        },
+        {
+          "name": "Paris Perdikaris",
+          "orcid": "https://orcid.org/0000-0002-2816-3229",
+          "openalex_id": "A5002562845",
+          "institutions": [
+            "University of Pennsylvania"
+          ]
+        },
+        {
+          "name": "Sifan Wang",
+          "orcid": "https://orcid.org/0000-0002-7721-6884",
+          "openalex_id": "A5101476623",
+          "institutions": [
+            "Applied Mathematics (United States)",
+            "University of Pennsylvania"
+          ]
+        },
+        {
+          "name": "Liu Yang",
+          "orcid": "https://orcid.org/0000-0002-7476-9168",
+          "openalex_id": "A5100760787",
+          "institutions": [
+            "Brown University"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1038/s42254-021-00314-5",
+      "pdf_url": "https://www.osti.gov/servlets/purl/2282016",
+      "url": "https://openalex.org/W3163993681",
+      "source_url": "https://openalex.org/W3163993681",
+      "year": 2021,
+      "date": "2021-05-24",
+      "doc_type": "review",
+      "journal": "Nature Reviews Physics",
+      "cited_by_count": 5671,
+      "referenced_works_count": 228,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Model Reduction and Neural Networks",
+        "Meteorological Phenomena and Simulations",
+        "Gaussian Processes and Bayesian Inference"
+      ],
+      "keywords": [
+        "Computer science",
+        "Artificial intelligence",
+        "Machine learning",
+        "Multiphysics",
+        "Inference",
+        "Artificial neural network",
+        "Physical law",
+        "Field (mathematics)",
+        "Discretization",
+        "Kernel method",
+        "Deep learning",
+        "Theoretical computer science",
+        "Mathematics",
+        "Support vector machine",
+        "Finite element method"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W2995022099",
+      "openalex_id": "W2995022099",
+      "title": "Advances and Open Problems in Federated Learning",
+      "authors": [
+        "Peter Kairouz",
+        "H. Brendan McMahan",
+        "Brendan Avent",
+        "Aurélien Bellet",
+        "Mehdi Bennis",
+        "Arjun Nitin Bhagoji",
+        "Kallista Bonawitz",
+        "Zachary Charles",
+        "Graham Cormode",
+        "Rachel Cummings",
+        "Rafael G. L. D’Oliveira",
+        "Hubert Eichner",
+        "Salim El Rouayheb",
+        "David Evans",
+        "Joshua Gardner",
+        "Zachary Garrett",
+        "Adrià Gascón",
+        "Badih Ghazi",
+        "Phillip B. Gibbons",
+        "Marco Gruteser",
+        "Zaïd Harchaoui",
+        "Chaoyang He",
+        "Lingxiao He",
+        "Zhouyuan Huo",
+        "Ben Hutchinson",
+        "Justin Hsu",
+        "Martin Jaggi",
+        "Tara Javidi",
+        "Gauri Joshi",
+        "Mikhail Khodak",
+        "Jakub Konečný",
+        "Aleksandra Korolova",
+        "Farinaz Koushanfar",
+        "Sanmi Koyejo",
+        "Tancrède Lepoint",
+        "Yang Liu",
+        "Prateek Mittal",
+        "Mehryar Mohri",
+        "Richard Nock",
+        "Ayfer Özgür",
+        "Rasmus Pagh",
+        "Mariana Raykova",
+        "Daniel Ramage",
+        "Daniel Ramage",
+        "Ramesh Raskar",
+        "Dawn Song",
+        "Weikang Song",
+        "Sebastian U. Stich",
+        "Ziteng Sun",
+        "Ajith Suresh",
+        "Florian Tramèr",
+        "Praneeth Vepakomma",
+        "Jianyu Wang",
+        "Li Xiong",
+        "Zheng Xu",
+        "Qiang Yang",
+        "Felix X. Yu",
+        "Han Yu",
+        "Sen Zhao"
+      ],
+      "author_details": [
+        {
+          "name": "Peter Kairouz",
+          "orcid": "https://orcid.org/0000-0001-6897-5937",
+          "openalex_id": "A5064699160",
+          "institutions": []
+        },
+        {
+          "name": "H. Brendan McMahan",
+          "orcid": null,
+          "openalex_id": "A5040311844",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Brendan Avent",
+          "orcid": null,
+          "openalex_id": "A5035617528",
+          "institutions": []
+        },
+        {
+          "name": "Aurélien Bellet",
+          "orcid": "https://orcid.org/0000-0003-3440-1251",
+          "openalex_id": "A5014504793",
+          "institutions": []
+        },
+        {
+          "name": "Mehdi Bennis",
+          "orcid": "https://orcid.org/0000-0003-0261-0171",
+          "openalex_id": "A5061429095",
+          "institutions": []
+        },
+        {
+          "name": "Arjun Nitin Bhagoji",
+          "orcid": "https://orcid.org/0000-0002-2803-5649",
+          "openalex_id": "A5003032696",
+          "institutions": []
+        },
+        {
+          "name": "Kallista Bonawitz",
+          "orcid": null,
+          "openalex_id": "A5039153937",
+          "institutions": []
+        },
+        {
+          "name": "Zachary Charles",
+          "orcid": "https://orcid.org/0000-0001-8997-874X",
+          "openalex_id": "A5034877995",
+          "institutions": []
+        },
+        {
+          "name": "Graham Cormode",
+          "orcid": "https://orcid.org/0000-0002-0698-0922",
+          "openalex_id": "A5031896681",
+          "institutions": []
+        },
+        {
+          "name": "Rachel Cummings",
+          "orcid": "https://orcid.org/0000-0002-1196-1515",
+          "openalex_id": "A5077952586",
+          "institutions": []
+        },
+        {
+          "name": "Rafael G. L. D’Oliveira",
+          "orcid": "https://orcid.org/0000-0001-5053-5909",
+          "openalex_id": "A5017403407",
+          "institutions": []
+        },
+        {
+          "name": "Hubert Eichner",
+          "orcid": null,
+          "openalex_id": "A5085098992",
+          "institutions": []
+        },
+        {
+          "name": "Salim El Rouayheb",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "David Evans",
+          "orcid": "https://orcid.org/0000-0001-7988-8943",
+          "openalex_id": "A5027001546",
+          "institutions": []
+        },
+        {
+          "name": "Joshua Gardner",
+          "orcid": "https://orcid.org/0000-0002-4998-5918",
+          "openalex_id": "A5058755355",
+          "institutions": []
+        },
+        {
+          "name": "Zachary Garrett",
+          "orcid": "https://orcid.org/0000-0001-8158-3997",
+          "openalex_id": "A5017433837",
+          "institutions": []
+        },
+        {
+          "name": "Adrià Gascón",
+          "orcid": "https://orcid.org/0000-0002-1807-8311",
+          "openalex_id": "A5015542293",
+          "institutions": []
+        },
+        {
+          "name": "Badih Ghazi",
+          "orcid": "https://orcid.org/0000-0001-8254-3268",
+          "openalex_id": "A5016244525",
+          "institutions": []
+        },
+        {
+          "name": "Phillip B. Gibbons",
+          "orcid": "https://orcid.org/0000-0001-6967-2735",
+          "openalex_id": "A5014824446",
+          "institutions": []
+        },
+        {
+          "name": "Marco Gruteser",
+          "orcid": "https://orcid.org/0000-0002-7424-4951",
+          "openalex_id": "A5078160983",
+          "institutions": []
+        },
+        {
+          "name": "Zaïd Harchaoui",
+          "orcid": "https://orcid.org/0000-0003-1186-1343",
+          "openalex_id": "A5010613767",
+          "institutions": []
+        },
+        {
+          "name": "Chaoyang He",
+          "orcid": "https://orcid.org/0000-0003-2770-9661",
+          "openalex_id": "A5003518978",
+          "institutions": []
+        },
+        {
+          "name": "Lingxiao He",
+          "orcid": "https://orcid.org/0000-0002-2395-6035",
+          "openalex_id": "A5089153368",
+          "institutions": []
+        },
+        {
+          "name": "Zhouyuan Huo",
+          "orcid": null,
+          "openalex_id": "A5069872293",
+          "institutions": []
+        },
+        {
+          "name": "Ben Hutchinson",
+          "orcid": "https://orcid.org/0000-0003-2253-6204",
+          "openalex_id": "A5071599724",
+          "institutions": []
+        },
+        {
+          "name": "Justin Hsu",
+          "orcid": "https://orcid.org/0000-0002-8953-7060",
+          "openalex_id": "A5033286190",
+          "institutions": []
+        },
+        {
+          "name": "Martin Jaggi",
+          "orcid": "https://orcid.org/0000-0003-1579-5558",
+          "openalex_id": "A5073756389",
+          "institutions": []
+        },
+        {
+          "name": "Tara Javidi",
+          "orcid": "https://orcid.org/0000-0001-7112-1043",
+          "openalex_id": "A5059310658",
+          "institutions": []
+        },
+        {
+          "name": "Gauri Joshi",
+          "orcid": "https://orcid.org/0000-0002-6372-9697",
+          "openalex_id": "A5067441201",
+          "institutions": []
+        },
+        {
+          "name": "Mikhail Khodak",
+          "orcid": null,
+          "openalex_id": "A5005152458",
+          "institutions": []
+        },
+        {
+          "name": "Jakub Konečný",
+          "orcid": null,
+          "openalex_id": "A5048916516",
+          "institutions": []
+        },
+        {
+          "name": "Aleksandra Korolova",
+          "orcid": "https://orcid.org/0000-0001-8237-9058",
+          "openalex_id": "A5005219368",
+          "institutions": []
+        },
+        {
+          "name": "Farinaz Koushanfar",
+          "orcid": "https://orcid.org/0000-0003-0798-3794",
+          "openalex_id": "A5019931011",
+          "institutions": []
+        },
+        {
+          "name": "Sanmi Koyejo",
+          "orcid": null,
+          "openalex_id": "A5091266570",
+          "institutions": []
+        },
+        {
+          "name": "Tancrède Lepoint",
+          "orcid": "https://orcid.org/0000-0003-3796-042X",
+          "openalex_id": "A5037225703",
+          "institutions": []
+        },
+        {
+          "name": "Yang Liu",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Prateek Mittal",
+          "orcid": "https://orcid.org/0000-0002-4057-0118",
+          "openalex_id": "A5015619835",
+          "institutions": []
+        },
+        {
+          "name": "Mehryar Mohri",
+          "orcid": "https://orcid.org/0000-0002-3987-9847",
+          "openalex_id": "A5058849006",
+          "institutions": []
+        },
+        {
+          "name": "Richard Nock",
+          "orcid": "https://orcid.org/0000-0001-8384-9621",
+          "openalex_id": "A5082414223",
+          "institutions": []
+        },
+        {
+          "name": "Ayfer Özgür",
+          "orcid": "https://orcid.org/0000-0002-4455-4692",
+          "openalex_id": "A5003322209",
+          "institutions": []
+        },
+        {
+          "name": "Rasmus Pagh",
+          "orcid": "https://orcid.org/0000-0002-1516-9306",
+          "openalex_id": "A5014293815",
+          "institutions": []
+        },
+        {
+          "name": "Mariana Raykova",
+          "orcid": "https://orcid.org/0000-0002-1744-4025",
+          "openalex_id": "A5089603958",
+          "institutions": []
+        },
+        {
+          "name": "Daniel Ramage",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Daniel Ramage",
+          "orcid": null,
+          "openalex_id": "A5071710055",
+          "institutions": []
+        },
+        {
+          "name": "Ramesh Raskar",
+          "orcid": "https://orcid.org/0000-0002-3254-3224",
+          "openalex_id": "A5023495279",
+          "institutions": []
+        },
+        {
+          "name": "Dawn Song",
+          "orcid": "https://orcid.org/0000-0001-9745-6802",
+          "openalex_id": "A5019426968",
+          "institutions": []
+        },
+        {
+          "name": "Weikang Song",
+          "orcid": null,
+          "openalex_id": "A5032224643",
+          "institutions": []
+        },
+        {
+          "name": "Sebastian U. Stich",
+          "orcid": null,
+          "openalex_id": "A5045519627",
+          "institutions": []
+        },
+        {
+          "name": "Ziteng Sun",
+          "orcid": null,
+          "openalex_id": "A5001128596",
+          "institutions": []
+        },
+        {
+          "name": "Ajith Suresh",
+          "orcid": "https://orcid.org/0000-0002-5164-7758",
+          "openalex_id": "A5085885345",
+          "institutions": []
+        },
+        {
+          "name": "Florian Tramèr",
+          "orcid": "https://orcid.org/0000-0001-8703-8762",
+          "openalex_id": "A5006851333",
+          "institutions": []
+        },
+        {
+          "name": "Praneeth Vepakomma",
+          "orcid": "https://orcid.org/0000-0003-2296-9296",
+          "openalex_id": "A5022815450",
+          "institutions": []
+        },
+        {
+          "name": "Jianyu Wang",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Li Xiong",
+          "orcid": "https://orcid.org/0000-0001-7354-0428",
+          "openalex_id": "A5078394535",
+          "institutions": []
+        },
+        {
+          "name": "Zheng Xu",
+          "orcid": "https://orcid.org/0000-0002-8362-5991",
+          "openalex_id": "A5037237895",
+          "institutions": []
+        },
+        {
+          "name": "Qiang Yang",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Felix X. Yu",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Han Yu",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        },
+        {
+          "name": "Sen Zhao",
+          "orcid": "https://orcid.org/0000-0002-5597-1109",
+          "openalex_id": "A5064111411",
+          "institutions": []
+        }
+      ],
+      "abstract": "Federated learning (FL) is a machine learning setting where many clients (e.g., mobile devices or whole organizations) collaboratively train a model under the orchestration of a central server (e.g., service provider), while keeping the training data decentralized. FL embodies the principles of focused data collection and minimization, and can mitigate many of the systemic privacy risks and costs resulting from traditional, centralized machine learning and data science approaches. Motivated by the explosive growth in FL research, this monograph discusses recent advances and presents an extensive collection of open problems and challenges.",
+      "doi": "10.1561/2200000083",
+      "pdf_url": "https://arxiv.org/pdf/1912.04977",
+      "url": "https://openalex.org/W2995022099",
+      "source_url": "https://openalex.org/W2995022099",
+      "year": 2020,
+      "date": "2020-12-02",
+      "doc_type": "article",
+      "journal": "Foundations and Trends® in Machine Learning",
+      "cited_by_count": 4299,
+      "referenced_works_count": 451,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Privacy-Preserving Technologies in Data",
+        "Cryptography and Data Security",
+        "Mobile Crowdsensing and Crowdsourcing"
+      ],
+      "keywords": [
+        "Orchestration",
+        "Computer science",
+        "Data collection",
+        "Federated learning",
+        "Open research",
+        "Service provider",
+        "Data science",
+        "Service (business)",
+        "Artificial intelligence",
+        "World Wide Web",
+        "Business"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3185341429",
+      "openalex_id": "W3185341429",
+      "title": "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing",
+      "authors": [
+        "Pengfei Liu",
+        "Weizhe Yuan",
+        "Jinlan Fu",
+        "Zhengbao Jiang",
+        "Hiroaki Hayashi",
+        "Graham Neubig"
+      ],
+      "author_details": [
+        {
+          "name": "Pengfei Liu",
+          "orcid": "https://orcid.org/0000-0001-9030-1875",
+          "openalex_id": "A5100354997",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        },
+        {
+          "name": "Weizhe Yuan",
+          "orcid": "https://orcid.org/0000-0002-6117-9417",
+          "openalex_id": "A5055933325",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        },
+        {
+          "name": "Jinlan Fu",
+          "orcid": "https://orcid.org/0000-0002-0370-1238",
+          "openalex_id": "A5103097172",
+          "institutions": [
+            "National University of Singapore"
+          ]
+        },
+        {
+          "name": "Zhengbao Jiang",
+          "orcid": "https://orcid.org/0000-0002-0315-6727",
+          "openalex_id": "A5043295774",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        },
+        {
+          "name": "Hiroaki Hayashi",
+          "orcid": "https://orcid.org/0000-0002-6875-7443",
+          "openalex_id": "A5101850869",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        },
+        {
+          "name": "Graham Neubig",
+          "orcid": "https://orcid.org/0000-0002-2072-3789",
+          "openalex_id": "A5068811427",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        }
+      ],
+      "abstract": "This article surveys and organizes research works in a new paradigm in natural language processing, which we dub “prompt-based learning.” Unlike traditional supervised learning, which trains a model to take in an input x and predict an output y as P ( y|x ), prompt-based learning is based on language models that model the probability of text directly. To use these models to perform prediction tasks, the original input x is modified using a template into a textual string prompt x′ that has some unfilled slots, and then the language model is used to probabilistically fill the unfilled information to obtain a final string x̂ , from which the final output y can be derived. This framework is powerful and attractive for a number of reasons: It allows the language model to be pre-trained on massive amounts of raw text, and by defining a new prompting function the model is able to perform few-shot or even zero-shot learning, adapting to new scenarios with few or no labeled data. In this article, we introduce the basics of this promising paradigm, describe a unified set of mathematical notations that can cover a wide variety of existing work, and organize existing work along several dimensions, e.g., the choice of pre-trained language models, prompts, and tuning strategies. To make the field more accessible to interested beginners, we not only make a systematic review of existing works and a highly structured typology of prompt-based concepts but also release other resources, e.g., a website NLPedia–Pretrain including constantly updated survey and paperlist.",
+      "doi": "10.1145/3560815",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3560815",
+      "url": "https://openalex.org/W3185341429",
+      "source_url": "https://openalex.org/W3185341429",
+      "year": 2022,
+      "date": "2022-09-14",
+      "doc_type": "review",
+      "journal": "ACM Computing Surveys",
+      "cited_by_count": 3407,
+      "referenced_works_count": 120,
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Sentiment Analysis and Opinion Mining"
+      ],
+      "keywords": [
+        "Computer science",
+        "Variety (cybernetics)",
+        "Set (abstract data type)",
+        "Notation",
+        "Cover (algebra)",
+        "Artificial intelligence",
+        "Natural language",
+        "Field (mathematics)",
+        "Function (biology)",
+        "Language model",
+        "String (physics)",
+        "Natural language processing",
+        "Natural language understanding",
+        "Programming language",
+        "Linguistics"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4360620450",
+      "openalex_id": "W4360620450",
+      "title": "Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy",
+      "authors": [
+        "Yogesh K. Dwivedi",
+        "Nir Kshetri",
+        "Laurie Hughes",
+        "Emma Slade",
+        "Anand Jeyaraj",
+        "Arpan Kumar Kar",
+        "Abdullah M. Baabdullah",
+        "Alex Koohang",
+        "Vishnupriya Raghavan",
+        "Manju Ahuja",
+        "Hanaa Albanna",
+        "Mousa Ahmad Albashrawi",
+        "Adil S. Al-Busaidi",
+        "Janarthanan Balakrishnan",
+        "Yves Barlette",
+        "Sriparna Basu",
+        "Indranil Bose",
+        "Laurence Brooks",
+        "Dimitrios Buhalis",
+        "Lemuria Carter",
+        "Soumyadeb Chowdhury",
+        "Tom Crick",
+        "Scott W. Cunningham",
+        "Gareth H. Davies",
+        "Robert M. Davison",
+        "Rahul Dé",
+        "Denis Dennehy",
+        "Yanqing Duan",
+        "Rameshwar Dubey",
+        "Rohita Dwivedi",
+        "John S. Edwards",
+        "Carlos Flavián",
+        "Robin Gauld",
+        "Varun Grover",
+        "Mei‐Chih Hu",
+        "Marijn Janssen",
+        "Paul Jones",
+        "Iris Junglas",
+        "Sangeeta Khorana",
+        "Sascha Kraus",
+        "Kai R. Larsen",
+        "Paul Latreille",
+        "Sven Laumer",
+        "Tegwen Malik",
+        "Abbas Mardani",
+        "Marcello Mariani",
+        "Sunil Mithas",
+        "Emmanuel Mogaji",
+        "Jeretta Horn Nord",
+        "Siobhán O’Connor",
+        "Fevzi Okumus",
+        "Margherita Pagani",
+        "Neeraj Pandey",
+        "Savvas Papagiannidis",
+        "Ilias O. Pappas",
+        "Nishith Pathak",
+        "Jan Pries‐Heje",
+        "Ramakrishnan Raman",
+        "Nripendra P. Rana",
+        "Sven‐Volker Rehm",
+        "Samuel Ribeiro‐Navarrete",
+        "Alexander Richter",
+        "Frantz Rowe",
+        "Suprateek Sarker",
+        "Bernd Carsten Stahl",
+        "Manoj Tiwari",
+        "Wil van der Aalst",
+        "Viswanath Venkatesh",
+        "Giampaolo Viglia",
+        "Michael Wade",
+        "Paul Walton",
+        "Jochen Wirtz",
+        "Ryan Wright"
+      ],
+      "author_details": [
+        {
+          "name": "Yogesh K. Dwivedi",
+          "orcid": "https://orcid.org/0000-0002-5547-9990",
+          "openalex_id": "A5048622877",
+          "institutions": [
+            "Symbiosis International University",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Nir Kshetri",
+          "orcid": "https://orcid.org/0000-0002-1408-4212",
+          "openalex_id": "A5025481201",
+          "institutions": [
+            "University of North Carolina at Greensboro"
+          ]
+        },
+        {
+          "name": "Laurie Hughes",
+          "orcid": "https://orcid.org/0000-0002-0956-0608",
+          "openalex_id": "A5072512285",
+          "institutions": [
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Emma Slade",
+          "orcid": "https://orcid.org/0000-0001-7648-6383",
+          "openalex_id": "A5081524121",
+          "institutions": [
+            "University of Bristol"
+          ]
+        },
+        {
+          "name": "Anand Jeyaraj",
+          "orcid": "https://orcid.org/0000-0003-3691-881X",
+          "openalex_id": "A5057695278",
+          "institutions": [
+            "Wright State University"
+          ]
+        },
+        {
+          "name": "Arpan Kumar Kar",
+          "orcid": "https://orcid.org/0000-0003-4186-4887",
+          "openalex_id": "A5061235109",
+          "institutions": [
+            "Indian Institute of Technology Delhi"
+          ]
+        },
+        {
+          "name": "Abdullah M. Baabdullah",
+          "orcid": null,
+          "openalex_id": "A5017453435",
+          "institutions": [
+            "King Abdulaziz University"
+          ]
+        },
+        {
+          "name": "Alex Koohang",
+          "orcid": "https://orcid.org/0000-0002-4565-0408",
+          "openalex_id": "A5008571658",
+          "institutions": [
+            "Georgia State University",
+            "Middle Georgia State College"
+          ]
+        },
+        {
+          "name": "Vishnupriya Raghavan",
+          "orcid": null,
+          "openalex_id": "A5050603102",
+          "institutions": [
+            "NIIT (India)"
+          ]
+        },
+        {
+          "name": "Manju Ahuja",
+          "orcid": null,
+          "openalex_id": "A5018408477",
+          "institutions": [
+            "University of Louisville"
+          ]
+        },
+        {
+          "name": "Hanaa Albanna",
+          "orcid": null,
+          "openalex_id": "A5078874795",
+          "institutions": [
+            "Northumbria University"
+          ]
+        },
+        {
+          "name": "Mousa Ahmad Albashrawi",
+          "orcid": null,
+          "openalex_id": "A5019826465",
+          "institutions": [
+            "King Fahd University of Petroleum and Minerals"
+          ]
+        },
+        {
+          "name": "Adil S. Al-Busaidi",
+          "orcid": "https://orcid.org/0000-0002-0959-7419",
+          "openalex_id": "A5057159975",
+          "institutions": [
+            "Sultan Qaboos University"
+          ]
+        },
+        {
+          "name": "Janarthanan Balakrishnan",
+          "orcid": "https://orcid.org/0000-0003-2456-2617",
+          "openalex_id": "A5033683059",
+          "institutions": [
+            "National Institute of Technology Tiruchirappalli"
+          ]
+        },
+        {
+          "name": "Yves Barlette",
+          "orcid": "https://orcid.org/0000-0001-6106-7274",
+          "openalex_id": "A5041516869",
+          "institutions": [
+            "Montpellier Business School"
+          ]
+        },
+        {
+          "name": "Sriparna Basu",
+          "orcid": "https://orcid.org/0000-0001-7924-8153",
+          "openalex_id": "A5056774275",
+          "institutions": [
+            "Fore School of Management"
+          ]
+        },
+        {
+          "name": "Indranil Bose",
+          "orcid": "https://orcid.org/0000-0002-5737-966X",
+          "openalex_id": "A5045996720",
+          "institutions": [
+            "Indian Institute of Management Ahmedabad"
+          ]
+        },
+        {
+          "name": "Laurence Brooks",
+          "orcid": "https://orcid.org/0000-0002-5456-8799",
+          "openalex_id": "A5049268821",
+          "institutions": [
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Dimitrios Buhalis",
+          "orcid": "https://orcid.org/0000-0001-9148-6090",
+          "openalex_id": "A5068663980",
+          "institutions": [
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Lemuria Carter",
+          "orcid": "https://orcid.org/0000-0002-2364-3100",
+          "openalex_id": "A5067377847",
+          "institutions": [
+            "UNSW Sydney"
+          ]
+        },
+        {
+          "name": "Soumyadeb Chowdhury",
+          "orcid": "https://orcid.org/0000-0002-8074-248X",
+          "openalex_id": "A5067653484",
+          "institutions": [
+            "TBS Education"
+          ]
+        },
+        {
+          "name": "Tom Crick",
+          "orcid": "https://orcid.org/0000-0001-5196-9389",
+          "openalex_id": "A5015452463",
+          "institutions": [
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Scott W. Cunningham",
+          "orcid": "https://orcid.org/0000-0001-7140-916X",
+          "openalex_id": "A5000045142",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "University of Strathclyde",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Gareth H. Davies",
+          "orcid": null,
+          "openalex_id": "A5104108927",
+          "institutions": [
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Robert M. Davison",
+          "orcid": "https://orcid.org/0000-0002-7243-3521",
+          "openalex_id": "A5006120288",
+          "institutions": [
+            "City University of Hong Kong",
+            "Universidad de Zaragoza",
+            "Indian Institute of Management Bangalore"
+          ]
+        },
+        {
+          "name": "Rahul Dé",
+          "orcid": "https://orcid.org/0000-0002-1300-1438",
+          "openalex_id": "A5113796817",
+          "institutions": [
+            "University of Bristol"
+          ]
+        },
+        {
+          "name": "Denis Dennehy",
+          "orcid": "https://orcid.org/0000-0001-9931-762X",
+          "openalex_id": "A5083528596",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Yanqing Duan",
+          "orcid": "https://orcid.org/0000-0003-4205-7403",
+          "openalex_id": "A5032994640",
+          "institutions": [
+            "University of Bedfordshire",
+            "College of Charleston",
+            "Swansea University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Rameshwar Dubey",
+          "orcid": null,
+          "openalex_id": "A5112902933",
+          "institutions": [
+            "Montpellier Business School"
+          ]
+        },
+        {
+          "name": "Rohita Dwivedi",
+          "orcid": "https://orcid.org/0000-0003-3801-3635",
+          "openalex_id": "A5070017829",
+          "institutions": [
+            "Symbiosis International University",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "John S. Edwards",
+          "orcid": "https://orcid.org/0000-0003-3979-017X",
+          "openalex_id": "A5007695310",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Aston University",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Carlos Flavián",
+          "orcid": "https://orcid.org/0000-0001-7118-9013",
+          "openalex_id": "A5044113079",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Universidad de Zaragoza",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Robin Gauld",
+          "orcid": "https://orcid.org/0000-0001-5401-1192",
+          "openalex_id": "A5065964282",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Swansea University",
+            "University of Reading",
+            "University of Otago",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Varun Grover",
+          "orcid": null,
+          "openalex_id": "A5103134481",
+          "institutions": [
+            "University of Arkansas at Fayetteville"
+          ]
+        },
+        {
+          "name": "Mei‐Chih Hu",
+          "orcid": null,
+          "openalex_id": "A5112818613",
+          "institutions": [
+            "University of Louisville"
+          ]
+        },
+        {
+          "name": "Marijn Janssen",
+          "orcid": "https://orcid.org/0000-0001-6211-8790",
+          "openalex_id": "A5062073470",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University",
+            "Delft University of Technology"
+          ]
+        },
+        {
+          "name": "Paul Jones",
+          "orcid": "https://orcid.org/0000-0003-0417-9143",
+          "openalex_id": "A5080152304",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Iris Junglas",
+          "orcid": "https://orcid.org/0000-0002-2914-3879",
+          "openalex_id": "A5001364826",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Sangeeta Khorana",
+          "orcid": "https://orcid.org/0000-0001-8901-0050",
+          "openalex_id": "A5086148004",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Sascha Kraus",
+          "orcid": "https://orcid.org/0000-0002-3721-1122",
+          "openalex_id": "A5075871949",
+          "institutions": [
+            "Free University of Bozen-Bolzano",
+            "College of Charleston",
+            "University of Johannesburg",
+            "University of Otago",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Kai R. Larsen",
+          "orcid": "https://orcid.org/0000-0002-8812-9866",
+          "openalex_id": "A5075496480",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "University of Colorado Boulder",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Paul Latreille",
+          "orcid": "https://orcid.org/0000-0001-7685-6532",
+          "openalex_id": "A5109602539",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Sven Laumer",
+          "orcid": null,
+          "openalex_id": "A5107936554",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Tegwen Malik",
+          "orcid": "https://orcid.org/0000-0003-4315-5726",
+          "openalex_id": "A5090009163",
+          "institutions": [
+            "University of Manchester",
+            "Delft University of Technology"
+          ]
+        },
+        {
+          "name": "Abbas Mardani",
+          "orcid": "https://orcid.org/0000-0003-1010-3655",
+          "openalex_id": "A5033150664",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Marcello Mariani",
+          "orcid": null,
+          "openalex_id": "A5108091448",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University",
+            "University of Bologna"
+          ]
+        },
+        {
+          "name": "Sunil Mithas",
+          "orcid": "https://orcid.org/0000-0002-2182-6202",
+          "openalex_id": "A5086635152",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "University of South Florida",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Emmanuel Mogaji",
+          "orcid": "https://orcid.org/0000-0003-0544-4842",
+          "openalex_id": "A5082000265",
+          "institutions": [
+            "Oklahoma State University",
+            "University of Greenwich",
+            "University of Arkansas at Fayetteville"
+          ]
+        },
+        {
+          "name": "Jeretta Horn Nord",
+          "orcid": "https://orcid.org/0000-0001-7590-9022",
+          "openalex_id": "A5070124847",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Siobhán O’Connor",
+          "orcid": "https://orcid.org/0000-0001-8579-1718",
+          "openalex_id": "A5067043429",
+          "institutions": [
+            "University of Manchester"
+          ]
+        },
+        {
+          "name": "Fevzi Okumus",
+          "orcid": null,
+          "openalex_id": "A5114045132",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Margherita Pagani",
+          "orcid": "https://orcid.org/0000-0002-4269-9409",
+          "openalex_id": "A5074068450",
+          "institutions": [
+            "SKEMA Business School"
+          ]
+        },
+        {
+          "name": "Neeraj Pandey",
+          "orcid": "https://orcid.org/0000-0002-6238-6397",
+          "openalex_id": "A5035078504",
+          "institutions": [
+            "Free University of Bozen-Bolzano",
+            "College of Charleston",
+            "University of Johannesburg",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Savvas Papagiannidis",
+          "orcid": null,
+          "openalex_id": "A5006679927",
+          "institutions": [
+            "Aston University",
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Ilias O. Pappas",
+          "orcid": "https://orcid.org/0000-0001-7528-3488",
+          "openalex_id": "A5080505347",
+          "institutions": [
+            "Free University of Bozen-Bolzano",
+            "University of Johannesburg"
+          ]
+        },
+        {
+          "name": "Nishith Pathak",
+          "orcid": null,
+          "openalex_id": "A5108072182",
+          "institutions": [
+            "College of Charleston",
+            "National Tsing Hua University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Jan Pries‐Heje",
+          "orcid": "https://orcid.org/0000-0003-2219-9332",
+          "openalex_id": "A5074257477",
+          "institutions": [
+            "National Institute of Technology Tiruchirappalli"
+          ]
+        },
+        {
+          "name": "Ramakrishnan Raman",
+          "orcid": "https://orcid.org/0000-0003-3642-6989",
+          "openalex_id": "A5072261829",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Nripendra P. Rana",
+          "orcid": "https://orcid.org/0000-0003-1105-8729",
+          "openalex_id": "A5034248834",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Sven‐Volker Rehm",
+          "orcid": "https://orcid.org/0000-0002-9785-6707",
+          "openalex_id": "A5011882746",
+          "institutions": [
+            "Humans and management in society"
+          ]
+        },
+        {
+          "name": "Samuel Ribeiro‐Navarrete",
+          "orcid": "https://orcid.org/0000-0003-1046-5322",
+          "openalex_id": "A5006215958",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Alexander Richter",
+          "orcid": "https://orcid.org/0000-0002-3699-6466",
+          "openalex_id": "A5061717541",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Frantz Rowe",
+          "orcid": "https://orcid.org/0000-0001-8520-1570",
+          "openalex_id": "A5056984467",
+          "institutions": [
+            "Laboratoire d'Economie et de Management de Nantes Atlantique"
+          ]
+        },
+        {
+          "name": "Suprateek Sarker",
+          "orcid": "https://orcid.org/0000-0002-8079-3121",
+          "openalex_id": "A5060897112",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield"
+          ]
+        },
+        {
+          "name": "Bernd Carsten Stahl",
+          "orcid": "https://orcid.org/0000-0002-4058-4456",
+          "openalex_id": "A5042194412",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Universidad de Zaragoza",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Manoj Tiwari",
+          "orcid": "https://orcid.org/0000-0001-8949-0330",
+          "openalex_id": "A5101785022",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University"
+          ]
+        },
+        {
+          "name": "Wil van der Aalst",
+          "orcid": null,
+          "openalex_id": "A5114045133",
+          "institutions": [
+            "Worcester Polytechnic Institute",
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+            "College of Charleston",
+            "Swansea University",
+            "University of Reading",
+            "University of Sheffield",
+            "Bournemouth University",
+            "Delft University of Technology"
+          ]
+        },
+        {
+          "name": "Viswanath Venkatesh",
+          "orcid": null,
+          "openalex_id": "A5108144975",
+          "institutions": [
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Giampaolo Viglia",
+          "orcid": "https://orcid.org/0000-0001-8521-4988",
+          "openalex_id": "A5065568454",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Michael Wade",
+          "orcid": "https://orcid.org/0000-0002-0829-7422",
+          "openalex_id": "A5008575290",
+          "institutions": [
+            "Prin. L. N. Welingkar Institute of Management Development and Research",
+            "Montpellier Business School",
+            "Liverpool John Moores University"
+          ]
+        },
+        {
+          "name": "Paul Walton",
+          "orcid": null,
+          "openalex_id": "A5109157215",
+          "institutions": [
+            "Delft University of Technology"
+          ]
+        },
+        {
+          "name": "Jochen Wirtz",
+          "orcid": "https://orcid.org/0000-0002-6297-4498",
+          "openalex_id": "A5064998398",
+          "institutions": [
+            "College of Charleston",
+            "Swansea University"
+          ]
+        },
+        {
+          "name": "Ryan Wright",
+          "orcid": "https://orcid.org/0000-0002-9719-415X",
+          "openalex_id": "A5060691228",
+          "institutions": [
+            "College of Charleston",
+            "Bournemouth University"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1016/j.ijinfomgt.2023.102642",
+      "pdf_url": "https://linkinghub.elsevier.com/science/article/pii/S0268401223000233/pdfft?md5=492895056a2fa29b1cb81876a1c57544&pid=1-s2.0-S0268401223000233-main.pdf",
+      "url": "https://openalex.org/W4360620450",
+      "source_url": "https://openalex.org/W4360620450",
+      "year": 2023,
+      "date": "2023-03-11",
+      "doc_type": "article",
+      "journal": "International Journal of Information Management",
+      "cited_by_count": 3309,
+      "referenced_works_count": 265,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "AI in Service Interactions",
+        "FinTech, Crowdfunding, Digital Finance"
+      ],
+      "keywords": [
+        "Transformative learning",
+        "Generative grammar",
+        "Knowledge management",
+        "Hospitality",
+        "Engineering ethics",
+        "Sociology",
+        "Tourism",
+        "Public relations",
+        "Political science",
+        "Computer science",
+        "Engineering",
+        "Artificial intelligence"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W2998508940",
+      "openalex_id": "W2998508940",
+      "title": "Random Erasing Data Augmentation",
+      "authors": [
+        "Zhun Zhong",
+        "Liang Zheng",
+        "Guoliang Kang",
+        "Shaozi Li",
+        "Yi Yang"
+      ],
+      "author_details": [
+        {
+          "name": "Zhun Zhong",
+          "orcid": "https://orcid.org/0000-0002-8202-0544",
+          "openalex_id": "A5065328976",
+          "institutions": [
+            "Xiamen University"
+          ]
+        },
+        {
+          "name": "Liang Zheng",
+          "orcid": "https://orcid.org/0000-0002-1464-9500",
+          "openalex_id": "A5100709340",
+          "institutions": [
+            "Australian National University"
+          ]
+        },
+        {
+          "name": "Guoliang Kang",
+          "orcid": "https://orcid.org/0000-0003-1978-2025",
+          "openalex_id": "A5011488839",
+          "institutions": [
+            "Carnegie Mellon University"
+          ]
+        },
+        {
+          "name": "Shaozi Li",
+          "orcid": "https://orcid.org/0000-0001-5403-9945",
+          "openalex_id": "A5081767617",
+          "institutions": [
+            "Xiamen University"
+          ]
+        },
+        {
+          "name": "Yi Yang",
+          "orcid": "https://orcid.org/0000-0002-0512-880X",
+          "openalex_id": "A5005421447",
+          "institutions": [
+            "University of Technology Sydney"
+          ]
+        }
+      ],
+      "abstract": "In this paper, we introduce Random Erasing, a new data augmentation method for training the convolutional neural network (CNN). In training, Random Erasing randomly selects a rectangle region in an image and erases its pixels with random values. In this process, training images with various levels of occlusion are generated, which reduces the risk of over-fitting and makes the model robust to occlusion. Random Erasing is parameter learning free, easy to implement, and can be integrated with most of the CNN-based recognition models. Albeit simple, Random Erasing is complementary to commonly used data augmentation techniques such as random cropping and flipping, and yields consistent improvement over strong baselines in image classification, object detection and person re-identification. Code is available at: https://github.com/zhunzhong07/Random-Erasing.",
+      "doi": "10.1609/aaai.v34i07.7000",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/7000/6854",
+      "url": "https://openalex.org/W2998508940",
+      "source_url": "https://openalex.org/W2998508940",
+      "year": 2020,
+      "date": "2020-04-03",
+      "doc_type": "article",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "cited_by_count": 2790,
+      "referenced_works_count": 46,
+      "is_open_access": true,
+      "oa_status": "diamond",
+      "topics": [
+        "Advanced Neural Network Applications",
+        "Advanced Image and Video Retrieval Techniques",
+        "Image Processing Techniques and Applications"
+      ],
+      "keywords": [
+        "Random forest",
+        "Computer science",
+        "Artificial intelligence",
+        "Convolutional neural network",
+        "Rectangle",
+        "Pixel",
+        "Identification (biology)",
+        "Image (mathematics)",
+        "Pattern recognition (psychology)",
+        "Code (set theory)",
+        "Convolution random number generator",
+        "Process (computing)",
+        "Object (grammar)",
+        "Random function",
+        "Algorithm",
+        "Random variable",
+        "Mathematics",
+        "Statistics",
+        "Programming language"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4384071683",
+      "openalex_id": "W4384071683",
+      "title": "Large language models encode clinical knowledge",
+      "authors": [
+        "Karan Singhal",
+        "Shekoofeh Azizi",
+        "Tao Tu",
+        "S. Sara Mahdavi",
+        "Jason Lee",
+        "Hyung Won Chung",
+        "Nathan Scales",
+        "Ajay Kumar Tanwani",
+        "Heather Cole-Lewis",
+        "Stephen Pfohl",
+        "Perry W. Payne",
+        "Martin Seneviratne",
+        "Paul Gamble",
+        "Christopher Kelly",
+        "Abubakr Babiker",
+        "Nathanael Schärli",
+        "Aakanksha Chowdhery",
+        "P. Mansfield",
+        "Dina Demner‐Fushman",
+        "Blaise Agüera y Arcas",
+        "Dale R. Webster",
+        "Greg S. Corrado",
+        "Yossi Matias",
+        "Katherine Chou",
+        "Juraj Gottweis",
+        "Nenad Tomašev",
+        "Yun Liu",
+        "Alvin Rajkomar",
+        "Joëlle Barral",
+        "Christopher Semturs",
+        "Alan Karthikesalingam",
+        "Vivek Natarajan"
+      ],
+      "author_details": [
+        {
+          "name": "Karan Singhal",
+          "orcid": "https://orcid.org/0000-0001-9002-7490",
+          "openalex_id": "A5027454515",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Shekoofeh Azizi",
+          "orcid": "https://orcid.org/0000-0002-7447-6031",
+          "openalex_id": "A5047463591",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Tao Tu",
+          "orcid": "https://orcid.org/0000-0003-3420-7889",
+          "openalex_id": "A5059213795",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "S. Sara Mahdavi",
+          "orcid": "https://orcid.org/0000-0001-6823-598X",
+          "openalex_id": "A5063201022",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Jason Lee",
+          "orcid": "https://orcid.org/0000-0003-4042-795X",
+          "openalex_id": "A5100657725",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Hyung Won Chung",
+          "orcid": "https://orcid.org/0000-0002-1280-9953",
+          "openalex_id": "A5051828575",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Nathan Scales",
+          "orcid": "https://orcid.org/0000-0002-9535-7138",
+          "openalex_id": "A5030765685",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Ajay Kumar Tanwani",
+          "orcid": "https://orcid.org/0000-0002-6365-8315",
+          "openalex_id": "A5088063475",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Heather Cole-Lewis",
+          "orcid": "https://orcid.org/0000-0002-7275-1810",
+          "openalex_id": "A5069557194",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Stephen Pfohl",
+          "orcid": "https://orcid.org/0000-0003-0551-9664",
+          "openalex_id": "A5021812637",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Perry W. Payne",
+          "orcid": null,
+          "openalex_id": "A5014637990",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Martin Seneviratne",
+          "orcid": "https://orcid.org/0000-0003-0435-3738",
+          "openalex_id": "A5058677067",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Paul Gamble",
+          "orcid": null,
+          "openalex_id": "A5090718376",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Christopher Kelly",
+          "orcid": "https://orcid.org/0000-0002-1246-844X",
+          "openalex_id": "A5026540467",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Abubakr Babiker",
+          "orcid": null,
+          "openalex_id": "A5066029226",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Nathanael Schärli",
+          "orcid": null,
+          "openalex_id": "A5007588003",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Aakanksha Chowdhery",
+          "orcid": "https://orcid.org/0000-0002-0628-5225",
+          "openalex_id": "A5055969617",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "P. Mansfield",
+          "orcid": "https://orcid.org/0000-0003-4969-0543",
+          "openalex_id": "A5086361722",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Dina Demner‐Fushman",
+          "orcid": null,
+          "openalex_id": "A5046764593",
+          "institutions": [
+            "United States National Library of Medicine"
+          ]
+        },
+        {
+          "name": "Blaise Agüera y Arcas",
+          "orcid": "https://orcid.org/0000-0003-2256-9823",
+          "openalex_id": "A5044698998",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Dale R. Webster",
+          "orcid": "https://orcid.org/0000-0002-3023-8824",
+          "openalex_id": "A5060000122",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Greg S. Corrado",
+          "orcid": "https://orcid.org/0000-0001-8817-0992",
+          "openalex_id": "A5068955381",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Yossi Matias",
+          "orcid": "https://orcid.org/0000-0003-3960-6002",
+          "openalex_id": "A5065128060",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Katherine Chou",
+          "orcid": "https://orcid.org/0000-0002-0318-7857",
+          "openalex_id": "A5070366042",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Juraj Gottweis",
+          "orcid": null,
+          "openalex_id": "A5057932939",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Nenad Tomašev",
+          "orcid": "https://orcid.org/0000-0003-1624-0220",
+          "openalex_id": "A5057195145",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Yun Liu",
+          "orcid": "https://orcid.org/0000-0003-4079-8275",
+          "openalex_id": "A5078784976",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Alvin Rajkomar",
+          "orcid": "https://orcid.org/0000-0001-5750-5016",
+          "openalex_id": "A5022388476",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Joëlle Barral",
+          "orcid": "https://orcid.org/0009-0009-0432-5148",
+          "openalex_id": "A5043862316",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Christopher Semturs",
+          "orcid": "https://orcid.org/0000-0001-6108-2773",
+          "openalex_id": "A5010171106",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Alan Karthikesalingam",
+          "orcid": "https://orcid.org/0000-0001-5074-898X",
+          "openalex_id": "A5003509342",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Vivek Natarajan",
+          "orcid": "https://orcid.org/0000-0001-7849-2074",
+          "openalex_id": "A5103234563",
+          "institutions": [
+            "Google (United States)"
+          ]
+        }
+      ],
+      "abstract": "Large language models (LLMs) have demonstrated impressive capabilities, but the bar for clinical applications is high. Attempts to assess the clinical knowledge of models typically rely on automated evaluations based on limited benchmarks. Here, to address these limitations, we present MultiMedQA, a benchmark combining six existing medical question answering datasets spanning professional medicine, research and consumer queries and a new dataset of medical questions searched online, HealthSearchQA. We propose a human evaluation framework for model answers along multiple axes including factuality, comprehension, reasoning, possible harm and bias. In addition, we evaluate Pathways Language Model<sup>1</sup> (PaLM, a 540-billion parameter LLM) and its instruction-tuned variant, Flan-PaLM<sup>2</sup> on MultiMedQA. Using a combination of prompting strategies, Flan-PaLM achieves state-of-the-art accuracy on every MultiMedQA multiple-choice dataset (MedQA<sup>3</sup>, MedMCQA<sup>4</sup>, PubMedQA<sup>5</sup> and Measuring Massive Multitask Language Understanding (MMLU) clinical topics<sup>6</sup>), including 67.6% accuracy on MedQA (US Medical Licensing Exam-style questions), surpassing the prior state of the art by more than 17%. However, human evaluation reveals key gaps. To resolve this, we introduce instruction prompt tuning, a parameter-efficient approach for aligning LLMs to new domains using a few exemplars. The resulting model, Med-PaLM, performs encouragingly, but remains inferior to clinicians. We show that comprehension, knowledge recall and reasoning improve with model scale and instruction prompt tuning, suggesting the potential utility of LLMs in medicine. Our human evaluations reveal limitations of today's models, reinforcing the importance of both evaluation frameworks and method development in creating safe, helpful LLMs for clinical applications.",
+      "doi": "10.1038/s41586-023-06291-2",
+      "pdf_url": "https://www.nature.com/articles/s41586-023-06291-2.pdf",
+      "url": "https://openalex.org/W4384071683",
+      "source_url": "https://openalex.org/W4384071683",
+      "year": 2023,
+      "date": "2023-07-12",
+      "doc_type": "article",
+      "journal": "Nature",
+      "cited_by_count": 2711,
+      "referenced_works_count": 91,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Topic Modeling",
+        "Artificial Intelligence in Healthcare and Education",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Computer science",
+        "Benchmark (surveying)",
+        "Language model",
+        "Comprehension",
+        "Artificial intelligence",
+        "Harm",
+        "Key (lock)",
+        "Unified Medical Language System",
+        "Data science",
+        "Precision medicine",
+        "Machine learning",
+        "Natural language processing",
+        "Medicine",
+        "Psychology",
+        "Computer security"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4327946446",
+      "openalex_id": "W4327946446",
+      "title": "ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns",
+      "authors": [
+        "Malik Sallam"
+      ],
+      "author_details": [
+        {
+          "name": "Malik Sallam",
+          "orcid": "https://orcid.org/0000-0002-0165-9670",
+          "openalex_id": "A5086563544",
+          "institutions": [
+            "University of Jordan",
+            "Jordan Hospital"
+          ]
+        }
+      ],
+      "abstract": "ChatGPT is an artificial intelligence (AI)-based conversational large language model (LLM). The potential applications of LLMs in health care education, research, and practice could be promising if the associated valid concerns are proactively examined and addressed. The current systematic review aimed to investigate the utility of ChatGPT in health care education, research, and practice and to highlight its potential limitations. Using the PRIMSA guidelines, a systematic search was conducted to retrieve English records in PubMed/MEDLINE and Google Scholar (published research or preprints) that examined ChatGPT in the context of health care education, research, or practice. A total of 60 records were eligible for inclusion. Benefits of ChatGPT were cited in 51/60 (85.0%) records and included: (1) improved scientific writing and enhancing research equity and versatility; (2) utility in health care research (efficient analysis of datasets, code generation, literature reviews, saving time to focus on experimental design, and drug discovery and development); (3) benefits in health care practice (streamlining the workflow, cost saving, documentation, personalized medicine, and improved health literacy); and (4) benefits in health care education including improved personalized learning and the focus on critical thinking and problem-based learning. Concerns regarding ChatGPT use were stated in 58/60 (96.7%) records including ethical, copyright, transparency, and legal issues, the risk of bias, plagiarism, lack of originality, inaccurate content with risk of hallucination, limited knowledge, incorrect citations, cybersecurity issues, and risk of infodemics. The promising applications of ChatGPT can induce paradigm shifts in health care education, research, and practice. However, the embrace of this AI chatbot should be conducted with extreme caution considering its potential limitations. As it currently stands, ChatGPT does not qualify to be listed as an author in scientific articles unless the ICMJE/COPE guidelines are revised or amended. An initiative involving all stakeholders in health care education, research, and practice is urgently needed. This will help to set a code of ethics to guide the responsible use of ChatGPT among other LLMs in health care and academia.",
+      "doi": "10.3390/healthcare11060887",
+      "pdf_url": "https://www.mdpi.com/2227-9032/11/6/887/pdf?version=1679359384",
+      "url": "https://openalex.org/W4327946446",
+      "source_url": "https://openalex.org/W4327946446",
+      "year": 2023,
+      "date": "2023-03-19",
+      "doc_type": "review",
+      "journal": "Healthcare",
+      "cited_by_count": 2540,
+      "referenced_works_count": 114,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "Ethics in Clinical Research",
+        "COVID-19 diagnosis using AI"
+      ],
+      "keywords": [
+        "Health care",
+        "Documentation",
+        "MEDLINE",
+        "Context (archaeology)",
+        "Medical education",
+        "Grey literature",
+        "Systematic review",
+        "Transparency (behavior)",
+        "Workflow",
+        "Psychology",
+        "Medicine",
+        "Computer science",
+        "Political science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4386958277",
+      "openalex_id": "W4386958277",
+      "title": "Revolutionizing healthcare: the role of artificial intelligence in clinical practice",
+      "authors": [
+        "Shuroug A. Alowais",
+        "Sahar S. Alghamdi",
+        "Nada Alsuhebany",
+        "Tariq Alqahtani",
+        "Abdulrahman Alshaya",
+        "Sumaya N. Almohareb",
+        "Atheer Aldairem",
+        "Mohammed Alrashed",
+        "Khalid Bin Saleh",
+        "Hisham A. Badreldin",
+        "Majed S. Al Yami",
+        "Shmeylan Al Harbi",
+        "Abdulkareem Albekairy"
+      ],
+      "author_details": [
+        {
+          "name": "Shuroug A. Alowais",
+          "orcid": "https://orcid.org/0000-0002-3266-5774",
+          "openalex_id": "A5005352524",
+          "institutions": []
+        },
+        {
+          "name": "Sahar S. Alghamdi",
+          "orcid": "https://orcid.org/0000-0002-2770-218X",
+          "openalex_id": "A5050298886",
+          "institutions": [
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Nada Alsuhebany",
+          "orcid": "https://orcid.org/0000-0003-4077-4521",
+          "openalex_id": "A5081991977",
+          "institutions": [
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City",
+            "King Abdullah International Medical Research Center"
+          ]
+        },
+        {
+          "name": "Tariq Alqahtani",
+          "orcid": "https://orcid.org/0009-0007-1094-6835",
+          "openalex_id": "A5066001851",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City",
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences"
+          ]
+        },
+        {
+          "name": "Abdulrahman Alshaya",
+          "orcid": "https://orcid.org/0000-0002-5262-5841",
+          "openalex_id": "A5020760203",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Sumaya N. Almohareb",
+          "orcid": "https://orcid.org/0000-0003-3392-8369",
+          "openalex_id": "A5084394960",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City",
+            "King Abdullah International Medical Research Center"
+          ]
+        },
+        {
+          "name": "Atheer Aldairem",
+          "orcid": "https://orcid.org/0009-0001-0924-4672",
+          "openalex_id": "A5086178563",
+          "institutions": [
+            "King Abdullah International Medical Research Center",
+            "National Guard Health Affairs",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Mohammed Alrashed",
+          "orcid": "https://orcid.org/0000-0002-5203-8962",
+          "openalex_id": "A5069678285",
+          "institutions": [
+            "King Abdullah International Medical Research Center",
+            "National Guard Health Affairs",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Khalid Bin Saleh",
+          "orcid": null,
+          "openalex_id": "A5112910027",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City",
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences"
+          ]
+        },
+        {
+          "name": "Hisham A. Badreldin",
+          "orcid": "https://orcid.org/0000-0001-7182-4347",
+          "openalex_id": "A5088912799",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Abdulaziz Medical City",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdullah International Medical Research Center"
+          ]
+        },
+        {
+          "name": "Majed S. Al Yami",
+          "orcid": "https://orcid.org/0000-0003-2308-8407",
+          "openalex_id": "A5005774540",
+          "institutions": [
+            "National Guard Health Affairs",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdullah International Medical Research Center",
+            "King Abdulaziz Medical City"
+          ]
+        },
+        {
+          "name": "Shmeylan Al Harbi",
+          "orcid": "https://orcid.org/0000-0003-4437-8761",
+          "openalex_id": "A5017442221",
+          "institutions": [
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdullah International Medical Research Center",
+            "King Abdulaziz Medical City",
+            "National Guard Health Affairs"
+          ]
+        },
+        {
+          "name": "Abdulkareem Albekairy",
+          "orcid": "https://orcid.org/0000-0002-0205-6484",
+          "openalex_id": "A5103246868",
+          "institutions": [
+            "King Abdullah International Medical Research Center",
+            "King Saud bin Abdulaziz University for Health Sciences",
+            "King Abdulaziz Medical City",
+            "National Guard Health Affairs"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1186/s12909-023-04698-z",
+      "pdf_url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-023-04698-z",
+      "url": "https://openalex.org/W4386958277",
+      "source_url": "https://openalex.org/W4386958277",
+      "year": 2023,
+      "date": "2023-09-22",
+      "doc_type": "review",
+      "journal": "BMC Medical Education",
+      "cited_by_count": 2523,
+      "referenced_works_count": 117,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Artificial Intelligence in Healthcare and Education",
+        "Ethics in Clinical Research",
+        "Machine Learning in Healthcare"
+      ],
+      "keywords": [
+        "Health care",
+        "MEDLINE",
+        "Applications of artificial intelligence",
+        "Medicine",
+        "Leverage (statistics)",
+        "Artificial intelligence",
+        "Computer science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3156636935",
+      "openalex_id": "W3156636935",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+      "authors": [
+        "Tianyu Gao",
+        "Xingcheng Yao",
+        "Danqi Chen"
+      ],
+      "author_details": [
+        {
+          "name": "Tianyu Gao",
+          "orcid": "https://orcid.org/0000-0002-5178-0866",
+          "openalex_id": "A5006863331",
+          "institutions": [
+            "Princeton University"
+          ]
+        },
+        {
+          "name": "Xingcheng Yao",
+          "orcid": "https://orcid.org/0000-0001-5065-3016",
+          "openalex_id": "A5065739587",
+          "institutions": [
+            "Tsinghua University"
+          ]
+        },
+        {
+          "name": "Danqi Chen",
+          "orcid": "https://orcid.org/0000-0002-6226-6838",
+          "openalex_id": "A5051064208",
+          "institutions": [
+            "Princeton University"
+          ]
+        }
+      ],
+      "abstract": "This paper presents SimCSE, a simple contrastive learning framework that greatly advances the state-of-the-art sentence embeddings. We first describe an unsupervised approach, which takes an input sentence and predicts itself in a contrastive objective, with only standard dropout used as noise. This simple method works surprisingly well, performing on par with previous supervised counterparts. We find that dropout acts as minimal data augmentation and removing it leads to a representation collapse. Then, we propose a supervised approach, which incorporates annotated pairs from natural language inference datasets into our contrastive learning framework, by using \"entailment\" pairs as positives and \"contradiction\" pairs as hard negatives. We evaluate SimCSE on standard semantic textual similarity (STS) tasks, and our unsupervised and supervised models using BERT base achieve an average of 76.3% and 81.6% Spearman's correlation respectively, a 4.2% and 2.2% improvement compared to previous best results. We also show-both theoretically and empirically-that contrastive learning objective regularizes pre-trained embeddings' anisotropic space to be more uniform, and it better aligns positive pairs when supervised signals are available. 1",
+      "doi": "10.18653/v1/2021.emnlp-main.552",
+      "pdf_url": "https://aclanthology.org/2021.emnlp-main.552.pdf",
+      "url": "https://openalex.org/W3156636935",
+      "source_url": "https://openalex.org/W3156636935",
+      "year": 2021,
+      "date": "2021-01-01",
+      "doc_type": "article",
+      "journal": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "cited_by_count": 2427,
+      "referenced_works_count": 70,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Sentiment Analysis and Opinion Mining"
+      ],
+      "keywords": [
+        "Artificial intelligence",
+        "Computer science",
+        "Natural language processing",
+        "Sentence",
+        "Simple (philosophy)",
+        "Feature learning",
+        "Pattern recognition (psychology)",
+        "Unsupervised learning"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3153990350",
+      "openalex_id": "W3153990350",
+      "title": "Machine learning and deep learning",
+      "authors": [
+        "Christian Janiesch",
+        "Patrick Zschech",
+        "Kai Heinrich"
+      ],
+      "author_details": [
+        {
+          "name": "Christian Janiesch",
+          "orcid": "https://orcid.org/",
+          "openalex_id": "",
+          "institutions": [
+            "University of Würzburg"
+          ]
+        },
+        {
+          "name": "Patrick Zschech",
+          "orcid": "https://orcid.org/0000-0002-1105-8086",
+          "openalex_id": "",
+          "institutions": [
+            "Friedrich-Alexander-Universität Erlangen-Nürnberg"
+          ]
+        },
+        {
+          "name": "Kai Heinrich",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": [
+            "Otto-von-Guericke University Magdeburg"
+          ]
+        }
+      ],
+      "abstract": "Abstract Today, intelligent systems that offer artificial intelligence capabilities often rely on machine learning. Machine learning describes the capacity of systems to learn from problem-specific training data to automate the process of analytical model building and solve associated tasks. Deep learning is a machine learning concept based on artificial neural networks. For many applications, deep learning models outperform shallow machine learning models and traditional data analysis approaches. In this article, we summarize the fundamentals of machine learning and deep learning to generate a broader understanding of the methodical underpinning of current intelligent systems. In particular, we provide a conceptual distinction between relevant terms and concepts, explain the process of automated analytical model building through machine learning and deep learning, and discuss the challenges that arise when implementing such intelligent systems in the field of electronic markets and networked business. These naturally go beyond technological aspects and highlight issues in human-machine interaction and artificial intelligence servitization.",
+      "doi": "10.1007/s12525-021-00475-2",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12525-021-00475-2.pdf",
+      "url": "https://openalex.org/W3153990350",
+      "source_url": "https://openalex.org/W3153990350",
+      "year": 2021,
+      "date": "2021-04-08",
+      "doc_type": "article",
+      "journal": "Electronic Markets",
+      "cited_by_count": 2304,
+      "referenced_works_count": 53,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [],
+      "keywords": [
+        "Deep learning",
+        "Field (mathematics)",
+        "Process (computing)",
+        "Underpinning",
+        "Artificial neural network",
+        "Instance-based learning",
+        "Hyper-heuristic",
+        "Computational learning theory"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3212386989",
+      "openalex_id": "W3212386989",
+      "title": "Attention mechanisms in computer vision: A survey",
+      "authors": [
+        "Meng-Hao Guo",
+        "Tian-Xing Xu",
+        "Jiangjiang Liu",
+        "Zheng-Ning Liu",
+        "Peng-Tao Jiang",
+        "Tai‐Jiang Mu",
+        "Song–Hai Zhang",
+        "Ralph R. Martin",
+        "Ming‐Ming Cheng",
+        "Shi‐Min Hu"
+      ],
+      "author_details": [
+        {
+          "name": "Meng-Hao Guo",
+          "orcid": "https://orcid.org/0000-0002-4128-4594",
+          "openalex_id": "A5101135616",
+          "institutions": [
+            "Tsinghua University"
+          ]
+        },
+        {
+          "name": "Tian-Xing Xu",
+          "orcid": "https://orcid.org/0000-0002-9433-1980",
+          "openalex_id": "A5058414523",
+          "institutions": [
+            "Tsinghua University"
+          ]
+        },
+        {
+          "name": "Jiangjiang Liu",
+          "orcid": "https://orcid.org/0000-0002-1341-2763",
+          "openalex_id": "A5059524537",
+          "institutions": [
+            "Nankai University"
+          ]
+        },
+        {
+          "name": "Zheng-Ning Liu",
+          "orcid": null,
+          "openalex_id": "A5013917396",
+          "institutions": [
+            "Tsinghua University"
+          ]
+        },
+        {
+          "name": "Peng-Tao Jiang",
+          "orcid": "https://orcid.org/0000-0002-1786-4943",
+          "openalex_id": "A5062345781",
+          "institutions": [
+            "Nankai University"
+          ]
+        },
+        {
+          "name": "Tai‐Jiang Mu",
+          "orcid": "https://orcid.org/0000-0002-9197-346X",
+          "openalex_id": "A5067592804",
+          "institutions": [
+            "Tsinghua University"
+          ]
+        },
+        {
+          "name": "Song–Hai Zhang",
+          "orcid": "https://orcid.org/0000-0003-0460-1586",
+          "openalex_id": "A5049883689",
+          "institutions": [
+            "Tsinghua University"
+          ]
+        },
+        {
+          "name": "Ralph R. Martin",
+          "orcid": null,
+          "openalex_id": "A5111609957",
+          "institutions": [
+            "Cardiff University"
+          ]
+        },
+        {
+          "name": "Ming‐Ming Cheng",
+          "orcid": "https://orcid.org/0000-0001-5550-8758",
+          "openalex_id": "A5037131575",
+          "institutions": [
+            "Nankai University"
+          ]
+        },
+        {
+          "name": "Shi‐Min Hu",
+          "orcid": "https://orcid.org/0000-0001-7507-6542",
+          "openalex_id": "A5037233582",
+          "institutions": [
+            "Tsinghua University"
+          ]
+        }
+      ],
+      "abstract": "Humans can naturally and effectively find salient regions in complex scenes. Motivated by this observation, attention mechanisms were introduced into computer vision with the aim of imitating this aspect of the human visual system. Such an attention mechanism can be regarded as a dynamic weight adjustment process based on features of the input image. Attention mechanisms have achieved great success in many visual tasks, including image classification, object detection, semantic segmentation, video understanding, image generation, 3D vision, multimodal tasks, and self-supervised learning. In this survey, we provide a comprehensive review of various attention mechanisms in computer vision and categorize them according to approach, such as channel attention, spatial attention, temporal attention, and branch attention; a related repository https://github.com/MenghaoGuo/Awesome-Vision-Attentions is dedicated to collecting related work. We also suggest future directions for attention mechanism research.",
+      "doi": "10.1007/s41095-022-0271-y",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s41095-022-0271-y.pdf",
+      "url": "https://openalex.org/W3212386989",
+      "source_url": "https://openalex.org/W3212386989",
+      "year": 2022,
+      "date": "2022-03-15",
+      "doc_type": "article",
+      "journal": "Computational Visual Media",
+      "cited_by_count": 2221,
+      "referenced_works_count": 238,
+      "is_open_access": true,
+      "oa_status": "diamond",
+      "topics": [
+        "Visual Attention and Saliency Detection",
+        "Advanced Neural Network Applications",
+        "CCD and CMOS Imaging Sensors"
+      ],
+      "keywords": [
+        "Computer science",
+        "Categorization",
+        "Artificial intelligence",
+        "Computer graphics",
+        "Process (computing)",
+        "Salient",
+        "Mechanism (biology)",
+        "Computer vision",
+        "Human–computer interaction",
+        "Human visual system model",
+        "Image (mathematics)"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3023211159",
+      "openalex_id": "W3023211159",
+      "title": "A comprehensive survey on support vector machine classification: Applications, challenges and trends",
+      "authors": [
+        "Jair Cervantes",
+        "Farid García‐Lamont",
+        "Lisbeth Rodríguez-Mazahua",
+        "Asdrúbal López‐Chau"
+      ],
+      "author_details": [
+        {
+          "name": "Jair Cervantes",
+          "orcid": "https://orcid.org/0000-0003-2012-8151",
+          "openalex_id": "A5048103294",
+          "institutions": [
+            "Universidad Autónoma del Estado de México"
+          ]
+        },
+        {
+          "name": "Farid García‐Lamont",
+          "orcid": "https://orcid.org/0000-0002-9739-3802",
+          "openalex_id": "A5022867602",
+          "institutions": [
+            "Universidad Autónoma del Estado de México"
+          ]
+        },
+        {
+          "name": "Lisbeth Rodríguez-Mazahua",
+          "orcid": "https://orcid.org/0000-0002-9861-3993",
+          "openalex_id": "A5020368425",
+          "institutions": [
+            "Instituto Tecnologico de Orizaba"
+          ]
+        },
+        {
+          "name": "Asdrúbal López‐Chau",
+          "orcid": "https://orcid.org/0000-0001-5254-0939",
+          "openalex_id": "A5065258336",
+          "institutions": [
+            "Universidad Autónoma del Estado de México"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1016/j.neucom.2019.10.118",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0925231220307153",
+      "url": "https://openalex.org/W3023211159",
+      "source_url": "https://openalex.org/W3023211159",
+      "year": 2020,
+      "date": "2020-05-08",
+      "doc_type": "article",
+      "journal": "Neurocomputing",
+      "cited_by_count": 2169,
+      "referenced_works_count": 303,
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "topics": [
+        "Face and Expression Recognition",
+        "Imbalanced Data Classification Techniques",
+        "Text and Document Classification Technologies"
+      ],
+      "keywords": [
+        "Support vector machine",
+        "Machine learning",
+        "Artificial intelligence",
+        "Computer science",
+        "Ranking SVM",
+        "Data mining",
+        "Pattern recognition (psychology)"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3145334405",
+      "openalex_id": "W3145334405",
+      "title": "The cGAS–STING pathway as a therapeutic target in inflammatory diseases",
+      "authors": [
+        "Alexiane Decout",
+        "Jason D. Katz",
+        "Shankar Venkatraman",
+        "Andrea Ablasser"
+      ],
+      "author_details": [
+        {
+          "name": "Alexiane Decout",
+          "orcid": "https://orcid.org/0000-0001-7761-6434",
+          "openalex_id": "A5008007174",
+          "institutions": [
+            "École Polytechnique Fédérale de Lausanne"
+          ]
+        },
+        {
+          "name": "Jason D. Katz",
+          "orcid": "https://orcid.org/0009-0006-8080-9409",
+          "openalex_id": "A5052803577",
+          "institutions": [
+            "Ifm Therapeutics (United States)"
+          ]
+        },
+        {
+          "name": "Shankar Venkatraman",
+          "orcid": null,
+          "openalex_id": "A5103856725",
+          "institutions": [
+            "Ifm Therapeutics (United States)"
+          ]
+        },
+        {
+          "name": "Andrea Ablasser",
+          "orcid": "https://orcid.org/0000-0002-8475-8999",
+          "openalex_id": "A5071484543",
+          "institutions": [
+            "École Polytechnique Fédérale de Lausanne"
+          ]
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1038/s41577-021-00524-z",
+      "pdf_url": "https://www.nature.com/articles/s41577-021-00524-z.pdf",
+      "url": "https://openalex.org/W3145334405",
+      "source_url": "https://openalex.org/W3145334405",
+      "year": 2021,
+      "date": "2021-04-08",
+      "doc_type": "review",
+      "journal": "Nature reviews. Immunology",
+      "cited_by_count": 2026,
+      "referenced_works_count": 217,
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "topics": [
+        "interferon and immune responses",
+        "Viral Infections and Vectors",
+        "Inflammasome and immune disorders"
+      ],
+      "keywords": [
+        "Sting",
+        "Innate immune system",
+        "Inflammation",
+        "Stimulator of interferon genes",
+        "Biology",
+        "Signal transduction",
+        "Mediator",
+        "Immune system",
+        "Cell biology",
+        "Immunology"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4206484811",
+      "openalex_id": "W4206484811",
+      "title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+      "authors": [
+        "Sangmin Park",
+        "Young‐Gab Kim"
+      ],
+      "author_details": [
+        {
+          "name": "Sangmin Park",
+          "orcid": "https://orcid.org/0000-0002-3484-9833",
+          "openalex_id": "A5100671422",
+          "institutions": [
+            "Korea University"
+          ]
+        },
+        {
+          "name": "Young‐Gab Kim",
+          "orcid": "https://orcid.org/0000-0001-9585-8808",
+          "openalex_id": "A5061277148",
+          "institutions": [
+            "Sejong University"
+          ]
+        }
+      ],
+      "abstract": "Unlike previous studies on the Metaverse based on Second Life, the current Metaverse is based on the social value of Generation Z that online and offline selves are not different. With the technological development of deep learning-based high-precision recognition models and natural generation models, Metaverse is being strengthened with various factors, from mobile-based always-on access to connectivity with reality using virtual currency. The integration of enhanced social activities and neural-net methods requires a new definition of Metaverse suitable for the present, different from the previous Metaverse. This paper divides the concepts and essential techniques necessary for realizing the Metaverse into three components (i.e., hardware, software, and contents) and three approaches (i.e., user interaction, implementation, and application) rather than marketing or hardware approach to conduct a comprehensive analysis. Furthermore, we describe essential methods based on three components and techniques to Metaverse&#x2019;s representative Ready Player One, Roblox, and Facebook research in the domain of films, games, and studies. Finally, we summarize the limitations and directions for implementing the immersive Metaverse as social influences, constraints, and open challenges.",
+      "doi": "10.1109/access.2021.3140175",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/9668973/09667507.pdf",
+      "url": "https://openalex.org/W4206484811",
+      "source_url": "https://openalex.org/W4206484811",
+      "year": 2022,
+      "date": "2022-01-01",
+      "doc_type": "article",
+      "journal": "IEEE Access",
+      "cited_by_count": 1688,
+      "referenced_works_count": 424,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Multimodal Machine Learning Applications",
+        "Advanced Neural Network Applications",
+        "Domain Adaptation and Few-Shot Learning"
+      ],
+      "keywords": [
+        "Computer science",
+        "Taxonomy (biology)",
+        "Metaverse",
+        "Data science",
+        "World Wide Web",
+        "Human–computer interaction",
+        "Ecology",
+        "Virtual reality"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W2747680751",
+      "openalex_id": "W2747680751",
+      "title": "Natural language processing: state of the art, current trends and challenges",
+      "authors": [
+        "Diksha Khurana",
+        "Aditya Koli",
+        "Kiran Khatter",
+        "Sukhdev Singh"
+      ],
+      "author_details": [
+        {
+          "name": "Diksha Khurana",
+          "orcid": null,
+          "openalex_id": "A5059223087",
+          "institutions": [
+            "Manav Rachna International Institute of Research and Studies"
+          ]
+        },
+        {
+          "name": "Aditya Koli",
+          "orcid": null,
+          "openalex_id": "A5037925675",
+          "institutions": [
+            "Manav Rachna International Institute of Research and Studies"
+          ]
+        },
+        {
+          "name": "Kiran Khatter",
+          "orcid": "https://orcid.org/0000-0002-1000-6102",
+          "openalex_id": "A5007623775",
+          "institutions": [
+            "BML Munjal University"
+          ]
+        },
+        {
+          "name": "Sukhdev Singh",
+          "orcid": "https://orcid.org/0000-0001-6282-4281",
+          "openalex_id": "A5004992343",
+          "institutions": []
+        }
+      ],
+      "abstract": null,
+      "doi": "10.1007/s11042-022-13428-4",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11042-022-13428-4.pdf",
+      "url": "https://openalex.org/W2747680751",
+      "source_url": "https://openalex.org/W2747680751",
+      "year": 2022,
+      "date": "2022-07-14",
+      "doc_type": "article",
+      "journal": "Multimedia Tools and Applications",
+      "cited_by_count": 1644,
+      "referenced_works_count": 146,
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Text and Document Classification Technologies"
+      ],
+      "keywords": [
+        "Automatic summarization",
+        "Computer science",
+        "Natural language processing",
+        "Machine translation",
+        "Artificial intelligence",
+        "Question answering",
+        "Information extraction",
+        "Natural language generation",
+        "Natural language",
+        "Translation (biology)",
+        "State (computer science)",
+        "Programming language"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3176923149",
+      "openalex_id": "W3176923149",
+      "title": "Text Data Augmentation for Deep Learning",
+      "authors": [
+        "Connor Shorten",
+        "Taghi M. Khoshgoftaar",
+        "Borko Furht"
+      ],
+      "author_details": [
+        {
+          "name": "Connor Shorten",
+          "orcid": "https://orcid.org/0000-0001-6253-6861",
+          "openalex_id": "A5051577117",
+          "institutions": [
+            "Florida Atlantic University"
+          ]
+        },
+        {
+          "name": "Taghi M. Khoshgoftaar",
+          "orcid": null,
+          "openalex_id": "A5089170562",
+          "institutions": [
+            "Florida Atlantic University"
+          ]
+        },
+        {
+          "name": "Borko Furht",
+          "orcid": "https://orcid.org/0000-0002-3584-9659",
+          "openalex_id": "A5057260089",
+          "institutions": [
+            "Florida Atlantic University"
+          ]
+        }
+      ],
+      "abstract": "Natural Language Processing (NLP) is one of the most captivating applications of Deep Learning. In this survey, we consider how the Data Augmentation training strategy can aid in its development. We begin with the major motifs of Data Augmentation summarized into strengthening local decision boundaries, brute force training, causality and counterfactual examples, and the distinction between meaning and form. We follow these motifs with a concrete list of augmentation frameworks that have been developed for text data. Deep Learning generally struggles with the measurement of generalization and characterization of overfitting. We highlight studies that cover how augmentations can construct test sets for generalization. NLP is at an early stage in applying Data Augmentation compared to Computer Vision. We highlight the key differences and promising ideas that have yet to be tested in NLP. For the sake of practical implementation, we describe tools that facilitate Data Augmentation such as the use of consistency regularization, controllers, and offline and online augmentation pipelines, to preview a few. Finally, we discuss interesting topics around Data Augmentation in NLP such as task-specific augmentations, the use of prior knowledge in self-supervised learning versus Data Augmentation, intersections with transfer and multi-task learning, and ideas for AI-GAs (AI-Generating Algorithms). We hope this paper inspires further research interest in Text Data Augmentation.",
+      "doi": "10.1186/s40537-021-00492-0",
+      "pdf_url": "https://journalofbigdata.springeropen.com/track/pdf/10.1186/s40537-021-00492-0",
+      "url": "https://openalex.org/W3176923149",
+      "source_url": "https://openalex.org/W3176923149",
+      "year": 2021,
+      "date": "2021-07-19",
+      "doc_type": "article",
+      "journal": "Journal Of Big Data",
+      "cited_by_count": 1643,
+      "referenced_works_count": 129,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Topic Modeling",
+        "Text and Document Classification Technologies",
+        "Machine Learning in Healthcare"
+      ],
+      "keywords": [
+        "Computer science",
+        "Computational Science and Engineering",
+        "Deep learning",
+        "Artificial intelligence",
+        "Data science",
+        "Machine learning"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3003667836",
+      "openalex_id": "W3003667836",
+      "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+      "authors": [
+        "Adil Rasheed",
+        "Omer San",
+        "Trond Kvamsdal"
+      ],
+      "author_details": [
+        {
+          "name": "Adil Rasheed",
+          "orcid": "https://orcid.org/0000-0003-2690-983X",
+          "openalex_id": "A5032407979",
+          "institutions": [
+            "Norwegian University of Science and Technology",
+            "SINTEF",
+            "SINTEF Digital"
+          ]
+        },
+        {
+          "name": "Omer San",
+          "orcid": "https://orcid.org/0000-0002-2241-4648",
+          "openalex_id": "A5085671233",
+          "institutions": [
+            "Oklahoma State University"
+          ]
+        },
+        {
+          "name": "Trond Kvamsdal",
+          "orcid": "https://orcid.org/0000-0002-1615-7649",
+          "openalex_id": "A5072774082",
+          "institutions": [
+            "SINTEF Digital",
+            "Norwegian University of Science and Technology",
+            "SINTEF"
+          ]
+        }
+      ],
+      "abstract": "Digital twin can be defined as a virtual representation of a physical asset enabled through data and simulators for real-time prediction, optimization, monitoring, controlling, and improved decision making. Recent advances in computational pipelines, multiphysics solvers, artificial intelligence, big data cybernetics, data processing and management tools bring the promise of digital twins and their impact on society closer to reality. Digital twinning is now an important and emerging trend in many applications. Also referred to as a computational megamodel, device shadow, mirrored system, avatar or a synchronized virtual prototype, there can be no doubt that a digital twin plays a transformative role not only in how we design and operate cyber-physical intelligent systems, but also in how we advance the modularity of multi-disciplinary systems to tackle fundamental barriers not addressed by the current, evolutionary modeling practices. In this work, we review the recent status of methodologies and techniques related to the construction of digital twins mostly from a modeling perspective. Our aim is to provide a detailed coverage of the current challenges and enabling technologies along with recommendations and reflections for various stakeholders.",
+      "doi": "10.1109/access.2020.2970143",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/08972429.pdf",
+      "url": "https://openalex.org/W3003667836",
+      "source_url": "https://openalex.org/W3003667836",
+      "year": 2020,
+      "date": "2020-01-01",
+      "doc_type": "article",
+      "journal": "IEEE Access",
+      "cited_by_count": 1579,
+      "referenced_works_count": 579,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Digital Transformation in Industry",
+        "Simulation Techniques and Applications"
+      ],
+      "keywords": [
+        "Computer science",
+        "Data science",
+        "Big data",
+        "Perspective (graphical)",
+        "Data sharing",
+        "Human–computer interaction",
+        "Artificial intelligence"
+      ],
+      "cited_by_api_url": null
+    }
+  ],
+  "query_used": "retrieval-augmented generation",
+  "filters_used": [
+    "from_publication_date:2020-01-01"
+  ]
+}

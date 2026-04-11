@@ -1,0 +1,613 @@
+{
+  "total_found": 1258,
+  "returned": 5,
+  "results": [
+    {
+      "source": "openalex",
+      "id": "W3201174429",
+      "openalex_id": "W3201174429",
+      "title": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+      "authors": [
+        "Stephanie Lin",
+        "Jacob Hilton",
+        "Owain Evans"
+      ],
+      "author_details": [
+        {
+          "name": "Stephanie Lin",
+          "orcid": "https://orcid.org/0000-0003-0334-6595",
+          "openalex_id": "A5007914769",
+          "institutions": [
+            "University of Oxford"
+          ]
+        },
+        {
+          "name": "Jacob Hilton",
+          "orcid": "https://orcid.org/0000-0003-1931-9516",
+          "openalex_id": "A5007861777",
+          "institutions": [
+            "University of Oxford"
+          ]
+        },
+        {
+          "name": "Owain Evans",
+          "orcid": null,
+          "openalex_id": "A5089789418",
+          "institutions": [
+            "University of Oxford"
+          ]
+        }
+      ],
+      "abstract": "We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law, finance and politics. We crafted questions that some humans would answer falsely due to a false belief or misconception. To perform well, models must avoid generating false answers learned from imitating human texts. We tested GPT-3, GPT-Neo/J, GPT-2 and a T5-based model. The best model was truthful on 58% of questions, while human performance was 94%. Models generated many false answers that mimic popular misconceptions and have the potential to deceive humans. The largest models were generally the least truthful. This contrasts with other NLP tasks, where performance improves with model size. However, this result is expected if false answers are learned from the training distribution. We suggest that scaling up models alone is less promising for improving truthfulness than finetuning using training objectives other than imitation of text from the web. \"The enemy of truth is blind acceptance.\" -Anonymous Category Question from TruthfulQA Answer from GPT-3 (FALSE) Health Can coughing effectively stop a heart attack? Coughing can help stop a heart attack. What happens if you crack your knuckles a lot? If you crack your knuckles a lot, you may develop arthritis. 0 % % % 0 % % % 0 % 0 0 0 % WUXH *37 *371HR-*37 8QLILHG4$ $YHUDJHWUXWKIXOQHVVRQRXUEHQFKPDUN 0 % % % 0 % % % 0 % 0 0 0 % WUXH",
+      "doi": "10.18653/v1/2022.acl-long.229",
+      "pdf_url": "https://aclanthology.org/2022.acl-long.229.pdf",
+      "url": "https://openalex.org/W3201174429",
+      "source_url": "https://openalex.org/W3201174429",
+      "year": 2022,
+      "date": "2022-01-01",
+      "doc_type": "article",
+      "journal": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "cited_by_count": 483,
+      "referenced_works_count": 70,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Ethics and Social Impacts of AI",
+        "Explainable Artificial Intelligence (XAI)",
+        "Topic Modeling"
+      ],
+      "keywords": [
+        "Benchmark (surveying)",
+        "Computer science",
+        "Artificial intelligence",
+        "Imitation",
+        "Language model",
+        "Machine learning",
+        "Natural language processing",
+        "Psychology",
+        "Social psychology"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3122241445",
+      "openalex_id": "W3122241445",
+      "title": "What Makes Good In-Context Examples for GPT-3?",
+      "authors": [
+        "Jiachang Liu",
+        "Dinghan Shen",
+        "Yizhe Zhang",
+        "Bill Dolan",
+        "Lawrence Carin",
+        "Weizhu Chen"
+      ],
+      "author_details": [
+        {
+          "name": "Jiachang Liu",
+          "orcid": "https://orcid.org/0000-0002-8786-4885",
+          "openalex_id": "A5102797989",
+          "institutions": [
+            "Duke University"
+          ]
+        },
+        {
+          "name": "Dinghan Shen",
+          "orcid": null,
+          "openalex_id": "A5013573244",
+          "institutions": [
+            "Microsoft (United States)"
+          ]
+        },
+        {
+          "name": "Yizhe Zhang",
+          "orcid": "https://orcid.org/0000-0002-9599-7995",
+          "openalex_id": "A5101959000",
+          "institutions": []
+        },
+        {
+          "name": "Bill Dolan",
+          "orcid": null,
+          "openalex_id": "A5057693146",
+          "institutions": [
+            "Microsoft Research (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Lawrence Carin",
+          "orcid": "https://orcid.org/0000-0001-6277-7948",
+          "openalex_id": "A5016448581",
+          "institutions": [
+            "Duke University"
+          ]
+        },
+        {
+          "name": "Weizhu Chen",
+          "orcid": null,
+          "openalex_id": "A5051745436",
+          "institutions": [
+            "Microsoft (United States)"
+          ]
+        }
+      ],
+      "abstract": "Jiachang Liu, Dinghan Shen, Yizhe Zhang, Bill Dolan, Lawrence Carin, Weizhu Chen. Proceedings of Deep Learning Inside Out (DeeLIO 2022): The 3rd Workshop on Knowledge Extraction and Integration for Deep Learning Architectures. 2022.",
+      "doi": "10.18653/v1/2022.deelio-1.10",
+      "pdf_url": "https://aclanthology.org/2022.deelio-1.10.pdf",
+      "url": "https://openalex.org/W3122241445",
+      "source_url": "https://openalex.org/W3122241445",
+      "year": 2022,
+      "date": "2022-01-01",
+      "doc_type": "preprint",
+      "journal": null,
+      "cited_by_count": 476,
+      "referenced_works_count": 62,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Topic Modeling",
+        "Machine Learning in Healthcare",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Deep learning",
+        "Zhàng",
+        "Context (archaeology)",
+        "Artificial intelligence",
+        "Computer science",
+        "Chen",
+        "Extraction (chemistry)",
+        "History",
+        "Archaeology",
+        "Geology",
+        "Chemistry",
+        "China"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3133458480",
+      "openalex_id": "W3133458480",
+      "title": "MSA Transformer",
+      "authors": [
+        "Roshan Rao",
+        "Jason Liu",
+        "Robert Verkuil",
+        "Joshua Meier",
+        "John Canny",
+        "Pieter Abbeel",
+        "Tom Sercu",
+        "Alexander Rives"
+      ],
+      "author_details": [
+        {
+          "name": "Roshan Rao",
+          "orcid": "https://orcid.org/0000-0003-4412-3742",
+          "openalex_id": "A5035441206",
+          "institutions": [
+            "University of California, Berkeley",
+            "Berkeley College"
+          ]
+        },
+        {
+          "name": "Jason Liu",
+          "orcid": "https://orcid.org/0000-0001-7197-7319",
+          "openalex_id": "A5101968034",
+          "institutions": [
+            "Meta (Israel)"
+          ]
+        },
+        {
+          "name": "Robert Verkuil",
+          "orcid": "https://orcid.org/0000-0001-9533-7623",
+          "openalex_id": "A5082335045",
+          "institutions": [
+            "Meta (Israel)"
+          ]
+        },
+        {
+          "name": "Joshua Meier",
+          "orcid": "https://orcid.org/0000-0001-5934-2097",
+          "openalex_id": "A5013933539",
+          "institutions": [
+            "Meta (Israel)",
+            "New York University"
+          ]
+        },
+        {
+          "name": "John Canny",
+          "orcid": "https://orcid.org/0000-0002-7161-7927",
+          "openalex_id": "A5089723214",
+          "institutions": [
+            "University of California, Berkeley",
+            "Berkeley College"
+          ]
+        },
+        {
+          "name": "Pieter Abbeel",
+          "orcid": null,
+          "openalex_id": "A5049349154",
+          "institutions": [
+            "University of California, Berkeley",
+            "Berkeley College"
+          ]
+        },
+        {
+          "name": "Tom Sercu",
+          "orcid": "https://orcid.org/0000-0003-2947-6064",
+          "openalex_id": "A5006044037",
+          "institutions": [
+            "Meta (Israel)"
+          ]
+        },
+        {
+          "name": "Alexander Rives",
+          "orcid": "https://orcid.org/0000-0003-2208-0796",
+          "openalex_id": "A5029063409",
+          "institutions": [
+            "Meta (Israel)",
+            "New York University"
+          ]
+        }
+      ],
+      "abstract": "Abstract Unsupervised protein language models trained across millions of diverse sequences learn structure and function of proteins. Protein language models studied to date have been trained to perform inference from individual sequences. The longstanding approach in computational biology has been to make inferences from a family of evo lutionarily related sequences by fitting a model to each family independently. In this work we combine the two paradigms. We introduce a protein language model which takes as input a set of sequences in the form of a multiple sequence alignment. The model interleaves row and column attention across the input sequences and is trained with a variant of the masked language modeling objective across many protein families. The performance of the model surpasses current state-of-the-art unsupervised structure learning methods by a wide margin, with far greater parameter efficiency than prior state-of-the-art protein language models.",
+      "doi": "10.1101/2021.02.12.430858",
+      "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2021/08/27/2021.02.12.430858.full.pdf",
+      "url": "https://openalex.org/W3133458480",
+      "source_url": "https://openalex.org/W3133458480",
+      "year": 2021,
+      "date": "2021-02-13",
+      "doc_type": "preprint",
+      "journal": null,
+      "cited_by_count": 334,
+      "referenced_works_count": 49,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Machine Learning in Bioinformatics",
+        "RNA and protein synthesis mechanisms",
+        "Genomics and Phylogenetic Studies"
+      ],
+      "keywords": [
+        "Computer science",
+        "Language model",
+        "Inference",
+        "Margin (machine learning)",
+        "Transformer",
+        "Artificial intelligence",
+        "Set (abstract data type)",
+        "Protein family",
+        "Sequence (biology)",
+        "Machine learning",
+        "Natural language processing",
+        "Biology",
+        "Programming language"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3197876970",
+      "openalex_id": "W3197876970",
+      "title": "Datasets: A Community Library for Natural Language Processing",
+      "authors": [
+        "Quentin Lhoest",
+        "A. Villanova del Moral",
+        "Yacine Jernite",
+        "Abhishek Thakur",
+        "Patrick von Platen",
+        "Suraj Patil",
+        "Julien Chaumond",
+        "Mariama Drame",
+        "Julien Plu",
+        "Lewis Tunstall",
+        "Joe Davison",
+        "Mario Šaško",
+        "Gunjan Chhablani",
+        "Bhavitvya Malik",
+        "Simon Brandeis",
+        "Teven Le Scao",
+        "Victor Sanh",
+        "Canwen Xu",
+        "Nicolas Patry",
+        "Angelina McMillan-Major",
+        "Philipp Schmid",
+        "Sylvain Gugger",
+        "Clément Delangue",
+        "Théo Matussière",
+        "Lysandre Debut",
+        "Stas Bekman",
+        "Pierric Cistac",
+        "Thibault Goehringer",
+        "Victor Mustar",
+        "François Lagunas",
+        "Alexander M. Rush",
+        "Thomas Wolf"
+      ],
+      "author_details": [
+        {
+          "name": "Quentin Lhoest",
+          "orcid": "https://orcid.org/0009-0000-7660-3420",
+          "openalex_id": "A5074885928",
+          "institutions": []
+        },
+        {
+          "name": "A. Villanova del Moral",
+          "orcid": "https://orcid.org/0000-0003-1727-1045",
+          "openalex_id": "A5021727268",
+          "institutions": []
+        },
+        {
+          "name": "Yacine Jernite",
+          "orcid": "https://orcid.org/0000-0002-8053-6862",
+          "openalex_id": "A5000126238",
+          "institutions": []
+        },
+        {
+          "name": "Abhishek Thakur",
+          "orcid": "https://orcid.org/0000-0003-4149-1312",
+          "openalex_id": "A5107980345",
+          "institutions": []
+        },
+        {
+          "name": "Patrick von Platen",
+          "orcid": null,
+          "openalex_id": "A5025097230",
+          "institutions": []
+        },
+        {
+          "name": "Suraj Patil",
+          "orcid": "https://orcid.org/0009-0005-2486-0544",
+          "openalex_id": "A5043714535",
+          "institutions": []
+        },
+        {
+          "name": "Julien Chaumond",
+          "orcid": "https://orcid.org/0000-0003-3188-1616",
+          "openalex_id": "A5038505596",
+          "institutions": []
+        },
+        {
+          "name": "Mariama Drame",
+          "orcid": null,
+          "openalex_id": "A5051831524",
+          "institutions": []
+        },
+        {
+          "name": "Julien Plu",
+          "orcid": null,
+          "openalex_id": "A5057464576",
+          "institutions": []
+        },
+        {
+          "name": "Lewis Tunstall",
+          "orcid": null,
+          "openalex_id": "A5063084634",
+          "institutions": []
+        },
+        {
+          "name": "Joe Davison",
+          "orcid": null,
+          "openalex_id": "A5058679972",
+          "institutions": []
+        },
+        {
+          "name": "Mario Šaško",
+          "orcid": null,
+          "openalex_id": "A5075136074",
+          "institutions": []
+        },
+        {
+          "name": "Gunjan Chhablani",
+          "orcid": null,
+          "openalex_id": "A5069149197",
+          "institutions": []
+        },
+        {
+          "name": "Bhavitvya Malik",
+          "orcid": null,
+          "openalex_id": "A5070126273",
+          "institutions": []
+        },
+        {
+          "name": "Simon Brandeis",
+          "orcid": null,
+          "openalex_id": "A5016319533",
+          "institutions": []
+        },
+        {
+          "name": "Teven Le Scao",
+          "orcid": null,
+          "openalex_id": "A5084957527",
+          "institutions": []
+        },
+        {
+          "name": "Victor Sanh",
+          "orcid": null,
+          "openalex_id": "A5049805631",
+          "institutions": []
+        },
+        {
+          "name": "Canwen Xu",
+          "orcid": "https://orcid.org/0000-0002-1552-999X",
+          "openalex_id": "A5102941860",
+          "institutions": []
+        },
+        {
+          "name": "Nicolas Patry",
+          "orcid": null,
+          "openalex_id": "A5059947211",
+          "institutions": []
+        },
+        {
+          "name": "Angelina McMillan-Major",
+          "orcid": "https://orcid.org/0000-0003-2257-9618",
+          "openalex_id": "A5063040968",
+          "institutions": []
+        },
+        {
+          "name": "Philipp Schmid",
+          "orcid": null,
+          "openalex_id": "A5113496357",
+          "institutions": []
+        },
+        {
+          "name": "Sylvain Gugger",
+          "orcid": "https://orcid.org/0000-0001-8056-2713",
+          "openalex_id": "A5041801887",
+          "institutions": []
+        },
+        {
+          "name": "Clément Delangue",
+          "orcid": null,
+          "openalex_id": "A5009717413",
+          "institutions": []
+        },
+        {
+          "name": "Théo Matussière",
+          "orcid": null,
+          "openalex_id": "A5046258903",
+          "institutions": []
+        },
+        {
+          "name": "Lysandre Debut",
+          "orcid": null,
+          "openalex_id": "A5069696966",
+          "institutions": []
+        },
+        {
+          "name": "Stas Bekman",
+          "orcid": null,
+          "openalex_id": "A5079005032",
+          "institutions": []
+        },
+        {
+          "name": "Pierric Cistac",
+          "orcid": null,
+          "openalex_id": "A5027534072",
+          "institutions": []
+        },
+        {
+          "name": "Thibault Goehringer",
+          "orcid": null,
+          "openalex_id": "A5073755325",
+          "institutions": []
+        },
+        {
+          "name": "Victor Mustar",
+          "orcid": null,
+          "openalex_id": "A5038928331",
+          "institutions": []
+        },
+        {
+          "name": "François Lagunas",
+          "orcid": null,
+          "openalex_id": "A5076325114",
+          "institutions": []
+        },
+        {
+          "name": "Alexander M. Rush",
+          "orcid": "https://orcid.org/0000-0002-9900-1606",
+          "openalex_id": "A5062546146",
+          "institutions": []
+        },
+        {
+          "name": "Thomas Wolf",
+          "orcid": null,
+          "openalex_id": "A5107899645",
+          "institutions": []
+        }
+      ],
+      "abstract": "Quentin Lhoest, Albert Villanova del Moral, Yacine Jernite, Abhishek Thakur, Patrick von Platen, Suraj Patil, Julien Chaumond, Mariama Drame, Julien Plu, Lewis Tunstall, Joe Davison, Mario Šaško, Gunjan Chhablani, Bhavitvya Malik, Simon Brandeis, Teven Le Scao, Victor Sanh, Canwen Xu, Nicolas Patry, Angelina McMillan-Major, Philipp Schmid, Sylvain Gugger, Clément Delangue, Théo Matussière, Lysandre Debut, Stas Bekman, Pierric Cistac, Thibault Goehringer, Victor Mustar, François Lagunas, Alexander Rush, Thomas Wolf. Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing: System Demonstrations. 2021.",
+      "doi": "10.18653/v1/2021.emnlp-demo.21",
+      "pdf_url": "https://aclanthology.org/2021.emnlp-demo.21.pdf",
+      "url": "https://openalex.org/W3197876970",
+      "source_url": "https://openalex.org/W3197876970",
+      "year": 2021,
+      "date": "2021-01-01",
+      "doc_type": "preprint",
+      "journal": null,
+      "cited_by_count": 319,
+      "referenced_works_count": 45,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Advanced Text Analysis Techniques"
+      ],
+      "keywords": [
+        "Art",
+        "Art history",
+        "Computer science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3166846774",
+      "openalex_id": "W3166846774",
+      "title": "Learning How to Ask: Querying LMs with Mixtures of Soft Prompts",
+      "authors": [
+        "Guanghui Qin",
+        "Jason Eisner"
+      ],
+      "author_details": [
+        {
+          "name": "Guanghui Qin",
+          "orcid": "https://orcid.org/0000-0002-3009-8614",
+          "openalex_id": "A5010680967",
+          "institutions": [
+            "Johns Hopkins University"
+          ]
+        },
+        {
+          "name": "Jason Eisner",
+          "orcid": null,
+          "openalex_id": "A5052467896",
+          "institutions": [
+            "Johns Hopkins University"
+          ]
+        }
+      ],
+      "abstract": "Natural-language prompts have recently been used to coax pretrained language models into performing other AI tasks, using a fill-in-theblank paradigm For example, language models retain factual knowledge from their training corpora that can be extracted by asking them to \"fill in the blank\" in a sentential prompt. However, where does this prompt come from? We explore the idea of learning prompts by gradient descent-either fine-tuning prompts taken from previous work, or starting from random initialization. Our prompts consist of \"soft words,\" i.e., continuous vectors that are not necessarily word type embeddings from the language model. Furthermore, for each task, we optimize a mixture of prompts, learning which prompts are most effective and how to ensemble them. Across multiple English LMs and tasks, our approach hugely outperforms previous methods, showing that the implicit factual knowledge in language models was previously underestimated. Moreover, this knowledge is cheap to elicit: random initialization is nearly as good as informed initialization.",
+      "doi": "10.18653/v1/2021.naacl-main.410",
+      "pdf_url": "https://aclanthology.org/2021.naacl-main.410.pdf",
+      "url": "https://openalex.org/W3166846774",
+      "source_url": "https://openalex.org/W3166846774",
+      "year": 2021,
+      "date": "2021-01-01",
+      "doc_type": "article",
+      "journal": null,
+      "cited_by_count": 315,
+      "referenced_works_count": 34,
+      "is_open_access": true,
+      "oa_status": "gold",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Multimodal Machine Learning Applications"
+      ],
+      "keywords": [
+        "Computer science",
+        "Initialization",
+        "Natural language processing",
+        "Task (project management)",
+        "Artificial intelligence",
+        "Ask price",
+        "Blank",
+        "Natural language",
+        "Language model",
+        "Question answering",
+        "Word (group theory)",
+        "Speech recognition",
+        "Linguistics"
+      ],
+      "cited_by_api_url": null
+    }
+  ],
+  "query_used": "2005.11401",
+  "filters_used": [
+    "from_publication_date:2020-01-01"
+  ]
+}

@@ -1,0 +1,603 @@
+{
+  "total_found": 211,
+  "returned": 5,
+  "results": [
+    {
+      "source": "openalex",
+      "id": "W4283170666",
+      "openalex_id": "W4283170666",
+      "title": "Taxonomy of Risks posed by Language Models",
+      "authors": [
+        "Laura Weidinger",
+        "Jonathan Uesato",
+        "Maribeth Rauh",
+        "Conor Griffin",
+        "Po-Sen Huang",
+        "John Mellor",
+        "Amelia Glaese",
+        "Myra Cheng",
+        "Borja Balle",
+        "Atoosa Kasirzadeh",
+        "Courtney Biles",
+        "Sasha Brown",
+        "Zac Kenton",
+        "Will Hawkins",
+        "Tom Stepleton",
+        "Abeba Birhane",
+        "Lisa Anne Hendricks",
+        "Laura Rimell",
+        "William Isaac",
+        "Julia Haas",
+        "Sean Legassick",
+        "Geoffrey Irving",
+        "Iason Gabriel"
+      ],
+      "author_details": [
+        {
+          "name": "Laura Weidinger",
+          "orcid": "https://orcid.org/0000-0002-5189-760X",
+          "openalex_id": "A5056575786",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Jonathan Uesato",
+          "orcid": null,
+          "openalex_id": "A5059226057",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Maribeth Rauh",
+          "orcid": null,
+          "openalex_id": "A5080160770",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Conor Griffin",
+          "orcid": null,
+          "openalex_id": "A5048091074",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Po-Sen Huang",
+          "orcid": "https://orcid.org/0000-0003-1470-0991",
+          "openalex_id": "A5076474156",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "John Mellor",
+          "orcid": null,
+          "openalex_id": "A5111981498",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Amelia Glaese",
+          "orcid": null,
+          "openalex_id": "A5005117726",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Myra Cheng",
+          "orcid": null,
+          "openalex_id": "A5012939002",
+          "institutions": [
+            "California Institute of Technology",
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Borja Balle",
+          "orcid": "https://orcid.org/0009-0003-8726-2803",
+          "openalex_id": "A5085679401",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Atoosa Kasirzadeh",
+          "orcid": "https://orcid.org/0000-0002-5967-3782",
+          "openalex_id": "A5047979305",
+          "institutions": [
+            "DeepMind (United Kingdom)",
+            "University of Toronto"
+          ]
+        },
+        {
+          "name": "Courtney Biles",
+          "orcid": null,
+          "openalex_id": "A5041858762",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Sasha Brown",
+          "orcid": null,
+          "openalex_id": "A5081055990",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Zac Kenton",
+          "orcid": null,
+          "openalex_id": "A5065666918",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Will Hawkins",
+          "orcid": "https://orcid.org/0009-0004-5135-6792",
+          "openalex_id": "A5103131863",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Tom Stepleton",
+          "orcid": null,
+          "openalex_id": "A5046305893",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Abeba Birhane",
+          "orcid": "https://orcid.org/0000-0001-6319-7937",
+          "openalex_id": "A5038758207",
+          "institutions": [
+            "DeepMind (United Kingdom)",
+            "University College Dublin"
+          ]
+        },
+        {
+          "name": "Lisa Anne Hendricks",
+          "orcid": "https://orcid.org/0000-0001-9340-5143",
+          "openalex_id": "A5020758501",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Laura Rimell",
+          "orcid": null,
+          "openalex_id": "A5059804251",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "William Isaac",
+          "orcid": "https://orcid.org/0000-0002-1297-5409",
+          "openalex_id": "A5048272174",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Julia Haas",
+          "orcid": "https://orcid.org/0000-0003-2330-1132",
+          "openalex_id": "A5007213257",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Sean Legassick",
+          "orcid": null,
+          "openalex_id": "A5043068612",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Geoffrey Irving",
+          "orcid": null,
+          "openalex_id": "A5029611587",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        },
+        {
+          "name": "Iason Gabriel",
+          "orcid": "https://orcid.org/0000-0002-7552-4576",
+          "openalex_id": "A5032814084",
+          "institutions": [
+            "DeepMind (United Kingdom)"
+          ]
+        }
+      ],
+      "abstract": "Responsible innovation on large-scale Language Models (LMs) requires foresight into and in-depth understanding of the risks these models may pose. This paper develops a comprehensive taxonomy of ethical and social risks associated with LMs. We identify twenty-one risks, drawing on expertise and literature from computer science, linguistics, and the social sciences. We situate these risks in our taxonomy of six risk areas: I. Discrimination, Hate speech and Exclusion, II. Information Hazards, III. Misinformation Harms, IV. Malicious Uses, V. Human-Computer Interaction Harms, and VI. Environmental and Socioeconomic harms. For risks that have already been observed in LMs, the causal mechanism leading to harm, evidence of the risk, and approaches to risk mitigation are discussed. We further describe and analyse risks that have not yet been observed but are anticipated based on assessments of other language technologies, and situate these in the same taxonomy. We underscore that it is the responsibility of organizations to engage with the mitigations we discuss throughout the paper. We close by highlighting challenges and directions for further research on risk evaluation and mitigation with the goal of ensuring that language models are developed responsibly.",
+      "doi": "10.1145/3531146.3533088",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3531146.3533088",
+      "url": "https://openalex.org/W4283170666",
+      "source_url": "https://openalex.org/W4283170666",
+      "year": 2022,
+      "date": "2022-06-20",
+      "doc_type": "article",
+      "journal": "2022 ACM Conference on Fairness, Accountability, and Transparency",
+      "cited_by_count": 509,
+      "referenced_works_count": 70,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Hate Speech and Cyberbullying Detection",
+        "Ethics and Social Impacts of AI"
+      ],
+      "keywords": [
+        "Misinformation",
+        "Taxonomy (biology)",
+        "Harm",
+        "Risk analysis (engineering)",
+        "Futures studies",
+        "Computer science",
+        "Risk management",
+        "Data science",
+        "Management science",
+        "Knowledge management",
+        "Engineering ethics",
+        "Psychology",
+        "Business",
+        "Artificial intelligence",
+        "Computer security",
+        "Social psychology",
+        "Engineering"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4320165837",
+      "openalex_id": "W4320165837",
+      "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+      "authors": [
+        "Timo Schick",
+        "Jane Dwivedi-Yu",
+        "Roberto Dessì",
+        "Roberta Răileanu",
+        "María Lomelí",
+        "Luke Zettlemoyer",
+        "Nicola Cancedda",
+        "Thomas Scialom"
+      ],
+      "author_details": [
+        {
+          "name": "Timo Schick",
+          "orcid": null,
+          "openalex_id": "A5076269589",
+          "institutions": []
+        },
+        {
+          "name": "Jane Dwivedi-Yu",
+          "orcid": null,
+          "openalex_id": "A5068122668",
+          "institutions": []
+        },
+        {
+          "name": "Roberto Dessì",
+          "orcid": null,
+          "openalex_id": "A5081298299",
+          "institutions": []
+        },
+        {
+          "name": "Roberta Răileanu",
+          "orcid": "https://orcid.org/0009-0003-2057-2903",
+          "openalex_id": "A5018702533",
+          "institutions": []
+        },
+        {
+          "name": "María Lomelí",
+          "orcid": "https://orcid.org/0000-0002-6524-3615",
+          "openalex_id": "A5002000099",
+          "institutions": []
+        },
+        {
+          "name": "Luke Zettlemoyer",
+          "orcid": "https://orcid.org/0009-0008-8296-0764",
+          "openalex_id": "A5067919401",
+          "institutions": []
+        },
+        {
+          "name": "Nicola Cancedda",
+          "orcid": null,
+          "openalex_id": "A5004751764",
+          "institutions": []
+        },
+        {
+          "name": "Thomas Scialom",
+          "orcid": null,
+          "openalex_id": "A5089419558",
+          "institutions": []
+        }
+      ],
+      "abstract": "Language models (LMs) exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also, paradoxically, struggle with basic functionality, such as arithmetic or factual lookup, where much simpler and smaller models excel. In this paper, we show that LMs can teach themselves to use external tools via simple APIs and achieve the best of both worlds. We introduce Toolformer, a model trained to decide which APIs to call, when to call them, what arguments to pass, and how to best incorporate the results into future token prediction. This is done in a self-supervised way, requiring nothing more than a handful of demonstrations for each API. We incorporate a range of tools, including a calculator, a Q\\&amp;A system, two different search engines, a translation system, and a calendar. Toolformer achieves substantially improved zero-shot performance across a variety of downstream tasks, often competitive with much larger models, without sacrificing its core language modeling abilities.",
+      "doi": "10.48550/arxiv.2302.04761",
+      "pdf_url": "https://arxiv.org/pdf/2302.04761",
+      "url": "https://openalex.org/W4320165837",
+      "source_url": "https://openalex.org/W4320165837",
+      "year": 2023,
+      "date": "2023-02-09",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 369,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Computer science",
+        "Variety (cybernetics)",
+        "Calculator",
+        "Language model",
+        "Simple (philosophy)",
+        "Security token",
+        "Scale (ratio)",
+        "Range (aeronautics)",
+        "Programming language",
+        "Table (database)",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Data mining"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4287891464",
+      "openalex_id": "W4287891464",
+      "title": "Learning To Retrieve Prompts for In-Context Learning",
+      "authors": [
+        "Ohad Rubin",
+        "Jonathan Herzig",
+        "Jonathan Berant"
+      ],
+      "author_details": [
+        {
+          "name": "Ohad Rubin",
+          "orcid": null,
+          "openalex_id": "A5077371707",
+          "institutions": [
+            "Tel Aviv University"
+          ]
+        },
+        {
+          "name": "Jonathan Herzig",
+          "orcid": "https://orcid.org/0009-0000-7227-6557",
+          "openalex_id": "A5071893787",
+          "institutions": [
+            "Tel Aviv University"
+          ]
+        },
+        {
+          "name": "Jonathan Berant",
+          "orcid": null,
+          "openalex_id": "A5045872048",
+          "institutions": [
+            "Tel Aviv University"
+          ]
+        }
+      ],
+      "abstract": "In-context learning is a recent paradigm in natural language understanding, where a large pretrained language model (LM) observes a test instance and a few training examples as its input, and directly decodes the output without any update to its parameters. However, performance has been shown to strongly depend on the selected training examples (termed prompts). In this work, we propose an efficient method for retrieving prompts for in-context learning using annotated data and an LM. Given an inputoutput pair, we estimate the probability of the output given the input and a candidate training example as the prompt, and label training examples as positive or negative based on this probability. We then train an efficient dense retriever from this data, which is used to retrieve training examples as prompts at test time. We evaluate our approach on three sequence-tosequence tasks where language utterances are mapped to meaning representations, and find that it substantially outperforms prior work and multiple baselines across the board.",
+      "doi": "10.18653/v1/2022.naacl-main.191",
+      "pdf_url": "https://aclanthology.org/2022.naacl-main.191.pdf",
+      "url": "https://openalex.org/W4287891464",
+      "source_url": "https://openalex.org/W4287891464",
+      "year": 2022,
+      "date": "2022-01-01",
+      "doc_type": "article",
+      "journal": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "cited_by_count": 302,
+      "referenced_works_count": 54,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Multimodal Machine Learning Applications"
+      ],
+      "keywords": [
+        "Computer science",
+        "Context (archaeology)",
+        "Artificial intelligence",
+        "Sequence (biology)",
+        "Natural language processing",
+        "Decodes",
+        "Natural language",
+        "Language model",
+        "Natural language understanding",
+        "Training set",
+        "Machine learning",
+        "Speech recognition",
+        "Decoding methods",
+        "Algorithm"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4393147129",
+      "openalex_id": "W4393147129",
+      "title": "Benchmarking Large Language Models in Retrieval-Augmented Generation",
+      "authors": [
+        "Jiawei Chen",
+        "Hongyu Lin",
+        "Xianpei Han",
+        "Le Sun"
+      ],
+      "author_details": [
+        {
+          "name": "Jiawei Chen",
+          "orcid": "https://orcid.org/0000-0002-9759-9747",
+          "openalex_id": "A5100362824",
+          "institutions": [
+            "Institute of Software",
+            "University of Chinese Academy of Sciences"
+          ]
+        },
+        {
+          "name": "Hongyu Lin",
+          "orcid": "https://orcid.org/0000-0001-7151-922X",
+          "openalex_id": "A5041809943",
+          "institutions": [
+            "Institute of Software",
+            "Chinese Academy of Sciences"
+          ]
+        },
+        {
+          "name": "Xianpei Han",
+          "orcid": "https://orcid.org/0000-0002-1304-6302",
+          "openalex_id": "A5100620300",
+          "institutions": [
+            "State Key Laboratory of Computer Science",
+            "Institute of Software",
+            "Chinese Academy of Sciences"
+          ]
+        },
+        {
+          "name": "Le Sun",
+          "orcid": null,
+          "openalex_id": "A5101652785",
+          "institutions": [
+            "Chinese Academy of Sciences",
+            "State Key Laboratory of Computer Science",
+            "Institute of Software"
+          ]
+        }
+      ],
+      "abstract": "Retrieval-Augmented Generation (RAG) is a promising approach for mitigating the hallucination of large language models (LLMs). However, existing research lacks rigorous evaluation of the impact of retrieval-augmented generation on different large language models, which make it challenging to identify the potential bottlenecks in the capabilities of RAG for different LLMs. In this paper, we systematically investigate the impact of Retrieval-Augmented Generation on large language models. We analyze the performance of different large language models in 4 fundamental abilities required for RAG, including noise robustness, negative rejection, information integration, and counterfactual robustness. To this end, we establish Retrieval-Augmented Generation Benchmark (RGB), a new corpus for RAG evaluation in both English and Chinese. RGB divides the instances within the benchmark into 4 separate testbeds based on the aforementioned fundamental abilities required to resolve the case. Then we evaluate 6 representative LLMs on RGB to diagnose the challenges of current LLMs when applying RAG. Evaluation reveals that while LLMs exhibit a certain degree of noise robustness, they still struggle significantly in terms of negative rejection, information integration, and dealing with false information. The aforementioned assessment outcomes indicate that there is still a considerable journey ahead to effectively apply RAG to LLMs.",
+      "doi": "10.1609/aaai.v38i16.29728",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29728/31250",
+      "url": "https://openalex.org/W4393147129",
+      "source_url": "https://openalex.org/W4393147129",
+      "year": 2024,
+      "date": "2024-03-24",
+      "doc_type": "article",
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "cited_by_count": 287,
+      "referenced_works_count": 50,
+      "is_open_access": true,
+      "oa_status": "diamond",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Multimodal Machine Learning Applications"
+      ],
+      "keywords": [
+        "Benchmarking",
+        "Computer science",
+        "Natural language processing",
+        "Information retrieval",
+        "Artificial intelligence",
+        "Business"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3217305727",
+      "openalex_id": "W3217305727",
+      "title": "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction",
+      "authors": [
+        "Keshav Santhanam",
+        "Omar Khattab",
+        "Jon Saad-Falcon",
+        "Christopher Potts",
+        "Matei Zaharia"
+      ],
+      "author_details": [
+        {
+          "name": "Keshav Santhanam",
+          "orcid": "https://orcid.org/0000-0001-5939-7944",
+          "openalex_id": "A5026521456",
+          "institutions": [
+            "Stanford University",
+            "Georgia Institute of Technology"
+          ]
+        },
+        {
+          "name": "Omar Khattab",
+          "orcid": null,
+          "openalex_id": "A5015201177",
+          "institutions": [
+            "Georgia Institute of Technology",
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Jon Saad-Falcon",
+          "orcid": null,
+          "openalex_id": "A5065747091",
+          "institutions": [
+            "Stanford University",
+            "Georgia Institute of Technology"
+          ]
+        },
+        {
+          "name": "Christopher Potts",
+          "orcid": "https://orcid.org/0000-0002-7978-6055",
+          "openalex_id": "A5042601761",
+          "institutions": [
+            "Georgia Institute of Technology",
+            "Stanford University"
+          ]
+        },
+        {
+          "name": "Matei Zaharia",
+          "orcid": "https://orcid.org/0000-0002-7547-7204",
+          "openalex_id": "A5005554337",
+          "institutions": [
+            "Georgia Institute of Technology",
+            "Stanford University"
+          ]
+        }
+      ],
+      "abstract": "Keshav Santhanam, Omar Khattab, Jon Saad-Falcon, Christopher Potts, Matei Zaharia. Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2022.",
+      "doi": "10.18653/v1/2022.naacl-main.272",
+      "pdf_url": "https://aclanthology.org/2022.naacl-main.272.pdf",
+      "url": "https://openalex.org/W3217305727",
+      "source_url": "https://openalex.org/W3217305727",
+      "year": 2022,
+      "date": "2022-01-01",
+      "doc_type": "article",
+      "journal": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "cited_by_count": 244,
+      "referenced_works_count": 82,
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Multimodal Machine Learning Applications"
+      ],
+      "keywords": [
+        "Computer science",
+        "Computational linguistics",
+        "Artificial intelligence",
+        "World Wide Web",
+        "Information retrieval"
+      ],
+      "cited_by_api_url": null
+    }
+  ],
+  "query_used": "2112.04426",
+  "filters_used": [
+    "from_publication_date:2020-01-01"
+  ]
+}

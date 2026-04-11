@@ -102,7 +102,7 @@ trace-agent-execution          →  trace_agent_execution
 ```
 academic-review-engine   → décrit l'architecture, pas l'action
 literature-review-agent  → éviter "agent"
-openakes                 → opaque
+openalex                 → opaque
 sru-sudoc                → pas de verbe
 search-screen-summarize-papers-openalex  → surchargé
 ```

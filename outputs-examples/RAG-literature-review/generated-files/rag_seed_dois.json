@@ -1,0 +1,500 @@
+{
+  "total_found": 6,
+  "returned": 6,
+  "results": [
+    {
+      "source": "openalex",
+      "id": "W4389984066",
+      "openalex_id": "W4389984066",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "authors": [
+        "Yunfan Gao",
+        "Yun Xiong",
+        "Xinyu Gao",
+        "Kangxiang Jia",
+        "Jinliu Pan",
+        "Yuxi Bi",
+        "Yi Dai",
+        "Jiawei Sun",
+        "Haofen Wang",
+        "Wang, Haofen"
+      ],
+      "author_details": [
+        {
+          "name": "Yunfan Gao",
+          "orcid": "https://orcid.org/0000-0002-7932-2752",
+          "openalex_id": "A5102001778",
+          "institutions": []
+        },
+        {
+          "name": "Yun Xiong",
+          "orcid": "https://orcid.org/0000-0002-8575-5415",
+          "openalex_id": "A5001877137",
+          "institutions": []
+        },
+        {
+          "name": "Xinyu Gao",
+          "orcid": "https://orcid.org/0000-0001-7654-3800",
+          "openalex_id": "A5101581913",
+          "institutions": []
+        },
+        {
+          "name": "Kangxiang Jia",
+          "orcid": "https://orcid.org/0009-0001-0054-5049",
+          "openalex_id": "A5109666673",
+          "institutions": []
+        },
+        {
+          "name": "Jinliu Pan",
+          "orcid": null,
+          "openalex_id": "A5104217086",
+          "institutions": []
+        },
+        {
+          "name": "Yuxi Bi",
+          "orcid": null,
+          "openalex_id": "A5104217087",
+          "institutions": []
+        },
+        {
+          "name": "Yi Dai",
+          "orcid": "https://orcid.org/0000-0003-1219-2436",
+          "openalex_id": "A5100647639",
+          "institutions": []
+        },
+        {
+          "name": "Jiawei Sun",
+          "orcid": "https://orcid.org/0000-0003-1332-6758",
+          "openalex_id": "A5101598822",
+          "institutions": []
+        },
+        {
+          "name": "Haofen Wang",
+          "orcid": "https://orcid.org/0000-0003-3018-3824",
+          "openalex_id": "A5039059501",
+          "institutions": []
+        },
+        {
+          "name": "Wang, Haofen",
+          "orcid": null,
+          "openalex_id": "",
+          "institutions": []
+        }
+      ],
+      "abstract": "Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development.",
+      "doi": "10.48550/arxiv.2312.10997",
+      "pdf_url": "https://arxiv.org/pdf/2312.10997",
+      "url": "https://openalex.org/W4389984066",
+      "source_url": "https://openalex.org/W4389984066",
+      "year": 2023,
+      "date": "2023-12-18",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 605,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Credibility",
+        "Computer science",
+        "Modular design",
+        "Benchmark (surveying)",
+        "Data science",
+        "Domain (mathematical analysis)",
+        "Language model",
+        "Artificial intelligence",
+        "Programming language",
+        "Political science"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W3007672467",
+      "openalex_id": "W3007672467",
+      "title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+      "authors": [
+        "Kelvin Guu",
+        "Kenton Lee",
+        "Zora Tung",
+        "Panupong Pasupat",
+        "Ming‐Wei Chang"
+      ],
+      "author_details": [
+        {
+          "name": "Kelvin Guu",
+          "orcid": null,
+          "openalex_id": "A5076669462",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Kenton Lee",
+          "orcid": "https://orcid.org/0000-0002-9534-5970",
+          "openalex_id": "A5081862885",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Zora Tung",
+          "orcid": null,
+          "openalex_id": "A5078389579",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Panupong Pasupat",
+          "orcid": null,
+          "openalex_id": "A5035867340",
+          "institutions": [
+            "Google (United States)"
+          ]
+        },
+        {
+          "name": "Ming‐Wei Chang",
+          "orcid": "https://orcid.org/0000-0002-0137-8895",
+          "openalex_id": "A5076904467",
+          "institutions": [
+            "Google (United States)"
+          ]
+        }
+      ],
+      "abstract": "Language model pre-training has been shown to capture a surprising amount of world knowledge, crucial for NLP tasks such as question answering. However, this knowledge is stored implicitly in the parameters of a neural network, requiring ever-larger networks to cover more facts. To capture knowledge in a more modular and interpretable way, we augment language model pre-training with a latent knowledge retriever, which allows the model to retrieve and attend over documents from a large corpus such as Wikipedia, used during pre-training, fine-tuning and inference. For the first time, we show how to pre-train such a knowledge retriever in an unsupervised manner, using masked language modeling as the learning signal and backpropagating through a retrieval step that considers millions of documents. We demonstrate the effectiveness of Retrieval-Augmented Language Model pre-training (REALM) by fine-tuning on the challenging task of Open-domain Question Answering (Open-QA). We compare against state-of-the-art models for both explicit and implicit knowledge storage on three popular Open-QA benchmarks, and find that we outperform all previous methods by a significant margin (4-16% absolute accuracy), while also providing qualitative benefits such as interpretability and modularity.",
+      "doi": "10.48550/arxiv.2002.08909",
+      "pdf_url": "https://arxiv.org/pdf/2002.08909",
+      "url": "https://openalex.org/W3007672467",
+      "source_url": "https://openalex.org/W3007672467",
+      "year": 2020,
+      "date": "2020-02-10",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 513,
+      "referenced_works_count": 38,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Speech Recognition and Synthesis"
+      ],
+      "keywords": [
+        "Realm",
+        "Training (meteorology)",
+        "Computer science",
+        "Language model",
+        "Natural language processing",
+        "Artificial intelligence",
+        "History",
+        "Geography",
+        "Archaeology"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4387800173",
+      "openalex_id": "W4387800173",
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "authors": [
+        "Akari Asai",
+        "Zeqiu Wu",
+        "Yizhong Wang",
+        "Avirup Sil",
+        "Hannaneh Hajishirzi"
+      ],
+      "author_details": [
+        {
+          "name": "Akari Asai",
+          "orcid": null,
+          "openalex_id": "A5108758733",
+          "institutions": []
+        },
+        {
+          "name": "Zeqiu Wu",
+          "orcid": null,
+          "openalex_id": "A5083545545",
+          "institutions": []
+        },
+        {
+          "name": "Yizhong Wang",
+          "orcid": "https://orcid.org/0000-0002-9760-3910",
+          "openalex_id": "A5101621485",
+          "institutions": []
+        },
+        {
+          "name": "Avirup Sil",
+          "orcid": "https://orcid.org/0000-0002-4753-3221",
+          "openalex_id": "A5112335036",
+          "institutions": []
+        },
+        {
+          "name": "Hannaneh Hajishirzi",
+          "orcid": "https://orcid.org/0000-0002-1055-6657",
+          "openalex_id": "A5082305994",
+          "institutions": []
+        }
+      ],
+      "abstract": "Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate. Retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues. However, indiscriminately retrieving and incorporating a fixed number of retrieved passages, regardless of whether retrieval is necessary, or passages are relevant, diminishes LM versatility or can lead to unhelpful response generation. We introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection. Our framework trains a single arbitrary LM that adaptively retrieves passages on-demand, and generates and reflects on retrieved passages and its own generations using special tokens, called reflection tokens. Generating reflection tokens makes the LM controllable during the inference phase, enabling it to tailor its behavior to diverse task requirements. Experiments show that Self-RAG (7B and 13B parameters) significantly outperforms state-of-the-art LLMs and retrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA, reasoning and fact verification tasks, and it shows significant gains in improving factuality and citation accuracy for long-form generations relative to these models.",
+      "doi": "10.48550/arxiv.2310.11511",
+      "pdf_url": "https://arxiv.org/pdf/2310.11511",
+      "url": "https://openalex.org/W4387800173",
+      "source_url": "https://openalex.org/W4387800173",
+      "year": 2023,
+      "date": "2023-10-17",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 84,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Multimodal Machine Learning Applications"
+      ],
+      "keywords": [
+        "Computer science",
+        "Task (project management)",
+        "Reflection (computer programming)",
+        "Set (abstract data type)",
+        "Inference",
+        "Information retrieval",
+        "Parametric statistics",
+        "Artificial intelligence",
+        "Programming language"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4318719006",
+      "openalex_id": "W4318719006",
+      "title": "REPLUG: Retrieval-Augmented Black-Box Language Models",
+      "authors": [
+        "Weijia Shi",
+        "Sewon Min",
+        "Michihiro Yasunaga",
+        "Minjoon Seo",
+        "Rich James",
+        "Michael Lewis",
+        "Luke Zettlemoyer",
+        "Wen-tau Yih"
+      ],
+      "author_details": [
+        {
+          "name": "Weijia Shi",
+          "orcid": null,
+          "openalex_id": "A5103238719",
+          "institutions": []
+        },
+        {
+          "name": "Sewon Min",
+          "orcid": null,
+          "openalex_id": "A5039158419",
+          "institutions": []
+        },
+        {
+          "name": "Michihiro Yasunaga",
+          "orcid": "https://orcid.org/0009-0003-3008-927X",
+          "openalex_id": "A5005898634",
+          "institutions": []
+        },
+        {
+          "name": "Minjoon Seo",
+          "orcid": null,
+          "openalex_id": "A5087565126",
+          "institutions": []
+        },
+        {
+          "name": "Rich James",
+          "orcid": null,
+          "openalex_id": "A5044220984",
+          "institutions": []
+        },
+        {
+          "name": "Michael Lewis",
+          "orcid": "https://orcid.org/0000-0002-7620-1891",
+          "openalex_id": "A5057420103",
+          "institutions": []
+        },
+        {
+          "name": "Luke Zettlemoyer",
+          "orcid": "https://orcid.org/0009-0008-8296-0764",
+          "openalex_id": "A5067919401",
+          "institutions": []
+        },
+        {
+          "name": "Wen-tau Yih",
+          "orcid": null,
+          "openalex_id": "A5066873932",
+          "institutions": []
+        }
+      ],
+      "abstract": "We introduce REPLUG, a retrieval-augmented language modeling framework that treats the language model (LM) as a black box and augments it with a tuneable retrieval model. Unlike prior retrieval-augmented LMs that train language models with special cross attention mechanisms to encode the retrieved text, REPLUG simply prepends retrieved documents to the input for the frozen black-box LM. This simple design can be easily applied to any existing retrieval and language models. Furthermore, we show that the LM can be used to supervise the retrieval model, which can then find documents that help the LM make better predictions. Our experiments demonstrate that REPLUG with the tuned retriever significantly improves the performance of GPT-3 (175B) on language modeling by 6.3%, as well as the performance of Codex on five-shot MMLU by 5.1%.",
+      "doi": "10.48550/arxiv.2301.12652",
+      "pdf_url": "https://arxiv.org/pdf/2301.12652",
+      "url": "https://openalex.org/W4318719006",
+      "source_url": "https://openalex.org/W4318719006",
+      "year": 2023,
+      "date": "2023-01-30",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 68,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Natural Language Processing Techniques",
+        "Machine Learning in Healthcare"
+      ],
+      "keywords": [
+        "Computer science",
+        "Language model",
+        "ENCODE",
+        "Black box",
+        "Simple (philosophy)",
+        "Natural language processing",
+        "Information retrieval",
+        "Artificial intelligence",
+        "Speech recognition"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4391418506",
+      "openalex_id": "W4391418506",
+      "title": "Corrective Retrieval Augmented Generation",
+      "authors": [
+        "Shi-Qi Yan",
+        "Jia-Chen Gu",
+        "Yun Zhu",
+        "Zhen-Hua Ling"
+      ],
+      "author_details": [
+        {
+          "name": "Shi-Qi Yan",
+          "orcid": null,
+          "openalex_id": "A5111122150",
+          "institutions": []
+        },
+        {
+          "name": "Jia-Chen Gu",
+          "orcid": "https://orcid.org/0000-0002-8801-1438",
+          "openalex_id": "A5005572782",
+          "institutions": []
+        },
+        {
+          "name": "Yun Zhu",
+          "orcid": null,
+          "openalex_id": "A5100808578",
+          "institutions": []
+        },
+        {
+          "name": "Zhen-Hua Ling",
+          "orcid": "https://orcid.org/0000-0001-7853-5273",
+          "openalex_id": "A5059767940",
+          "institutions": []
+        }
+      ],
+      "abstract": "Large language models (LLMs) inevitably exhibit hallucinations since the accuracy of generated texts cannot be secured solely by the parametric knowledge they encapsulate. Although retrieval-augmented generation (RAG) is a practicable complement to LLMs, it relies heavily on the relevance of retrieved documents, raising concerns about how the model behaves if retrieval goes wrong. To this end, we propose the Corrective Retrieval Augmented Generation (CRAG) to improve the robustness of generation. Specifically, a lightweight retrieval evaluator is designed to assess the overall quality of retrieved documents for a query, returning a confidence degree based on which different knowledge retrieval actions can be triggered. Since retrieval from static and limited corpora can only return sub-optimal documents, large-scale web searches are utilized as an extension for augmenting the retrieval results. Besides, a decompose-then-recompose algorithm is designed for retrieved documents to selectively focus on key information and filter out irrelevant information in them. CRAG is plug-and-play and can be seamlessly coupled with various RAG-based approaches. Experiments on four datasets covering short- and long-form generation tasks show that CRAG can significantly improve the performance of RAG-based approaches.",
+      "doi": "10.48550/arxiv.2401.15884",
+      "pdf_url": "https://arxiv.org/pdf/2401.15884",
+      "url": "https://openalex.org/W4391418506",
+      "source_url": "https://openalex.org/W4391418506",
+      "year": 2024,
+      "date": "2024-01-29",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 23,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Speech and dialogue systems"
+      ],
+      "keywords": [
+        "Computer science",
+        "Information retrieval"
+      ],
+      "cited_by_api_url": null
+    },
+    {
+      "source": "openalex",
+      "id": "W4393119012",
+      "openalex_id": "W4393119012",
+      "title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+      "authors": [
+        "Soyeong Jeong",
+        "Jinheon Baek",
+        "Sukmin Cho",
+        "Sung Ju Hwang",
+        "Jong Cheol Park"
+      ],
+      "author_details": [
+        {
+          "name": "Soyeong Jeong",
+          "orcid": "https://orcid.org/0000-0003-3428-0365",
+          "openalex_id": "A5088628107",
+          "institutions": []
+        },
+        {
+          "name": "Jinheon Baek",
+          "orcid": "https://orcid.org/0000-0002-9367-560X",
+          "openalex_id": "A5013449404",
+          "institutions": []
+        },
+        {
+          "name": "Sukmin Cho",
+          "orcid": "https://orcid.org/0000-0003-1290-1570",
+          "openalex_id": "A5000595758",
+          "institutions": []
+        },
+        {
+          "name": "Sung Ju Hwang",
+          "orcid": "https://orcid.org/0000-0002-9675-2324",
+          "openalex_id": "A5070302452",
+          "institutions": []
+        },
+        {
+          "name": "Jong Cheol Park",
+          "orcid": "https://orcid.org/0000-0002-8859-5111",
+          "openalex_id": "A5100641120",
+          "institutions": []
+        }
+      ],
+      "abstract": "Retrieval-Augmented Large Language Models (LLMs), which incorporate the non-parametric knowledge from external knowledge bases into LLMs, have emerged as a promising approach to enhancing response accuracy in several tasks, such as Question-Answering (QA). However, even though there are various approaches dealing with queries of different complexities, they either handle simple queries with unnecessary computational overhead or fail to adequately address complex multi-step queries; yet, not all user requests fall into only one of the simple or complex categories. In this work, we propose a novel adaptive QA framework, that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity. Also, this selection process is operationalized with a classifier, which is a smaller LM trained to predict the complexity level of incoming queries with automatically collected labels, obtained from actual predicted outcomes of models and inherent inductive biases in datasets. This approach offers a balanced strategy, seamlessly adapting between the iterative and single-step retrieval-augmented LLMs, as well as the no-retrieval methods, in response to a range of query complexities. We validate our model on a set of open-domain QA datasets, covering multiple query complexities, and show that ours enhances the overall efficiency and accuracy of QA systems, compared to relevant baselines including the adaptive retrieval approaches. Code is available at: https://github.com/starsuzi/Adaptive-RAG.",
+      "doi": "10.48550/arxiv.2403.14403",
+      "pdf_url": "https://arxiv.org/pdf/2403.14403",
+      "url": "https://openalex.org/W4393119012",
+      "source_url": "https://openalex.org/W4393119012",
+      "year": 2024,
+      "date": "2024-03-21",
+      "doc_type": "preprint",
+      "journal": "arXiv (Cornell University)",
+      "cited_by_count": 6,
+      "referenced_works_count": 0,
+      "is_open_access": true,
+      "oa_status": "green",
+      "topics": [
+        "Topic Modeling",
+        "Intelligent Tutoring Systems and Adaptive Learning",
+        "Natural Language Processing Techniques"
+      ],
+      "keywords": [
+        "Computer science",
+        "Artificial intelligence",
+        "Natural language processing"
+      ],
+      "cited_by_api_url": null
+    }
+  ]
+}
