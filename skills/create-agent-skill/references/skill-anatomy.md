@@ -1,11 +1,11 @@
 # Skill anatomy — patterns and real examples
 
-> Concrete patterns drawn from existing hub skills.
+> Concrete patterns drawn from existing skills.
 > Use this as a template library when drafting a new SKILL.md.
 
 ---
 
-## Skill types in the hub
+## Skill types
 
 | Type | Examples | CLI pattern |
 |---|---|---|
@@ -35,10 +35,13 @@ description: >
   Trigger on keywords like "HAL", "archives-ouvertes", "collection HAL",
   "portail HAL", "dépôt HAL".
 metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: stable
-  preferred_output: json
+  {
+    "version": "0.1.0",
+    "author": "agent-skills",
+    "maturity": "stable",
+    "preferred_output": "json",
+    "openclaw": { "requires": { "bins": ["uv"] } },
+  }
 
 selection:
   use_when:
@@ -77,11 +80,13 @@ description: >
   skill before search-works-openalex, search-records-sudoc, or any other retrieval
   skill.
 metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: stable
-  preferred_output: json
-  supports_validation: true
+  {
+    "version": "0.1.0",
+    "author": "agent-skills",
+    "maturity": "stable",
+    "preferred_output": "json",
+    "openclaw": { "requires": {} },
+  }
 
 selection:
   use_when:
@@ -111,11 +116,13 @@ description: >
   task involves evaluating, summarizing, or synthesizing a set of already-retrieved
   academic papers. Each task is addressable independently.
 metadata:
-  version: 1.2.0
-  author: smartbiblia
-  maturity: stable
-  preferred_output: json
-  supports_validation: true
+  {
+    "version": "1.2.0",
+    "author": "agent-skills",
+    "maturity": "stable",
+    "preferred_output": "json",
+    "openclaw": { "requires": {} },
+  }
 
 selection:
   use_when:
@@ -205,7 +212,7 @@ This skill exposes a single task. There is no `--task` flag.
 uv run skills/generate-search-queries/scripts/cli.py prompt
 uv run skills/generate-search-queries/scripts/cli.py schema
 uv run skills/generate-search-queries/scripts/cli.py validate \
-  --json-file $WORKSPACE/queries.json
+  --json-file ./queries.json
 ```
 ```
 
@@ -219,7 +226,7 @@ uv run skills/synthesize-literature/scripts/cli.py list
 uv run skills/synthesize-literature/scripts/cli.py prompt --task screen_study_prisma
 uv run skills/synthesize-literature/scripts/cli.py schema --task summarize_paper
 uv run skills/synthesize-literature/scripts/cli.py validate \
-  --task screen_study_prisma --json-file $WORKSPACE/screening.json
+  --task screen_study_prisma --json-file ./screening.json
 ```
 
 Returns `{"valid": true, "errors": []}` or `{"valid": false, "errors": [...]}`.
@@ -228,7 +235,7 @@ Exit code is `0` on success, `1` on validation failure.
 
 ### Output section
 
-Always include a jsonc example. For retrieval skills, show the hub common record schema:
+Always include a jsonc example. For retrieval skills, show the common record schema:
 
 ```markdown
 ## Output
@@ -393,7 +400,7 @@ emit({"total_found": 0, "returned": 0, "results": [], "error": str(e)})
 emit({"total_found": n, "returned": len(results), "results": results, "error": None})
 ```
 
-### Record normalization to hub common schema
+### Record normalization to common schema
 
 ```python
 def normalize(raw: dict) -> dict:
@@ -421,7 +428,7 @@ def normalize(raw: dict) -> dict:
 
 When a package exposes multiple distinct operations (like `search-works-openalex`),
 document them as a table at the top of `## Purpose` and register them in
-`HUB-REGISTRY.md` as separate logical skill identifiers pointing to the same package:
+registry documentation as separate logical skill identifiers pointing to the same package:
 
 ```markdown
 This skill exposes four logical operations, each addressable independently:

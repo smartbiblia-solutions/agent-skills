@@ -5,13 +5,18 @@ description: >
   question. Decomposes concepts, expands terminology (synonyms, broader/narrower
   terms, related terms), and produces 8–15 validated bilingual (EN/FR) search
   queries as strict JSON. Use this skill at the very start of any literature
-  review or retrieval task, before calling any retrieval skill. Trigger on
+  review or retrieval task, before running any retrieval step. Trigger on
   phrases like "build a search strategy for", "find search terms for",
   "systematic review on", "what should I search for", "generate queries about",
   or any request that implies going from a research question to searchable
-  expressions. Always use this skill before search-works-openalex,
-  search-records-sudoc, or any other retrieval skill.
-metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "🔎"}}
+  expressions.
+metadata:
+  {
+    "version": "0.1.0",
+    "author": "smartbiblia",
+    "maturity": "stable",
+    "preferred_output": "json",
+  }
 
 selection:
   use_when:
@@ -23,10 +28,6 @@ selection:
     - The user provides keywords directly and only needs to run a search.
   prefer_over:
     - generic-keyword-generator
-  combine_with:
-    - search-works-openalex
-    - search-records-sudoc
-    - orchestrate-literature-review
 
 tags:
   - systematic-review
@@ -53,11 +54,11 @@ Output is strict JSON validated against a schema.
 
 ## When to use / When not to use
 
-Use this skill at the **start** of any literature review or retrieval pipeline,
-before calling `search-works-openalex` or `search-records-sudoc`.
+Use this skill at the **start** of any literature review or retrieval task,
+before running any database search.
 
 Do not use it if the user already has search terms and only needs to run a
-retrieval — start directly with the retrieval skill.
+retrieval.
 
 ---
 
@@ -74,7 +75,7 @@ uv run skills/generate-search-queries/scripts/cli.py schema
 
 # Validate the produced JSON
 uv run skills/generate-search-queries/scripts/cli.py validate \
-  --json-file $WORKSPACE/queries.json
+  --json-file ./queries.json
 ```
 
 Returns `{"valid": true, "errors": []}` or `{"valid": false, "errors": [...]}`.
@@ -122,14 +123,8 @@ The validated JSON has this structure:
 }
 ```
 
-The `queries[].query` strings are directly usable as `--query` arguments
-in `search-works-openalex`:
-
-```bash
-uv run skills/search-works-openalex/scripts/cli.py search \
-  --query "<queries[0].query>" \
-  --max-results 15
-```
+The `queries[].query` strings are directly usable as search terms in any
+academic database retrieval step.
 
 ---
 
@@ -138,24 +133,6 @@ uv run skills/search-works-openalex/scripts/cli.py search \
 - Read the prompt, produce JSON, validate. Fix and re-validate on failure.
 - Max 2 retries on schema validation failure, then stop and report the error.
 - Return JSON only — no prose, no markdown outside the JSON object.
-
----
-
-## Composition hints
-
-This skill is always **first** in a retrieval or review pipeline:
-
-```
-generate-search-queries          ← this skill
-  → search-works-openalex        (use queries[].query as --query)
-  → search-records-sudoc         (use queries[].query as search terms)
-  → screen-studies-prisma
-  → summarize-paper
-  → synthesize-papers-thematic
-```
-
-For a full end-to-end pipeline, use `orchestrate-literature-review` which
-calls this skill at STEP 1a.
 
 ---
 

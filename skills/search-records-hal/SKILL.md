@@ -5,31 +5,34 @@ description: >
   open repository, powered by Apache Solr. Use this skill whenever the user
   asks to search HAL, query a specific HAL collection or portal, retrieve
   bibliographic metadata, export BibTeX/TEI, or compute facets and trends from
-  HAL. Prefer this skill over search-works-openalex when the task targets
-  French institutional or lab deposits, francophone open-access preprints, or
-  when generate-search-queries produced queries with lang "fr". Trigger on
-  keywords like "HAL", "archives-ouvertes", "collection HAL", "portail HAL",
-  "dépôt HAL", or any request to search French open-access deposits.
-  Most HAL usage is collection-scoped — always ask for the collection code
-  when it is not provided.
-metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "🇫🇷", "requires": {"bins": ["uv"]}}}
+  HAL. Prefer this skill when the task targets French institutional or lab
+  deposits or francophone open-access preprints. Trigger on keywords like
+  "HAL", "archives-ouvertes", "collection HAL", "portail HAL", "dépôt HAL",
+  or any request to search French open-access deposits. Most HAL usage is
+  collection-scoped — always ask for the collection code when it is not provided.
+metadata:
+  {
+    "version": "0.1.0",
+    "author": "smartbiblia",
+    "maturity": "stable",
+    "preferred_output": "json",
+    "openclaw":
+      {
+        "requires": { "bins": ["uv"], "env": ["HAL_HTTP_TIMEOUT", "HAL_MAX_RETRIES", "HAL_TRACE"] },
+      },
+  }
 
 selection:
   use_when:
     - The task targets a specific HAL collection or institutional portal.
     - The user asks for French open-access deposits or francophone preprints.
-    - generate-search-queries produced queries with lang "fr" and HAL is a target source.
+    - The search strategy produced queries with lang "fr" and HAL is a target source.
     - BibTeX or TEI export from HAL is needed.
   avoid_when:
-    - The task requires broad international scholarly coverage — use search-works-openalex instead.
-    - DOI resolution is the primary goal — use lookup-dois-openalex instead.
+    - The task requires broad international scholarly coverage.
+    - DOI resolution is the primary goal.
   prefer_over:
     - generic-web-search
-  combine_with:
-    - generate-search-queries
-    - search-works-openalex
-    - screen-studies-prisma
-    - synthesize-literature
 
 tags:
   - hal
@@ -52,9 +55,9 @@ OpenAlex-compatible record shape for consistent downstream processing.
 uv run skills/search-records-hal/scripts/cli.py <subcommand> [flags]
 ```
 
-The output schema is intentionally aligned with `search-works-openalex` so
-that records from both sources can be processed by the same downstream skills
-(`screen-studies-prisma`, `summarize-paper`, etc.) without transformation.
+The output schema is intentionally aligned with the common hub record schema
+so that records from different sources can be processed by downstream steps
+without transformation.
 
 ---
 
@@ -64,9 +67,9 @@ Use this skill when the task targets HAL specifically: French institutional
 deposits, lab collections, francophone preprints, or when BibTeX/TEI export
 is needed.
 
-For broad international scholarly coverage, use `search-works-openalex`.
-The two skills are complementary — run both and deduplicate on `doi` when
-comprehensive coverage is needed.
+For broad international scholarly coverage, use a general scholarly retrieval
+tool. This skill and international retrieval tools are complementary — run both
+and deduplicate on `doi` when comprehensive coverage is needed.
 
 ---
 
@@ -188,25 +191,6 @@ Retried status codes: 429, 500, 502, 503, 504. Timeouts are also retried.
 
 ---
 
-## Composition hints
-
-Typical pipeline position:
-
-```
-generate-search-queries          (produces queries with lang "fr" when HAL is a target)
-  → search-records-hal             ← this skill, for French/francophone coverage
-  → search-works-openalex        (run in parallel for international coverage)
-  → deduplicate on doi field
-  → screen-studies-prisma
-  → summarize-paper
-  → synthesize-papers-thematic
-```
-
-For combined coverage (HAL + OpenAlex), merge result arrays and deduplicate
-on the `doi` field before passing to `screen-studies-prisma`.
-
----
-
 ## Common workflows
 
 ### Collection-scoped search, compact payload
@@ -241,24 +225,6 @@ uv run skills/search-records-hal/scripts/cli.py search \
   --wt bibtex
 # → returns error payload with source_url; fetch that URL directly for BibTeX
 ```
-
-### Combined HAL + OpenAlex search
-
-```bash
-# Run both in parallel, then deduplicate on doi
-uv run skills/search-records-hal/scripts/cli.py search \
-  --collection "FRANCE-GRILLES" --q 'text:GraphRAG' --rows 15 \
-  > $WORKSPACE/hal_results.json &
-
-uv run skills/search-works-openalex/scripts/cli.py search \
-  --query "GraphRAG graph retrieval augmented generation" --max-results 15 \
-  > $WORKSPACE/openalex_results.json &
-
-wait
-# merge results[] arrays, deduplicate on doi field
-```
-
----
 
 ## Failure modes
 

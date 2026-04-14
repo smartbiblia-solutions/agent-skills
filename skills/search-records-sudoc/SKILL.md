@@ -14,7 +14,17 @@ description: >
   Also use it when the user wants to know whether a document is held in
   French academic libraries, or needs UNIMARC metadata for a French
   publication.
-metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "📚", "requires": {"bins": ["uv"]}}}
+metadata:
+  {
+    "version": "0.1.0",
+    "author": "smartbiblia",
+    "maturity": "stable",
+    "preferred_output": "json",
+    "openclaw":
+      {
+        "requires": { "bins": ["uv"], "env": ["SUDOC_HTTP_TIMEOUT", "SUDOC_MAX_RETRIES", "SUDOC_TRACE"] },
+      },
+  }
 
 selection:
   use_when:
@@ -25,17 +35,11 @@ selection:
     - UNIMARC metadata or RAMEAU subject headings are required.
     - The user wants to know whether a document is held in French academic libraries.
   avoid_when:
-    - The task requires broad international scholarly literature — use search-works-openalex instead.
-    - The task targets French open-access preprints or institutional deposits — use search-records-hal instead.
-    - DOI-based scholarly retrieval is the primary goal — use lookup-dois-openalex instead.
+    - The task requires broad international scholarly literature.
+    - The task targets French open-access preprints or institutional deposits.
+    - DOI-based scholarly retrieval is the primary goal.
   prefer_over:
     - generic-web-search
-  combine_with:
-    - generate-search-queries
-    - search-works-openalex
-    - search-records-hal
-    - screen-studies-prisma
-    - synthesize-literature
 
 tags:
   - sudoc

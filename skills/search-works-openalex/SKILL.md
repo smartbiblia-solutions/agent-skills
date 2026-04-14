@@ -10,7 +10,18 @@ description: >
   any request involving bibliographic data. Use it even if the user doesn't
   explicitly name OpenAlex — if they want to find or analyse academic papers,
   this skill applies.
-metadata: {"version": "0.1.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "🌐", "requires": {"bins": ["uv"]}}}
+metadata:
+  {
+    "version": "0.1.0",
+    "author": "smartbiblia",
+    "maturity": "stable",
+    "preferred_output": "json",
+    "openclaw":
+      {
+        "requires": { "bins": ["uv"], "env": ["OPENALEX_API_KEY"] },
+        "primaryEnv": "OPENALEX_API_KEY",
+      },
+  }
 
 selection:
   use_when:
@@ -19,15 +30,10 @@ selection:
     - The task requires finding papers that cite a specific work.
     - The task is to classify a title or abstract by academic topic.
   avoid_when:
-    - The task concerns a library catalog or institutional holdings (use search-records-sudoc instead).
+    - The task concerns a library catalog or institutional holdings.
     - Papers have already been retrieved and the next step is appraisal or synthesis.
   prefer_over:
     - generic-web-search
-  combine_with:
-    - generate-search-queries
-    - screen-studies-prisma
-    - summarize-paper
-    - synthesize-papers-thematic
 
 tags:
   - openalex
@@ -68,9 +74,8 @@ Use this skill for any task involving discovery or retrieval of scholarly works,
 DOI resolution, citation graph exploration, or topic classification of academic text.
 
 Do not use it when:
-- The task concerns a library catalog or institutional holdings — use `search-records-sudoc` instead.
-- Papers have already been retrieved and the next step is appraisal or synthesis —
-  use `appraise-study-quality` or `synthesize-papers-thematic` instead.
+- The task concerns a library catalog or institutional holdings.
+- Papers have already been retrieved and the next step is appraisal or synthesis.
 
 ---
 
@@ -284,29 +289,6 @@ Set these in a `.env` file next to the script or export them in the shell.
 
 Retried status codes: **429, 403, 500, 502, 503, 504**. Timeouts are also
 retried up to `MAX_RETRIES`.
-
----
-
-## Composition hints
-
-Typical position in a systematic review pipeline:
-
-```
-generate-search-queries
-  → search-works-openalex        ← this skill
-  → screen-studies-prisma
-  → summarize-paper
-  → appraise-study-quality
-  → synthesize-papers-thematic
-```
-
-For citation analysis:
-
-```
-batch-lookup-by-doi              ← resolve seed papers
-  → get-citing-works-openalex   ← expand the citation graph
-  → screen-studies-prisma
-```
 
 ---
 

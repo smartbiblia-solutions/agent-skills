@@ -1,87 +1,109 @@
 ---
-name: create_hub_skill
+name: create_agent_skill
 description: >
-  Meta-skill for creating new agent skills that conform to the smartbiblia hub
-  standards. Use this skill whenever the task is to create a new skill for the
-  hub, update an existing skill to match hub conventions, or review a skill for
+  Meta-skill for creating new agent skills that conform to the skill
+  specification standards. Use this skill whenever the task is to create a new skill,
+  update an existing skill to match conventions, or review a skill for
   compliance. Guides the agent through three phases: researching the data source
   and producing a llm.md reference document, drafting a compliant SKILL.md, and
-  reviewing coherence with the hub registry. Always use this skill before writing
-  any new SKILL.md for the hub — it ensures naming, frontmatter, selection block,
+  reviewing coherence with existing skills. Always use this skill before writing
+  any new SKILL.md — it ensures naming, frontmatter, selection block,
   CLI patterns, and output schemas are consistent with existing skills.
-metadata: {"version": "0.2.0", "author": "smartbiblia", "maturity": "stable", "openclaw": {"emoji": "🛠️"}}
+metadata:
+  {
+    "version": "0.2.0",
+    "author": "agent-skills",
+    "maturity": "stable",
+    "preferred_output": "markdown",
+    "openclaw": { "requires": {} },
+  }
 
 selection:
   use_when:
-    - A new skill needs to be created for the hub.
-    - An existing skill needs to be reviewed or updated for hub compliance.
+    - A new skill needs to be created.
+    - An existing skill needs to be reviewed or updated for compliance.
     - A llm.md reference document needs to be produced for a data source API.
+  avoid_when:
+    - The task is to scaffold a gitagent repository — that is a different kind of task.
 
 tags:
   - meta-skill
   - skill-creator
-  - hub-standards
+  - skill-standards
 ---
 
-# create-hub-skill
+# create-agent-skill
 
 ## Purpose
 
-This meta-skill guides the creation of hub-compliant skills. It enforces the
+This meta-skill guides the creation of spec-compliant skills. It enforces the
 conventions established across all existing skills so that new contributions
 are immediately consistent in naming, structure, routing signals, CLI patterns,
 and output schemas.
 
 ---
 
-## Hub reference documents
+## When to use / When not to use
 
-These files are the authoritative sources for hub conventions.
-Fetch them at the start of each phase that requires them — they are always
-up to date at these URLs.
+Use this skill when creating a new skill from scratch, updating an
+existing skill to match current conventions, or producing a `references/llm.md`
+API reference document for a data source (only when the skill wraps an API
+that lacks an LLM-optimized documentation page).
 
-| Document | URL | When to fetch |
+Do not use it when:
+- The task is to create a new gitagent repository scaffold (`agent.yaml`, `SOUL.md`, etc.) — that is a different kind of task.
+- Only a single file in an existing skill needs a minor edit — edit it directly.
+
+---
+
+## Reference documents
+
+These files are the authoritative sources for skill conventions.
+Fetch them at the start of each phase that requires them.
+
+| Document | Path | When to fetch |
 |---|---|---|
-| Hub registry | `https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills/HUB-REGISTRY.md` | Phases 2 and 3 — naming, combine_with, pipeline position |
-| Spec skills | `https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills/SPEC_SKILLS_en.md` | Phase 2 — naming rules, manifest structure |
+| Spec skills | `skills/SPEC_SKILLS_en.md` | Phase 2 — naming rules, manifest structure |
 | Skill anatomy | `references/skill-anatomy.md` | Phase 2 — detailed patterns with real examples |
 | llm.md guide | `references/llm-md-guide.md` | Phase 1 — how to document a data source API |
 
-`skill-anatomy.md` and `llm-md-guide.md` are local to this skill and do not
-change with the hub — they describe stable patterns, not the current state of
-the registry.
+`skill-anatomy.md` and `llm-md-guide.md` are local to this skill and describe
+stable patterns for skill creation.
 
 ---
 
 ## Workflow
 
-### PHASE 1 — Research the data source
+### PHASE 1 — Research the data source (conditional)
 
-**Goal**: produce a `references/llm.md` in the new skill's folder that
-captures everything an agent needs to use the API correctly.
+**Only for skills that wrap an external API** — skip to Phase 2 otherwise.
+
+**Goal**: produce a `references/llm.md` when the API lacks an LLM-optimized
+documentation page (e.g., no `/llm.txt` file).
 
 1. Read `references/llm-md-guide.md`.
-2. Fetch the API documentation (official docs, OpenAPI spec, or equivalent).
-   If the source provides an LLM-optimized page (like OpenAlex's `/llm.txt`),
-   use it as the primary input.
-3. Produce `skills/<new-skill>/references/llm.md`.
+2. Check if the API provides an LLM-optimized reference (e.g., OpenAlex's `/llm.txt`).
+   - If yes: skip Phase 1 — the LLM can reference the official document directly.
+   - If no: proceed to produce a condensed `references/llm.md` for this skill.
+3. Produce `skills/<new-skill>/references/llm.md` capturing non-obvious behaviors:
+   - Authentication, encoding rules, pagination quirks
+   - Field mappings to the common record schema
+   - Rate limits and retry guidance
 
 `references/llm.md` stays in the repo as a maintenance document. It is not
 required at agent runtime — agents use the `SKILL.md` directly.
 
-Skip this phase if the API is already well-documented in an existing
-`references/llm.md`, or if the source is simple enough to proceed directly
-to Phase 2.
+Skip this phase entirely if the skill does not wrap an external API
+(e.g., contract packs, pure analytical tools, orchestrators).
 
 ---
 
 ### PHASE 2 — Draft the SKILL.md
 
-**Goal**: produce a hub-compliant `SKILL.md` for the new skill.
+**Goal**: produce a spec-compliant `SKILL.md` for the new skill.
 
 Fetch before starting:
-- `HUB-REGISTRY.md` (URL above) — to check existing names and pipeline position
-- `SPEC_SKILLS.md` (URL above) — for naming rules and manifest conventions
+- `SPEC_SKILLS_en.md` — for naming rules and manifest conventions
 
 Then read `references/skill-anatomy.md` for detailed patterns and real examples.
 
@@ -98,12 +120,11 @@ source  = the external system, when behavior depends on it
 The `object` token must reflect the source's actual data model:
 - Use `works` when the source exposes typed work entities (e.g. OpenAlex `/works`)
 - Use `records` when the source exposes a bibliographic index without entity typing
-  (Sudoc SRU, HAL Solr) — consistent with `search-records-sudoc` and `search-records-hal`
+  (e.g. Sudoc SRU, HAL Solr)
 - Use `queries` when the output is search query expressions
 - Use `papers` for generic scholarly papers when no typed entity model exists
 
-Check the fetched `HUB-REGISTRY.md` to verify the name does not conflict with
-an existing skill.
+Check existing skills in the `skills/` folder to verify the name does not conflict.
 
 #### Step 2 — Write the frontmatter
 
@@ -117,10 +138,13 @@ description: >
    Include trigger phrases. End with output format.
    Name sibling skills explicitly when disambiguation matters.>
 metadata:
-  version: 0.1.0
-  author: smartbiblia
-  maturity: experimental | beta | stable
-  preferred_output: json | markdown | text
+  {
+    "version": "0.1.0",
+    "author": "agent-skills",
+    "maturity": "experimental",
+    "preferred_output": "json",
+    "openclaw": { "requires": {} },
+  }
 
 selection:
   use_when:
@@ -149,10 +173,10 @@ Rules for `description`:
 
 Rules for `selection.avoid_when`:
 - Always name the alternative skill explicitly, not just the category.
-- Every skill that has a sibling in the hub needs at least one `avoid_when` entry.
+- Every skill that has a sibling needs at least one `avoid_when` entry.
 
 Rules for `selection.combine_with`:
-- Use the fetched `HUB-REGISTRY.md` to find the pipeline position of this skill.
+- Review existing skills in the `skills/` folder to find the pipeline position of this skill.
 - List skills that immediately precede and follow.
 
 #### Step 3 — Write the body
@@ -185,13 +209,12 @@ Optional (add only when genuinely useful):
 For retrieval skills, the CLI must:
 - emit strict JSON on stdout — exit code always 0, errors surfaced in `error` field
 - implement retry with exponential backoff for transient HTTP errors
-- normalize output to the hub common record schema (see below)
+- normalize output to the common record schema (see below)
 - support a `--trace` flag for HTTP debug logging
 - be self-contained (`uv run`, inline dependencies declared in the script header)
 
-**Hub common record schema** — all retrieval skills normalize to this shape so
-that downstream skills (`screen-studies-prisma`, `summarize-paper`, etc.) can
-process records from any source without transformation:
+**Common record schema** — retrieval skills should normalize to this shape so
+that downstream steps can process records from any source without transformation:
 
 ```jsonc
 {
@@ -221,34 +244,19 @@ Single-task contract packs have no `--task` flag.
 
 ### PHASE 3 — Review and integrate
 
-**Goal**: verify coherence with the hub and update the registry.
-
-Fetch `HUB-REGISTRY.md` (URL above) before starting this phase.
+**Goal**: verify coherence with existing skills.
 
 #### Coherence checklist
 
 - [ ] Skill name follows `<verb>-<object>-<source>` and does not conflict with existing skills
 - [ ] `object` token is semantically correct for this source's data model
-- [ ] `selection.avoid_when` names at least one alternative hub skill explicitly
+- [ ] `selection.avoid_when` names at least one alternative skill explicitly
 - [ ] `selection.combine_with` reflects the actual pipeline position
-- [ ] Output schema is compatible with the hub common record schema
+- [ ] Output schema is compatible with the common record schema
 - [ ] `## Composition hints` shows where this skill sits in the annotated pipeline
 - [ ] `maturity` is set to `experimental` for a new, untested skill
 - [ ] No optional metadata fields filled with placeholder or default values
-- [ ] `references/llm.md` produced and committed (if Phase 1 was executed)
-
-#### Update HUB-REGISTRY.md
-
-After the SKILL.md is validated, update `HUB-REGISTRY.md` in the repo:
-
-1. Add the skill to the **Package inventory** table
-2. Add logical skill identifiers to the **Logical skills** table if the package
-   exposes multiple addressable operations
-3. Insert the skill in the **Annotated pipeline** at the correct position,
-   with its input and output types documented
-4. Add a row to the **Renaming map** if this skill replaces an older one
-
-Commit the updated `HUB-REGISTRY.md` together with the new skill folder.
+- [ ] `references/llm.md` produced only if: (a) skill wraps an external API, and (b) the API lacks an LLM-optimized reference like `/llm.txt`
 
 #### Skill folder structure
 
@@ -264,9 +272,26 @@ skills/<new-skill>/
     llm.md              ← API reference produced in Phase 1
 ```
 
-No packaging step needed — agents access skills directly from the repo,
-either by path (`skills/<n>/SKILL.md`) or via GitHub raw URL:
+No packaging step needed — agents access skills directly from the repo
+by path (`skills/<n>/SKILL.md`).
 
-```
-https://raw.githubusercontent.com/smartbiblia-solutions/agent-skills/main/skills/<n>/SKILL.md
-```
+---
+
+## Output
+
+This skill produces one or more of the following artifacts, depending on which
+phases are executed:
+
+| Phase | Artifact | Description |
+|---|---|---|
+| 1 | `skills/<n>/references/llm.md` | Condensed API reference (only for API-wrapping skills when API lacks `llm.txt`) |
+| 2 | `skills/<n>/SKILL.md` | Spec-compliant skill manifest and body |
+
+Phase 2 is always required. Phase 1 is only for skills wrapping an external API
+that lacks an LLM-optimized documentation page.
+
+---
+
+## Composition hints
+
+This skill has no upstream dependency — it is a standalone authoring tool.

@@ -7,9 +7,15 @@ description: >
   task involves evaluating, summarizing, or synthesizing a set of already-retrieved
   academic papers. Each task is addressable independently — use a single task in
   isolation or chain them in a full review pipeline. Always use this skill before
-  any synthesis or appraisal step. Do not use it for retrieval — use
-  search-works-openalex or search-records-sudoc instead.
-metadata: {"version": "1.2.0", "author": "smartbiblia", "maturity": "stable", "preferred_output": "json", "openclaw": {"emoji": "📝"}}
+  any synthesis or appraisal step. Do not use it for retrieval — retrieval must
+  be handled separately before using this skill.
+metadata:
+  {
+    "version": "1.2.0",
+    "author": "smartbiblia",
+    "maturity": "stable",
+    "preferred_output": "json",
+  }
 
 selection:
   use_when:
@@ -17,13 +23,8 @@ selection:
     - Any post-retrieval step of a literature review pipeline is needed.
     - A single atomic task (e.g. summarize one paper, screen one abstract) is needed independently.
   avoid_when:
-    - Papers have not yet been retrieved — use search-works-openalex first.
-    - The task is only to build a search strategy — use generate-search-queries instead.
-  combine_with:
-    - generate-search-queries
-    - search-works-openalex
-    - search-records-sudoc
-    - orchestrate-literature-review
+    - Papers have not yet been retrieved — retrieval must run first.
+    - The task is only to build a search strategy.
 
 tags:
   - prisma
@@ -41,8 +42,8 @@ A contract pack for the post-retrieval stages of a literature review. Each task
 is backed by a methodological prompt and a strict JSON schema. The CLI exposes
 three commands: `list`, `prompt`, `schema`, and `validate`.
 
-This skill is the **task library**. It answers: *how to execute this step correctly*.
-For pipeline orchestration (what to do, in what order), see `orchestrate-literature-review`.
+This skill is a **task library** for post-retrieval analysis. It answers: *how to execute this step correctly*.
+Pipeline orchestration (what to do, in what order) is handled at the agent level.
 
 ---
 
@@ -55,8 +56,7 @@ study quality, or producing a synthesis.
 Each task can be used independently — you do not need to run the full pipeline
 to screen a single paper or produce a thematic synthesis from an existing corpus.
 
-Do not use it for retrieval (use `search-works-openalex`) or query design
-(use `generate-search-queries`).
+Do not use it for retrieval or query design — those are separate pre-retrieval steps handled outside this skill.
 
 ---
 
@@ -137,7 +137,7 @@ uv run skills/synthesize-literature/scripts/cli.py schema --task summarize_paper
 ```bash
 uv run skills/synthesize-literature/scripts/cli.py validate \
   --task screen_study_prisma \
-  --json-file $WORKSPACE/screening_W123.json
+  --json-file ./screening_W123.json
 ```
 
 Returns `{"valid": true, "errors": []}` or `{"valid": false, "errors": [...]}`.
@@ -167,28 +167,6 @@ Exit code is `0` on success, `1` on validation failure.
 - Validate each output before moving to the next step.
 - Retry at most 2 times on schema validation failure, then stop and report the error.
 - If information is absent from the input, use `null` — never invent values.
-
----
-
-## Composition hints
-
-Typical pipeline position:
-
-```
-generate-search-queries
-  → search-works-openalex
-  → screen-studies-prisma          ← this skill (task 1)
-  → summarize-paper                ← this skill (task 2)
-  → appraise-study-quality         ← this skill (task 4, optional)
-  → synthesize-papers-thematic     ← this skill (task 5a/b/c/d)
-```
-
-For standalone use — synthesize an existing corpus without running the full pipeline:
-
-```
-[existing summaries JSON]
-  → synthesize-papers-thematic     ← start here directly
-```
 
 ---
 

@@ -14,7 +14,7 @@ It is **not packaged** in the `.skill` file — it stays in the repo for mainten
 Produce one when:
 - The API has non-obvious behavior (encoding quirks, case-sensitive paths, etc.)
 - The API has a rich query language that needs to be documented for reliable use
-- The data model differs from the hub's common record schema and normalization rules are needed
+- The data model differs from the common record schema and normalization rules are needed
 - Official documentation is scattered across multiple pages
 
 Skip it when:
@@ -47,7 +47,7 @@ For each API, capture:
 - **Key parameters** with types, defaults, and valid values
 - **Non-obvious behavior** — encoding rules, case sensitivity, pagination, rate limits
 - **Response structure** — the raw response schema before normalization
-- **Field mapping** — how raw response fields map to the hub common record schema
+- **Field mapping** — how raw response fields map to the common record schema
 - **Error behavior** — how errors are signaled (status codes, error fields, always-200 APIs)
 - **Rate limits and retry guidance**
 
@@ -104,9 +104,9 @@ For each API, capture:
 
 ---
 
-## Field mapping to hub common record schema
+## Field mapping to common record schema
 
-| Hub field | Source field | Notes |
+| Common field | Source field | Notes |
 |---|---|---|
 | `id` | `<source_id_field>` | |
 | `title` | `<title_field>` | May be an array — take first element |
@@ -154,7 +154,7 @@ curl "<URL>"
 
 ---
 
-## Real examples from the hub
+## Real examples
 
 ### HAL llm.md — key sections
 
@@ -173,7 +173,7 @@ The HAL skill's llm.md would capture:
 
 ## Field mapping
 
-| Hub field | HAL field | Notes |
+| Common field | HAL field | Notes |
 |---|---|---|
 | `id` | `halId_s` | |
 | `title` | `title_s` or `title_t` | `title_s` preferred |
