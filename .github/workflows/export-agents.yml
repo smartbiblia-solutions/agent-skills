@@ -40,26 +40,38 @@ jobs:
           # Export loop
       - name: Export all agents
         run: |
+          set -e
+
           mkdir -p build
 
           for agent in $(find agents -name "agent.yaml" -exec dirname {} \;); do
             name=$(basename "$agent")
 
-            echo "Processing $name"
+            echo "=============================="
+            echo "Processing $agent"
+            echo "=============================="
 
-            # IMPORTANT: run inside agent folder
-            gitagent validate "$agent"
+            # FIX CRITIQUE
+            pushd "$agent" > /dev/null
 
-            mkdir -p build/$name
+            echo "PWD: $(pwd)"
+            ls
 
-            gitagent export "$agent" --format claude-code --output build/$name/claude
-            gitagent export "$agent" --format codex --output build/$name/codex
-            gitagent export "$agent" --format opencode --output build/$name/opencode
-            gitagent export "$agent" --format openclaw --output build/$name/openclaw
-            gitagent export "$agent" --format nanobot --output build/$name/nanobot
-            gitagent export "$agent" --format cursor --output build/$name/cursor
+            gitagent validate
 
-            gitagent export "$agent" --format system-prompt > build/$name/system-prompt.txt
+            mkdir -p "../../build/$name"
+
+            gitagent export . --format claude-code --output "../../build/$name/claude"
+            gitagent export . --format codex --output "../../build/$name/codex"
+            gitagent export . --format opencode --output "../../build/$name/opencode"
+            gitagent export . --format openclaw --output "../../build/$name/openclaw"
+            gitagent export . --format nanobot --output "../../build/$name/nanobot"
+            gitagent export . --format cursor --output "../../build/$name/cursor"
+
+            gitagent export . --format system-prompt > "../../build/$name/system-prompt.txt"
+
+            # revenir au root
+            popd > /dev/null
           done
 
       # Zip artifacts
