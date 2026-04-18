@@ -31,7 +31,7 @@ jobs:
       - name: Resolve external skills
         run: |
           for agent in $(find agents -name "agent.yaml" -exec dirname {} \;); do
-            echo "Resolving $agent"
+            echo "🔧 Resolving $agent"
             python3 scripts/resolve_skills.py "$agent"
           done
 
@@ -40,18 +40,16 @@ jobs:
         run: |
           mkdir -p build
 
-          for agent in $(echo '${{ steps.agents.outputs.agents }}' | jq -r '.[]'); do
+          for agent in $(find agents -name "agent.yaml" -exec dirname {} \;); do
             name=$(basename "$agent")
 
             echo "Processing $name"
 
-            # Validate
+            # IMPORTANT: run inside agent folder
             gitagent validate "$agent"
 
-            # Create output folder
             mkdir -p build/$name
 
-            # Export formats
             gitagent export "$agent" --format claude-code --output build/$name/claude
             gitagent export "$agent" --format codex --output build/$name/codex
             gitagent export "$agent" --format opencode --output build/$name/opencode
@@ -59,7 +57,6 @@ jobs:
             gitagent export "$agent" --format nanobot --output build/$name/nanobot
             gitagent export "$agent" --format cursor --output build/$name/cursor
 
-            # Optional: system prompt
             gitagent export "$agent" --format system-prompt > build/$name/system-prompt.txt
           done
 
