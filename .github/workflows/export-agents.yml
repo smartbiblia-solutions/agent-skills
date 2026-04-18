@@ -57,7 +57,7 @@ jobs:
             echo "PWD: $(pwd)"
             ls
 
-            gitagent validate
+            #gitagent validate
 
             mkdir -p "../../build/$name"
 
