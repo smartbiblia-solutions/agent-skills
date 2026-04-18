@@ -31,7 +31,9 @@ jobs:
       - name: Resolve external skills
         run: |
           for agent in $(find agents -name "agent.yaml" -exec dirname {} \;); do
-            echo "🔧 Resolving $agent"
+            echo "AGENT: $agent"
+            ls "$agent"
+            echo "Resolving $agent"
             python3 scripts/resolve_skills.py "$agent"
           done
 
