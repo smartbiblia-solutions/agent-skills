@@ -55,7 +55,7 @@ jobs:
             name=$(basename "$agent")
 
             echo "=============================="
-            echo "🚀 Processing $agent"
+            echo "Processing $agent"
             echo "=============================="
 
             pushd "$agent" > /dev/null
