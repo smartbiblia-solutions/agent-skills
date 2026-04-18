@@ -1,5 +1,5 @@
 ---
-name: search_records_sudoc
+name: search-records-sudoc
 description: >
   Search and retrieve bibliographic records from the Sudoc catalogue, the
   French academic union catalogue covering all higher education and research
