@@ -2,8 +2,8 @@ name: Export Agents (GitAgent Multi-Format)
 
 on:
   push:
-    tags:
-      - "v*"
+    branches: [main]
+    tags: ["v*"]
 
 permissions:
   contents: write
@@ -32,6 +32,15 @@ jobs:
 
       - name: Install GitAgent
         run: npm install -g @open-gitagent/gitagent
+        
+      # ---------------------------
+      # Detect all agents (folders containing agent.yaml)
+      # ---------------------------
+      - name: Find agents
+        id: agents
+        run: |
+          AGENTS=$(find agents -name "agent.yaml" -exec dirname {} \; | jq -R -s -c 'split("\n")[:-1]')
+          echo "agents=$AGENTS" >> $GITHUB_OUTPUT
 
       # ---------------------------
       # Resolve external skills
