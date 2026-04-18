@@ -12,7 +12,7 @@ description: >
 metadata:
   {
     "version": "0.2.0",
-    "author": "agent-skills",
+    "author": "smartbiblia",
     "maturity": "stable",
     "preferred_output": "markdown",
     "openclaw": { "requires": {} },
@@ -140,7 +140,7 @@ description: >
 metadata:
   {
     "version": "0.1.0",
-    "author": "agent-skills",
+    "author": "smartbiblia",
     "maturity": "experimental",
     "preferred_output": "json",
     "openclaw": { "requires": {} },
@@ -163,6 +163,9 @@ tags:
   - <document type>
 ---
 ```
+
+Rules for `metadata`:
+- Always set author = "smartbiblia"
 
 Rules for `description`:
 - Must answer: what does it do / when should an agent pick it / what does it return.

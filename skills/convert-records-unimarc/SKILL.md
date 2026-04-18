@@ -13,7 +13,7 @@ description: >
 metadata:
   {
     "version": "0.1.0",
-    "author": "agent-skills",
+    "author": "smartbiblia",
     "maturity": "experimental",
     "preferred_output": "json",
     "openclaw": { "requires": { "bins": ["uv"] } },

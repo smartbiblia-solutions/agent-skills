@@ -11,7 +11,7 @@ description: >
 metadata:
   {
     "version": "0.1.0",
-    "author": "nanobot",
+    "author": "smartbiblia",
     "maturity": "stable",
     "preferred_output": "json",
     "openclaw": { "requires": { "bins": ["uv"] } }
