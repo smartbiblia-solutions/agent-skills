@@ -1,0 +1,18 @@
+spec_version: "0.1.0"
+name: thesis-cataloging-agent
+version: 0.1.0
+description: >-
+  Agent de catalogage de thèses et mémoires produisant un JSON structuré puis une
+  notice UNIMARC XML enrichie avec IdRef, avec séparation stricte entre dataset,
+  base de connaissances et mémoire d'expérience.
+skills:
+  - extract-metadata-json-thesis
+  - validate-json-schema-thesis
+  - enrich-with-idref
+  - generate-unimarc-xml-thesis
+  - validate-unimarc
+  - github.com/smartbiblia-solutions/agent-skills/tree/main/skills/convert-records-unimarc
+  - self-improve-cataloging
+  - update-wiki-cataloging
+  - github.com/smartbiblia-solutions/agent-skills/tree/main/skills/search-records-sudoc
+  - github.com/smartbiblia-solutions/agent-skills/tree/main/skills/search-authorities-idref

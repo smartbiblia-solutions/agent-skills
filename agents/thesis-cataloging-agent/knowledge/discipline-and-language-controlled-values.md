@@ -1,0 +1,115 @@
+# Controlled values: discipline and language
+
+## Langues
+
+- `fre` — français
+- `eng` — anglais
+- `ger` — allemand
+- `spa` — espagnol
+- `ita` — italien
+- `lat` — latin
+
+## Disciplines locales utilisées par le prototype
+
+- `000 Informatique, information, généralités`
+- `004 Informatique`
+- `020 Bibliothéconomie et sciences de l'information`
+- `060 Organisations générales et muséologie`
+- `070 Médias d'information, journalisme, édition`
+- `090 Manuscrits et livres rares`
+- `100 Philosophie, psychologie`
+- `110 Métaphysique`
+- `120 Epistémologie, causalité, genre humain`
+- `130 Phénomènes paranormaux, pseudosciences`
+- `140 Les divers systèmes et écoles philosophiques`
+- `150 Psychologie`
+- `160 Logique`
+- `170 Morale (éthique)`
+- `180 Philosophie de l'Antiquité, du Moyen Âge, de l'Orient`
+- `190 Philosophie occidentale moderne et philosophies non orientales`
+- `200 Religion`
+- `210 Philosophie et théorie de la religion`
+- `220 Bible`
+- `230 Théologie chrétienne`
+- `240 Théologie morale et pratiques chrétiennes`
+- `250 Eglises locales, ordres religieux chrétiens`
+- `260 Théologie chrétienne et société, ecclésiologie`
+- `270 Histoire et géographie du christianisme et de l'Eglise chrétienne`
+- `280 Confessions et sectes de l'Eglise chrétienne`
+- `290 Autres religions`
+- `300 Sciences sociales, sociologie, anthropologie`
+- `310 Statistiques générales`
+- `320 Science politique`
+- `330 Economie`
+- `340 Droit`
+- `350 Administration publique. Arts et science militaires`
+- `360 Problèmes et services sociaux`
+- `370 Education et enseignement`
+- `380 Commerce, communications, transports`
+- `390 Ethnologie`
+- `400 Langues et linguistique`
+- `410 Linguistique générale`
+- `420 Langue anglaise. Anglo-saxon`
+- `430 Langues germaniques. Allemand`
+- `440 Langues romanes. Français`
+- `450 Langues italienne, roumaine, rhéto-romane`
+- `460 Langues espagnole et portugaise`
+- `470 Langues italiques. Latin`
+- `480 Langues helléniques. Grec classique`
+- `490 Autres langues`
+- `500 Sciences de la nature et mathématiques`
+- `510 Mathématiques`
+- `520 Astronomie, cartographie, géodésie`
+- `530 Physique`
+- `540 Chimie, minéralogie, cristallographie`
+- `550 Sciences de la terre`
+- `560 Paléontologie. Paléozoologie`
+- `570 Sciences de la vie, biologie, biochimie`
+- `580 Plantes. Botanique`
+- `590 Animaux. Zoologie`
+- `600 Technologie (Sciences appliquées)`
+- `610 Médecine et santé`
+- `620 Sciences de l'ingénieur`
+- `630 Agronomie, agriculture et médecine vétérinaire`
+- `640 Economie domestique. Vie familiale`
+- `650 Gestion et organisation de l'entreprise`
+- `660 Génie chimique, technologies alimentaires`
+- `670 Fabrication industrielle`
+- `680 Fabrication de produits à usages spécifiques`
+- `690 Bâtiments`
+- `700 Arts. Beaux-arts et arts décoratifs`
+- `710 Urbanisme`
+- `720 Architecture`
+- `730 Arts plastiques. Sculpture`
+- `740 Dessin. Arts décoratifs`
+- `750 Peinture`
+- `760 Arts graphiques`
+- `770 Photographie et les photographies, art numérique`
+- `780 Musique`
+- `790 Arts du spectacle, loisirs`
+- `796 Sport`
+- `800 Histoire et critique littéraires, rhétorique`
+- `810 Littérature américaine en anglais`
+- `820 Littératures anglaise et anglo-saxonne`
+- `830 Littérature allemande`
+- `840 Littérature de langues romanes. Littérature française`
+- `850 Littérature italienne`
+- `860 Littératures espagnole et portugaise`
+- `870 Littérature latine`
+- `880 Littérature grecque`
+- `890 Littératures des autres langues`
+- `900 Géographie et histoire`
+- `910 Géographie et voyages`
+- `920 Biographies générales, généalogie, emblèmes`
+- `930 Histoire ancienne et préhistoire`
+- `940 Histoire moderne et contemporaine de l'Europe`
+- `944 Histoire générale de la France`
+- `950 Histoire générale de l'Asie, Orient, Extrême-Orient`
+- `960 Histoire générale de l'Afrique`
+- `970 Histoire générale de l'Amérique du Nord`
+- `980 Histoire générale de l'Amérique du Sud`
+- `990 Histoire générale des autres parties du monde, des mondes extraterrestres. Iles du Pacifique`
+
+## Extension
+
+Si une nouvelle discipline récurrente apparaît, l'ajouter au wiki puis adapter les heuristiques d'extraction / validation.

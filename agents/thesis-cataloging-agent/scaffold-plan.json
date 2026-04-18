@@ -1,0 +1,128 @@
+{
+  "agent_name": "thesis-cataloging-agent",
+  "template": "standard",
+  "gitagent_spec_version": "0.1.0",
+  "summary": "Scaffold gitagent standard pour un agent de catalogage de thèses UNIMARC auto-améliorant, avec pipeline séquentiel, base de connaissances fichier, mémoire d'expérience séparée et compétences locales/externes distinctes.",
+  "directories": [
+    {
+      "path": "knowledge",
+      "purpose": "Base de connaissances LLM Wiki en Markdown, source de vérité des règles UNIMARC et pratiques ABES/Sudoc.",
+      "required": true
+    },
+    {
+      "path": "memory",
+      "purpose": "Mémoire d'expérience séparée de la base de connaissances et du dataset d'évaluation.",
+      "required": true
+    },
+    {
+      "path": "dataset",
+      "purpose": "Jeu de données hors ligne pour évaluation uniquement, explicitement non modifiable par l'agent.",
+      "required": true
+    },
+    {
+      "path": "skills/extract-metadata-json-thesis",
+      "purpose": "Compétence locale pour extraire les métadonnées de la page de couverture vers le schéma JSON intermédiaire imposé.",
+      "required": true
+    },
+    {
+      "path": "skills/validate-json-schema-thesis",
+      "purpose": "Compétence locale pour valider la structure JSON intermédiaire et signaler les écarts au schéma.",
+      "required": true
+    },
+    {
+      "path": "skills/enrich-with-idref",
+      "purpose": "Compétence locale d'alignement des personnes avec IdRef et injection des PPN dans les structures enrichies.",
+      "required": true
+    },
+    {
+      "path": "skills/generate-unimarc-xml-thesis",
+      "purpose": "Compétence locale de génération de notice UNIMARC XML à partir du JSON validé et enrichi.",
+      "required": true
+    },
+    {
+      "path": "skills/validate-unimarc",
+      "purpose": "Compétence locale de validation logique et structurelle de la notice UNIMARC produite.",
+      "required": true
+    },
+    {
+      "path": "skills/convert-records-unimarc",
+      "purpose": "Compétence locale de conversion entre sérialisations UNIMARC sans altérer le contenu catalographique.",
+      "required": true
+    },
+    {
+      "path": "skills/self-improve-cataloging",
+      "purpose": "Compétence locale de capitalisation des corrections utilisateur dans une mémoire d'expérience séparée.",
+      "required": true
+    },
+    {
+      "path": "skills/update-wiki-cataloging",
+      "purpose": "Compétence locale de mise à jour atomique de la base de connaissances /knowledge en français.",
+      "required": true
+    },
+    {
+      "path": "schemas",
+      "purpose": "Schémas JSON/XSD et contrats de validation du pipeline.",
+      "required": true
+    },
+    {
+      "path": "examples",
+      "purpose": "Exemples d'entrée/sortie pour tests manuels et documentation.",
+      "required": false
+    },
+    {
+      "path": "docs",
+      "purpose": "Documentation opérationnelle, architecture et règles métier du dépôt.",
+      "required": false
+    }
+  ],
+  "files": [
+    {
+      "path": "agent.yaml",
+      "purpose": "Manifeste principal gitagent décrivant l'agent, ses contraintes et les références de compétences.",
+      "required": true,
+      "content": "spec_version: \"0.1.0\"\nname: thesis-cataloging-agent\nversion: 0.1.0\ndescription: >-\n  Agent de catalogage de thèses et mémoires produisant un JSON structuré puis une\n  notice UNIMARC XML enrichie avec IdRef, avec séparation stricte entre dataset,\n  base de connaissances et mémoire d'expérience.\nskills:\n  - extract-metadata-json-thesis\n  - validate-json-schema-thesis\n  - enrich-with-idref\n  - generate-unimarc-xml-thesis\n  - validate-unimarc\n  - convert-records-unimarc\n  - self-improve-cataloging\n  - update-wiki-cataloging\n  - search-records-sudoc\n  - search-idref-authorities\n"
+    },
+    {
+      "path": "SOUL.md",
+      "purpose": "Identité, ton et règles de communication de l'agent.",
+      "required": true,
+      "content": "# Identité\n\nJe suis un agent de catalogage de thèses orienté production.\n\n## Mission\n\nTransformer une page de couverture de thèse ou un texte OCR en métadonnées structurées puis en notice UNIMARC conforme, enrichie par alignement IdRef.\n\n## Règles non négociables\n\n- Je comprends toujours le français.\n- Je réponds toujours en français, sauf pour les formats structurés comme JSON ou XML.\n- Je privilégie toujours les règles présentes dans `/knowledge/` à mes suppositions internes.\n- Je maintiens une séparation stricte entre `dataset/`, `knowledge/` et `memory/`.\n- Je n'invente jamais de PPN IdRef ni de zone UNIMARC incertaine sans le signaler.\n- Si une notice existe déjà dans le Sudoc, je m'arrête et j'indique : `Une notice existe déjà dans le Sudoc`.\n"
+    },
+    {
+      "path": "README.md",
+      "purpose": "Vue d'ensemble du dépôt, architecture et mode d'emploi.",
+      "required": true,
+      "content": "# thesis-cataloging-agent\n\nAgent gitagent de catalogage de thèses UNIMARC en français.\n\n## Pipeline imposé\n\n1. retrieve-knowledge\n2. retrieve-memory\n3. extract-metadata-json\n4. validate-json-schema\n5. search-records-sudoc\n6. search-idref-authorities\n7. enrich-with-idref\n8. generate-unimarc-xml\n9. validate-unimarc\n10. convert-records-unimarc\n11. self-improve\n12. update-wiki\n\n## Séparation architecturale\n\n- `dataset/` : données de vérité terrain, hors ligne, jamais modifiées par l'agent\n- `knowledge/` : wiki LLM en Markdown, modifiable et versionné\n- `memory/` : mémoire d'expérience et corrections, utilisable à l'inférence\n"
+    },
+    {
+      "path": "RULES.md",
+      "purpose": "Contraintes métier et de sûreté applicables au pipeline.",
+      "required": true,
+      "content": "# Règles métier\n\n## Langue\n\n- Comprendre le français\n- Répondre en français\n- Produire les explications en français\n\n## Ordre d'exécution obligatoire\n\nLe pipeline suit strictement l'ordre défini dans le cahier des charges.\n\n## Séparation des couches\n\n- `dataset/` ne doit jamais être modifié par l'agent\n- `knowledge/` contient les règles catalographiques en Markdown\n- `memory/` stocke les cas passés et corrections\n\n## IdRef\n\n- Interdiction d'halluciner un PPN\n- Interdiction de forcer un appariement ambigu\n\n## Sudoc\n\n- Si un doublon est trouvé, arrêter le pipeline\n"
+    },
+    {
+      "path": "docs/architecture.md",
+      "purpose": "Description détaillée de l'architecture et des flux de données.",
+      "required": false,
+      "content": "# Architecture\n\n## Topologie\n\nPipeline séquentiel unique.\n\n## Composants\n\n- Ingestion image ou OCR\n- Récupération des règles depuis `/knowledge/`\n- Récupération de cas depuis `memory/`\n- Extraction JSON\n- Validation\n- Détection de doublon Sudoc\n- Recherche d'autorités IdRef\n- Enrichissement PPN\n- Génération UNIMARC XML\n- Validation UNIMARC\n- Conversion de sérialisations\n- Auto-amélioration\n- Mise à jour du wiki\n"
+    },
+    {
+      "path": "schemas/thesis-metadata.schema.json",
+      "purpose": "Schéma JSON intermédiaire obligatoire pour l'extraction des métadonnées.",
+      "required": true,
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"Thesis metadata\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"document-type\",\n    \"title\",\n    \"subtitle\",\n    \"author\",\n    \"advisor\",\n    \"jury_president\",\n    \"reviewers\",\n    \"committee_members\",\n    \"defense_year\",\n    \"language\",\n    \"abstract_language\",\n    \"degree_type\",\n    \"discipline\",\n    \"granting_institution\",\n    \"co_tutelle_institutions\",\n    \"doctoral_school\",\n    \"partner_institutions\",\n    \"abstract\"\n  ],\n  \"properties\": {\n    \"document-type\": {\"type\": \"string\", \"enum\": [\"thesis\", \"dissertation\"]},\n    \"title\": {\"type\": \"string\"},\n    \"subtitle\": {\"type\": \"string\"},\n    \"author\": {\"type\": \"string\"},\n    \"advisor\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"jury_president\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"reviewers\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"committee_members\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"defense_year\": {\"type\": \"string\"},\n    \"language\": {\"type\": \"string\"},\n    \"abstract_language\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"degree_type\": {\"type\": \"string\"},\n    \"discipline\": {\"type\": \"string\"},\n    \"granting_institution\": {\"type\": \"string\"},\n    \"co_tutelle_institutions\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"doctoral_school\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"partner_institutions\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n    \"abstract\": {\"type\": \"string\"}\n  }\n}\n"
+    }
+  ],
+  "assumptions": [
+    "Un agent est justifié ici malgré qu'une partie de la logique puisse être implémentée comme scripts, car le besoin impose mémoire, wiki évolutif, pipeline métier strict et amélioration continue.",
+    "Le plus petit niveau viable est `standard`, car le besoin requiert plusieurs compétences locales, une base de connaissances persistante, une mémoire séparée et des schémas de validation.",
+    "Les compétences `search-records-sudoc` et `search-idref-authorities` sont supposées externes et déjà disponibles; elles ne sont pas réimplémentées localement.",
+    "Les règles UNIMARC détaillées doivent résider dans `knowledge/` et non uniquement dans les prompts ou le code."
+  ],
+  "next_steps": [
+    "Matérialiser le plan sur disque et compléter les compétences locales requises.",
+    "Peupler `knowledge/` avec les règles UNIMARC, pratiques ABES/Sudoc et cas limites en français.",
+    "Ajouter des exemples d'entrée et des cas de test de validation JSON/UNIMARC.",
+    "Brancher les compétences externes Sudoc et IdRef dans le pipeline d'orchestration."
+  ]
+}
