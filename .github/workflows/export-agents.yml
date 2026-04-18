@@ -95,17 +95,27 @@ jobs:
         run: |
           mkdir -p release
 
-          for agent in $(ls build); do
+          for agent in $(find build -mindepth 1 -maxdepth 1 -type d); do
+            agent_name=$(basename "$agent")
+
+            echo "Packaging $agent_name"
+
             for format in claude codex opencode openclaw nanobot cursor; do
-              if [ -d "build/$agent/$format" ]; then
-                zip -r "release/${agent}-${format}.zip" "build/$agent/$format"
+              if [ -d "$agent/$format" ]; then
+                echo " - $format"
+                zip -r "release/${agent_name}-${format}.zip" "$agent/$format"
+              else
+                echo "missing $format"
               fi
             done
 
-            if [ -f "build/$agent/system-prompt.txt" ]; then
-              cp "build/$agent/system-prompt.txt" "release/${agent}-system-prompt.txt"
+            if [ -f "$agent/system-prompt.txt" ]; then
+              cp "$agent/system-prompt.txt" "release/${agent_name}-system-prompt.txt"
             fi
           done
+
+          echo "Release contents:"
+          ls -R release
 
       # ---------------------------
       # Create GitHub Release
