@@ -51,13 +51,13 @@ tags:
 
 It emits **strict JSON on stdout** and is designed for agent use.
 
-This skill exposes three logical operations:
+This skill exposes three logical operations through CLI subcommands. These are not separate skills; they are entry points of the single skill `search-authorities-idref`:
 
-| Logical skill | Subcommand | Purpose |
+| Logical operation | CLI subcommand | Purpose |
 |---|---|---|
-| `search-idref-authorities` | `search` | Search IdRef authorities with a simple or expert Solr query |
-| `get-idref-authority` | `get` | Retrieve a single authority by PPN using a precise Solr lookup |
-| `get-idref-references` | `references` | Fetch linked bibliographic references grouped by role |
+| authority search | `search` | Search IdRef authorities with a simple or expert Solr query |
+| authority lookup by PPN | `get` | Retrieve a single authority by PPN using a precise Solr lookup |
+| linked bibliographic references | `references` | Fetch linked bibliographic references grouped by role |
 
 ## When to use / When not to use
 
@@ -186,18 +186,19 @@ Always check the `error` field.
 ## Composition hints
 
 ```text
-search-idref-authorities        ← this skill
-  → get-idref-authority
-  → get-idref-references
+search-authorities-idref        ← this skill
+  → subcommand `search`
+  → subcommand `get`
+  → subcommand `references`
   → search-records-sudoc
 ```
 
 Useful pattern:
 
 ```text
-search-idref-authorities        ← identify a person or organization in IdRef
-  → get-idref-references        ← inspect linked bibliography
-  → search-records-sudoc        ← expand to catalog records if needed
+search-authorities-idref (subcommand `search`)      ← identify a person or organization in IdRef
+  → search-authorities-idref (subcommand `references`) ← inspect linked bibliography
+  → search-records-sudoc                              ← expand to catalog records if needed
 ```
 
 ## Environment variables

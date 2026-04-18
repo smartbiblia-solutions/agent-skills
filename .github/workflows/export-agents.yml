@@ -1,0 +1,79 @@
+name: Export Agents (GitAgent Multi-Format)
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install GitAgent CLI
+        run: npm install -g @open-gitagent/gitagent
+
+      # Detect all agents (folders containing agent.yaml)
+      - name: Find agents
+        id: agents
+        run: |
+          AGENTS=$(find agents -name "agent.yaml" -exec dirname {} \; | jq -R -s -c 'split("\n")[:-1]')
+          echo "agents=$AGENTS" >> $GITHUB_OUTPUT
+
+      # Export loop
+      - name: Export all agents
+        run: |
+          mkdir -p build
+
+          for agent in $(echo '${{ steps.agents.outputs.agents }}' | jq -r '.[]'); do
+            name=$(basename "$agent")
+
+            echo "Processing $name"
+
+            # Validate
+            gitagent validate "$agent"
+
+            # Create output folder
+            mkdir -p build/$name
+
+            # Export formats
+            gitagent export "$agent" --format claude-code --output build/$name/claude
+            gitagent export "$agent" --format codex --output build/$name/codex
+            gitagent export "$agent" --format opencode --output build/$name/opencode
+            gitagent export "$agent" --format openclaw --output build/$name/openclaw
+            gitagent export "$agent" --format nanobot --output build/$name/nanobot
+            gitagent export "$agent" --format cursor --output build/$name/cursor
+
+            # Optional: system prompt
+            gitagent export "$agent" --format system-prompt > build/$name/system-prompt.txt
+          done
+
+      # Zip artifacts
+      - name: Zip artifacts
+        run: |
+          cd build
+          for dir in */ ; do
+            zip -r "${dir%/}.zip" "$dir"
+          done
+
+      # Upload artifacts (for debugging / CI)
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: exported-agents
+          path: build/
+
+      # Create GitHub Release (only on tags)
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/*.zip
