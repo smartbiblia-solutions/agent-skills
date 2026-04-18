@@ -27,8 +27,60 @@ jobs:
         run: |
           AGENTS=$(find agents -name "agent.yaml" -exec dirname {} \; | jq -R -s -c 'split("\n")[:-1]')
           echo "agents=$AGENTS" >> $GITHUB_OUTPUT
+          
+      - name: Resolve external skills
+        run: |
+            mkdir -p tmp
 
-      # Export loop
+            for agent in $(find agents -name "agent.yaml" -exec dirname {} \;); do
+              echo "🔧 Resolving skills for $agent"
+
+              mkdir -p "$agent/skills"
+
+              python3 <<EOF
+        import yaml, os, subprocess, shutil
+
+        agent_dir = "$agent"
+        agent_file = os.path.join(agent_dir, "agent.yaml")
+
+        with open(agent_file) as f:
+            data = yaml.safe_load(f)
+
+        skills = data.get("skills", [])
+
+        for skill in skills:
+            if isinstance(skill, str) and skill.startswith("github.com"):
+                print(f"📦 Resolving {skill}")
+
+                # Parse URL
+                # github.com/org/repo/tree/branch/path
+                parts = skill.split("/")
+                org = parts[1]
+                repo = parts[2]
+                branch = parts[4]
+                subpath = "/".join(parts[5:])
+
+                clone_dir = f"tmp/{repo}"
+
+                if not os.path.exists(clone_dir):
+                    subprocess.run(
+                        ["git", "clone", "--depth", "1", "--branch", branch,
+                         f"https://github.com/{org}/{repo}.git", clone_dir],
+                        check=True
+                    )
+
+                source_path = os.path.join(clone_dir, subpath)
+                target_path = os.path.join(agent_dir, "skills", os.path.basename(subpath))
+
+                if os.path.exists(target_path):
+                    shutil.rmtree(target_path)
+
+                shutil.copytree(source_path, target_path)
+
+        EOF
+            done
+
+          # Export loop
       - name: Export all agents
         run: |
           mkdir -p build
