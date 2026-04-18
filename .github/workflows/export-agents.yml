@@ -91,9 +91,17 @@ jobs:
       # ---------------------------
       # Package per agent / format
       # ---------------------------
+      - name: Check release files
+        run: |
+          echo "Files to upload:"
+          ls -lh release
+            
       - name: Package release files
         run: |
           mkdir -p release
+
+          echo "BUILD CONTENT:"
+          ls -R build || true
 
           for agent in $(find build -mindepth 1 -maxdepth 1 -type d); do
             agent_name=$(basename "$agent")
@@ -102,10 +110,11 @@ jobs:
 
             for format in claude codex opencode openclaw nanobot cursor; do
               if [ -d "$agent/$format" ]; then
-                echo " - $format"
-                zip -r "release/${agent_name}-${format}.zip" "$agent/$format"
+                zip_path="release/${agent_name}-${format}.zip"
+                echo "Creating $zip_path"
+                zip -r "$zip_path" "$agent/$format"
               else
-                echo "missing $format"
+                echo "Missing $agent/$format"
               fi
             done
 
@@ -114,7 +123,7 @@ jobs:
             fi
           done
 
-          echo "Release contents:"
+          echo "RELEASE CONTENT:"
           ls -R release
 
       # ---------------------------
