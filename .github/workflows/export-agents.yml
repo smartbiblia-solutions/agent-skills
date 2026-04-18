@@ -91,11 +91,6 @@ jobs:
       # ---------------------------
       # Package per agent / format
       # ---------------------------
-      - name: Check release files
-        run: |
-          echo "Files to upload:"
-          ls -lh release
-            
       - name: Package release files
         run: |
           mkdir -p release
@@ -125,6 +120,11 @@ jobs:
 
           echo "RELEASE CONTENT:"
           ls -R release
+          
+      - name: Check release files
+        run: |
+          echo "Files to upload:"
+          ls -lh release
 
       # ---------------------------
       # Create GitHub Release
