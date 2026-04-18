@@ -2,56 +2,62 @@ name: Export Agents (GitAgent Multi-Format)
 
 on:
   push:
-    branches: [main]
-    tags: ["v*"]
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   export:
     runs-on: ubuntu-latest
 
     steps:
+      # ---------------------------
+      # Checkout repo
+      # ---------------------------
       - name: Checkout repo
         uses: actions/checkout@v5
 
+      # ---------------------------
+      # Setup Node (GitAgent)
+      # ---------------------------
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
           node-version: "24"
 
-      - name: Install GitAgent CLI
+      - name: Install GitAgent
         run: npm install -g @open-gitagent/gitagent
 
-      # Detect all agents (folders containing agent.yaml)
-      - name: Find agents
-        id: agents
-        run: |
-          AGENTS=$(find agents -name "agent.yaml" -exec dirname {} \; | jq -R -s -c 'split("\n")[:-1]')
-          echo "agents=$AGENTS" >> $GITHUB_OUTPUT
-          
+      # ---------------------------
+      # Resolve external skills
+      # ---------------------------
       - name: Resolve external skills
         run: |
           for agent in $(find agents -name "agent.yaml" -exec dirname {} \;); do
-            echo "AGENT: $agent"
-            ls "$agent"
-            echo "Resolving $agent"
+            echo "🔧 Resolving $agent"
             python3 scripts/resolve_skills.py "$agent"
           done
 
-          # Export loop
+      # ---------------------------
+      # Export agents
+      # ---------------------------
       - name: Export all agents
         run: |
           set -e
-
           mkdir -p build
 
           for agent in $(find agents -name "agent.yaml" -exec dirname {} \;); do
             name=$(basename "$agent")
 
             echo "=============================="
-            echo "Processing $agent"
+            echo "🚀 Processing $agent"
             echo "=============================="
 
-            # FIX CRITIQUE
             pushd "$agent" > /dev/null
 
             echo "PWD: $(pwd)"
@@ -70,28 +76,34 @@ jobs:
 
             gitagent export . --format system-prompt > "../../build/$name/system-prompt.txt"
 
-            # revenir au root
             popd > /dev/null
           done
 
-      # Zip artifacts
-      - name: Zip artifacts
+      # ---------------------------
+      # Package per agent / format
+      # ---------------------------
+      - name: Package release files
         run: |
-          cd build
-          for dir in */ ; do
-            zip -r "${dir%/}.zip" "$dir"
+          mkdir -p release
+
+          for agent in $(ls build); do
+            for format in claude codex opencode openclaw nanobot cursor; do
+              if [ -d "build/$agent/$format" ]; then
+                zip -r "release/${agent}-${format}.zip" "build/$agent/$format"
+              fi
+            done
+
+            if [ -f "build/$agent/system-prompt.txt" ]; then
+              cp "build/$agent/system-prompt.txt" "release/${agent}-system-prompt.txt"
+            fi
           done
 
-      # Upload artifacts (for debugging / CI)
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+      # ---------------------------
+      # Create GitHub Release
+      # ---------------------------
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
         with:
-          name: exported-agents
-          path: build/
-
-      # Create GitHub Release (only on tags)
-      - name: Create Release
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v1
-        with:
-          files: build/*.zip
+          name: "Release ${{ github.ref_name }}"
+          tag_name: ${{ github.ref_name }}
+          files: release/*
