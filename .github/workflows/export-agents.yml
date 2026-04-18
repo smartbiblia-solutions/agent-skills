@@ -104,7 +104,7 @@ jobs:
             echo "Packaging $agent_name"
 
             for format in claude codex opencode openclaw nanobot cursor; do
-              if [ -d "$agent/$format" ]; then
+              if [ -e "$agent/$format" ]; then
                 zip_path="release/${agent_name}-${format}.zip"
                 echo "Creating $zip_path"
                 zip -r "$zip_path" "$agent/$format"
