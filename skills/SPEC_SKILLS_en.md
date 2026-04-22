@@ -10,14 +10,12 @@
 This spec targets the **AgentSkills** format as implemented by **OpenClaw**.
 Key constraints imposed by OpenClaw's parser:
 
-- The `name` field in YAML frontmatter must be **snake_case**.
+- The `name` field in YAML frontmatter uses **kebab-case** — identical to the folder name.
 - The `metadata` field must contain valid **JSON** (single-line compact or multi-line pretty-printed).
 - The `selection` block is a **AgentDesk-only extension**: OpenClaw ignores it gracefully;
   AgentDesk uses it for its skill recommendation UI and pipeline builder.
-- The folder name (used as ClawHub slug) stays **kebab-case** — it is independent from `name`.
 
-**Folder name** (slug, kebab-case) → `search-works-openalex`  
-**`name` field** (snake_case, runtime identifier) → `search_works_openalex`
+**Folder name** and **`name` field** both use kebab-case: `search-works-openalex`
 
 ---
 
@@ -52,8 +50,7 @@ The `source` segment is optional for source-agnostic skills:
 ### Character rules
 
 - Lowercase ASCII only
-- **Folder name and ClawHub slug**: hyphens as separators (kebab-case)
-- **`name` field in YAML**: underscores as separators (snake_case) — OpenClaw requirement
+- **Folder name, ClawHub slug, and `name` field**: all use kebab-case (hyphens as separators)
 - No version suffixes in names
 - No architectural terms: avoid `engine`, `agent`, `tool`, `runner`, `service`
 
@@ -81,20 +78,18 @@ The `source` segment is optional for source-agnostic skills:
 ### Good names
 
 ```
-Folder / slug (kebab)          →  name field (snake_case)
-──────────────────────────────────────────────────────────
-generate-search-queries        →  generate_search_queries
-search-works-openalex          →  search_works_openalex
-search-records-sudoc           →  search_records_sudoc
-lookup-dois-crossref           →  lookup_dois_crossref
-extract-metadata-pdf           →  extract_metadata_pdf
-extract-metadata-unimarc       →  extract_metadata_unimarc
-screen-studies-prisma          →  screen_studies_prisma
-summarize-paper                →  summarize_paper
-synthesize-papers-thematic     →  synthesize_papers_thematic
-appraise-study-quality         →  appraise_study_quality
-classify-text-openalex         →  classify_text_openalex
-trace-agent-execution          →  trace_agent_execution
+generate-search-queries
+search-works-openalex
+search-records-sudoc
+lookup-dois-crossref
+extract-metadata-pdf
+extract-metadata-unimarc
+screen-studies-prisma
+summarize-paper
+synthesize-papers-thematic
+appraise-study-quality
+classify-text-openalex
+trace-agent-execution
 ```
 
 ### Names to avoid
@@ -117,7 +112,7 @@ OpenClaw's parser does not support multi-line YAML values under `metadata`.
 ### Required fields
 
 ```yaml
-name: search_works_openalex
+name: search-works-openalex
 description: >
   Search and retrieve scholarly works from OpenAlex. Use this skill when the
   task is to discover academic papers, resolve bibliographic entities, or
@@ -354,12 +349,60 @@ Replace dependencies with the actual packages required. Keep dependencies minima
 - Include retry/backoff logic for external API calls
 - Support `--trace` flag for HTTP debugging
 
+### Skill folder structure
+
+```
+skills/<skill-name>/
+  SKILL.md              ← the skill manifest and body
+  scripts/              ← CLI scripts (retrieval skills)
+    cli.py
+    .env.example
+  prompts/              ← methodological prompts (contract pack skills)
+  schemas/              ← JSON schemas (contract pack skills)
+  references/           ← maintenance documents, not used at agent runtime
+    llm.md              ← API reference (only when API has no llm.txt)
+```
+
+No packaging step needed — agents access skills directly from the repo
+by path (`skills/<n>/SKILL.md`).
+
+### Common record schema
+
+Retrieval skills must normalize their output to this shape so downstream steps
+can process records from any source without transformation:
+
+```jsonc
+{
+  "source": "openalex | hal | sudoc | …",
+  "id": "<source-specific id>",
+  "title": "string",
+  "authors": ["First Last"],
+  "abstract": "string or null",
+  "doi": "10.xxx/… or null",
+  "pdf_url": "https://… or null",
+  "url": "https://…",
+  "year": 2024,
+  "date": "2024-03-15 or null",
+  "doc_type": "string or null",
+  "journal": "string or null"
+}
+```
+
+Source-specific fields (e.g. `hal_id`, `ppn`, `cited_by_count`) may be added
+alongside the common fields. Do not rename or remove common fields.
+
+For contract pack skills, the CLI exposes only three subcommands:
+`prompt`, `schema`, and `validate --json-file <f>`.
+Single-task contract packs have no `--task` flag.
+
 ---
 
 ## 6. SKILL.md body structure
 
 Keep the frontmatter concise. Detailed usage belongs in the body.
 Adapt the sections to the skill type — not every skill needs every section.
+
+### Mandatory for all skills
 
 ```markdown
 --- YAML FRONTMATTER ---
@@ -372,26 +415,52 @@ One paragraph. What problem this skill solves and for whom.
 ## When to use / When not to use
 Mirrors the `selection` block, but in prose. Add nuance the YAML can't carry.
 
-## Input
-What the skill expects: format, required fields, constraints.
+## CLI usage            ← or ## Subcommands for multi-command skills
+How to invoke the skill. Use `uv run skills/<n>/scripts/cli.py <subcommand>` form.
 
 ## Output
-What the skill returns: format, schema, example.
-
-## Commands
-How to invoke the skill (CLI, prompt command, API call).
-
-## Examples
-1–2 concrete input/output pairs.
+What the skill returns: format, schema, jsonc example.
 
 ## Composition hints
-What typically comes before and after this skill in a pipeline.
+Pipeline diagram showing where this skill sits relative to upstream and downstream steps.
+```
 
-## Failure modes         ← only if non-obvious
-Known failure conditions and how to handle them.
+### Mandatory for CLI retrieval skills (additional)
 
-## Validation           ← only for contract-based skills
-Schema command, validate command, retry policy.
+```markdown
+## Environment variables
+Table of all env vars consumed by the CLI, with defaults and required/optional status.
+
+## Failure modes
+Exit code behavior, the `error` field contract, known edge cases.
+```
+
+### Mandatory for contract pack skills (additional)
+
+```markdown
+## Task reference
+Table of tasks with schema names and required inputs.
+Single-task packs have one row and no --task flag.
+
+## Rules
+Validate-before-proceed policy, retry limit, JSON-only output constraint.
+```
+
+### Optional (add only when genuinely useful)
+
+```markdown
+## Input
+What the skill expects: format, required fields, constraints.
+Only needed when input is non-obvious or structured.
+
+## Common workflows
+3–5 concrete bash examples covering distinct use cases.
+
+## Index reference / ## Query syntax
+For Solr/SRU skills with complex query languages.
+
+## Data coverage
+Scope, format, authentication requirements.
 ```
 
 ---
@@ -421,7 +490,7 @@ When multiple skills could apply, prefer in this order:
 ## 8. Complete manifest example
 
 ```yaml
-name: generate_search_queries
+name: generate-search-queries
 description: >
   Generate structured scholarly search queries from a natural-language research
   question. Use this skill whenever the task involves building a search strategy,
@@ -500,7 +569,7 @@ When AgentDesk imports a skill from the Github registry:
 
 ### Required
 - Folder name: lowercase kebab-case starting with a verb (`search-works-openalex`)
-- `name` field: snake_case version of the folder name (`search_works_openalex`)
+- `name` field: kebab-case, identical to the folder name (`search-works-openalex`)
 - `<verb>-<object>-<source>` pattern when source matters
 - Rich `description` answering: what / when / what it returns
 - `metadata` with valid JSON structure (single-line or multi-line)
