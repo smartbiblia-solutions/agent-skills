@@ -5,12 +5,13 @@ description: >
   natural-language brief, with optional conversational elicitation when the
   brief is incomplete. Use this skill when the user asks for an "agent",
   "agent folder", "agent scaffold", "AGENTS.md", "SOUL.md", or wants to
-  scaffold a new nanobot workspace. Supports local skill references (bare
-  kebab-case names) and remote skill references (GitHub URLs); remote skills
-  are downloaded into the workspace at generation time. Returns a strict JSON
-  scaffold plan ready to be materialized to disk by a downstream file-writing
-  agent. Do not use this skill when the task is to create or update a skill
-  package — use create-agent-skill instead.
+  scaffold a new nanobot workspace. Supports internal skill references (bare
+  kebab-case names) and external skill dependency references (full GitHub URLs,
+  including repository subpaths). External skills are declared for AgentDesk to
+  resolve at runtime, not copied into the generated agent repository. Returns a
+  strict JSON scaffold plan ready to be materialized to disk by a downstream
+  file-writing agent. Do not use this skill when the task is to create or update
+  a skill package — use create-agent-skill instead.
 metadata:
   {
     "version": "0.1.0",
@@ -25,7 +26,7 @@ selection:
     - The task is to scaffold a new agent workspace or repository.
     - The user needs starter contents for AGENTS.md and SOUL.md.
     - The desired output is a structured scaffold plan another agent can write to disk.
-    - The user mentions skill references (local names or GitHub URLs) to embed in the agent.
+    - The user mentions internal skills or external skill dependency URLs to reference from the agent.
   avoid_when:
     - The task is to create or update a skill package — use create-agent-skill instead.
     - The user already has an agent repository and only needs one file edited.
@@ -119,6 +120,8 @@ The generated scaffold MUST:
 - include only necessary files and directories
 - avoid speculative features (skills, tools, workflows, agents)
 - reflect real needs, not hypothetical extensions
+- select `full` when the brief requires multiple internal skills plus
+  `/knowledge`, `/raw`, `/memory`, deterministic workflows, or generated examples
 
 ### Step 4 — User honesty (MANDATORY)
 
@@ -150,8 +153,8 @@ Useful inputs to capture before generation:
 - Constraints and non-negotiable rules
 - Persona or communication style
 - Optional complexity signals: tools, workflows, sub-agents, compliance
-- Skill references: local bare names (`review-summary`) or GitHub URLs
-  (`https://github.com/org/skill-rag`)
+- Skill references: internal bare names (`review-summary`) or external GitHub
+  URLs (`https://github.com/org/repo/tree/main/skills/skill-rag`)
 
 ---
 
@@ -206,36 +209,41 @@ workspace/
 
 ---
 
-## Skill reference handling
+## Skill and Dependency Reference Handling
 
-The skill extracts and normalizes all skill references from the brief before
-generating the scaffold.
+The skill extracts all internal skill names and external dependency URLs from
+the brief before generating the scaffold.
 
 ### Reference formats
 
 | Format | Example | Type |
 |---|---|---|
-| Bare kebab-case name | `review-summary` | Local |
-| GitHub URL (default branch) | `https://github.com/owner/repo` | Remote |
-| GitHub URL with version | `https://github.com/owner/repo/tree/v1.2` | Remote, pinned |
+| Bare kebab-case name | `review-summary` | Internal |
+| GitHub URL | `https://github.com/owner/repo/tree/main/skills/skill-rag` | External |
 
-### Normalization rules
+### Handling Rules
 
-- **Local ref** (no `/`, no `github.com`): the agent owns the skill source.
-  - Create a `skills/<n>/` placeholder directory in the scaffold.
-- **Remote ref** (contains `github.com/`): resolved at generation time by downloading
-  the SKILL.md from the GitHub URL into `skills/<n>/`.
-  - Strip `https://github.com/` to get `owner/repo`.
-  - If a `/tree/<ref>` segment is present and `<ref>` is not `main` or `master`,
-    record `@<ref>` as the pinned version.
-  - Create the corresponding `skills/<n>/` directory in the scaffold.
-  - Add a note in `assumptions` that the remote skill was resolved at generation.
+- **Internal ref** (bare kebab-case, no `/`, no `github.com`): the generated
+  agent owns this skill.
+  - Create `skills/<name>/SKILL.md` in the scaffold.
+- **External ref** (contains `github.com/`): shared dependency owned outside the
+  generated agent repository.
+  - Preserve the full URL exactly, including branch and subpath.
+  - Do NOT download it.
+  - Do NOT create a local `skills/<name>/` placeholder for it.
+  - Declare it in `skill_refs`, `AGENTS.md`, and `TOOLS.md` so AgentDesk can
+    resolve or install it when the agent launches.
 
-### AGENTS.md `Use skills:` block
+### AGENTS.md Skill Blocks
 
-In `AGENTS.md`, emit a `Use skills:` section listing local refs first, then
-remote refs. Omit the block entirely if no skills were mentioned in the brief.
-Do not invent skill names not present in the brief.
+In `AGENTS.md`, emit separate sections:
+
+- `Internal skills:` for skills generated inside the agent repository.
+- `External skills to install:` for full GitHub URLs that AgentDesk should
+  resolve later.
+
+Omit a section if it has no entries. Do not invent skill names or URLs not
+present in the brief.
 
 ---
 
@@ -265,8 +273,8 @@ This is a single-task contract pack. There is no `--task` flag.
 - Before generating, evaluate if an agent is necessary.
 - If a simpler alternative exists (script or skill), record it in `assumptions`.
 - Always justify structural choices (template, directories, files).
-- Remote skill refs must be downloaded and placed in `skills/` at generation
-  time, not deferred to agent runtime.
+- External skill refs must be preserved as full URLs and declared for AgentDesk
+  runtime resolution. They must not be downloaded or duplicated into `skills/`.
 
 ---
 
@@ -286,14 +294,15 @@ uv run skills/generate-agent-scaffold/scripts/cli.py validate \
 The final output is a strict JSON scaffold plan. The elicitation itself is
 conversational and does not alter the output schema.
 
-The optional `skill_refs` field provides a structured breakdown of all skill
-references extracted from the brief, with normalized refs and original source URLs.
+The optional `skill_refs` field provides a structured breakdown of internal
+skills and external skill dependencies extracted from the brief. External
+dependencies preserve their full source URLs, including subpaths.
 
 ```jsonc
 {
   "agent_name": "legal-research-agent",
   "template": "standard",
-  "summary": "Standard scaffold for a legal research agent with local and remote skills.",
+  "summary": "Standard scaffold for a legal research agent with internal and external skills.",
   "topology": "SINGLE",
   "decision_log": {
     "agent_needed": true,
@@ -303,26 +312,23 @@ references extracted from the brief, with normalized refs and original source UR
   "skill_refs": [
     {
       "ref": "case-summarizer",
-      "type": "local",
+      "type": "internal",
       "source": "case-summarizer",
-      "version": null
+      "version": null,
+      "install": "generate"
     },
     {
-      "ref": "owner/skill-rag@v1",
+      "ref": "https://github.com/owner/agent-skills/tree/main/skills/skill-rag",
       "type": "github",
-      "source": "https://github.com/owner/skill-rag/tree/v1",
-      "version": "v1"
+      "source": "https://github.com/owner/agent-skills/tree/main/skills/skill-rag",
+      "version": null,
+      "install": "declare_external"
     }
   ],
   "directories": [
     {
       "path": "skills/case-summarizer",
-      "purpose": "Placeholder for the local case-summarizer skill.",
-      "required": false
-    },
-    {
-      "path": "skills/skill-rag",
-      "purpose": "Remote skill downloaded from github.com/owner/skill-rag at generation time.",
+      "purpose": "Internal case-summarizer skill generated inside this agent repository.",
       "required": false
     }
   ],
@@ -365,11 +371,11 @@ references extracted from the brief, with normalized refs and original source UR
     }
   ],
   "assumptions": [
-    "Remote skill ref https://github.com/owner/skill-rag/tree/v1 was downloaded into skills/skill-rag/ at generation time."
+    "External skill dependency https://github.com/owner/agent-skills/tree/main/skills/skill-rag is declared for AgentDesk runtime resolution and is not copied into this agent repository."
   ],
   "next_steps": [
-    "Implement skills/case-summarizer/ or replace with a remote ref once published.",
-    "Review skills/skill-rag/ to verify the downloaded SKILL.md matches your expectations."
+    "Implement skills/case-summarizer/.",
+    "Verify AgentDesk can resolve the declared external skill URL at launch time."
   ]
 }
 ```

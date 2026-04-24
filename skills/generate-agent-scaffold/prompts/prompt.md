@@ -54,6 +54,9 @@ If the answer to (1) or (2) is yes:
 - Avoid adding directories unless directly implied
 - Avoid sub-agents unless explicitly required
 - Avoid workflows unless deterministic multi-step logic is clear
+- Select `full` when the brief requires multiple internal skills together with
+  `/knowledge`, `/raw`, `/memory`, workflow instructions, generated examples, or
+  documentation bootstrap behavior.
 
 ---
 
@@ -77,14 +80,17 @@ If complexity is introduced, explain why in `assumptions`.
   - `full`
 - Prefer `minimal` template unless the brief clearly requires more structure.
 - If `standard` or `full` is selected, justify it in `assumptions`.
+- Select `full` when the brief requires multiple internal skills plus
+  `/knowledge`, `/raw`, `/memory`, workflows, or examples.
 - If the use case appears trivial, include a note that a script may suffice.
 - Keep the agent output structure stable even if the input was gathered
   through conversation.
 - Include only folders and files justified by the brief.
 - Always include valid starter content for `AGENTS.md`, `SOUL.md`, `USER.md`,
   `TOOLS.md`, `HEARTBEAT.md`, and `memory/MEMORY.md`.
-- Use kebab-case for the agent `name` and semantic version `0.1.0` unless the
-  brief specifies otherwise.
+- Use kebab-case for `agent_name`. If any generated file includes an agent
+  version, default it to semantic version `0.1.0` unless the brief specifies
+  otherwise.
 - Keep starter files concise but usable.
 - If the brief implies sub-agents, include an `agents/` subtree.
 - If the brief implies reusable capabilities, include `skills/`.
@@ -93,38 +99,42 @@ If complexity is introduced, explain why in `assumptions`.
 
 ---
 
-## Skill reference extraction and normalization
+## Skill Reference and External Dependency Extraction
 
-Before generating the scaffold, scan the brief for skill references. A skill
-reference is:
+Before generating the scaffold, scan the brief for internal skills and external
+skill dependency references.
 
-- A bare kebab-case name with no slashes: `review-summary` → **local ref**
-- A GitHub URL in any of these forms → **remote ref**
+- A bare kebab-case name with no slashes: `review-summary` -> **internal skill**
+- A GitHub URL, including repository subpaths: `https://github.com/org/repo/tree/main/skills/review-summary` -> **external dependency**
 
-### Normalization
+### Preservation
 
-Strip `https://github.com/` to get `owner/repo`.
-If a `/tree/<ref>` segment is present and `<ref>` is not `main` or `master`,
-append `@<ref>` to obtain the normalized ref (e.g. `owner/skill-rag@v1`).
-If no `/tree/` segment is present, omit the `@version` part.
+Preserve GitHub URLs exactly as provided, including `/tree/<ref>/...` subpaths.
+Do not reduce them to `owner/repo`, and do not discard the skill subdirectory.
 
-The normalized form goes in `skill_refs[].ref`.
-The original URL from the brief goes in `skill_refs[].source`.
+For GitHub URL references:
+
+- `skill_refs[].ref` MUST be the full URL.
+- `skill_refs[].source` MUST be the same full URL unless the brief provides a label.
+- `skill_refs[].install` MUST be `declare_external`.
 
 ### Classification and scaffold behavior
 
-- **Local** (bare name, no `/`): the agent owns the skill source.
-  Create a `skills/<n>/` placeholder directory entry in the scaffold.
+- **Internal** (bare kebab-case, no `/`, no `github.com`): the generated agent
+  owns the skill source. Create `skills/<name>/SKILL.md` in the scaffold.
 
-- **Remote** (`github.com/...`): the skill is fetched from GitHub at generation
-  time and its contents placed in `skills/<n>/`.
-  Create the corresponding directory entry.
-  Add a note in `assumptions`:
-  > "Remote skill ref <source-url> was downloaded into skills/<n>/ at generation time."
+- **External** (`github.com/...`): the skill is shared and maintained outside the
+  generated agent repository. Do NOT download it. Do NOT create a local
+  `skills/<name>/` placeholder. Declare the full URL in `skill_refs`,
+  `AGENTS.md`, and `TOOLS.md` so AgentDesk can resolve or install it when the
+  agent launches.
 
-In `AGENTS.md`, emit a `Use skills:` block listing local refs first, then
-remote refs, using their normalized forms. Omit the block entirely if no skills
-were mentioned in the brief. Do not invent skill names not present in the brief.
+In `AGENTS.md`, emit two blocks when applicable:
+
+- `Internal skills:` for skills generated inside this agent repository.
+- `External skills to install:` for full GitHub URLs AgentDesk should resolve.
+
+Omit empty blocks. Do not invent skill names or URLs not present in the brief.
 
 ---
 
@@ -139,7 +149,7 @@ Return an object with:
 - `decision_log` — object with `agent_needed` (bool), `simpler_alternative`
   (string or null), `justification` (string)
 - `summary` — one-sentence description
-- `skill_refs` — array of extracted and normalized skill references (omit if empty)
+- `skill_refs` — array of extracted internal and external skill references (omit if empty)
 - `directories` — ordered array of directory entries
 - `files` — ordered array of file entries with starter content
 - `assumptions` — array of strings recording inferred decisions
@@ -160,10 +170,11 @@ Each `files` item must contain:
 
 Each `skill_refs` item must contain:
 
-- `ref` — normalized form (`bare-name` for local, `owner/repo[@version]` for remote)
-- `type` — `local` or `github`
+- `ref` — bare internal skill name or full GitHub URL for an external dependency
+- `type` — `internal` or `github`
 - `source` — original string from the brief
 - `version` — pinned version tag, branch, or SHA; null if default branch
+- `install` — `generate` for internal skills, `declare_external` for external URLs
 
 ---
 
@@ -213,10 +224,13 @@ Get USER_ID and CHANNEL from the current session (e.g., `8281248569` and `telegr
 
 When the user asks for a recurring/periodic task, update `HEARTBEAT.md` instead of creating a one-time cron reminder.
 
-## Use skills:                                        [CUSTOMIZE — omit block if no skills]
+## Internal skills:                                  [CUSTOMIZE — omit block if no internal skills]
 
 - local-skill-name
-- owner/remote-skill@version
+
+## External skills to install:                       [CUSTOMIZE — omit block if no external skills]
+
+- https://github.com/owner/repo/tree/main/skills/remote-skill
 ```
 
 ---

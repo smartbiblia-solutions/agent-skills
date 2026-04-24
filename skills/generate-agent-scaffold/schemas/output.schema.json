@@ -7,6 +7,8 @@
   "required": [
     "agent_name",
     "template",
+    "topology",
+    "decision_log",
     "summary",
     "directories",
     "files",
@@ -81,7 +83,7 @@
     },
     "skill_refs": {
       "type": "array",
-      "description": "Structured list of all skill references extracted from the brief.",
+      "description": "Structured list of all internal skills and external skill dependencies extracted from the brief.",
       "items": {
         "$ref": "#/$defs/skill_ref"
       }
@@ -112,16 +114,44 @@
     "skill_ref": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["ref", "type"],
+      "required": ["ref", "type", "source", "version", "install"],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": { "const": "internal" }
+            }
+          },
+          "then": {
+            "properties": {
+              "install": { "const": "generate" },
+              "ref": { "pattern": "^[a-z][a-z0-9-]*$" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": { "const": "github" }
+            }
+          },
+          "then": {
+            "properties": {
+              "install": { "const": "declare_external" },
+              "ref": { "pattern": "^https://github\\.com/.+$" }
+            }
+          }
+        }
+      ],
       "properties": {
         "ref": {
           "type": "string",
-          "description": "Normalized skill reference: bare kebab-case name for local refs, owner/repo[@version] for remote refs.",
-          "pattern": "^([a-z][a-z0-9-]*|[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+(@[a-zA-Z0-9._/-]+)?)$"
+          "description": "Bare kebab-case name for internal skills, or full GitHub URL for external dependencies.",
+          "pattern": "^([a-z][a-z0-9-]*|https://github\\.com/.+)$"
         },
         "type": {
           "type": "string",
-          "enum": ["local", "github"]
+          "enum": ["internal", "github"]
         },
         "source": {
           "type": "string",
@@ -130,6 +160,11 @@
         "version": {
           "type": ["string", "null"],
           "description": "Pinned version tag, branch, or SHA. Null if resolved to default branch."
+        },
+        "install": {
+          "type": "string",
+          "enum": ["generate", "declare_external"],
+          "description": "Whether the scaffold should generate the skill locally or declare it for AgentDesk runtime resolution."
         }
       }
     },

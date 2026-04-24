@@ -32,6 +32,8 @@ def validate_payload(payload: dict) -> list[str]:
     required_top = {
         "agent_name",
         "template",
+        "topology",
+        "decision_log",
         "summary",
         "directories",
         "files",
@@ -49,6 +51,20 @@ def validate_payload(payload: dict) -> list[str]:
 
     if payload.get("template") not in {"minimal", "standard", "full"}:
         errors.append("template must be one of: minimal, standard, full")
+
+    if payload.get("topology") not in {"DIRECT_CODE", "SINGLE", "PIPELINE", "FORK_JOIN", "CRITIC_LOOP", "HIERARCHICAL"}:
+        errors.append("topology must be one of: DIRECT_CODE, SINGLE, PIPELINE, FORK_JOIN, CRITIC_LOOP, HIERARCHICAL")
+
+    decision_log = payload.get("decision_log")
+    if not isinstance(decision_log, dict):
+        errors.append("decision_log must be an object")
+    else:
+        if not isinstance(decision_log.get("agent_needed"), bool):
+            errors.append("decision_log.agent_needed must be a boolean")
+        if "simpler_alternative" in decision_log and not isinstance(decision_log["simpler_alternative"], (str, type(None))):
+            errors.append("decision_log.simpler_alternative must be a string or null")
+        if not isinstance(decision_log.get("justification"), str) or not decision_log.get("justification"):
+            errors.append("decision_log.justification must be a non-empty string")
 
     if not isinstance(payload.get("summary"), str) or not payload.get("summary"):
         errors.append("summary must be a non-empty string")
@@ -105,11 +121,21 @@ def validate_payload(payload: dict) -> list[str]:
                 if not isinstance(ref, dict):
                     errors.append(f"skill_refs[{index}] must be an object")
                     continue
-                for field in ("ref", "type"):
+                for field in ("ref", "type", "source", "version", "install"):
                     if field not in ref:
                         errors.append(f"skill_refs[{index}] missing field: {field}")
-                if ref.get("type") not in {"local", "github", None}:
-                    errors.append(f"skill_refs[{index}].type must be 'local' or 'github'")
+                if ref.get("type") not in {"internal", "github", None}:
+                    errors.append(f"skill_refs[{index}].type must be 'internal' or 'github'")
+                if ref.get("install") not in {"generate", "declare_external", None}:
+                    errors.append(f"skill_refs[{index}].install must be 'generate' or 'declare_external'")
+                if ref.get("type") == "github" and isinstance(ref.get("ref"), str) and not ref["ref"].startswith("https://github.com/"):
+                    errors.append(f"skill_refs[{index}].ref must preserve the full GitHub URL")
+                if ref.get("type") == "github" and ref.get("install") == "generate":
+                    errors.append(f"skill_refs[{index}].install must be 'declare_external' for GitHub dependencies")
+                if ref.get("type") == "internal" and isinstance(ref.get("ref"), str) and ("/" in ref["ref"] or ref["ref"].startswith("http")):
+                    errors.append(f"skill_refs[{index}].ref must be a bare kebab-case internal skill name")
+                if ref.get("type") == "internal" and ref.get("install") == "declare_external":
+                    errors.append(f"skill_refs[{index}].install must be 'generate' for internal skills")
 
     return errors
 
