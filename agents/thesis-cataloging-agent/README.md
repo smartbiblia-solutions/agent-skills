@@ -1,6 +1,6 @@
 # Agent de catalogage UNIMARC — thèses et mémoires imprimés
 
-Dépôt GitAgent-compatible pour un agent AgentDesk/Nanobot/OpenClaw de catalogage en français.
+Dépôt pour un agent AgentDesk/Nanobot/OpenClaw de catalogage en français.
 
 ## Périmètre
 
