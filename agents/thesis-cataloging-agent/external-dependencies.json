@@ -1,0 +1,15 @@
+{
+  "external_skills": {
+    "search-authorities-idref": "https://github.com/smartbiblia-solutions/agent-skills/tree/main/skills/search-authorities-idref",
+    "search-records-sudoc": "https://github.com/smartbiblia-solutions/agent-skills/tree/main/skills/search-records-sudoc",
+    "convert-records-unimarc": "https://github.com/smartbiblia-solutions/agent-skills/tree/main/skills/convert-records-unimarc",
+    "scrape-web-pages": "https://github.com/smartbiblia-solutions/agent-skills/tree/main/skills/scrape-web-pages",
+    "wiki-ingest": "https://github.com/akshayballal95/wiki-ingest/tree/main/skills/ingest"
+  },
+  "external_tools": {
+    "graphify": {
+      "pypi_package": "graphifyy",
+      "install": "UV_CACHE_DIR=/root/.cache/uv uv tool install graphifyy && graphify install --platform claw"
+    }
+  }
+}

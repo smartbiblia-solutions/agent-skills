@@ -1,0 +1,69 @@
+# Arborescence complète
+
+- AGENTS.md
+- HEARTBEAT.md
+- README.md
+- SOUL.md
+- TOOLS.md
+- USER.md
+- dataset/
+  - README.md
+  - examples/
+    - .gitkeep
+- examples/
+  - example-memoire-original-imprime.xml
+  - example-metadata.json
+  - example-these-originale-imprimee.xml
+- external-dependencies.json
+- graphify-out/
+  - README.md
+- knowledge/
+  - feedback/
+    - self-improvement.md
+  - idref/
+    - alignment.md
+  - index.md
+  - log.md
+  - sudoc/
+    - duplicate-check.md
+  - unimarc/
+    - examples.md
+    - indicators.md
+    - json-to-unimarc.md
+    - profiles.md
+    - static-fields.md
+  - vocabulaires/
+    - discipline-tef.md
+- memory/
+  - MEMORY.md
+  - cases/
+    - 0001-example.json
+- raw/
+  - README.md
+  - abes-unimarc/
+    - .gitkeep
+- skills/
+  - classify-profile/
+    - SKILL.md
+  - enrich-with-idref/
+    - SKILL.md
+  - extract-metadata-json/
+    - SKILL.md
+  - generate-unimarc-xml/
+    - SKILL.md
+  - orchestrate-unimarc-generation/
+    - SKILL.md
+  - retrieve-knowledge/
+    - SKILL.md
+  - retrieve-memory/
+    - SKILL.md
+  - self-improve/
+    - SKILL.md
+  - update-wiki/
+    - SKILL.md
+  - validate-json-schema/
+    - SKILL.md
+  - validate-unimarc/
+    - SKILL.md
+- workflows/
+  - bootstrap-abes-unimarc.md

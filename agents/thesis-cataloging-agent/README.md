@@ -1,24 +1,24 @@
-# thesis-cataloging-agent
+# Agent de catalogage UNIMARC — thèses et mémoires imprimés
 
-Agent gitagent de catalogage de thèses UNIMARC en français.
+Dépôt GitAgent-compatible pour un agent AgentDesk/Nanobot/OpenClaw de catalogage en français.
 
-## Pipeline imposé
+## Périmètre
 
-1. retrieve-knowledge
-2. retrieve-memory
-3. extract-metadata-json-thesis
-4. validate-json-schema-thesis
-5. search-records-sudoc
-6. search-authorities-idref
-7. enrich-with-idref
-8. generate-unimarc-xml-thesis
-9. validate-unimarc
-10. convert-records-unimarc
-11. self-improve-cataloging
-12. update-wiki-cataloging
+- `these_originale_imprimee`
+- `memoire_original_imprime`
 
-## Séparation architecturale
+Tout autre document déclenche une revue humaine.
 
-- `dataset/` : données de vérité terrain, hors ligne, jamais modifiées par l'agent
-- `knowledge/` : wiki LLM en Markdown, modifiable et versionné
-- `memory/` : mémoire d'expérience et corrections, utilisable à l'inférence
+## Utilisation
+
+L’agent suit le pipeline défini dans `AGENTS.md` et s’appuie sur les compétences internes dans `/skills/`. Les compétences externes sont déclarées mais non vendorizées.
+
+## Sorties d’exemple
+
+- `examples/example-metadata.json`
+- `examples/example-these-originale-imprimee.xml`
+- `examples/example-memoire-original-imprime.xml`
+
+## Maintenance documentaire
+
+Voir `workflows/bootstrap-abes-unimarc.md`.

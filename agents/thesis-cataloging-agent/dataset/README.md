@@ -1,7 +1,3 @@
-# Dataset hors ligne
+# Dataset
 
-Ce dossier est réservé aux jeux de données de vérité terrain utilisés pour l'évaluation ou un éventuel fine-tuning hors de l'agent.
-
-## Interdiction
-
-- L'agent ne doit jamais modifier ce dossier.
+Vérité terrain hors ligne : image/OCR → JSON extrait → UNIMARC attendu. Ne jamais modifier pendant une exécution normale.

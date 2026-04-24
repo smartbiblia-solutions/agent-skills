@@ -1,0 +1,10 @@
+{
+  "case_id": "0001-example",
+  "date": "2026-04-24",
+  "profile": "these_originale_imprimee",
+  "trigger": "validation_failure",
+  "summary_fr": "Un directeur de thèse supplémentaire avait été extrait mais non répété en 701.",
+  "correction_fr": "Répéter la zone 701 pour chaque directeur avec le code de fonction approprié.",
+  "proposed_rule_fr": "Si plusieurs directeurs sont présents, répéter la zone 701 avec le code de fonction du profil actif.",
+  "wiki_update_status": "proposed_not_approved"
+}
