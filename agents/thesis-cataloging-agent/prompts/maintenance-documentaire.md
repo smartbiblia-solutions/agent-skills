@@ -21,9 +21,11 @@ Tâches :
 7. Générer les artefacts Graphify.
 
 Commandes Graphify :
-UV_CACHE_DIR=/root/.cache/uv uv tool install graphifyy
+```bash
+uv tool install graphifyy
 graphify install --platform claw
 graphify run --input agents/thesis-cataloging-agent/knowledge --output agents/thesis-cataloging-agent/graphify-out
+```
 
 Sortie attendue :
 - fichiers `/knowledge` modifiés

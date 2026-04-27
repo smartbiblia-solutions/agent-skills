@@ -51,7 +51,7 @@ https://documentation.abes.fr/sudoc/formats/unmb/zones/{zone}.htm
 Après validation du wiki, générer des artefacts facultatifs :
 
 ```bash
-UV_CACHE_DIR=/root/.cache/uv uv tool install graphifyy
+uv tool install graphifyy
 graphify install --platform claw
 graphify run --input agents/thesis-cataloging-agent/knowledge --output agents/thesis-cataloging-agent/graphify-out
 ```

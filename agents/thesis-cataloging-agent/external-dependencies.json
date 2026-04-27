@@ -9,7 +9,7 @@
   "external_tools": {
     "graphify": {
       "pypi_package": "graphifyy",
-      "install": "UV_CACHE_DIR=/root/.cache/uv uv tool install graphifyy && graphify install --platform claw"
+      "install": "uv tool install graphifyy && graphify install --platform claw"
     }
   }
 }
