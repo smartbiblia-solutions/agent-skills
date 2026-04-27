@@ -1,0 +1,163 @@
+[
+  {
+    "zone": "008",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/008.htm",
+    "title": "008 : Type de document et statut de la notice",
+    "file": "008.md",
+    "chars": 7584
+  },
+  {
+    "zone": "029",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/029.htm",
+    "title": "029 : Numéro national de thèse",
+    "file": "029.md",
+    "chars": 10015
+  },
+  {
+    "zone": "100",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/100.htm",
+    "title": "100 : Données générales de traitement",
+    "file": "100.md",
+    "chars": 12734
+  },
+  {
+    "zone": "101",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/101.htm",
+    "title": "101 : Langue de la ressource",
+    "file": "101.md",
+    "chars": 12353
+  },
+  {
+    "zone": "102",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/102.htm",
+    "title": "102 : Pays de publication ou de production",
+    "file": "102.md",
+    "chars": 9574
+  },
+  {
+    "zone": "104",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/104.htm",
+    "title": "104 : Données générales de traitement",
+    "file": "104.md",
+    "chars": 2657
+  },
+  {
+    "zone": "105",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/105.htm",
+    "title": "105 : Données codées pour les ressources textuelles - monographies",
+    "file": "105.md",
+    "chars": 5119
+  },
+  {
+    "zone": "106",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/106.htm",
+    "title": "106 : Données codées - Forme de la ressource",
+    "file": "106.md",
+    "chars": 859
+  },
+  {
+    "zone": "181",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/181.htm",
+    "title": "181-182 : Type de contenu et type de médiation",
+    "file": "181.md",
+    "chars": 55417
+  },
+  {
+    "zone": "182",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/182.htm",
+    "title": "181-182 : Type de contenu et type de médiation",
+    "file": "182.md",
+    "chars": 55417
+  },
+  {
+    "zone": "183",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/183.htm",
+    "title": "183 Type de support",
+    "file": "183.md",
+    "chars": 35933
+  },
+  {
+    "zone": "200",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/200.htm",
+    "title": "200 : Titre et mention de responsabilité",
+    "file": "200.md",
+    "chars": 32394
+  },
+  {
+    "zone": "214",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/214.htm",
+    "title": "Zone 214 : Mention de publication, production, diffusion, fabrication",
+    "file": "214.md",
+    "chars": 41331
+  },
+  {
+    "zone": "215",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/215.htm",
+    "title": "215 : Description matérielle",
+    "file": "215.md",
+    "chars": 3965
+  },
+  {
+    "zone": "320",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/320.htm",
+    "title": "320 : Note sur les bibliographies ou les index contenus dans la ressource",
+    "file": "320.md",
+    "chars": 2083
+  },
+  {
+    "zone": "328",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/328.htm",
+    "title": "328 : Note sur les thèses",
+    "file": "328.md",
+    "chars": 9086
+  },
+  {
+    "zone": "330",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/330.htm",
+    "title": "330 : Résumé ou extrait",
+    "file": "330.md",
+    "chars": 4399
+  },
+  {
+    "zone": "608",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/608.htm",
+    "title": "608 : Point d'accès forme, genre ou caractéristiques physiques",
+    "file": "608.md",
+    "chars": 9933
+  },
+  {
+    "zone": "686",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/686.htm",
+    "title": "686 : Autres classifications",
+    "file": "686.md",
+    "chars": 6509
+  },
+  {
+    "zone": "700",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/700.htm",
+    "title": "700 : Nom de personne (relatif à l'oeuvre ou à l'expression)",
+    "file": "700.md",
+    "chars": 6128
+  },
+  {
+    "zone": "701",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/701.htm",
+    "title": "701 : Nom de personne (relatif à l'oeuvre ou à l'expression)",
+    "file": "701.md",
+    "chars": 3855
+  },
+  {
+    "zone": "702",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/702.htm",
+    "title": "702 : Nom de personne (relatif à la manifestation ou à l'item)",
+    "file": "702.md",
+    "chars": 4653
+  },
+  {
+    "zone": "711",
+    "url": "https://documentation.abes.fr/sudoc/formats/unmb/zones/711.htm",
+    "title": "711 : Collectivité (relative à l'oeuvre ou à l'expression)",
+    "file": "711.md",
+    "chars": 5311
+  }
+]
