@@ -18,14 +18,18 @@ Tâches :
 4. Proposer les mises à jour nécessaires.
 5. Ne modifier `/knowledge` que si les règles sont vérifiées.
 6. Journaliser dans `knowledge/log.md`.
-7. Générer les artefacts Graphify.
+7. Vérifier que Graphify est disponible.
+8. Si la commande `graphify` est absente, installer Graphify avec `UV_CACHE_DIR=/root/.cache/uv uv tool install graphifyy`, puis exécuter `graphify install --platform claw`.
+9. Générer les artefacts Graphify.
 
-Commandes Graphify :
+Commandes Graphify obligatoires :
 ```bash
-uv tool install graphifyy
+command -v graphify || UV_CACHE_DIR=/root/.cache/uv uv tool install graphifyy
 graphify install --platform claw
 graphify run --input agents/thesis-cataloging-agent/knowledge --output agents/thesis-cataloging-agent/graphify-out
 ```
+
+Si `uv` est absent ou si l'environnement interdit l'installation d'outils, ne pas présenter cela comme une simple absence de Graphify. Dire explicitement que l'environnement ne permet pas l'installation automatique et donner la commande manuelle à exécuter.
 
 Sortie attendue :
 - fichiers `/knowledge` modifiés

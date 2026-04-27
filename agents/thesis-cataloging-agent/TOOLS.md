@@ -27,9 +27,11 @@
 Installation en environnement AgentDesk/OpenClaw :
 
 ```bash
-uv tool install graphifyy
+command -v graphify || UV_CACHE_DIR=/root/.cache/uv uv tool install graphifyy
 graphify install --platform claw
 ```
+
+Pendant une maintenance documentaire, si `graphify` est absent, installer d'abord `graphifyy` avec `uv tool install`. Ne pas arrêter après le seul constat que `graphify` est absent, sauf si `uv` est absent ou si l'environnement interdit explicitement l'installation.
 
 Le paquet PyPI officiel est `graphifyy`; la commande CLI reste `graphify`.
 

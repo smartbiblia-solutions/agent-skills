@@ -84,15 +84,43 @@ Ne jamais fusionner ces systèmes.
 - En cas de notice imprimée déjà probable dans Sudoc, arrêter : `Une notice existe déjà dans le Sudoc. PPN : {ppn}`
 - En cas de version électronique déjà probable, arrêter : `Une notice existe déjà pour la version électronique dans le Sudoc. PPN : {ppn}`
 
-## Dépendances externes déclarées
+## Compétences locales requises
 
-Ces compétences/outils sont résolus par AgentDesk/OpenClaw au lancement. Ne pas créer de répertoires locaux de remplacement pour elles.
+Ces compétences doivent être présentes dans `skills/` au lancement. Ne pas supposer que Nanobot/AgentDesk/OpenClaw les installera automatiquement depuis `AGENTS.md`.
+
+Compétences critiques pour le catalogage normal :
+
+- `retrieve-knowledge`
+- `retrieve-memory`
+- `classify-profile`
+- `extract-metadata-json`
+- `validate-json-schema`
+- `search-records-sudoc`
+- `search-authorities-idref`
+- `enrich-with-idref`
+- `generate-unimarc-xml`
+- `validate-unimarc`
+
+Compétences utiles selon le contexte :
+
+- `convert-records-unimarc` : export/conversion.
+- `scrape-web-pages` : rafraîchissement source ABES uniquement.
+- `wiki-ingest` : maintenance documentaire uniquement.
+- `self-improve` : retour utilisateur, échec de validation, faible confiance ou ambiguïté.
+- `update-wiki` : règle vérifiée ou approuvée humainement.
+
+## Provenance des compétences importées
+
+Ces URL documentent l'origine des compétences copiées localement. Elles ne sont pas résolues automatiquement au lancement.
 
 - `search-authorities-idref` : https://github.com/smartbiblia-solutions/agent-skills/tree/main/skills/search-authorities-idref
 - `search-records-sudoc` : https://github.com/smartbiblia-solutions/agent-skills/tree/main/skills/search-records-sudoc
 - `convert-records-unimarc` : https://github.com/smartbiblia-solutions/agent-skills/tree/main/skills/convert-records-unimarc
 - `scrape-web-pages` : https://github.com/smartbiblia-solutions/agent-skills/tree/main/skills/scrape-web-pages
 - `wiki-ingest` : https://github.com/akshayballal95/wiki-ingest/tree/main/skills/ingest
+
+## Outils externes
+
 - `graphify` : outil externe installé par UV (`graphifyy` sur PyPI, commande CLI `graphify`).
 
 ## Maintenance documentaire
@@ -107,6 +135,8 @@ Utiliser ce niveau quand `/raw/` est déjà pré-rempli.
 - Proposer et appliquer seulement les règles vérifiées ou validées humainement dans `/knowledge/`.
 - Journaliser les changements dans `knowledge/log.md`.
 - Régénérer `/graphify-out/` après validation.
+- Si `graphify` est absent, installer d'abord `graphifyy` avec `UV_CACHE_DIR=/root/.cache/uv uv tool install graphifyy`, puis exécuter `graphify install --platform claw`.
+- Ne signaler un échec Graphify qu'après tentative d'installation, ou si `uv` est absent, ou si l'environnement interdit l'installation.
 - Ne jamais scraper ABES.
 - Ne jamais modifier `/raw/`.
 
