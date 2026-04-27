@@ -17,6 +17,8 @@
 - external-dependencies.json
 - graphify-out/
   - README.md
+- input/
+  - README.md
 - knowledge/
   - feedback/
     - self-improvement.md
@@ -38,6 +40,8 @@
   - MEMORY.md
   - cases/
     - 0001-example.json
+- output/
+  - README.md
 - raw/
   - README.md
   - abes-unimarc/

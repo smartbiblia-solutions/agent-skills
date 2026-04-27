@@ -20,9 +20,31 @@ Tu prends en entrée une page de couverture ou un OCR, tu extrais les métadonn�
 
 `exactitude > conformité au profil local > conformité UNIMARC > complétude > vitesse`
 
+## Accueil et routage initial
+
+Si l'utilisateur ouvre une nouvelle conversation sans tâche explicite, répondre uniquement :
+
+```text
+Choisissez un mode :
+
+1. Catalogage normal — produire une notice UNIMARC/XML depuis une page de couverture ou un OCR.
+2. Maintenance documentaire — vérifier /knowledge depuis /raw, mettre à jour les règles validées et régénérer Graphify.
+3. Rafraîchissement source ABES — mettre à jour /raw/abes-unimarc depuis la documentation ABES, puis préparer /knowledge.
+
+Répondez 1, 2 ou 3.
+```
+
+Si l'utilisateur répond `1`, lire `prompts/catalogage-normal.md` et demander l'OCR ou la page de couverture si elle manque.
+
+Si l'utilisateur répond `2`, lire `prompts/maintenance-documentaire.md` et confirmer que la maintenance courante est bien demandée avant de modifier `/knowledge` ou de lancer Graphify. Ne pas modifier `/raw`.
+
+Si l'utilisateur répond `3`, lire `workflows/bootstrap-abes-unimarc.md` et confirmer que le rafraîchissement source ABES est demandé explicitement avant toute mise à jour de `/raw/abes-unimarc`.
+
 ## Séparation stricte des systèmes
 
 - `/dataset/` : vérité terrain hors ligne pour évaluation/régression/futur fine-tuning. Ne jamais modifier pendant une exécution normale.
+- `/input/` : documents utilisateur d'une exécution normale : images de couverture, OCR, lots. Ne jamais utiliser comme vérité terrain.
+- `/output/` : artefacts produits par une exécution normale : JSON, rapports Sudoc/IdRef, UNIMARC/XML, rapports d'incertitude.
 - `/raw/` : documentation source immuable (ABES/Sudoc/UNIMARC/spécifications locales). Ne jamais modifier pendant une exécution normale.
 - `/knowledge/` : wiki opérationnel maintenu en français. Source de vérité pendant le catalogage.
 - `/memory/` : mémoire d’expérience : cas passés, corrections, échecs de validation, leçons.
@@ -34,19 +56,23 @@ Ne jamais fusionner ces systèmes.
 
 À chaque exécution normale :
 
-1. `retrieve-knowledge`
-2. `retrieve-memory`
-3. `classify-profile`
-4. `extract-metadata-json`
-5. `validate-json-schema`
-6. `search-records-sudoc` *(compétence externe)*
-7. `search-authorities-idref` *(compétence externe)*
-8. `enrich-with-idref`
-9. `generate-unimarc-xml`
-10. `validate-unimarc`
-11. `convert-records-unimarc` *(compétence externe facultative, export uniquement)*
-12. `self-improve` seulement si retour utilisateur, échec de validation, faible confiance ou ambiguïté
-13. `update-wiki` seulement après retour humain approuvé ou extraction de règle vérifiée
+1. Créer ou identifier un dossier `input/run-YYYYMMDD-HHMM/` pour les entrées utilisateur si des fichiers sont fournis.
+2. Créer le dossier miroir `output/run-YYYYMMDD-HHMM/` pour les résultats.
+3. Pour chaque document du lot, conserver un identifiant stable (`001`, `002`, etc.).
+4. `retrieve-knowledge`
+5. `retrieve-memory`
+6. `classify-profile`
+7. `extract-metadata-json`
+8. `validate-json-schema`
+9. `search-records-sudoc` *(compétence externe)*
+10. `search-authorities-idref` *(compétence externe)*
+11. `enrich-with-idref`
+12. `generate-unimarc-xml`
+13. `validate-unimarc`
+14. Écrire les sorties dans `output/run-YYYYMMDD-HHMM/`.
+15. `convert-records-unimarc` *(compétence externe facultative, export uniquement)*
+16. `self-improve` seulement si retour utilisateur, échec de validation, faible confiance ou ambiguïté
+17. `update-wiki` seulement après retour humain approuvé ou extraction de règle vérifiée
 
 ## Règles critiques
 
@@ -69,11 +95,34 @@ Ces compétences/outils sont résolus par AgentDesk/OpenClaw au lancement. Ne pa
 - `wiki-ingest` : https://github.com/akshayballal95/wiki-ingest/tree/main/skills/ingest
 - `graphify` : outil externe installé par UV (`graphifyy` sur PyPI, commande CLI `graphify`).
 
-## Initialisation documentaire uniquement
+## Maintenance documentaire
 
-Le bootstrap peut alimenter `/raw/abes-unimarc/` avec la documentation ABES transposée en markdown pour les zones :
+Il existe deux niveaux séparés.
+
+### Maintenance courante
+
+Utiliser ce niveau quand `/raw/` est déjà pré-rempli.
+
+- Comparer `/raw/abes-unimarc/` avec `/knowledge/`.
+- Proposer et appliquer seulement les règles vérifiées ou validées humainement dans `/knowledge/`.
+- Journaliser les changements dans `knowledge/log.md`.
+- Régénérer `/graphify-out/` après validation.
+- Ne jamais scraper ABES.
+- Ne jamais modifier `/raw/`.
+
+### Rafraîchissement source ABES
+
+Utiliser ce niveau seulement si la documentation ABES a changé, si une zone manque dans `/raw/`, ou si un humain demande explicitement une régénération source.
+
+Le workflow `workflows/bootstrap-abes-unimarc.md` peut alimenter `/raw/abes-unimarc/` avec la documentation ABES transposée en markdown pour les zones :
 `008, 029, 100, 101, 102, 104, 105, 106, 181, 182, 183, 200, 214, 215, 320, 328, 330, 608, 686, 700, 701, 702, 711`.
 
 Modèle d’URL : `https://documentation.abes.fr/sudoc/formats/unmb/zones/{zone}.htm`
 
-Ce bootstrap n’est jamais exécuté pendant le catalogage normal.
+Ce workflow n’est jamais exécuté pendant le catalogage normal.
+
+## Prompts prêts à l’emploi
+
+- `prompts/catalogage-normal.md` : pour produire une notice depuis OCR/page de couverture.
+- `prompts/maintenance-documentaire.md` : pour mettre à jour `/knowledge` depuis `/raw` et régénérer
+  Graphify.

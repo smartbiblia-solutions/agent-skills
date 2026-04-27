@@ -13,6 +13,12 @@ Tout autre document déclenche une revue humaine.
 
 L’agent suit le pipeline défini dans `AGENTS.md` et s’appuie sur les compétences internes dans `/skills/`. Les compétences externes sont déclarées mais non vendorizées.
 
+## Entrées et sorties
+
+- `input/` reçoit les images de couverture, OCR et lots fournis par l'utilisateur pendant une exécution.
+- `output/` reçoit les métadonnées JSON, rapports Sudoc/IdRef, notices UNIMARC/XML et rapports d'incertitude.
+- `dataset/` reste réservé aux tests et à l'évaluation.
+
 ## Sorties d’exemple
 
 - `examples/example-metadata.json`
